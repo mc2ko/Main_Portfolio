@@ -388,6 +388,7 @@
 }
 #wrap {
   width: 500px;
+  height: 800px;
   margin: 0 auto;
 }
 @media screen and (max-width: 500px) {
@@ -401,6 +402,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 header > h1 {
   position: absolute;
@@ -420,8 +422,8 @@ header > h1 + .title {
 section {
   overflow: hidden;
   position: relative;
-  width: 500px;
-  height: 800px;
+  width: 100%;
+  height: 100%;
 }
 section > .backImage {
   position: absolute;
@@ -1445,10 +1447,9 @@ footer {
   top: 759px;
   width: 500px;
   height: 40px;
+  text-align: center;
 }
 footer small {
-  display: flex;
-  justify-content: center;
   line-height: 40px;
   text-shadow: 1px 1px #fff;
 }/*# sourceMappingURL=style.css.map */
