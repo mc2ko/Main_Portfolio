@@ -388,10 +388,13 @@
 }
 #wrap {
   width: 500px;
-  max-width: 500px;
-  min-width: 500px;
-  max-height: 800px;
   margin: 0 auto;
+}
+@media screen and (max-width: 500px) {
+  #wrap {
+    max-width: 500px;
+    min-width: 500px;
+  }
 }
 
 header {
