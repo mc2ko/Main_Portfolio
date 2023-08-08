@@ -387,21 +387,31 @@
   }
 }
 #wrap {
+  width: 500px;
   max-width: 500px;
+  min-width: 500px;
   max-height: 800px;
+  margin: 0 auto;
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > h1 {
   position: absolute;
   z-index: 300;
-  left: 50%;
+  text-indent: -9999px;
+}
+header > h1 + .title {
+  position: absolute;
+  z-index: 300;
   top: 10px;
-  transform: translate(-50%, 0);
   width: 454px;
   height: 106px;
   background-image: url(./../images/resource_img.png);
   background-position: -1px -1px;
-  text-indent: -9999px;
 }
 
 section {
@@ -409,7 +419,6 @@ section {
   position: relative;
   width: 500px;
   height: 800px;
-  margin: 0 auto;
 }
 section > .backImage {
   position: absolute;
@@ -1422,15 +1431,17 @@ section > .buttons > .buttonOff + .buttonNormal > .startButton {
   width: 240px;
   height: 72px;
 }
+section > .buttons > .buttonOff + .buttonNormal > .startButton:hover {
+  background-image: url(./../images/resource_img.png);
+  background-position: -381px -923px;
+}
 
 footer {
   position: absolute;
   z-index: 800;
-  left: 50%;
   top: 759px;
   width: 500px;
   height: 40px;
-  transform: translate(-50%, 0);
 }
 footer small {
   display: flex;

@@ -415,23 +415,32 @@
 // -----------------------------------애니메이션 저장소 끝-----------------------------------
 
 #wrap {
+  width: 500px;
   max-width: 500px;
+  min-width: 500px;
   max-height: 800px;
+  margin: 0 auto;
 }
 
 header {
-  position: absolute;
-  z-index: 300;
-  left: 50%;
-  top: 10px;
-  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > h1 {
+    position: absolute;
+    z-index: 300;
+    text-indent: -9999px;
+    + .title {
+      position: absolute;
+      z-index: 300;
+      top: 10px;
 
-  width: 454px;
-  height: 106px;
-  background-image: url(./../images/resource_img.png);
-  background-position: -1px -1px;
-
-  text-indent: -9999px;
+      width: 454px;
+      height: 106px;
+      background-image: url(./../images/resource_img.png);
+      background-position: -1px -1px;
+    }
+  }
 } //end of header
 
 section {
@@ -439,7 +448,6 @@ section {
   position: relative;
   width: 500px;
   height: 800px;
-  margin: 0 auto;
 
   // 백그라운드 이미지
   > .backImage {
@@ -1589,6 +1597,10 @@ section {
 
           width: 240px;
           height: 72px;
+          &:hover {
+            background-image: url(./../images/resource_img.png);
+            background-position: -381px -923px;
+          }
         } //end of .startButton
       } //end of .buttonNormal
     } //end of .buttonOff
@@ -1598,11 +1610,9 @@ section {
 footer {
   position: absolute;
   z-index: 800;
-  left: 50%;
   top: 759px;
   width: 500px;
   height: 40px;
-  transform: translate(-50%, 0);
   small {
     display: flex;
     justify-content: center;
