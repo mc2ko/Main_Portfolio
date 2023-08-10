@@ -1,447 +1,466 @@
 @charset "utf-8";
 
-// 창문 애니메이션 영역
-@keyframes leftWindowScale {
-  0% {
-    transform: scaleX(100%);
+$phone: "screen and (min-width: 640px)";
+
+// ------------------------------------애니메이션 저장소-------------------------------------
+* {
+  // 창문 애니메이션 영역
+  @keyframes leftWindowScale {
+    0% {
+      transform: scaleX(100%);
+    }
+    100% {
+      transform: scaleX(1%);
+    }
   }
-  100% {
-    transform: scaleX(1%);
+
+  @keyframes rightWindowScale {
+    0% {
+      transform: scaleX(100%);
+    }
+    100% {
+      transform: scaleX(1%);
+    }
+  }
+
+  @keyframes leftWindowSkew {
+    0% {
+      transform: skewY(0);
+    }
+    100% {
+      transform: skewY(-50deg);
+    }
+  }
+
+  @keyframes rightWindowSkew {
+    0% {
+      transform: skewY(0);
+    }
+    100% {
+      transform: skewY(50deg);
+    }
+  }
+
+  // 꽃 애니메이션 영역
+  @keyframes leafAni {
+    0% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+  @keyframes faceDance {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      left: 6px;
+      top: 4px;
+    }
+    50% {
+      left: 0px;
+      top: 0px;
+    }
+    75% {
+      left: -6px;
+      top: 4px;
+    }
+    100% {
+      left: 0px;
+      top: 0px;
+    }
+  }
+
+  @keyframes faceDancer {
+    0% {
+      left: 20px;
+      top: 31px;
+    }
+    25% {
+      left: 26px;
+      top: 35px;
+    }
+    50% {
+      left: 20px;
+      top: 31px;
+    }
+    75% {
+      left: 14px;
+      top: 35px;
+    }
+    100% {
+      left: 20px;
+      top: 31px;
+    }
+  }
+
+  @keyframes leafAni {
+    0% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+  // 풍선 애니메이션 영역
+  @keyframes balloons {
+    0% {
+      top: 20px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+
+  @keyframes balloonMove01 {
+    0% {
+      left: 70px;
+      top: 450px;
+      scale: 0%;
+    }
+    20% {
+      left: 40px;
+    }
+    40% {
+      left: -10px;
+    }
+    60% {
+      left: 10px;
+    }
+    80% {
+      left: -10px;
+    }
+    100% {
+      left: 10px;
+      top: 0px;
+      scale: 100%;
+    }
+  }
+
+  @keyframes balloonMove02 {
+    0% {
+      left: 57px;
+      top: 450px;
+      scale: 0%;
+    }
+    20% {
+      left: 107px;
+    }
+    40% {
+      left: 67px;
+    }
+    60% {
+      left: 87px;
+    }
+    80% {
+      left: 67px;
+    }
+    100% {
+      left: 87px;
+      top: 0px;
+      scale: 100%;
+    }
+  }
+
+  @keyframes balloonMove03 {
+    0% {
+      left: 214px;
+      top: 450px;
+      scale: 0%;
+    }
+    20% {
+      left: 184px;
+    }
+    40% {
+      left: 144px;
+    }
+    60% {
+      left: 164px;
+    }
+    80% {
+      left: 144px;
+    }
+    100% {
+      left: 164px;
+      top: 0px;
+      scale: 100%;
+    }
+  }
+
+  @keyframes balloonMove04 {
+    0% {
+      left: 241px;
+      top: 450px;
+      scale: 0%;
+    }
+    20% {
+      left: 231px;
+    }
+    40% {
+      left: 241px;
+    }
+    60% {
+      left: 221px;
+    }
+    80% {
+      left: 241px;
+    }
+    100% {
+      left: 241px;
+      top: 0px;
+      scale: 100%;
+    }
+  }
+
+  @keyframes balloonMove05 {
+    0% {
+      left: 308px;
+      top: 450px;
+      scale: 0%;
+    }
+    20% {
+      left: 308px;
+    }
+    40% {
+      left: 298px;
+    }
+    60% {
+      left: 318px;
+    }
+    80% {
+      left: 298px;
+    }
+    100% {
+      left: 318px;
+      top: 0px;
+      scale: 100%;
+    }
+  }
+
+  @keyframes balloonMove06 {
+    0% {
+      left: 365px;
+      top: 450px;
+      scale: 0%;
+    }
+    20% {
+      left: 385px;
+    }
+    40% {
+      left: 375px;
+    }
+    60% {
+      left: 395px;
+    }
+    80% {
+      left: 375px;
+    }
+    100% {
+      left: 395px;
+      top: 0px;
+      scale: 100%;
+    }
+  }
+
+  //음악가 애니메이션 영역
+  @keyframes musician {
+    0% {
+      opacity: 0;
+      left: 9px;
+      top: -38px;
+      background-position: -989px -237px;
+    }
+    17% {
+      opacity: 1;
+      left: 52px;
+      top: -68px;
+      background-position: -989px -237px;
+    }
+    33% {
+      left: 42px;
+      top: -88px;
+      background-position: -989px -237px;
+    }
+    49% {
+      opacity: 1;
+      left: 82px;
+      top: -108px;
+      background-position: -989px -237px;
+    }
+    50% {
+      opacity: 0;
+      left: 2px;
+      top: -48px;
+      background-position: -989px -277px;
+    }
+    67% {
+      opacity: 1;
+      left: 82px;
+      top: -68px;
+      background-position: -989px -277px;
+    }
+    83% {
+      opacity: 1;
+      left: 62px;
+      top: -88px;
+      background-position: -989px -277px;
+    }
+    99% {
+      left: 122px;
+      top: -98px;
+      background-position: -989px -277px;
+    }
+    100% {
+      opacity: 0;
+      left: 122px;
+      top: -108px;
+      background-position: -989px -277px;
+    }
+  }
+
+  //구름 애니메이션 영역
+  @keyframes cloudAni01 {
+    0% {
+      left: 440px;
+      opacity: 0;
+      scale: 100%;
+    }
+    1% {
+      left: 440px;
+      opacity: 1;
+      scale: 100%;
+    }
+    25% {
+      scale: 110%;
+    }
+    50% {
+      scale: 90%;
+    }
+    75% {
+      scale: 110%;
+    }
+    99% {
+      opacity: 1;
+      scale: 100%;
+    }
+    100% {
+      left: -80px;
+      opacity: 0;
+      scale: 100%;
+    }
+  }
+
+  @keyframes cloudAni02 {
+    0% {
+      left: 440px;
+      opacity: 0;
+      scale: 100%;
+    }
+    1% {
+      left: 440px;
+      opacity: 1;
+      scale: 100%;
+    }
+    25% {
+      scale: 90%;
+    }
+    50% {
+      scale: 110%;
+    }
+    75% {
+      scale: 90%;
+    }
+    99% {
+      opacity: 1;
+      scale: 100%;
+    }
+    100% {
+      left: -80px;
+      opacity: 0;
+      scale: 100%;
+    }
+  }
+
+  @keyframes cloudAni03 {
+    0% {
+      left: 440px;
+      opacity: 0;
+      scale: 100%;
+    }
+    1% {
+      left: 440px;
+      opacity: 1;
+      scale: 100%;
+    }
+    25% {
+      scale: 110%;
+    }
+    50% {
+      scale: 90%;
+    }
+    75% {
+      scale: 110%;
+    }
+    99% {
+      opacity: 1;
+      scale: 100%;
+    }
+    100% {
+      left: -80px;
+      opacity: 0;
+      scale: 100%;
+    }
   }
 }
-
-@keyframes rightWindowScale {
-  0% {
-    transform: scaleX(100%);
-  }
-  100% {
-    transform: scaleX(1%);
-  }
-}
-
-@keyframes leftWindowSkew {
-  0% {
-    transform: skewY(0);
-  }
-  100% {
-    transform: skewY(-50deg);
-  }
-}
-
-@keyframes rightWindowSkew {
-  0% {
-    transform: skewY(0);
-  }
-  100% {
-    transform: skewY(50deg);
-  }
-}
-
-// 꽃 애니메이션 영역
-@keyframes leafAni {
-  0% {
-    transform: rotate(20deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
-@keyframes faceDance {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    left: 6px;
-    top: 4px;
-  }
-  50% {
-    left: 0px;
-    top: 0px;
-  }
-  75% {
-    left: -6px;
-    top: 4px;
-  }
-  100% {
-    left: 0px;
-    top: 0px;
-  }
-}
-
-@keyframes faceDancer {
-  0% {
-    left: 20px;
-    top: 31px;
-  }
-  25% {
-    left: 26px;
-    top: 35px;
-  }
-  50% {
-    left: 20px;
-    top: 31px;
-  }
-  75% {
-    left: 14px;
-    top: 35px;
-  }
-  100% {
-    left: 20px;
-    top: 31px;
-  }
-}
-
-@keyframes leafAni {
-  0% {
-    transform: rotate(20deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
-// 풍선 애니메이션 영역
-@keyframes balloons {
-  0% {
-    top: 20px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-
-@keyframes balloonMove01 {
-  0% {
-    left: 70px;
-    top: 450px;
-    scale: 0%;
-  }
-  20% {
-    left: 40px;
-  }
-  40% {
-    left: -10px;
-  }
-  60% {
-    left: 10px;
-  }
-  80% {
-    left: -10px;
-  }
-  100% {
-    left: 10px;
-    top: 0px;
-    scale: 100%;
-  }
-}
-
-@keyframes balloonMove02 {
-  0% {
-    left: 57px;
-    top: 450px;
-    scale: 0%;
-  }
-  20% {
-    left: 107px;
-  }
-  40% {
-    left: 67px;
-  }
-  60% {
-    left: 87px;
-  }
-  80% {
-    left: 67px;
-  }
-  100% {
-    left: 87px;
-    top: 0px;
-    scale: 100%;
-  }
-}
-
-@keyframes balloonMove03 {
-  0% {
-    left: 214px;
-    top: 450px;
-    scale: 0%;
-  }
-  20% {
-    left: 184px;
-  }
-  40% {
-    left: 144px;
-  }
-  60% {
-    left: 164px;
-  }
-  80% {
-    left: 144px;
-  }
-  100% {
-    left: 164px;
-    top: 0px;
-    scale: 100%;
-  }
-}
-
-@keyframes balloonMove04 {
-  0% {
-    left: 241px;
-    top: 450px;
-    scale: 0%;
-  }
-  20% {
-    left: 231px;
-  }
-  40% {
-    left: 241px;
-  }
-  60% {
-    left: 221px;
-  }
-  80% {
-    left: 241px;
-  }
-  100% {
-    left: 241px;
-    top: 0px;
-    scale: 100%;
-  }
-}
-
-@keyframes balloonMove05 {
-  0% {
-    left: 308px;
-    top: 450px;
-    scale: 0%;
-  }
-  20% {
-    left: 308px;
-  }
-  40% {
-    left: 298px;
-  }
-  60% {
-    left: 318px;
-  }
-  80% {
-    left: 298px;
-  }
-  100% {
-    left: 318px;
-    top: 0px;
-    scale: 100%;
-  }
-}
-
-@keyframes balloonMove06 {
-  0% {
-    left: 365px;
-    top: 450px;
-    scale: 0%;
-  }
-  20% {
-    left: 385px;
-  }
-  40% {
-    left: 375px;
-  }
-  60% {
-    left: 395px;
-  }
-  80% {
-    left: 375px;
-  }
-  100% {
-    left: 395px;
-    top: 0px;
-    scale: 100%;
-  }
-}
-
-//음악가 애니메이션 영역
-@keyframes musician {
-  0% {
-    opacity: 0;
-    left: 9px;
-    top: -38px;
-    background-position: -989px -237px;
-  }
-  17% {
-    opacity: 1;
-    left: 52px;
-    top: -68px;
-    background-position: -989px -237px;
-  }
-  33% {
-    left: 42px;
-    top: -88px;
-    background-position: -989px -237px;
-  }
-  49% {
-    opacity: 1;
-    left: 82px;
-    top: -108px;
-    background-position: -989px -237px;
-  }
-  50% {
-    opacity: 0;
-    left: 2px;
-    top: -48px;
-    background-position: -989px -277px;
-  }
-  67% {
-    opacity: 1;
-    left: 82px;
-    top: -68px;
-    background-position: -989px -277px;
-  }
-  83% {
-    opacity: 1;
-    left: 62px;
-    top: -88px;
-    background-position: -989px -277px;
-  }
-  99% {
-    left: 122px;
-    top: -98px;
-    background-position: -989px -277px;
-  }
-  100% {
-    opacity: 0;
-    left: 122px;
-    top: -108px;
-    background-position: -989px -277px;
-  }
-}
-
-//구름 애니메이션 영역
-@keyframes cloudAni01 {
-  0% {
-    left: 440px;
-    opacity: 0;
-    scale: 100%;
-  }
-  1% {
-    left: 440px;
-    opacity: 1;
-    scale: 100%;
-  }
-  25% {
-    scale: 110%;
-  }
-  50% {
-    scale: 90%;
-  }
-  75% {
-    scale: 110%;
-  }
-  99% {
-    opacity: 1;
-    scale: 100%;
-  }
-  100% {
-    left: -80px;
-    opacity: 0;
-    scale: 100%;
-  }
-}
-
-@keyframes cloudAni02 {
-  0% {
-    left: 440px;
-    opacity: 0;
-    scale: 100%;
-  }
-  1% {
-    left: 440px;
-    opacity: 1;
-    scale: 100%;
-  }
-  25% {
-    scale: 90%;
-  }
-  50% {
-    scale: 110%;
-  }
-  75% {
-    scale: 90%;
-  }
-  99% {
-    opacity: 1;
-    scale: 100%;
-  }
-  100% {
-    left: -80px;
-    opacity: 0;
-    scale: 100%;
-  }
-}
-
-@keyframes cloudAni03 {
-  0% {
-    left: 440px;
-    opacity: 0;
-    scale: 100%;
-  }
-  1% {
-    left: 440px;
-    opacity: 1;
-    scale: 100%;
-  }
-  25% {
-    scale: 110%;
-  }
-  50% {
-    scale: 90%;
-  }
-  75% {
-    scale: 110%;
-  }
-  99% {
-    opacity: 1;
-    scale: 100%;
-  }
-  100% {
-    left: -80px;
-    opacity: 0;
-    scale: 100%;
-  }
-}
-
 // -----------------------------------애니메이션 저장소 끝-----------------------------------
+body {
+  @media #{$phone} {
+    background-color: black;
+  }
+}
 
 #wrap {
-  max-width: 500px;
-  max-height: 800px;
+  width: 500px;
+  height: 800px;
+
+  @media #{$phone} {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 header {
-  position: absolute;
-  z-index: 300;
-  left: 50%;
-  top: 10px;
-  transform: translate(-50%, 0);
+  width: 500px;
+  > h1 {
+    text-indent: -9999px;
+  }
 
-  width: 454px;
-  height: 106px;
-  background-image: url(./../images/resource_img.png);
-  background-position: -1px -1px;
+  > .bgt {
+    position: absolute;
+    z-index: 300;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%, 0);
 
-  text-indent: -9999px;
+    width: 454px;
+    height: 106px;
+    background-image: url(./../images/resource_img.png);
+    background-position: -1px -1px;
+  }
 } //end of header
 
 section {
   overflow: hidden;
   position: relative;
-  width: 500px;
-  height: 800px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
 
-  // 백그라운드 이미지
+  // -------------------------------------백이미지 저장소-----------------------------------
   > .backImage {
     position: absolute;
     z-index: 100;
@@ -512,8 +531,9 @@ section {
       } //end of .sun
     } //end of .mountain
   } //end of .backImage
+  // ------------------------------------백이미지 저장소 끝---------------------------------
 
-  // 창문(닫힌창문)
+  // -------------------------------------닫힌창문 저장소-----------------------------------
   > .closeWindow {
     display: block;
     position: absolute;
@@ -546,8 +566,9 @@ section {
       transform-origin: right;
     } //end of .rightWindow
   } //end of .windowsAni
+  // ------------------------------------닫힌창문 저장소 끝---------------------------------
 
-  // 창문(애니메이션창문)
+  // -------------------------------------열린창문 저장소-----------------------------------
   > .windowsAni {
     display: none;
     position: absolute;
@@ -602,8 +623,9 @@ section {
       } //end of .right
     } //end of .left
   } //end of .windowsAni
+  // ------------------------------------열린창문 저장소 끝---------------------------------
 
-  // 창문(뒤요소들을 가려줄 창문틀)
+  // -------------------------------------가리기용 저장소-----------------------------------
   > .boxing {
     position: absolute;
     z-index: 220;
@@ -617,8 +639,9 @@ section {
     background-position: -1px -109px;
     // opacity: 0.4; //임시 알파값!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   } //end of .boxing
+  // ------------------------------------가리기용 저장소 끝---------------------------------
 
-  // 꽃 위치
+  // -------------------------------------꽃의무대 저장소-----------------------------------
   > .flowers {
     display: flex;
     position: relative;
@@ -1223,6 +1246,7 @@ section {
       } //end of .root
     } //end of .flowers06
   } //end of .tempResult
+  // ------------------------------------꽃의무대 저장소 끝---------------------------------
 
   .leafAni {
     animation: leafAni 0.45s ease 0s alternate-reverse infinite;
@@ -1241,7 +1265,7 @@ section {
       infinite forwards;
   }
 
-  // 풍선 위치
+  // -------------------------------------풍선위치 저장소-----------------------------------
   > .lottoNumbers {
     display: flex;
     position: absolute;
@@ -1535,6 +1559,7 @@ section {
       } //end of .balloon
     } //end of .balloonAni06
   } //end of .lottoNumbers
+  // ------------------------------------풍선위치 저장소 끝---------------------------------
 
   .balloonsAni {
     animation: balloons 1s ease 2s alternate-reverse infinite;
@@ -1558,11 +1583,6 @@ section {
   .balloonMove06 {
     animation: balloonMove06 2s ease-out 0s alternate forwards;
   }
-
-  > .result {
-    position: absolute;
-    z-index: 400; //풍선!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!풍선 연출넣기!!!!!
-  } //end of .result
 
   > .buttons {
     > .buttonOff {
