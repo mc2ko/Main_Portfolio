@@ -417,6 +417,10 @@ $phone: "screen and (max-width: 640px)";
   }
 }
 // -----------------------------------애니메이션 저장소 끝-----------------------------------
+body {
+  background-color: #6dcabc;
+}
+
 #wrap {
   position: relative;
   width: 500px;
@@ -447,7 +451,7 @@ header {
 } //end of header
 
 section {
-  // overflow: hidden;
+  overflow: hidden;
   position: relative;
 
   width: 500px;
@@ -1583,9 +1587,9 @@ section {
   > .buttons {
     > .buttonOff {
       position: absolute;
-      z-index: 400;
+      z-index: 800;
       left: 50%;
-      top: 686px;
+      top: 676px;
       transform: translate(-50%, 0);
 
       width: 240px;
@@ -1594,9 +1598,9 @@ section {
       background-position: -381px -775px;
       + .buttonNormal {
         position: absolute;
-        z-index: 410;
+        z-index: 810;
         left: 50%;
-        top: 686px;
+        top: 676px;
         transform: translate(-50%, 0);
 
         width: 240px;
@@ -1606,10 +1610,13 @@ section {
         > .startButton {
           display: block;
           position: absolute;
-          z-index: 1000;
+          z-index: 900;
+          left: 50%;
+          top: -676px;
+          transform: translate(-50%, 0);
 
-          width: 240px;
-          height: 72px;
+          width: 500px;
+          height: 800px;
         } //end of .startButton
       } //end of .buttonNormal
     } //end of .buttonOff
@@ -1618,7 +1625,7 @@ section {
 
 footer {
   position: absolute;
-  z-index: 800;
+  z-index: 700;
   left: 50%;
   top: 759px;
   width: 500px;
@@ -1627,7 +1634,23 @@ footer {
   small {
     display: flex;
     justify-content: center;
-    line-height: 40px;
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    transform: translate(-50%, 0);
+
+    width: 150px;
+    height: 28px;
     text-shadow: 1px 1px #fff;
+    a {
+      display: block;
+      position: absolute;
+      z-index: 1000;
+      top: 10px;
+
+      width: 150px;
+      height: 20px;
+      text-align: center;
+    }
   }
 }

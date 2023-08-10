@@ -387,6 +387,10 @@
   }
 }
 
+body {
+  background-color: #6dcabc;
+}
+
 #wrap {
   position: relative;
   width: 500px;
@@ -415,6 +419,7 @@ header > .bgt {
 }
 
 section {
+  overflow: hidden;
   position: relative;
   width: 500px;
   height: 800px;
@@ -1404,9 +1409,9 @@ section .balloonMove06 {
 }
 section > .buttons > .buttonOff {
   position: absolute;
-  z-index: 400;
+  z-index: 800;
   left: 50%;
-  top: 686px;
+  top: 676px;
   transform: translate(-50%, 0);
   width: 240px;
   height: 72px;
@@ -1415,9 +1420,9 @@ section > .buttons > .buttonOff {
 }
 section > .buttons > .buttonOff + .buttonNormal {
   position: absolute;
-  z-index: 410;
+  z-index: 810;
   left: 50%;
-  top: 686px;
+  top: 676px;
   transform: translate(-50%, 0);
   width: 240px;
   height: 72px;
@@ -1427,14 +1432,17 @@ section > .buttons > .buttonOff + .buttonNormal {
 section > .buttons > .buttonOff + .buttonNormal > .startButton {
   display: block;
   position: absolute;
-  z-index: 1000;
-  width: 240px;
-  height: 72px;
+  z-index: 900;
+  left: 50%;
+  top: -676px;
+  transform: translate(-50%, 0);
+  width: 500px;
+  height: 800px;
 }
 
 footer {
   position: absolute;
-  z-index: 800;
+  z-index: 700;
   left: 50%;
   top: 759px;
   width: 500px;
@@ -1444,6 +1452,20 @@ footer {
 footer small {
   display: flex;
   justify-content: center;
-  line-height: 40px;
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  transform: translate(-50%, 0);
+  width: 150px;
+  height: 28px;
   text-shadow: 1px 1px #fff;
+}
+footer small a {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  top: 10px;
+  width: 150px;
+  height: 20px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
