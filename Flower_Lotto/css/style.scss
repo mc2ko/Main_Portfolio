@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 $phone: "screen and (max-width: 640px)";
+$resourceImage: "url(./../images/resource_img.png)";
+$resourcePattern: "url(./../images/background_pattern.jpg)";
 
 // ------------------------------------애니메이션 저장소-------------------------------------
 * {
@@ -445,13 +447,13 @@ header {
 
     width: 454px;
     height: 106px;
-    background-image: url(./../images/resource_img.png);
+    background-image: #{$resourceImage};
     background-position: -1px -1px;
   }
 } //end of header
 
 section {
-  overflow: hidden;
+  // overflow: hidden;
   position: relative;
 
   width: 500px;
@@ -467,7 +469,7 @@ section {
 
     width: 500px;
     height: 800px;
-    background-image: url(./../images/background_pattern.jpg);
+    background-image: #{$resourcePattern};
     + .mountain {
       position: absolute;
       z-index: 110;
@@ -477,7 +479,7 @@ section {
 
       width: 348px;
       height: 348px;
-      background-image: url(./../images/resource_img.png);
+      background-image: #{$resourceImage};
       background-position: -503px -191px;
       + .sun {
         position: absolute;
@@ -487,7 +489,7 @@ section {
 
         width: 134px;
         height: 134px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -853px -191px;
         + .cloud01 {
           opacity: 0;
@@ -498,7 +500,7 @@ section {
 
           width: 106px;
           height: 64px;
-          background-image: url(./../images/resource_img.png);
+          background-image: #{$resourceImage};
           background-position: -527px -541px;
           animation: cloudAni01 20s ease 1.6s normal infinite forwards;
           + .cloud02 {
@@ -510,7 +512,7 @@ section {
 
             width: 118px;
             height: 74px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -635px -541px;
             animation: cloudAni02 16s ease 4s normal infinite forwards;
             + .cloud03 {
@@ -522,7 +524,7 @@ section {
 
               width: 96px;
               height: 72px;
-              background-image: url(./../images/resource_img.png);
+              background-image: #{$resourceImage};
               background-position: -755px -541px;
               animation: cloudAni03 14s ease 0.4s normal infinite forwards;
             } //end of .cloud03
@@ -550,7 +552,7 @@ section {
 
       width: 174px;
       height: 344px;
-      background-image: url(./../images/resource_img.png);
+      background-image: #{$resourceImage};
       background-position: -673px -679px;
       transform-origin: left;
     } //end of .leftWindow
@@ -561,7 +563,7 @@ section {
 
       width: 174px;
       height: 344px;
-      background-image: url(./../images/resource_img.png);
+      background-image: #{$resourceImage};
       background-position: -849px -679px;
       transform-origin: right;
     } //end of .rightWindow
@@ -593,7 +595,7 @@ section {
 
         width: 174px;
         height: 344px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -673px -679px;
         transform-origin: left;
 
@@ -614,7 +616,7 @@ section {
 
           width: 174px;
           height: 344px;
-          background-image: url(./../images/resource_img.png);
+          background-image: #{$resourceImage};
           background-position: -849px -679px;
           transform-origin: right;
 
@@ -628,16 +630,41 @@ section {
   // -------------------------------------가리기용 저장소-----------------------------------
   > .boxing {
     position: absolute;
-    z-index: 220;
+    z-index: 230;
     left: 50%;
     top: 138px;
     transform: translate(-50%, 0);
 
     width: 500px;
     height: 524px;
-    background-image: url(./../images/resource_img.png);
+    background-image: #{$resourceImage};
     background-position: -1px -109px;
-    // opacity: 0.4; //임시 알파값!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    &:before {
+      display: block;
+      position: absolute;
+      z-index: 220;
+      left: -98px;
+      top: 60px;
+
+      width: 100px;
+      height: 400px;
+      background-color: #6dcabc;
+      content: "";
+    }
+
+    &:after {
+      display: block;
+      position: absolute;
+      z-index: 220;
+      left: 498px;
+      top: 60px;
+
+      width: 100px;
+      height: 400px;
+      background-color: #6dcabc;
+      content: "";
+    }
   } //end of .boxing
   // ------------------------------------가리기용 저장소 끝---------------------------------
 
@@ -668,7 +695,7 @@ section {
 
         width: 66px;
         height: 104px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -457px -1px;
         + .rootNumber {
           position: absolute;
@@ -678,7 +705,7 @@ section {
 
           width: 20px;
           height: 20px;
-          background-image: url(./../images/resource_img.png);
+          background-image: #{$resourceImage};
           background-position: -989px -317px;
           + .leaf01 {
             position: absolute;
@@ -688,7 +715,7 @@ section {
 
             width: 34px;
             height: 18px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -989px -191px;
             transform-origin: right bottom;
             + .leaf02 {
@@ -699,7 +726,7 @@ section {
 
               width: 34px;
               height: 24px;
-              background-image: url(./../images/resource_img.png);
+              background-image: #{$resourceImage};
               background-position: -989px -211px;
               transform-origin: left bottom;
               + .flowerNumber01 {
@@ -710,7 +737,7 @@ section {
 
                 width: 74px;
                 height: 80px;
-                background-image: url(./../images/resource_img.png);
+                background-image: #{$resourceImage};
                 background-position: -521px -693px;
                 + .face {
                   opacity: 0;
@@ -728,7 +755,7 @@ section {
 
                     width: 36px;
                     height: 24px;
-                    background-image: url(./../images/resource_img.png);
+                    background-image: #{$resourceImage};
                     background-position: -623px -775px;
                     + .music {
                       visibility: hidden;
@@ -739,7 +766,7 @@ section {
 
                       width: 28px;
                       height: 38px;
-                      background-image: url(./../images/resource_img.png);
+                      background-image: #{$resourceImage};
                       background-position: -989px -237px;
                     } //end of .music
                   } //end of .faceSelect
@@ -767,7 +794,7 @@ section {
 
         width: 66px;
         height: 104px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -457px -1px;
         + .rootNumber {
           position: absolute;
@@ -777,7 +804,7 @@ section {
 
           width: 20px;
           height: 20px;
-          background-image: url(./../images/resource_img.png);
+          background-image: #{$resourceImage};
           background-position: -989px -339px;
           + .leaf01 {
             position: absolute;
@@ -787,7 +814,7 @@ section {
 
             width: 34px;
             height: 18px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -989px -191px;
             transform-origin: right bottom;
             + .leaf02 {
@@ -798,7 +825,7 @@ section {
 
               width: 34px;
               height: 24px;
-              background-image: url(./../images/resource_img.png);
+              background-image: #{$resourceImage};
               background-position: -989px -211px;
               transform-origin: left bottom;
               + .flowerNumber02 {
@@ -809,7 +836,7 @@ section {
 
                 width: 74px;
                 height: 80px;
-                background-image: url(./../images/resource_img.png);
+                background-image: #{$resourceImage};
                 background-position: -521px -693px;
                 + .face {
                   opacity: 0;
@@ -827,7 +854,7 @@ section {
 
                     width: 36px;
                     height: 24px;
-                    background-image: url(./../images/resource_img.png);
+                    background-image: #{$resourceImage};
                     background-position: -623px -775px;
                     + .music {
                       visibility: hidden;
@@ -838,7 +865,7 @@ section {
 
                       width: 28px;
                       height: 38px;
-                      background-image: url(./../images/resource_img.png);
+                      background-image: #{$resourceImage};
                       background-position: -989px -237px;
                     } //end of .music
                   } //end of .faceSelect
@@ -866,7 +893,7 @@ section {
 
         width: 66px;
         height: 104px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -457px -1px;
         + .rootNumber {
           position: absolute;
@@ -876,7 +903,7 @@ section {
 
           width: 20px;
           height: 20px;
-          background-image: url(./../images/resource_img.png);
+          background-image: #{$resourceImage};
           background-position: -989px -361px;
           + .leaf01 {
             position: absolute;
@@ -886,7 +913,7 @@ section {
 
             width: 34px;
             height: 18px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -989px -191px;
             transform-origin: right bottom;
             + .leaf02 {
@@ -897,7 +924,7 @@ section {
 
               width: 34px;
               height: 24px;
-              background-image: url(./../images/resource_img.png);
+              background-image: #{$resourceImage};
               background-position: -989px -211px;
               transform-origin: left bottom;
               + .flowerNumber03 {
@@ -908,7 +935,7 @@ section {
 
                 width: 74px;
                 height: 80px;
-                background-image: url(./../images/resource_img.png);
+                background-image: #{$resourceImage};
                 background-position: -521px -693px;
                 + .face {
                   opacity: 0;
@@ -926,7 +953,7 @@ section {
 
                     width: 36px;
                     height: 24px;
-                    background-image: url(./../images/resource_img.png);
+                    background-image: #{$resourceImage};
                     background-position: -623px -775px;
                     + .music {
                       visibility: hidden;
@@ -937,7 +964,7 @@ section {
 
                       width: 28px;
                       height: 38px;
-                      background-image: url(./../images/resource_img.png);
+                      background-image: #{$resourceImage};
                       background-position: -989px -237px;
                     } //end of .music
                   } //end of .faceSelect
@@ -965,7 +992,7 @@ section {
 
         width: 66px;
         height: 104px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -457px -1px;
         + .rootNumber {
           position: absolute;
@@ -975,7 +1002,7 @@ section {
 
           width: 20px;
           height: 20px;
-          background-image: url(./../images/resource_img.png);
+          background-image: #{$resourceImage};
           background-position: -989px -383px;
           + .leaf01 {
             position: absolute;
@@ -985,7 +1012,7 @@ section {
 
             width: 34px;
             height: 18px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -989px -191px;
             transform-origin: right bottom;
             + .leaf02 {
@@ -996,7 +1023,7 @@ section {
 
               width: 34px;
               height: 24px;
-              background-image: url(./../images/resource_img.png);
+              background-image: #{$resourceImage};
               background-position: -989px -211px;
               transform-origin: left bottom;
               + .flowerNumber04 {
@@ -1007,7 +1034,7 @@ section {
 
                 width: 74px;
                 height: 80px;
-                background-image: url(./../images/resource_img.png);
+                background-image: #{$resourceImage};
                 background-position: -521px -693px;
                 + .face {
                   opacity: 0;
@@ -1025,7 +1052,7 @@ section {
 
                     width: 36px;
                     height: 24px;
-                    background-image: url(./../images/resource_img.png);
+                    background-image: #{$resourceImage};
                     background-position: -623px -775px;
                     + .music {
                       visibility: hidden;
@@ -1036,7 +1063,7 @@ section {
 
                       width: 28px;
                       height: 38px;
-                      background-image: url(./../images/resource_img.png);
+                      background-image: #{$resourceImage};
                       background-position: -989px -237px;
                     } //end of .music
                   } //end of .faceSelect
@@ -1064,7 +1091,7 @@ section {
 
         width: 66px;
         height: 104px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -457px -1px;
         + .rootNumber {
           position: absolute;
@@ -1074,7 +1101,7 @@ section {
 
           width: 20px;
           height: 20px;
-          background-image: url(./../images/resource_img.png);
+          background-image: #{$resourceImage};
           background-position: -989px -405px;
           + .leaf01 {
             position: absolute;
@@ -1084,7 +1111,7 @@ section {
 
             width: 34px;
             height: 18px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -989px -191px;
             transform-origin: right bottom;
             + .leaf02 {
@@ -1095,7 +1122,7 @@ section {
 
               width: 34px;
               height: 24px;
-              background-image: url(./../images/resource_img.png);
+              background-image: #{$resourceImage};
               background-position: -989px -211px;
               transform-origin: left bottom;
               + .flowerNumber05 {
@@ -1106,7 +1133,7 @@ section {
 
                 width: 74px;
                 height: 80px;
-                background-image: url(./../images/resource_img.png);
+                background-image: #{$resourceImage};
                 background-position: -521px -693px;
                 + .face {
                   opacity: 0;
@@ -1124,7 +1151,7 @@ section {
 
                     width: 36px;
                     height: 24px;
-                    background-image: url(./../images/resource_img.png);
+                    background-image: #{$resourceImage};
                     background-position: -623px -775px;
                     + .music {
                       visibility: hidden;
@@ -1135,7 +1162,7 @@ section {
 
                       width: 28px;
                       height: 38px;
-                      background-image: url(./../images/resource_img.png);
+                      background-image: #{$resourceImage};
                       background-position: -989px -237px;
                     } //end of .music
                   } //end of .faceSelect
@@ -1163,7 +1190,7 @@ section {
 
         width: 66px;
         height: 104px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -457px -1px;
         + .rootNumber {
           position: absolute;
@@ -1173,7 +1200,7 @@ section {
 
           width: 20px;
           height: 20px;
-          background-image: url(./../images/resource_img.png);
+          background-image: #{$resourceImage};
           background-position: -989px -427px;
           + .leaf01 {
             position: absolute;
@@ -1183,7 +1210,7 @@ section {
 
             width: 34px;
             height: 18px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -989px -191px;
             transform-origin: right bottom;
             + .leaf02 {
@@ -1194,7 +1221,7 @@ section {
 
               width: 34px;
               height: 24px;
-              background-image: url(./../images/resource_img.png);
+              background-image: #{$resourceImage};
               background-position: -989px -211px;
               transform-origin: left bottom;
               + .flowerNumber06 {
@@ -1205,7 +1232,7 @@ section {
 
                 width: 74px;
                 height: 80px;
-                background-image: url(./../images/resource_img.png);
+                background-image: #{$resourceImage};
                 background-position: -521px -693px;
                 + .face {
                   opacity: 0;
@@ -1223,7 +1250,7 @@ section {
 
                     width: 36px;
                     height: 24px;
-                    background-image: url(./../images/resource_img.png);
+                    background-image: #{$resourceImage};
                     background-position: -623px -775px;
                     + .music {
                       visibility: hidden;
@@ -1234,7 +1261,7 @@ section {
 
                       width: 28px;
                       height: 38px;
-                      background-image: url(./../images/resource_img.png);
+                      background-image: #{$resourceImage};
                       background-position: -989px -237px;
                     } //end of .music
                   } //end of .faceSelect
@@ -1295,7 +1322,7 @@ section {
 
         width: 94px;
         height: 188px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -525px -1px;
         + .lottoNumber {
           display: flex;
@@ -1313,7 +1340,7 @@ section {
 
             width: 24px;
             height: 46px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -1px -963px;
           }
           > .number02 {
@@ -1322,7 +1349,7 @@ section {
 
             width: 24px;
             height: 46px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -1px -963px;
           }
         } //end of .lottoNumber
@@ -1341,7 +1368,7 @@ section {
 
         width: 94px;
         height: 188px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -525px -1px;
         + .lottoNumber {
           display: flex;
@@ -1359,7 +1386,7 @@ section {
 
             width: 24px;
             height: 46px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -1px -963px;
           }
           > .number02 {
@@ -1368,7 +1395,7 @@ section {
 
             width: 24px;
             height: 46px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -1px -963px;
           }
         } //end of .lottoNumber
@@ -1387,7 +1414,7 @@ section {
 
         width: 94px;
         height: 188px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -525px -1px;
         + .lottoNumber {
           display: flex;
@@ -1405,7 +1432,7 @@ section {
 
             width: 24px;
             height: 46px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -1px -963px;
           }
           > .number02 {
@@ -1414,7 +1441,7 @@ section {
 
             width: 24px;
             height: 46px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -1px -963px;
           }
         } //end of .lottoNumber
@@ -1433,7 +1460,7 @@ section {
 
         width: 94px;
         height: 188px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -525px -1px;
         + .lottoNumber {
           display: flex;
@@ -1451,7 +1478,7 @@ section {
 
             width: 24px;
             height: 46px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -1px -963px;
           }
           > .number02 {
@@ -1460,7 +1487,7 @@ section {
 
             width: 24px;
             height: 46px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -1px -963px;
           }
         } //end of .lottoNumber
@@ -1479,7 +1506,7 @@ section {
 
         width: 94px;
         height: 188px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -525px -1px;
         + .lottoNumber {
           display: flex;
@@ -1497,7 +1524,7 @@ section {
 
             width: 24px;
             height: 46px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -1px -963px;
           }
           > .number02 {
@@ -1506,7 +1533,7 @@ section {
 
             width: 24px;
             height: 46px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -1px -963px;
           }
         } //end of .lottoNumber
@@ -1525,7 +1552,7 @@ section {
 
         width: 94px;
         height: 188px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -525px -1px;
         + .lottoNumber {
           display: flex;
@@ -1543,7 +1570,7 @@ section {
 
             width: 24px;
             height: 46px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -1px -963px;
           }
           > .number02 {
@@ -1552,7 +1579,7 @@ section {
 
             width: 24px;
             height: 46px;
-            background-image: url(./../images/resource_img.png);
+            background-image: #{$resourceImage};
             background-position: -1px -963px;
           }
         } //end of .lottoNumber

@@ -419,7 +419,6 @@ header > .bgt {
 }
 
 section {
-  overflow: hidden;
   position: relative;
   width: 500px;
   height: 800px;
@@ -565,7 +564,7 @@ section > .windowsAni > .left + .right > .rightWindow {
 }
 section > .boxing {
   position: absolute;
-  z-index: 220;
+  z-index: 230;
   left: 50%;
   top: 138px;
   transform: translate(-50%, 0);
@@ -573,6 +572,28 @@ section > .boxing {
   height: 524px;
   background-image: url(./../images/resource_img.png);
   background-position: -1px -109px;
+}
+section > .boxing:before {
+  display: block;
+  position: absolute;
+  z-index: 220;
+  left: -98px;
+  top: 60px;
+  width: 100px;
+  height: 400px;
+  background-color: #6dcabc;
+  content: "";
+}
+section > .boxing:after {
+  display: block;
+  position: absolute;
+  z-index: 220;
+  left: 498px;
+  top: 60px;
+  width: 100px;
+  height: 400px;
+  background-color: #6dcabc;
+  content: "";
 }
 section > .flowers {
   display: flex;
