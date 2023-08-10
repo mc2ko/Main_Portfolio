@@ -387,14 +387,14 @@
   }
 }
 #wrap {
-  width: 500px;
+  position: relative;
+  width: 100%;
   height: 800px;
   margin: 0 auto;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1440px) {
   #wrap {
     max-width: 500px;
-    min-width: 500px;
   }
 }
 
@@ -403,6 +403,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 500px;
 }
 header > h1 {
   position: absolute;
@@ -422,8 +423,10 @@ header > h1 + .title {
 section {
   overflow: hidden;
   position: relative;
+  max-width: 500px;
   width: 100%;
   height: 100%;
+  border: 1px solid #000;
 }
 section > .backImage {
   position: absolute;
