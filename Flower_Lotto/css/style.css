@@ -424,8 +424,6 @@ header > h1 + .title {
 section {
   overflow: hidden;
   position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
   width: 500px;
   height: 800px;
   box-sizing: border-box;
