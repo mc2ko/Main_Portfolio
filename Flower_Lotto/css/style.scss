@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-$phone: 'screen and (max-width:1000px)';
+$phone: 'screen and (max-width:640px)';
 
 // 창문 애니메이션 영역
 @keyframes leftWindowScale {
@@ -421,6 +421,7 @@ $phone: 'screen and (max-width:1000px)';
 	width: 100%;
 	margin: 0 auto;
 	@media #{$phone} {
+		max-width: 640px;
 		border: 4px solid blue;
 		box-sizing: border-box;
 		background-color: #000;
@@ -633,6 +634,10 @@ section {
 		height: 524px;
 		background-image: url(./../images/resource_img.png);
 		background-position: -1px -109px;
+
+		@media #{$phone} {
+			width: 100%;
+		}
 		// opacity: 0.4; //임시 알파값!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	} //end of .boxing
 

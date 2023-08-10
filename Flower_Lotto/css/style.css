@@ -391,8 +391,9 @@
   width: 100%;
   margin: 0 auto;
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:640px) {
   #wrap {
+    max-width: 640px;
     border: 4px solid blue;
     box-sizing: border-box;
     background-color: #000;
@@ -578,6 +579,11 @@ section > .boxing {
   height: 524px;
   background-image: url(./../images/resource_img.png);
   background-position: -1px -109px;
+}
+@media screen and (max-width:640px) {
+  section > .boxing {
+    width: 100%;
+  }
 }
 section > .flowers {
   display: flex;
