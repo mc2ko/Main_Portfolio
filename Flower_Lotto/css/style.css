@@ -431,6 +431,11 @@ section {
   height: 800px;
   box-sizing: border-box;
 }
+@media screen and (max-width:640px) {
+  section {
+    width: 100%;
+  }
+}
 section > .backImage {
   position: absolute;
   z-index: 100;
