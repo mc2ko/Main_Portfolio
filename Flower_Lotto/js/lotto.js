@@ -1,3 +1,9 @@
+const $wrapSize = $("#wrap");
+$(window).on("load resize", function () {
+  $wrapSize.width(window.innerWidth);
+  $wrapSize.height(window.innerHeight);
+});
+
 const $randomLotto = $(".startButton");
 const $fixedResult = $(".result");
 
