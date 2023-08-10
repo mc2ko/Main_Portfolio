@@ -417,21 +417,9 @@ $phone: "screen and (max-width: 640px)";
   }
 }
 // -----------------------------------애니메이션 저장소 끝-----------------------------------
-body {
-  @media #{$phone} {
-    background-color: black;
-  }
-}
-
 #wrap {
   position: relative;
   width: 500px;
-  top: 0;
-  // margin: 0 auto;
-
-  @media #{$phone} {
-    transform: scale(0.8, 0.8);
-  }
 }
 
 header {
@@ -459,7 +447,7 @@ header {
 } //end of header
 
 section {
-  overflow: hidden;
+  // overflow: hidden;
   position: relative;
 
   width: 500px;

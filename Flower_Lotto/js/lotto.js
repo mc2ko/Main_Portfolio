@@ -1,8 +1,3 @@
-// const $autoDisplay = $("#wrap");
-// $(window).on("load resize", function () {
-//   $autoDisplay.width(window.innerWidth);
-// });
-
 const $randomLotto = $(".startButton");
 const $fixedResult = $(".result");
 

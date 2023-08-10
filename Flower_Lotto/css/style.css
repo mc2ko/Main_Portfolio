@@ -387,21 +387,9 @@
   }
 }
 
-@media screen and (max-width: 640px) {
-  body {
-    background-color: black;
-  }
-}
-
 #wrap {
   position: relative;
   width: 500px;
-  top: 0;
-}
-@media screen and (max-width: 640px) {
-  #wrap {
-    transform: scale(0.8, 0.8);
-  }
 }
 
 header {
@@ -427,7 +415,6 @@ header > .bgt {
 }
 
 section {
-  overflow: hidden;
   position: relative;
   width: 500px;
   height: 800px;
