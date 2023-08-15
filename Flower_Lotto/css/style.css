@@ -1450,6 +1450,10 @@ section > .buttons > .buttonOff + .buttonNormal {
   background-image: url(./../images/resource_img.png);
   background-position: -381px -849px;
 }
+section > .buttons > .buttonOff + .buttonNormal:hover {
+  background-image: url(./../images/resource_img.png);
+  background-position: -381px -923px;
+}
 section > .buttons > .buttonOff + .buttonNormal > .startButton {
   display: block;
   position: absolute;

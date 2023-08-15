@@ -701,7 +701,7 @@ section {
           position: absolute;
           z-index: 312;
           left: 28px;
-          top: 128px;
+          top: 130px;
 
           width: 20px;
           height: 20px;
@@ -800,7 +800,7 @@ section {
           position: absolute;
           z-index: 322;
           left: 28px;
-          top: 128px;
+          top: 130px;
 
           width: 20px;
           height: 20px;
@@ -899,7 +899,7 @@ section {
           position: absolute;
           z-index: 332;
           left: 28px;
-          top: 128px;
+          top: 130px;
 
           width: 20px;
           height: 20px;
@@ -998,7 +998,7 @@ section {
           position: absolute;
           z-index: 342;
           left: 28px;
-          top: 128px;
+          top: 130px;
 
           width: 20px;
           height: 20px;
@@ -1097,7 +1097,7 @@ section {
           position: absolute;
           z-index: 352;
           left: 28px;
-          top: 128px;
+          top: 130px;
 
           width: 20px;
           height: 20px;
@@ -1196,7 +1196,7 @@ section {
           position: absolute;
           z-index: 362;
           left: 28px;
-          top: 128px;
+          top: 130px;
 
           width: 20px;
           height: 20px;
@@ -1621,7 +1621,7 @@ section {
 
       width: 240px;
       height: 72px;
-      background-image: url(./../images/resource_img.png);
+      background-image: #{$resourceImage};
       background-position: -381px -775px;
       + .buttonNormal {
         position: absolute;
@@ -1632,8 +1632,14 @@ section {
 
         width: 240px;
         height: 72px;
-        background-image: url(./../images/resource_img.png);
+        background-image: #{$resourceImage};
         background-position: -381px -849px;
+
+        &:hover {
+          background-image: #{$resourceImage};
+          background-position: -381px -923px;
+        }
+
         > .startButton {
           display: block;
           position: absolute;
