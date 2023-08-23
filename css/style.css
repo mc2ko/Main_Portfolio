@@ -1,6 +1,5 @@
 #wrap {
   position: relative;
-  min-width: 1200px;
 }
 @media screen and (max-width:640px) {
   #wrap {
@@ -31,11 +30,17 @@
   position: relative;
   transition: all 0.3s ease-in-out;
   background-color: yellow;
+  width: 100%;
 }
 @media screen and (max-width:640px) {
   #wrap > #home {
     min-width: 420px;
   }
+}
+#wrap > #home:after {
+  display: block;
+  padding-bottom: 100%;
+  content: "";
 }
 #wrap > #home > .intro {
   position: absolute;
@@ -95,8 +100,9 @@
 }
 #wrap > #home > .mouse {
   position: absolute;
+  z-index: 300;
   left: 50%;
-  bottom: 40px;
+  top: 45%;
   width: 30px;
   height: 50px;
   border: 2px solid #ffffff;
@@ -125,6 +131,7 @@
 }
 #wrap > #home > .mouse > .wheel {
   position: absolute;
+  z-index: 301;
   left: 50%;
   top: 5px;
   width: 4px;
@@ -135,39 +142,18 @@
   transform: translate(-50%, 0);
   animation: mousewheel 1s linear infinite;
 }
-#wrap > #home > .bgmov {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
 #wrap > #home > .bgmov > .background {
-  position: relative;
-  min-width: 100%;
-  width: 100%;
-  height: 100%;
-  background-color: yellow;
-}
-#wrap > #home > .bgmov > .background > .backImage {
   position: absolute;
   z-index: 100;
   width: 100%;
-  height: 100%;
+  height: 50%;
   background-image: url(./../images/background/background_image.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-}
-#wrap > #home > .bgmov > .background > .backTree {
-  position: absolute;
-  z-index: 101;
-  width: 100%;
-  height: 50%;
-  background-image: url(./../images/background/back_tree.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 #wrap header {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
   width: 100%;
   min-width: 1200px;
   background-color: #ffffff;
@@ -185,7 +171,6 @@
   z-index: 1000;
 }
 #wrap header > .container {
-  position: relative;
   height: 66px;
 }
 #wrap header > .container > h2 {
@@ -230,6 +215,7 @@
 }
 #wrap header > .container > nav {
   position: absolute;
+  z-index: 1000;
   right: 7%;
   top: 50%;
   transform: translate(0, -50%);
@@ -278,17 +264,26 @@
 #wrap header > .container > nav > .gnb > li:hover > a, #wrap header > .container > nav > .gnb > li.on > a {
   color: #52b3d9;
 }
-#wrap header ~ section {
-  padding-top: 80px;
+#wrap > #aboutme {
+  min-width: 1200px;
+  position: relative;
+  z-index: 200;
+  height: 480px;
 }
-#wrap header ~ section > h2 {
+@media screen and (max-width:640px) {
+  #wrap > #aboutme {
+    min-width: initial;
+  }
+}
+#wrap > #aboutme > h2 {
+  padding-top: 80px;
   margin-bottom: 72px;
   color: #2c3e50;
   font-size: 50px;
   line-height: 50px;
   text-align: center;
 }
-#wrap header ~ section > h2:after {
+#wrap > #aboutme > h2:after {
   display: block;
   width: 138px;
   height: 15px;
@@ -424,6 +419,34 @@
   font-family: "Font Awesome 5 Free";
   content: "\f14a";
 }
+#wrap > #skill {
+  min-width: 1200px;
+  background-color: skyblue;
+}
+@media screen and (max-width:640px) {
+  #wrap > #skill {
+    min-width: initial;
+  }
+}
+#wrap > #skill > h2 {
+  padding-top: 80px;
+  margin-bottom: 72px;
+  color: #2c3e50;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+#wrap > #skill > h2:after {
+  display: block;
+  width: 138px;
+  height: 15px;
+  margin: 30px auto 0;
+  background-image: url(./../images/deco_tit.png);
+  content: "";
+}
+#wrap > #skill > article:last-child {
+  padding-bottom: 80px;
+}
 #wrap > #skill > article.skill-1 {
   margin-bottom: 120px;
 }
@@ -504,11 +527,23 @@
   background-image: url(./../images/skill/skill04.png);
 }
 #wrap #ability {
-  margin-top: 100px;
   background-color: #1a1a1a;
 }
 #wrap #ability > h2 {
+  padding-top: 80px;
+  margin-bottom: 72px;
   color: #ffffff;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+#wrap #ability > h2:after {
+  display: block;
+  width: 138px;
+  height: 15px;
+  margin: 30px auto 0;
+  background-image: url(./../images/deco_tit.png);
+  content: "";
 }
 #wrap #ability > .ability-container {
   padding-bottom: 50px;
@@ -573,7 +608,7 @@
   color: #ffffff;
 }
 #wrap #ability > .resume {
-  padding: 50px 0;
+  padding: 80px 0;
   background-color: #ffffff;
 }
 #wrap #ability > .resume > div {
@@ -640,11 +675,49 @@
     display: none;
   }
 }
+#wrap #uxdesign {
+  background-color: skyblue;
+  padding-bottom: 80px;
+}
+#wrap #uxdesign > h2 {
+  padding-top: 80px;
+  margin-bottom: 72px;
+  color: #2c3e50;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+#wrap #uxdesign > h2:after {
+  display: block;
+  width: 138px;
+  height: 15px;
+  margin: 30px auto 0;
+  background-image: url(./../images/deco_tit.png);
+  content: "";
+}
+#wrap #portfolio {
+  padding-bottom: 100px;
+}
+#wrap #portfolio > h2 {
+  padding-top: 80px;
+  margin-bottom: 72px;
+  color: #2c3e50;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+#wrap #portfolio > h2:after {
+  display: block;
+  width: 138px;
+  height: 15px;
+  margin: 30px auto 0;
+  background-image: url(./../images/deco_tit.png);
+  content: "";
+}
 #wrap #portfolio > ol {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
 }
 #wrap #portfolio > ol > li {
   position: relative;
@@ -671,6 +744,26 @@
   width: 100%;
   font-size: 20px;
   text-align: center;
+}
+#wrap #contact {
+  background-color: cadetblue;
+  padding-bottom: 80px;
+}
+#wrap #contact > h2 {
+  padding-top: 80px;
+  margin-bottom: 72px;
+  color: #2c3e50;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+#wrap #contact > h2:after {
+  display: block;
+  width: 138px;
+  height: 15px;
+  margin: 30px auto 0;
+  background-image: url(./../images/deco_tit.png);
+  content: "";
 }
 #wrap > footer {
   min-width: 1200px;
