@@ -1,0 +1,1496 @@
+@keyframes leftWindowScale {
+  0% {
+    transform: scaleX(100%);
+  }
+  100% {
+    transform: scaleX(1%);
+  }
+}
+@keyframes rightWindowScale {
+  0% {
+    transform: scaleX(100%);
+  }
+  100% {
+    transform: scaleX(1%);
+  }
+}
+@keyframes leftWindowSkew {
+  0% {
+    transform: skewY(0);
+  }
+  100% {
+    transform: skewY(-50deg);
+  }
+}
+@keyframes rightWindowSkew {
+  0% {
+    transform: skewY(0);
+  }
+  100% {
+    transform: skewY(50deg);
+  }
+}
+@keyframes leafAni {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes faceDance {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 6px;
+    top: 4px;
+  }
+  50% {
+    left: 0px;
+    top: 0px;
+  }
+  75% {
+    left: -6px;
+    top: 4px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes faceDancer {
+  0% {
+    left: 20px;
+    top: 31px;
+  }
+  25% {
+    left: 26px;
+    top: 35px;
+  }
+  50% {
+    left: 20px;
+    top: 31px;
+  }
+  75% {
+    left: 14px;
+    top: 35px;
+  }
+  100% {
+    left: 20px;
+    top: 31px;
+  }
+}
+@keyframes leafAni {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes balloons {
+  0% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes balloonMove01 {
+  0% {
+    left: 70px;
+    top: 450px;
+    scale: 0%;
+  }
+  20% {
+    left: 40px;
+  }
+  40% {
+    left: -10px;
+  }
+  60% {
+    left: 10px;
+  }
+  80% {
+    left: -10px;
+  }
+  100% {
+    left: 10px;
+    top: 0px;
+    scale: 100%;
+  }
+}
+@keyframes balloonMove02 {
+  0% {
+    left: 57px;
+    top: 450px;
+    scale: 0%;
+  }
+  20% {
+    left: 107px;
+  }
+  40% {
+    left: 67px;
+  }
+  60% {
+    left: 87px;
+  }
+  80% {
+    left: 67px;
+  }
+  100% {
+    left: 87px;
+    top: 0px;
+    scale: 100%;
+  }
+}
+@keyframes balloonMove03 {
+  0% {
+    left: 214px;
+    top: 450px;
+    scale: 0%;
+  }
+  20% {
+    left: 184px;
+  }
+  40% {
+    left: 144px;
+  }
+  60% {
+    left: 164px;
+  }
+  80% {
+    left: 144px;
+  }
+  100% {
+    left: 164px;
+    top: 0px;
+    scale: 100%;
+  }
+}
+@keyframes balloonMove04 {
+  0% {
+    left: 241px;
+    top: 450px;
+    scale: 0%;
+  }
+  20% {
+    left: 231px;
+  }
+  40% {
+    left: 241px;
+  }
+  60% {
+    left: 221px;
+  }
+  80% {
+    left: 241px;
+  }
+  100% {
+    left: 241px;
+    top: 0px;
+    scale: 100%;
+  }
+}
+@keyframes balloonMove05 {
+  0% {
+    left: 308px;
+    top: 450px;
+    scale: 0%;
+  }
+  20% {
+    left: 308px;
+  }
+  40% {
+    left: 298px;
+  }
+  60% {
+    left: 318px;
+  }
+  80% {
+    left: 298px;
+  }
+  100% {
+    left: 318px;
+    top: 0px;
+    scale: 100%;
+  }
+}
+@keyframes balloonMove06 {
+  0% {
+    left: 365px;
+    top: 450px;
+    scale: 0%;
+  }
+  20% {
+    left: 385px;
+  }
+  40% {
+    left: 375px;
+  }
+  60% {
+    left: 395px;
+  }
+  80% {
+    left: 375px;
+  }
+  100% {
+    left: 395px;
+    top: 0px;
+    scale: 100%;
+  }
+}
+@keyframes musician {
+  0% {
+    opacity: 0;
+    left: 9px;
+    top: -38px;
+    background-position: -989px -237px;
+  }
+  17% {
+    opacity: 1;
+    left: 52px;
+    top: -68px;
+    background-position: -989px -237px;
+  }
+  33% {
+    left: 42px;
+    top: -88px;
+    background-position: -989px -237px;
+  }
+  49% {
+    opacity: 1;
+    left: 82px;
+    top: -108px;
+    background-position: -989px -237px;
+  }
+  50% {
+    opacity: 0;
+    left: 2px;
+    top: -48px;
+    background-position: -989px -277px;
+  }
+  67% {
+    opacity: 1;
+    left: 82px;
+    top: -68px;
+    background-position: -989px -277px;
+  }
+  83% {
+    opacity: 1;
+    left: 62px;
+    top: -88px;
+    background-position: -989px -277px;
+  }
+  99% {
+    left: 122px;
+    top: -98px;
+    background-position: -989px -277px;
+  }
+  100% {
+    opacity: 0;
+    left: 122px;
+    top: -108px;
+    background-position: -989px -277px;
+  }
+}
+@keyframes cloudAni01 {
+  0% {
+    left: 440px;
+    opacity: 0;
+    scale: 100%;
+  }
+  1% {
+    left: 440px;
+    opacity: 1;
+    scale: 100%;
+  }
+  25% {
+    scale: 110%;
+  }
+  50% {
+    scale: 90%;
+  }
+  75% {
+    scale: 110%;
+  }
+  99% {
+    opacity: 1;
+    scale: 100%;
+  }
+  100% {
+    left: -80px;
+    opacity: 0;
+    scale: 100%;
+  }
+}
+@keyframes cloudAni02 {
+  0% {
+    left: 440px;
+    opacity: 0;
+    scale: 100%;
+  }
+  1% {
+    left: 440px;
+    opacity: 1;
+    scale: 100%;
+  }
+  25% {
+    scale: 90%;
+  }
+  50% {
+    scale: 110%;
+  }
+  75% {
+    scale: 90%;
+  }
+  99% {
+    opacity: 1;
+    scale: 100%;
+  }
+  100% {
+    left: -80px;
+    opacity: 0;
+    scale: 100%;
+  }
+}
+@keyframes cloudAni03 {
+  0% {
+    left: 440px;
+    opacity: 0;
+    scale: 100%;
+  }
+  1% {
+    left: 440px;
+    opacity: 1;
+    scale: 100%;
+  }
+  25% {
+    scale: 110%;
+  }
+  50% {
+    scale: 90%;
+  }
+  75% {
+    scale: 110%;
+  }
+  99% {
+    opacity: 1;
+    scale: 100%;
+  }
+  100% {
+    left: -80px;
+    opacity: 0;
+    scale: 100%;
+  }
+}
+
+body {
+  background-color: #6dcabc;
+}
+
+#wrap {
+  position: relative;
+  width: 500px;
+}
+
+header {
+  position: absolute;
+  z-index: 200;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 500px;
+}
+header > h1 {
+  text-indent: -9999px;
+}
+header > .bgt {
+  position: absolute;
+  z-index: 300;
+  left: 50%;
+  top: 10px;
+  transform: translate(-50%, 0);
+  width: 454px;
+  height: 106px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -1px -1px;
+}
+
+section {
+  position: relative;
+  width: 500px;
+  height: 800px;
+  margin: 0 auto;
+}
+section > .backImage {
+  position: absolute;
+  z-index: 100;
+  width: 500px;
+  height: 800px;
+  background-image: url(./../images/background_patternBD.jpg);
+}
+section > .backImage + .mountain {
+  position: absolute;
+  z-index: 110;
+  left: 50%;
+  top: 224px;
+  transform: translate(-50%, 0);
+  width: 348px;
+  height: 348px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -503px -191px;
+}
+section > .backImage + .mountain + .sun {
+  position: absolute;
+  z-index: 120;
+  left: 260px;
+  top: 278px;
+  width: 134px;
+  height: 134px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -853px -191px;
+}
+section > .backImage + .mountain + .sun + .cloud01 {
+  opacity: 0;
+  position: absolute;
+  z-index: 130;
+  left: 90px;
+  top: 333px;
+  width: 106px;
+  height: 64px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -527px -541px;
+  animation: cloudAni01 20s ease 1.6s normal infinite forwards;
+}
+section > .backImage + .mountain + .sun + .cloud01 + .cloud02 {
+  opacity: 0;
+  position: absolute;
+  z-index: 140;
+  left: 152px;
+  top: 293px;
+  width: 118px;
+  height: 74px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -635px -541px;
+  animation: cloudAni02 16s ease 4s normal infinite forwards;
+}
+section > .backImage + .mountain + .sun + .cloud01 + .cloud02 + .cloud03 {
+  opacity: 0;
+  position: absolute;
+  z-index: 150;
+  left: 340px;
+  top: 376px;
+  width: 96px;
+  height: 72px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -755px -541px;
+  animation: cloudAni03 14s ease 0.4s normal infinite forwards;
+}
+section > .closeWindow {
+  display: block;
+  position: absolute;
+  z-index: 180;
+  left: 50%;
+  top: 226px;
+  transform: translate(-50%, 0);
+  width: 348px;
+  height: 344px;
+}
+section > .closeWindow > .closeLeft {
+  position: absolute;
+  z-index: 190;
+  width: 174px;
+  height: 344px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -673px -679px;
+  transform-origin: left;
+}
+section > .closeWindow > .closeRight {
+  position: absolute;
+  left: 172px;
+  z-index: 190;
+  width: 174px;
+  height: 344px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -849px -679px;
+  transform-origin: right;
+}
+section > .windowsAni {
+  display: none;
+  position: absolute;
+  z-index: 200;
+  left: 50%;
+  top: 226px;
+  transform: translate(-50%, 0);
+  width: 348px;
+  height: 344px;
+}
+section > .windowsAni > .left {
+  position: absolute;
+  width: 174px;
+  height: 344px;
+  transform-origin: left;
+  animation: leftWindowSkew 1s ease-out 0s alternate backwards;
+}
+section > .windowsAni > .left > .leftWindow {
+  position: absolute;
+  z-index: 200;
+  width: 174px;
+  height: 344px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -673px -679px;
+  transform-origin: left;
+  animation: leftWindowScale 1s ease-out 0s alternate backwards;
+}
+section > .windowsAni > .left + .right {
+  position: absolute;
+  left: 172px;
+  width: 174px;
+  height: 344px;
+  transform-origin: right;
+  animation: rightWindowSkew 1s ease-out 0s alternate backwards;
+}
+section > .windowsAni > .left + .right > .rightWindow {
+  position: absolute;
+  z-index: 200;
+  width: 174px;
+  height: 344px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -849px -679px;
+  transform-origin: right;
+  animation: rightWindowScale 1s ease-out 0s alternate backwards;
+}
+section > .boxing {
+  position: absolute;
+  z-index: 230;
+  left: 50%;
+  top: 138px;
+  transform: translate(-50%, 0);
+  width: 500px;
+  height: 524px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -1px -109px;
+}
+section > .boxing:before {
+  display: block;
+  position: absolute;
+  z-index: 220;
+  left: -98px;
+  top: 60px;
+  width: 100px;
+  height: 400px;
+  background-color: #6dcabc;
+  content: "";
+}
+section > .boxing:after {
+  display: block;
+  position: absolute;
+  z-index: 220;
+  left: 498px;
+  top: 60px;
+  width: 100px;
+  height: 400px;
+  background-color: #6dcabc;
+  content: "";
+}
+section > .flowers {
+  display: flex;
+  position: relative;
+  z-index: 300;
+  left: 50%;
+  top: 455px;
+  transform: translate(-50%, 0);
+  width: 420px;
+  height: 180px;
+}
+section > .flowers > .flowers01 {
+  position: relative;
+  z-index: 310;
+  left: 8px;
+  top: 12px;
+  width: 76px;
+  height: 154px;
+}
+section > .flowers > .flowers01 > .root {
+  position: absolute;
+  z-index: 311;
+  left: 5px;
+  top: 52px;
+  width: 66px;
+  height: 104px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -457px -1px;
+}
+section > .flowers > .flowers01 > .root + .rootNumber {
+  position: absolute;
+  z-index: 312;
+  left: 28px;
+  top: 130px;
+  width: 20px;
+  height: 20px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -317px;
+}
+section > .flowers > .flowers01 > .root + .rootNumber + .leaf01 {
+  position: absolute;
+  z-index: 312;
+  left: 0px;
+  top: 86px;
+  width: 34px;
+  height: 18px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -191px;
+  transform-origin: right bottom;
+}
+section > .flowers > .flowers01 > .root + .rootNumber + .leaf01 + .leaf02 {
+  position: absolute;
+  z-index: 312;
+  left: 41px;
+  top: 74px;
+  width: 34px;
+  height: 24px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -211px;
+  transform-origin: left bottom;
+}
+section > .flowers > .flowers01 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber01 {
+  position: absolute;
+  z-index: 313;
+  left: 2px;
+  top: 1px;
+  width: 74px;
+  height: 80px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -521px -693px;
+}
+section > .flowers > .flowers01 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber01 + .face {
+  opacity: 0;
+  position: absolute;
+  z-index: 314;
+  left: 22px;
+  top: 31px;
+  width: 36px;
+  height: 24px;
+}
+section > .flowers > .flowers01 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber01 + .face > .faceSelect {
+  visibility: hidden;
+  position: absolute;
+  z-index: 315;
+  width: 36px;
+  height: 24px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -623px -775px;
+}
+section > .flowers > .flowers01 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber01 + .face > .faceSelect + .music {
+  visibility: hidden;
+  position: absolute;
+  z-index: 316;
+  left: 2px;
+  top: -8px;
+  width: 28px;
+  height: 38px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -237px;
+}
+section > .flowers > .flowers02 {
+  position: relative;
+  z-index: 320;
+  left: 3px;
+  top: 12px;
+  width: 76px;
+  height: 154px;
+}
+section > .flowers > .flowers02 > .root {
+  position: absolute;
+  z-index: 321;
+  left: 5px;
+  top: 52px;
+  width: 66px;
+  height: 104px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -457px -1px;
+}
+section > .flowers > .flowers02 > .root + .rootNumber {
+  position: absolute;
+  z-index: 322;
+  left: 28px;
+  top: 130px;
+  width: 20px;
+  height: 20px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -339px;
+}
+section > .flowers > .flowers02 > .root + .rootNumber + .leaf01 {
+  position: absolute;
+  z-index: 322;
+  left: 0px;
+  top: 86px;
+  width: 34px;
+  height: 18px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -191px;
+  transform-origin: right bottom;
+}
+section > .flowers > .flowers02 > .root + .rootNumber + .leaf01 + .leaf02 {
+  position: absolute;
+  z-index: 322;
+  left: 41px;
+  top: 74px;
+  width: 34px;
+  height: 24px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -211px;
+  transform-origin: left bottom;
+}
+section > .flowers > .flowers02 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber02 {
+  position: absolute;
+  z-index: 323;
+  left: 2px;
+  top: 1px;
+  width: 74px;
+  height: 80px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -521px -693px;
+}
+section > .flowers > .flowers02 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber02 + .face {
+  opacity: 0;
+  position: absolute;
+  z-index: 324;
+  left: 22px;
+  top: 31px;
+  width: 36px;
+  height: 24px;
+}
+section > .flowers > .flowers02 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber02 + .face > .faceSelect {
+  visibility: hidden;
+  position: absolute;
+  z-index: 325;
+  width: 36px;
+  height: 24px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -623px -775px;
+}
+section > .flowers > .flowers02 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber02 + .face > .faceSelect + .music {
+  visibility: hidden;
+  position: absolute;
+  z-index: 326;
+  left: 2px;
+  top: -8px;
+  width: 28px;
+  height: 38px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -237px;
+}
+section > .flowers > .flowers03 {
+  position: relative;
+  z-index: 330;
+  left: -2px;
+  top: 12px;
+  width: 76px;
+  height: 154px;
+}
+section > .flowers > .flowers03 > .root {
+  position: absolute;
+  z-index: 331;
+  left: 5px;
+  top: 52px;
+  width: 66px;
+  height: 104px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -457px -1px;
+}
+section > .flowers > .flowers03 > .root + .rootNumber {
+  position: absolute;
+  z-index: 332;
+  left: 28px;
+  top: 130px;
+  width: 20px;
+  height: 20px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -361px;
+}
+section > .flowers > .flowers03 > .root + .rootNumber + .leaf01 {
+  position: absolute;
+  z-index: 332;
+  left: 0px;
+  top: 86px;
+  width: 34px;
+  height: 18px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -191px;
+  transform-origin: right bottom;
+}
+section > .flowers > .flowers03 > .root + .rootNumber + .leaf01 + .leaf02 {
+  position: absolute;
+  z-index: 332;
+  left: 41px;
+  top: 74px;
+  width: 34px;
+  height: 24px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -211px;
+  transform-origin: left bottom;
+}
+section > .flowers > .flowers03 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber03 {
+  position: absolute;
+  z-index: 333;
+  left: 2px;
+  top: 1px;
+  width: 74px;
+  height: 80px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -521px -693px;
+}
+section > .flowers > .flowers03 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber03 + .face {
+  opacity: 0;
+  position: absolute;
+  z-index: 334;
+  left: 22px;
+  top: 31px;
+  width: 36px;
+  height: 24px;
+}
+section > .flowers > .flowers03 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber03 + .face > .faceSelect {
+  visibility: hidden;
+  position: absolute;
+  z-index: 335;
+  width: 36px;
+  height: 24px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -623px -775px;
+}
+section > .flowers > .flowers03 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber03 + .face > .faceSelect + .music {
+  visibility: hidden;
+  position: absolute;
+  z-index: 336;
+  left: 2px;
+  top: -8px;
+  width: 28px;
+  height: 38px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -237px;
+}
+section > .flowers > .flowers04 {
+  position: relative;
+  z-index: 340;
+  left: -7px;
+  top: 12px;
+  width: 76px;
+  height: 154px;
+}
+section > .flowers > .flowers04 > .root {
+  position: absolute;
+  z-index: 341;
+  left: 5px;
+  top: 52px;
+  width: 66px;
+  height: 104px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -457px -1px;
+}
+section > .flowers > .flowers04 > .root + .rootNumber {
+  position: absolute;
+  z-index: 342;
+  left: 28px;
+  top: 130px;
+  width: 20px;
+  height: 20px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -383px;
+}
+section > .flowers > .flowers04 > .root + .rootNumber + .leaf01 {
+  position: absolute;
+  z-index: 342;
+  left: 0px;
+  top: 86px;
+  width: 34px;
+  height: 18px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -191px;
+  transform-origin: right bottom;
+}
+section > .flowers > .flowers04 > .root + .rootNumber + .leaf01 + .leaf02 {
+  position: absolute;
+  z-index: 342;
+  left: 41px;
+  top: 74px;
+  width: 34px;
+  height: 24px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -211px;
+  transform-origin: left bottom;
+}
+section > .flowers > .flowers04 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber04 {
+  position: absolute;
+  z-index: 343;
+  left: 2px;
+  top: 1px;
+  width: 74px;
+  height: 80px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -521px -693px;
+}
+section > .flowers > .flowers04 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber04 + .face {
+  opacity: 0;
+  position: absolute;
+  z-index: 344;
+  left: 22px;
+  top: 31px;
+  width: 36px;
+  height: 24px;
+}
+section > .flowers > .flowers04 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber04 + .face > .faceSelect {
+  visibility: hidden;
+  position: absolute;
+  z-index: 345;
+  width: 36px;
+  height: 24px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -623px -775px;
+}
+section > .flowers > .flowers04 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber04 + .face > .faceSelect + .music {
+  visibility: hidden;
+  position: absolute;
+  z-index: 346;
+  left: 2px;
+  top: -8px;
+  width: 28px;
+  height: 38px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -237px;
+}
+section > .flowers > .flowers05 {
+  position: relative;
+  z-index: 350;
+  left: -12px;
+  top: 12px;
+  width: 76px;
+  height: 154px;
+}
+section > .flowers > .flowers05 > .root {
+  position: absolute;
+  z-index: 351;
+  left: 5px;
+  top: 52px;
+  width: 66px;
+  height: 104px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -457px -1px;
+}
+section > .flowers > .flowers05 > .root + .rootNumber {
+  position: absolute;
+  z-index: 352;
+  left: 28px;
+  top: 130px;
+  width: 20px;
+  height: 20px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -405px;
+}
+section > .flowers > .flowers05 > .root + .rootNumber + .leaf01 {
+  position: absolute;
+  z-index: 352;
+  left: 0px;
+  top: 86px;
+  width: 34px;
+  height: 18px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -191px;
+  transform-origin: right bottom;
+}
+section > .flowers > .flowers05 > .root + .rootNumber + .leaf01 + .leaf02 {
+  position: absolute;
+  z-index: 352;
+  left: 41px;
+  top: 74px;
+  width: 34px;
+  height: 24px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -211px;
+  transform-origin: left bottom;
+}
+section > .flowers > .flowers05 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber05 {
+  position: absolute;
+  z-index: 353;
+  left: 2px;
+  top: 1px;
+  width: 74px;
+  height: 80px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -521px -693px;
+}
+section > .flowers > .flowers05 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber05 + .face {
+  opacity: 0;
+  position: absolute;
+  z-index: 354;
+  left: 22px;
+  top: 31px;
+  width: 36px;
+  height: 24px;
+}
+section > .flowers > .flowers05 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber05 + .face > .faceSelect {
+  visibility: hidden;
+  position: absolute;
+  z-index: 355;
+  width: 36px;
+  height: 24px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -623px -775px;
+}
+section > .flowers > .flowers05 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber05 + .face > .faceSelect + .music {
+  visibility: hidden;
+  position: absolute;
+  z-index: 356;
+  left: 2px;
+  top: -8px;
+  width: 28px;
+  height: 38px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -237px;
+}
+section > .flowers > .flowers06 {
+  position: relative;
+  z-index: 360;
+  left: -17px;
+  top: 12px;
+  width: 76px;
+  height: 154px;
+}
+section > .flowers > .flowers06 > .root {
+  position: absolute;
+  z-index: 361;
+  left: 5px;
+  top: 52px;
+  width: 66px;
+  height: 104px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -457px -1px;
+}
+section > .flowers > .flowers06 > .root + .rootNumber {
+  position: absolute;
+  z-index: 362;
+  left: 28px;
+  top: 130px;
+  width: 20px;
+  height: 20px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -427px;
+}
+section > .flowers > .flowers06 > .root + .rootNumber + .leaf01 {
+  position: absolute;
+  z-index: 362;
+  left: 0px;
+  top: 86px;
+  width: 34px;
+  height: 18px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -191px;
+  transform-origin: right bottom;
+}
+section > .flowers > .flowers06 > .root + .rootNumber + .leaf01 + .leaf02 {
+  position: absolute;
+  z-index: 362;
+  left: 41px;
+  top: 74px;
+  width: 34px;
+  height: 24px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -211px;
+  transform-origin: left bottom;
+}
+section > .flowers > .flowers06 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber06 {
+  position: absolute;
+  z-index: 363;
+  left: 2px;
+  top: 1px;
+  width: 74px;
+  height: 80px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -521px -693px;
+}
+section > .flowers > .flowers06 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber06 + .face {
+  opacity: 0;
+  position: absolute;
+  z-index: 364;
+  left: 22px;
+  top: 31px;
+  width: 36px;
+  height: 24px;
+}
+section > .flowers > .flowers06 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber06 + .face > .faceSelect {
+  visibility: hidden;
+  position: absolute;
+  z-index: 365;
+  width: 36px;
+  height: 24px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -623px -775px;
+}
+section > .flowers > .flowers06 > .root + .rootNumber + .leaf01 + .leaf02 + .flowerNumber06 + .face > .faceSelect + .music {
+  visibility: hidden;
+  position: absolute;
+  z-index: 366;
+  left: 2px;
+  top: -8px;
+  width: 28px;
+  height: 38px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -989px -237px;
+}
+section .leafAni {
+  animation: leafAni 0.45s ease 0s alternate-reverse infinite;
+}
+section .faceDance {
+  animation: faceDance 0.6s ease 0s normal infinite forwards;
+}
+section .faceDancer {
+  animation: faceDancer 0.6s ease 0s normal infinite forwards;
+}
+section .music {
+  animation: musician 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s normal infinite forwards;
+}
+section > .lottoNumbers {
+  display: flex;
+  position: absolute;
+  z-index: 600;
+  left: 50%;
+  top: 92px;
+  transform: translate(-50%, 0);
+  width: 500px;
+  height: 200px;
+}
+section > .lottoNumbers > .moving {
+  display: none;
+  position: absolute;
+  width: 94px;
+  height: 188px;
+}
+section > .lottoNumbers .balloonAni01 {
+  position: absolute;
+  z-index: 610;
+  width: 94px;
+  height: 188px;
+}
+section > .lottoNumbers .balloonAni01 > .balloon {
+  position: absolute;
+  z-index: 611;
+  width: 94px;
+  height: 188px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -525px -1px;
+}
+section > .lottoNumbers .balloonAni01 > .balloon + .lottoNumber {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 612;
+  left: 22px;
+  top: 36px;
+  width: 48px;
+  height: 46px;
+}
+section > .lottoNumbers .balloonAni01 > .balloon + .lottoNumber > .number01 {
+  position: relative;
+  z-index: 613;
+  width: 24px;
+  height: 46px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -1px -963px;
+}
+section > .lottoNumbers .balloonAni01 > .balloon + .lottoNumber > .number02 {
+  position: relative;
+  z-index: 613;
+  width: 24px;
+  height: 46px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -1px -963px;
+}
+section > .lottoNumbers .balloonAni02 {
+  position: absolute;
+  z-index: 620;
+  width: 94px;
+  height: 188px;
+}
+section > .lottoNumbers .balloonAni02 > .balloon {
+  position: absolute;
+  z-index: 621;
+  width: 94px;
+  height: 188px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -525px -1px;
+}
+section > .lottoNumbers .balloonAni02 > .balloon + .lottoNumber {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 622;
+  left: 22px;
+  top: 36px;
+  width: 48px;
+  height: 46px;
+}
+section > .lottoNumbers .balloonAni02 > .balloon + .lottoNumber > .number01 {
+  position: relative;
+  z-index: 623;
+  width: 24px;
+  height: 46px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -1px -963px;
+}
+section > .lottoNumbers .balloonAni02 > .balloon + .lottoNumber > .number02 {
+  position: relative;
+  z-index: 623;
+  width: 24px;
+  height: 46px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -1px -963px;
+}
+section > .lottoNumbers .balloonAni03 {
+  position: absolute;
+  z-index: 630;
+  width: 94px;
+  height: 188px;
+}
+section > .lottoNumbers .balloonAni03 > .balloon {
+  position: absolute;
+  z-index: 631;
+  width: 94px;
+  height: 188px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -525px -1px;
+}
+section > .lottoNumbers .balloonAni03 > .balloon + .lottoNumber {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 632;
+  left: 22px;
+  top: 36px;
+  width: 48px;
+  height: 46px;
+}
+section > .lottoNumbers .balloonAni03 > .balloon + .lottoNumber > .number01 {
+  position: relative;
+  z-index: 633;
+  width: 24px;
+  height: 46px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -1px -963px;
+}
+section > .lottoNumbers .balloonAni03 > .balloon + .lottoNumber > .number02 {
+  position: relative;
+  z-index: 633;
+  width: 24px;
+  height: 46px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -1px -963px;
+}
+section > .lottoNumbers .balloonAni04 {
+  position: absolute;
+  z-index: 640;
+  width: 94px;
+  height: 188px;
+}
+section > .lottoNumbers .balloonAni04 > .balloon {
+  position: absolute;
+  z-index: 641;
+  width: 94px;
+  height: 188px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -525px -1px;
+}
+section > .lottoNumbers .balloonAni04 > .balloon + .lottoNumber {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 642;
+  left: 22px;
+  top: 36px;
+  width: 48px;
+  height: 46px;
+}
+section > .lottoNumbers .balloonAni04 > .balloon + .lottoNumber > .number01 {
+  position: relative;
+  z-index: 643;
+  width: 24px;
+  height: 46px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -1px -963px;
+}
+section > .lottoNumbers .balloonAni04 > .balloon + .lottoNumber > .number02 {
+  position: relative;
+  z-index: 643;
+  width: 24px;
+  height: 46px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -1px -963px;
+}
+section > .lottoNumbers .balloonAni05 {
+  position: absolute;
+  z-index: 650;
+  width: 94px;
+  height: 188px;
+}
+section > .lottoNumbers .balloonAni05 > .balloon {
+  position: absolute;
+  z-index: 651;
+  width: 94px;
+  height: 188px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -525px -1px;
+}
+section > .lottoNumbers .balloonAni05 > .balloon + .lottoNumber {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 652;
+  left: 22px;
+  top: 36px;
+  width: 48px;
+  height: 46px;
+}
+section > .lottoNumbers .balloonAni05 > .balloon + .lottoNumber > .number01 {
+  position: relative;
+  z-index: 653;
+  width: 24px;
+  height: 46px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -1px -963px;
+}
+section > .lottoNumbers .balloonAni05 > .balloon + .lottoNumber > .number02 {
+  position: relative;
+  z-index: 653;
+  width: 24px;
+  height: 46px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -1px -963px;
+}
+section > .lottoNumbers .balloonAni06 {
+  position: absolute;
+  z-index: 660;
+  width: 94px;
+  height: 188px;
+}
+section > .lottoNumbers .balloonAni06 > .balloon {
+  position: absolute;
+  z-index: 661;
+  width: 94px;
+  height: 188px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -525px -1px;
+}
+section > .lottoNumbers .balloonAni06 > .balloon + .lottoNumber {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 662;
+  left: 22px;
+  top: 36px;
+  width: 48px;
+  height: 46px;
+}
+section > .lottoNumbers .balloonAni06 > .balloon + .lottoNumber > .number01 {
+  position: relative;
+  z-index: 663;
+  width: 24px;
+  height: 46px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -1px -963px;
+}
+section > .lottoNumbers .balloonAni06 > .balloon + .lottoNumber > .number02 {
+  position: relative;
+  z-index: 663;
+  width: 24px;
+  height: 46px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -1px -963px;
+}
+section .balloonsAni {
+  animation: balloons 1s ease 2s alternate-reverse infinite;
+}
+section .balloonMove01 {
+  animation: balloonMove01 2s ease-out 0s alternate forwards;
+}
+section .balloonMove02 {
+  animation: balloonMove02 2s ease-out 0s alternate forwards;
+}
+section .balloonMove03 {
+  animation: balloonMove03 2s ease-out 0s alternate forwards;
+}
+section .balloonMove04 {
+  animation: balloonMove04 2s ease-out 0s alternate forwards;
+}
+section .balloonMove05 {
+  animation: balloonMove05 2s ease-out 0s alternate forwards;
+}
+section .balloonMove06 {
+  animation: balloonMove06 2s ease-out 0s alternate forwards;
+}
+section > .buttons > .buttonOff {
+  position: absolute;
+  z-index: 800;
+  left: 50%;
+  top: 676px;
+  transform: translate(-50%, 0);
+  width: 240px;
+  height: 72px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -381px -775px;
+}
+section > .buttons > .buttonOff + .buttonNormal {
+  position: absolute;
+  z-index: 810;
+  left: 50%;
+  top: 676px;
+  transform: translate(-50%, 0);
+  width: 240px;
+  height: 72px;
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -381px -849px;
+}
+section > .buttons > .buttonOff + .buttonNormal:hover {
+  background-image: url(./../images/resource_imgBD.png);
+  background-position: -381px -923px;
+}
+section > .buttons > .buttonOff + .buttonNormal > .startButton {
+  display: block;
+  position: absolute;
+  z-index: 900;
+  left: 50%;
+  top: -676px;
+  transform: translate(-50%, 0);
+  width: 500px;
+  height: 800px;
+}
+
+footer {
+  position: absolute;
+  z-index: 700;
+  left: 50%;
+  top: 759px;
+  width: 500px;
+  height: 40px;
+  transform: translate(-50%, 0);
+}
+footer small {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  transform: translate(-50%, 0);
+  width: 150px;
+  height: 28px;
+  text-shadow: 1px 1px #fff;
+}
+footer small a {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  top: 10px;
+  width: 150px;
+  height: 20px;
+  text-align: center;
+}/*# sourceMappingURL=styleBD.css.map */

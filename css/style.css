@@ -1,0 +1,756 @@
+#wrap {
+  position: relative;
+  min-width: 1200px;
+}
+@media screen and (max-width:640px) {
+  #wrap {
+    min-width: 100%;
+  }
+}
+#wrap > .loading {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+}
+#wrap > .loading > p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  text-indent: -9999px;
+  background-image: url(./../images/loading.gif);
+  transform: translate(-50%, -50%);
+}
+#wrap > #home {
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  background-color: yellow;
+}
+@media screen and (max-width:640px) {
+  #wrap > #home {
+    min-width: 420px;
+  }
+}
+#wrap > #home > .intro {
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+@media screen and (max-width:640px) {
+  #wrap > #home > .intro {
+    top: 10%;
+    padding-bottom: 30px;
+  }
+}
+#wrap > #home > .intro > h1 {
+  z-index: 100;
+  color: #ffffff;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+@media screen and (max-width:640px) {
+  #wrap > #home > .intro > h1 {
+    font-size: 22px;
+  }
+}
+#wrap > #home > .intro > h2 {
+  color: #52b3d9;
+  font-size: 60px;
+  line-height: 80px;
+}
+@media screen and (max-width:640px) {
+  #wrap > #home > .intro > h2 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+}
+#wrap > #home > .intro > h2 > span {
+  color: #68c3a3;
+}
+@media screen and (max-width:640px) {
+  #wrap > #home > .intro > h2 > span {
+    display: block;
+  }
+}
+#wrap > #home > .intro > p {
+  margin-top: 24px;
+  color: #ffffff;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+@media screen and (max-width:640px) {
+  #wrap > #home > .intro > p > span {
+    display: block;
+  }
+}
+#wrap > #home > .mouse {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  width: 30px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 15px;
+  transform: translate(-50%, 0);
+}
+@media screen and (max-width:640px) {
+  #wrap > #home > .mouse {
+    display: none;
+  }
+}
+@keyframes mousewheel {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 20px;
+    opacity: 0;
+  }
+}
+#wrap > #home > .mouse > .wheel {
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  width: 4px;
+  height: 10px;
+  text-indent: -9999px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transform: translate(-50%, 0);
+  animation: mousewheel 1s linear infinite;
+}
+#wrap > #home > .bgmov {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#wrap > #home > .bgmov > .background {
+  position: relative;
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+#wrap > #home > .bgmov > .background > .backImage {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-image: url(./../images/background/background_image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .backTree {
+  position: absolute;
+  z-index: 101;
+  width: 100%;
+  height: 50%;
+  background-image: url(./../images/background/back_tree.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#wrap header {
+  width: 100%;
+  min-width: 1200px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+@media screen and (max-width:640px) {
+  #wrap header {
+    min-width: 100%;
+  }
+}
+#wrap header.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+#wrap header > .container {
+  position: relative;
+  height: 66px;
+}
+#wrap header > .container > h2 {
+  position: absolute;
+  left: 7%;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-image: url(./../images/logo.png);
+  background-repeat: no-repeat;
+}
+#wrap header > .container > h2 > a {
+  display: block;
+  height: 32px;
+  color: #2c3e50;
+  line-height: 32px;
+  text-indent: 40px;
+  text-transform: uppercase;
+}
+#wrap header > .container > button {
+  display: none;
+}
+@media screen and (max-width:640px) {
+  #wrap header > .container > button {
+    background: none;
+    border: none;
+    outline: none;
+    display: block;
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 24px;
+    height: 18px;
+    text-indent: -9999px;
+    background-image: url(./../images/mnu_btn.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  #wrap header > .container > button.clse {
+    background-image: url(./../images/clse_btn.png);
+  }
+}
+#wrap header > .container > nav {
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+@media screen and (max-width:640px) {
+  #wrap header > .container > nav {
+    display: none;
+    right: initial;
+    left: 0;
+    top: 66px;
+    width: 100%;
+    transform: initial;
+    border-top: 1px solid #eeeeee;
+  }
+}
+#wrap header > .container > nav > .gnb {
+  display: flex;
+}
+@media screen and (max-width:640px) {
+  #wrap header > .container > nav > .gnb {
+    display: initial;
+  }
+}
+@media screen and (max-width:640px) {
+  #wrap header > .container > nav > .gnb > li {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+  }
+}
+#wrap header > .container > nav > .gnb > li > a {
+  display: block;
+  padding: 0 15px;
+  color: #3c3c3c;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+@media screen and (max-width:640px) {
+  #wrap header > .container > nav > .gnb > li > a {
+    height: 48px;
+    padding: 0;
+    line-height: 48px;
+    text-indent: 7%;
+  }
+}
+#wrap header > .container > nav > .gnb > li:hover > a, #wrap header > .container > nav > .gnb > li.on > a {
+  color: #52b3d9;
+}
+#wrap header ~ section {
+  padding-top: 80px;
+}
+#wrap header ~ section > h2 {
+  margin-bottom: 72px;
+  color: #2c3e50;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+#wrap header ~ section > h2:after {
+  display: block;
+  width: 138px;
+  height: 15px;
+  margin: 30px auto 0;
+  background-image: url(./../images/deco_tit.png);
+  content: "";
+}
+#wrap > #aboutme > .container {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 30px;
+}
+@media screen and (max-width:640px) {
+  #wrap > #aboutme > .container {
+    display: block;
+    padding-bottom: 0;
+  }
+}
+#wrap > #aboutme > .container > .profile {
+  width: 33.33333%;
+}
+@media screen and (max-width:640px) {
+  #wrap > #aboutme > .container > .profile {
+    width: 100%;
+  }
+}
+#wrap > #aboutme > .container > .profile > div {
+  position: relative;
+  width: 360px;
+  margin: 0 auto;
+  border: 1px solid #d5d5d5;
+  border-radius: 0 0 10px 10px;
+}
+@media screen and (max-width:640px) {
+  #wrap > #aboutme > .container > .profile > div {
+    width: 95%;
+    margin-top: 50px;
+  }
+}
+#wrap > #aboutme > .container > .profile > div:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 20px;
+  border-bottom: 1px solid #d5d5d5;
+  content: "";
+}
+#wrap > #aboutme > .container > .profile > div > .myphoto {
+  overflow: hidden;
+  background-image: url(./../images/aboutme/photo-frame.png);
+  background-position: 0 bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #aboutme > .container > .profile > div > .myphoto > img {
+  display: block;
+  position: relative;
+  left: -22%;
+  top: 30px;
+  z-index: -1;
+  width: 160%;
+  margin: -100px 0 0 -30px;
+}
+#wrap > #aboutme > .container > .profile > div > ol {
+  padding: 0 20px;
+}
+#wrap > #aboutme > .container > .profile > div > ol > li {
+  height: 45px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 45px;
+  border-bottom: 1px solid #eeeeee;
+}
+#wrap > #aboutme > .container > .profile > div > ol > li:last-child {
+  border-bottom-width: 0;
+}
+#wrap > #aboutme > .container > .biography {
+  width: 66.66666%;
+}
+@media screen and (max-width:640px) {
+  #wrap > #aboutme > .container > .biography {
+    width: 100%;
+    margin-top: 48px;
+  }
+}
+#wrap > #aboutme > .container > .biography > .detail {
+  margin-bottom: 64px;
+  padding-left: 10%;
+}
+@media screen and (max-width:640px) {
+  #wrap > #aboutme > .container > .biography > .detail {
+    padding: 0 5%;
+  }
+}
+#wrap > #aboutme > .container > .biography > .detail > h3 {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 32px;
+}
+#wrap > #aboutme > .container > .biography > .detail > p {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 14px;
+}
+@media screen and (max-width:640px) {
+  #wrap > #aboutme > .container > .biography > .detail > p {
+    line-height: 1.4;
+  }
+  #wrap > #aboutme > .container > .biography > .detail > p > br {
+    display: none;
+  }
+}
+#wrap > #aboutme > .container > .biography > .detail > p > mark {
+  background-color: #fcf8e3;
+}
+#wrap > #aboutme > .container > .biography > .detail > .ican {
+  margin-top: 80px;
+}
+@media screen and (max-width:640px) {
+  #wrap > #aboutme > .container > .biography > .detail > .ican {
+    margin-top: 50px;
+  }
+}
+#wrap > #aboutme > .container > .biography > .detail > .ican > li {
+  font-size: 16px;
+  line-height: 40px;
+}
+#wrap > #aboutme > .container > .biography > .detail > .ican > li:before {
+  margin-right: 10px;
+  color: #52b3d9;
+  font-family: "Font Awesome 5 Free";
+  content: "\f14a";
+}
+#wrap > #skill > article.skill-1 {
+  margin-bottom: 120px;
+}
+#wrap > #skill > article > h3 {
+  margin-bottom: 80px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+}
+#wrap > #skill > article > h3 > span {
+  display: block;
+}
+#wrap > #skill > article > ol {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width:640px) {
+  #wrap > #skill > article > ol {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+#wrap > #skill > article > ol > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  height: 150px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+@media screen and (max-width:640px) {
+  #wrap > #skill > article > ol > li {
+    width: 100%;
+  }
+  #wrap > #skill > article > ol > li:first-child {
+    margin-bottom: 40px;
+  }
+}
+#wrap > #skill > article > ol > li > h4 {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 24px;
+}
+#wrap > #skill > article > ol > li > p {
+  line-height: 1.6;
+}
+#wrap > #skill > article.skill-1 li:first-child {
+  padding-left: 360px;
+  background-image: url(./../images/skill/skill01.png);
+  background-position: 180px 0;
+}
+@media screen and (max-width:640px) {
+  #wrap > #skill > article.skill-1 li:first-child {
+    padding-left: 180px;
+    background-position: 0 0;
+  }
+}
+#wrap > #skill > article.skill-1 li:last-child {
+  padding-left: 180px;
+  background-image: url(./../images/skill/skill02.png);
+}
+#wrap > #skill > article.skill-2 li:first-child {
+  padding-left: 360px;
+  background-image: url(./../images/skill/skill03.png);
+  background-position: 180px 0;
+}
+@media screen and (max-width:640px) {
+  #wrap > #skill > article.skill-2 li:first-child {
+    padding-left: 180px;
+    background-position: 0 0;
+  }
+}
+#wrap > #skill > article.skill-2 li:last-child {
+  padding-left: 180px;
+  background-image: url(./../images/skill/skill04.png);
+}
+#wrap #ability {
+  margin-top: 100px;
+  background-color: #1a1a1a;
+}
+#wrap #ability > h2 {
+  color: #ffffff;
+}
+#wrap #ability > .ability-container {
+  padding-bottom: 50px;
+}
+#wrap #ability > .ability-container > .stick {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width:640px) {
+  #wrap #ability > .ability-container > .stick {
+    display: block;
+  }
+}
+#wrap #ability > .ability-container > .stick > .stick-container {
+  width: 43%;
+}
+@media screen and (max-width:640px) {
+  #wrap #ability > .ability-container > .stick > .stick-container {
+    width: 100%;
+  }
+}
+#wrap #ability > .ability-container > .stick > .stick-container > .item {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 40px;
+}
+@media screen and (max-width:640px) {
+  #wrap #ability > .ability-container > .stick > .stick-container > .item {
+    padding: 0 7%;
+  }
+}
+#wrap #ability > .ability-container > .stick > .stick-container > .item > h3 {
+  width: 17%;
+  padding-right: 8%;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 10px;
+  text-align: right;
+}
+@media screen and (max-width:640px) {
+  #wrap #ability > .ability-container > .stick > .stick-container > .item > h3 {
+    font-size: 15px;
+  }
+}
+#wrap #ability > .ability-container > .stick > .stick-container > .item > .progress {
+  position: relative;
+  width: 75%;
+  height: 10px;
+  background-color: #333333;
+  border-radius: 3px;
+}
+#wrap #ability > .ability-container > .stick > .stick-container > .item > .progress > .bar {
+  width: 0;
+  height: 100%;
+  background-color: #52b3d9;
+  transition: all 2s ease-in-out;
+}
+#wrap #ability > .ability-container > .stick > .stick-container > .item > .progress > .bar > span {
+  position: absolute;
+  right: 15px;
+  top: -20px;
+  color: #ffffff;
+}
+#wrap #ability > .resume {
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+#wrap #ability > .resume > div {
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
+}
+@media screen and (max-width:640px) {
+  #wrap #ability > .resume > div {
+    display: block;
+  }
+}
+#wrap #ability > .resume > div > .frame {
+  overflow: hidden;
+  width: 520px;
+  height: 340px;
+  margin-right: 50px;
+}
+@media screen and (max-width:640px) {
+  #wrap #ability > .resume > div > .frame {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+#wrap #ability > .resume > div > .frame > img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+}
+#wrap #ability > .resume > div > .iam {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#wrap #ability > .resume > div > .iam > p {
+  line-height: 1.8;
+}
+@media screen and (max-width:640px) {
+  #wrap #ability > .resume > div > .iam > p > br {
+    display: none;
+  }
+}
+#wrap #ability > .resume > div > .iam > p > span {
+  display: block;
+}
+@media screen and (max-width:640px) {
+  #wrap #ability > .resume > div > .iam > p > span {
+    display: inline;
+  }
+}
+#wrap #ability > .resume > div > .iam > a {
+  display: block;
+  width: 260px;
+  height: 40px;
+  color: #ffffff;
+  line-height: 40px;
+  text-align: center;
+  background-color: #1a1a1a;
+}
+@media screen and (max-width:640px) {
+  #wrap #ability > .resume > div > .iam > a {
+    display: none;
+  }
+}
+#wrap #portfolio > ol {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+#wrap #portfolio > ol > li {
+  position: relative;
+}
+#wrap #portfolio > ol > li:nth-child(1) {
+  width: 250px;
+  height: 400px;
+  background-image: url(./../images/portfolio/Flower_Lotto/Flower_Lotto.jpg);
+  background-size: cover;
+}
+#wrap #portfolio > ol > li:nth-child(1) > a {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 250px;
+  height: 430px;
+  text-indent: -9999px;
+}
+#wrap #portfolio > ol > li:nth-child(1) > p {
+  position: absolute;
+  top: 410px;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+#wrap > footer {
+  min-width: 1200px;
+}
+@media screen and (max-width:640px) {
+  #wrap > footer {
+    min-width: 100%;
+  }
+}
+#wrap > footer > .working {
+  border-top: 1px solid #eeeeee;
+}
+#wrap > footer > .working > p {
+  height: 80px;
+  padding-left: 7%;
+  line-height: 80px;
+}
+#wrap > footer > .working > p > a {
+  margin: 0 30px;
+}
+#wrap > footer > .working > p > a:hover {
+  text-decoration: underline;
+}
+#wrap > footer > .info {
+  background-color: #1a1a1a;
+}
+#wrap > footer > .info > .container {
+  position: relative;
+  padding: 45px 7% 40px;
+}
+#wrap > footer > .info > .container h2,
+#wrap > footer > .info > .container p {
+  margin-bottom: 15px;
+  color: #aaa;
+  font-size: 13px;
+}
+#wrap > footer > .info > .container h2 > a,
+#wrap > footer > .info > .container p > a {
+  color: #aaa;
+}
+#wrap > footer > .info > .container h2 > .bar,
+#wrap > footer > .info > .container p > .bar {
+  margin: 0 10px;
+}
+#wrap > footer > .info > .container h2:after {
+  display: block;
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 53px;
+  height: 68px;
+  background-image: url(./../images/footer_logo.png);
+  content: "";
+}
+@media screen and (max-width:640px) {
+  #wrap > footer > .info > .container h2:after {
+    display: none;
+  }
+}
+@media screen and (max-width:640px) {
+  #wrap > footer > .info > .container > p.iam_2 > span {
+    display: block;
+  }
+}
+#wrap > aside {
+  display: none;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1000;
+}
+#wrap > aside > .top {
+  display: block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  background-color: #52b3d9;
+}
+#wrap > aside > .top > i {
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */

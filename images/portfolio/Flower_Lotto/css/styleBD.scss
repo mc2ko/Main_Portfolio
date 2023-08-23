@@ -1,0 +1,1689 @@
+@charset "utf-8";
+
+$phone: "screen and (max-width: 640px)";
+$resourceImage: "url(./../images/resource_imgBD.png)";
+$resourcePattern: "url(./../images/background_patternBD.jpg)";
+
+// ------------------------------------애니메이션 저장소-------------------------------------
+* {
+  // 창문 애니메이션 영역
+  @keyframes leftWindowScale {
+    0% {
+      transform: scaleX(100%);
+    }
+    100% {
+      transform: scaleX(1%);
+    }
+  }
+
+  @keyframes rightWindowScale {
+    0% {
+      transform: scaleX(100%);
+    }
+    100% {
+      transform: scaleX(1%);
+    }
+  }
+
+  @keyframes leftWindowSkew {
+    0% {
+      transform: skewY(0);
+    }
+    100% {
+      transform: skewY(-50deg);
+    }
+  }
+
+  @keyframes rightWindowSkew {
+    0% {
+      transform: skewY(0);
+    }
+    100% {
+      transform: skewY(50deg);
+    }
+  }
+
+  // 꽃 애니메이션 영역
+  @keyframes leafAni {
+    0% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+  @keyframes faceDance {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      left: 6px;
+      top: 4px;
+    }
+    50% {
+      left: 0px;
+      top: 0px;
+    }
+    75% {
+      left: -6px;
+      top: 4px;
+    }
+    100% {
+      left: 0px;
+      top: 0px;
+    }
+  }
+
+  @keyframes faceDancer {
+    0% {
+      left: 20px;
+      top: 31px;
+    }
+    25% {
+      left: 26px;
+      top: 35px;
+    }
+    50% {
+      left: 20px;
+      top: 31px;
+    }
+    75% {
+      left: 14px;
+      top: 35px;
+    }
+    100% {
+      left: 20px;
+      top: 31px;
+    }
+  }
+
+  @keyframes leafAni {
+    0% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+  // 풍선 애니메이션 영역
+  @keyframes balloons {
+    0% {
+      top: 20px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+
+  @keyframes balloonMove01 {
+    0% {
+      left: 70px;
+      top: 450px;
+      scale: 0%;
+    }
+    20% {
+      left: 40px;
+    }
+    40% {
+      left: -10px;
+    }
+    60% {
+      left: 10px;
+    }
+    80% {
+      left: -10px;
+    }
+    100% {
+      left: 10px;
+      top: 0px;
+      scale: 100%;
+    }
+  }
+
+  @keyframes balloonMove02 {
+    0% {
+      left: 57px;
+      top: 450px;
+      scale: 0%;
+    }
+    20% {
+      left: 107px;
+    }
+    40% {
+      left: 67px;
+    }
+    60% {
+      left: 87px;
+    }
+    80% {
+      left: 67px;
+    }
+    100% {
+      left: 87px;
+      top: 0px;
+      scale: 100%;
+    }
+  }
+
+  @keyframes balloonMove03 {
+    0% {
+      left: 214px;
+      top: 450px;
+      scale: 0%;
+    }
+    20% {
+      left: 184px;
+    }
+    40% {
+      left: 144px;
+    }
+    60% {
+      left: 164px;
+    }
+    80% {
+      left: 144px;
+    }
+    100% {
+      left: 164px;
+      top: 0px;
+      scale: 100%;
+    }
+  }
+
+  @keyframes balloonMove04 {
+    0% {
+      left: 241px;
+      top: 450px;
+      scale: 0%;
+    }
+    20% {
+      left: 231px;
+    }
+    40% {
+      left: 241px;
+    }
+    60% {
+      left: 221px;
+    }
+    80% {
+      left: 241px;
+    }
+    100% {
+      left: 241px;
+      top: 0px;
+      scale: 100%;
+    }
+  }
+
+  @keyframes balloonMove05 {
+    0% {
+      left: 308px;
+      top: 450px;
+      scale: 0%;
+    }
+    20% {
+      left: 308px;
+    }
+    40% {
+      left: 298px;
+    }
+    60% {
+      left: 318px;
+    }
+    80% {
+      left: 298px;
+    }
+    100% {
+      left: 318px;
+      top: 0px;
+      scale: 100%;
+    }
+  }
+
+  @keyframes balloonMove06 {
+    0% {
+      left: 365px;
+      top: 450px;
+      scale: 0%;
+    }
+    20% {
+      left: 385px;
+    }
+    40% {
+      left: 375px;
+    }
+    60% {
+      left: 395px;
+    }
+    80% {
+      left: 375px;
+    }
+    100% {
+      left: 395px;
+      top: 0px;
+      scale: 100%;
+    }
+  }
+
+  //음악가 애니메이션 영역
+  @keyframes musician {
+    0% {
+      opacity: 0;
+      left: 9px;
+      top: -38px;
+      background-position: -989px -237px;
+    }
+    17% {
+      opacity: 1;
+      left: 52px;
+      top: -68px;
+      background-position: -989px -237px;
+    }
+    33% {
+      left: 42px;
+      top: -88px;
+      background-position: -989px -237px;
+    }
+    49% {
+      opacity: 1;
+      left: 82px;
+      top: -108px;
+      background-position: -989px -237px;
+    }
+    50% {
+      opacity: 0;
+      left: 2px;
+      top: -48px;
+      background-position: -989px -277px;
+    }
+    67% {
+      opacity: 1;
+      left: 82px;
+      top: -68px;
+      background-position: -989px -277px;
+    }
+    83% {
+      opacity: 1;
+      left: 62px;
+      top: -88px;
+      background-position: -989px -277px;
+    }
+    99% {
+      left: 122px;
+      top: -98px;
+      background-position: -989px -277px;
+    }
+    100% {
+      opacity: 0;
+      left: 122px;
+      top: -108px;
+      background-position: -989px -277px;
+    }
+  }
+
+  //구름 애니메이션 영역
+  @keyframes cloudAni01 {
+    0% {
+      left: 440px;
+      opacity: 0;
+      scale: 100%;
+    }
+    1% {
+      left: 440px;
+      opacity: 1;
+      scale: 100%;
+    }
+    25% {
+      scale: 110%;
+    }
+    50% {
+      scale: 90%;
+    }
+    75% {
+      scale: 110%;
+    }
+    99% {
+      opacity: 1;
+      scale: 100%;
+    }
+    100% {
+      left: -80px;
+      opacity: 0;
+      scale: 100%;
+    }
+  }
+
+  @keyframes cloudAni02 {
+    0% {
+      left: 440px;
+      opacity: 0;
+      scale: 100%;
+    }
+    1% {
+      left: 440px;
+      opacity: 1;
+      scale: 100%;
+    }
+    25% {
+      scale: 90%;
+    }
+    50% {
+      scale: 110%;
+    }
+    75% {
+      scale: 90%;
+    }
+    99% {
+      opacity: 1;
+      scale: 100%;
+    }
+    100% {
+      left: -80px;
+      opacity: 0;
+      scale: 100%;
+    }
+  }
+
+  @keyframes cloudAni03 {
+    0% {
+      left: 440px;
+      opacity: 0;
+      scale: 100%;
+    }
+    1% {
+      left: 440px;
+      opacity: 1;
+      scale: 100%;
+    }
+    25% {
+      scale: 110%;
+    }
+    50% {
+      scale: 90%;
+    }
+    75% {
+      scale: 110%;
+    }
+    99% {
+      opacity: 1;
+      scale: 100%;
+    }
+    100% {
+      left: -80px;
+      opacity: 0;
+      scale: 100%;
+    }
+  }
+}
+// -----------------------------------애니메이션 저장소 끝-----------------------------------
+body {
+  background-color: #6dcabc;
+}
+
+#wrap {
+  position: relative;
+  width: 500px;
+}
+
+header {
+  position: absolute;
+  z-index: 200;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 500px;
+  > h1 {
+    text-indent: -9999px;
+  }
+
+  > .bgt {
+    position: absolute;
+    z-index: 300;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%, 0);
+
+    width: 454px;
+    height: 106px;
+    background-image: #{$resourceImage};
+    background-position: -1px -1px;
+  }
+} //end of header
+
+section {
+  // overflow: hidden;
+  position: relative;
+
+  width: 500px;
+  height: 800px;
+  margin: 0 auto;
+  @media #{$phone} {
+  }
+
+  // -------------------------------------백이미지 저장소-----------------------------------
+  > .backImage {
+    position: absolute;
+    z-index: 100;
+
+    width: 500px;
+    height: 800px;
+    background-image: #{$resourcePattern};
+    + .mountain {
+      position: absolute;
+      z-index: 110;
+      left: 50%;
+      top: 224px;
+      transform: translate(-50%, 0);
+
+      width: 348px;
+      height: 348px;
+      background-image: #{$resourceImage};
+      background-position: -503px -191px;
+      + .sun {
+        position: absolute;
+        z-index: 120;
+        left: 260px;
+        top: 278px;
+
+        width: 134px;
+        height: 134px;
+        background-image: #{$resourceImage};
+        background-position: -853px -191px;
+        + .cloud01 {
+          opacity: 0;
+          position: absolute;
+          z-index: 130;
+          left: 90px;
+          top: 333px;
+
+          width: 106px;
+          height: 64px;
+          background-image: #{$resourceImage};
+          background-position: -527px -541px;
+          animation: cloudAni01 20s ease 1.6s normal infinite forwards;
+          + .cloud02 {
+            opacity: 0;
+            position: absolute;
+            z-index: 140;
+            left: 152px;
+            top: 293px;
+
+            width: 118px;
+            height: 74px;
+            background-image: #{$resourceImage};
+            background-position: -635px -541px;
+            animation: cloudAni02 16s ease 4s normal infinite forwards;
+            + .cloud03 {
+              opacity: 0;
+              position: absolute;
+              z-index: 150;
+              left: 340px;
+              top: 376px;
+
+              width: 96px;
+              height: 72px;
+              background-image: #{$resourceImage};
+              background-position: -755px -541px;
+              animation: cloudAni03 14s ease 0.4s normal infinite forwards;
+            } //end of .cloud03
+          } //end of .cloud02
+        } //end of .cloud01
+      } //end of .sun
+    } //end of .mountain
+  } //end of .backImage
+  // ------------------------------------백이미지 저장소 끝---------------------------------
+
+  // -------------------------------------닫힌창문 저장소-----------------------------------
+  > .closeWindow {
+    display: block;
+    position: absolute;
+    z-index: 180;
+    left: 50%;
+    top: 226px;
+    transform: translate(-50%, 0);
+
+    width: 348px;
+    height: 344px;
+    > .closeLeft {
+      position: absolute;
+      z-index: 190;
+
+      width: 174px;
+      height: 344px;
+      background-image: #{$resourceImage};
+      background-position: -673px -679px;
+      transform-origin: left;
+    } //end of .leftWindow
+    > .closeRight {
+      position: absolute;
+      left: 172px;
+      z-index: 190;
+
+      width: 174px;
+      height: 344px;
+      background-image: #{$resourceImage};
+      background-position: -849px -679px;
+      transform-origin: right;
+    } //end of .rightWindow
+  } //end of .windowsAni
+  // ------------------------------------닫힌창문 저장소 끝---------------------------------
+
+  // -------------------------------------열린창문 저장소-----------------------------------
+  > .windowsAni {
+    display: none;
+    position: absolute;
+    z-index: 200;
+    left: 50%;
+    top: 226px;
+    transform: translate(-50%, 0);
+
+    width: 348px;
+    height: 344px;
+    > .left {
+      position: absolute;
+
+      width: 174px;
+      height: 344px;
+      transform-origin: left;
+
+      animation: leftWindowSkew 1s ease-out 0s alternate backwards;
+      > .leftWindow {
+        position: absolute;
+        z-index: 200;
+
+        width: 174px;
+        height: 344px;
+        background-image: #{$resourceImage};
+        background-position: -673px -679px;
+        transform-origin: left;
+
+        animation: leftWindowScale 1s ease-out 0s alternate backwards;
+      } //end of .leftWindow
+      + .right {
+        position: absolute;
+        left: 172px;
+
+        width: 174px;
+        height: 344px;
+        transform-origin: right;
+
+        animation: rightWindowSkew 1s ease-out 0s alternate backwards;
+        > .rightWindow {
+          position: absolute;
+          z-index: 200;
+
+          width: 174px;
+          height: 344px;
+          background-image: #{$resourceImage};
+          background-position: -849px -679px;
+          transform-origin: right;
+
+          animation: rightWindowScale 1s ease-out 0s alternate backwards;
+        } //end of .rightWindow
+      } //end of .right
+    } //end of .left
+  } //end of .windowsAni
+  // ------------------------------------열린창문 저장소 끝---------------------------------
+
+  // -------------------------------------가리기용 저장소-----------------------------------
+  > .boxing {
+    position: absolute;
+    z-index: 230;
+    left: 50%;
+    top: 138px;
+    transform: translate(-50%, 0);
+
+    width: 500px;
+    height: 524px;
+    background-image: #{$resourceImage};
+    background-position: -1px -109px;
+
+    &:before {
+      display: block;
+      position: absolute;
+      z-index: 220;
+      left: -98px;
+      top: 60px;
+
+      width: 100px;
+      height: 400px;
+      background-color: #6dcabc;
+      content: "";
+    }
+
+    &:after {
+      display: block;
+      position: absolute;
+      z-index: 220;
+      left: 498px;
+      top: 60px;
+
+      width: 100px;
+      height: 400px;
+      background-color: #6dcabc;
+      content: "";
+    }
+  } //end of .boxing
+  // ------------------------------------가리기용 저장소 끝---------------------------------
+
+  // -------------------------------------꽃의무대 저장소-----------------------------------
+  > .flowers {
+    display: flex;
+    position: relative;
+    z-index: 300;
+    left: 50%;
+    top: 455px;
+    transform: translate(-50%, 0);
+
+    width: 420px;
+    height: 180px;
+    > .flowers01 {
+      position: relative;
+      z-index: 310;
+      left: 8px;
+      top: 12px;
+
+      width: 76px;
+      height: 154px;
+      > .root {
+        position: absolute;
+        z-index: 311;
+        left: 5px;
+        top: 52px;
+
+        width: 66px;
+        height: 104px;
+        background-image: #{$resourceImage};
+        background-position: -457px -1px;
+        + .rootNumber {
+          position: absolute;
+          z-index: 312;
+          left: 28px;
+          top: 130px;
+
+          width: 20px;
+          height: 20px;
+          background-image: #{$resourceImage};
+          background-position: -989px -317px;
+          + .leaf01 {
+            position: absolute;
+            z-index: 312;
+            left: 0px;
+            top: 86px;
+
+            width: 34px;
+            height: 18px;
+            background-image: #{$resourceImage};
+            background-position: -989px -191px;
+            transform-origin: right bottom;
+            + .leaf02 {
+              position: absolute;
+              z-index: 312;
+              left: 41px;
+              top: 74px;
+
+              width: 34px;
+              height: 24px;
+              background-image: #{$resourceImage};
+              background-position: -989px -211px;
+              transform-origin: left bottom;
+              + .flowerNumber01 {
+                position: absolute;
+                z-index: 313;
+                left: 2px;
+                top: 1px;
+
+                width: 74px;
+                height: 80px;
+                background-image: #{$resourceImage};
+                background-position: -521px -693px;
+                + .face {
+                  opacity: 0;
+                  position: absolute;
+                  z-index: 314;
+                  left: 22px;
+                  top: 31px;
+
+                  width: 36px;
+                  height: 24px;
+                  > .faceSelect {
+                    visibility: hidden;
+                    position: absolute;
+                    z-index: 315;
+
+                    width: 36px;
+                    height: 24px;
+                    background-image: #{$resourceImage};
+                    background-position: -623px -775px;
+                    + .music {
+                      visibility: hidden;
+                      position: absolute;
+                      z-index: 316;
+                      left: 2px;
+                      top: -8px;
+
+                      width: 28px;
+                      height: 38px;
+                      background-image: #{$resourceImage};
+                      background-position: -989px -237px;
+                    } //end of .music
+                  } //end of .faceSelect
+                } //end of .face
+              } //end of .flowerNumber01
+            } //end of .leaf02
+          } //end of .leaf01
+        } //end of .rootNumber
+      } //end of .root
+    } //end of .flowers01
+
+    > .flowers02 {
+      position: relative;
+      z-index: 320;
+      left: 3px;
+      top: 12px;
+
+      width: 76px;
+      height: 154px;
+      > .root {
+        position: absolute;
+        z-index: 321;
+        left: 5px;
+        top: 52px;
+
+        width: 66px;
+        height: 104px;
+        background-image: #{$resourceImage};
+        background-position: -457px -1px;
+        + .rootNumber {
+          position: absolute;
+          z-index: 322;
+          left: 28px;
+          top: 130px;
+
+          width: 20px;
+          height: 20px;
+          background-image: #{$resourceImage};
+          background-position: -989px -339px;
+          + .leaf01 {
+            position: absolute;
+            z-index: 322;
+            left: 0px;
+            top: 86px;
+
+            width: 34px;
+            height: 18px;
+            background-image: #{$resourceImage};
+            background-position: -989px -191px;
+            transform-origin: right bottom;
+            + .leaf02 {
+              position: absolute;
+              z-index: 322;
+              left: 41px;
+              top: 74px;
+
+              width: 34px;
+              height: 24px;
+              background-image: #{$resourceImage};
+              background-position: -989px -211px;
+              transform-origin: left bottom;
+              + .flowerNumber02 {
+                position: absolute;
+                z-index: 323;
+                left: 2px;
+                top: 1px;
+
+                width: 74px;
+                height: 80px;
+                background-image: #{$resourceImage};
+                background-position: -521px -693px;
+                + .face {
+                  opacity: 0;
+                  position: absolute;
+                  z-index: 324;
+                  left: 22px;
+                  top: 31px;
+
+                  width: 36px;
+                  height: 24px;
+                  > .faceSelect {
+                    visibility: hidden;
+                    position: absolute;
+                    z-index: 325;
+
+                    width: 36px;
+                    height: 24px;
+                    background-image: #{$resourceImage};
+                    background-position: -623px -775px;
+                    + .music {
+                      visibility: hidden;
+                      position: absolute;
+                      z-index: 326;
+                      left: 2px;
+                      top: -8px;
+
+                      width: 28px;
+                      height: 38px;
+                      background-image: #{$resourceImage};
+                      background-position: -989px -237px;
+                    } //end of .music
+                  } //end of .faceSelect
+                } //end of .face
+              } //end of .flowerNumber02
+            } //end of .leaf02
+          } //end of .leaf01
+        } //end of .rootNumber
+      } //end of .root
+    } //end of .flowers02
+
+    > .flowers03 {
+      position: relative;
+      z-index: 330;
+      left: -2px;
+      top: 12px;
+
+      width: 76px;
+      height: 154px;
+      > .root {
+        position: absolute;
+        z-index: 331;
+        left: 5px;
+        top: 52px;
+
+        width: 66px;
+        height: 104px;
+        background-image: #{$resourceImage};
+        background-position: -457px -1px;
+        + .rootNumber {
+          position: absolute;
+          z-index: 332;
+          left: 28px;
+          top: 130px;
+
+          width: 20px;
+          height: 20px;
+          background-image: #{$resourceImage};
+          background-position: -989px -361px;
+          + .leaf01 {
+            position: absolute;
+            z-index: 332;
+            left: 0px;
+            top: 86px;
+
+            width: 34px;
+            height: 18px;
+            background-image: #{$resourceImage};
+            background-position: -989px -191px;
+            transform-origin: right bottom;
+            + .leaf02 {
+              position: absolute;
+              z-index: 332;
+              left: 41px;
+              top: 74px;
+
+              width: 34px;
+              height: 24px;
+              background-image: #{$resourceImage};
+              background-position: -989px -211px;
+              transform-origin: left bottom;
+              + .flowerNumber03 {
+                position: absolute;
+                z-index: 333;
+                left: 2px;
+                top: 1px;
+
+                width: 74px;
+                height: 80px;
+                background-image: #{$resourceImage};
+                background-position: -521px -693px;
+                + .face {
+                  opacity: 0;
+                  position: absolute;
+                  z-index: 334;
+                  left: 22px;
+                  top: 31px;
+
+                  width: 36px;
+                  height: 24px;
+                  > .faceSelect {
+                    visibility: hidden;
+                    position: absolute;
+                    z-index: 335;
+
+                    width: 36px;
+                    height: 24px;
+                    background-image: #{$resourceImage};
+                    background-position: -623px -775px;
+                    + .music {
+                      visibility: hidden;
+                      position: absolute;
+                      z-index: 336;
+                      left: 2px;
+                      top: -8px;
+
+                      width: 28px;
+                      height: 38px;
+                      background-image: #{$resourceImage};
+                      background-position: -989px -237px;
+                    } //end of .music
+                  } //end of .faceSelect
+                } //end of .face
+              } //end of .flowerNumber03
+            } //end of .leaf02
+          } //end of .leaf01
+        } //end of .rootNumber
+      } //end of .root
+    } //end of .flowers03
+
+    > .flowers04 {
+      position: relative;
+      z-index: 340;
+      left: -7px;
+      top: 12px;
+
+      width: 76px;
+      height: 154px;
+      > .root {
+        position: absolute;
+        z-index: 341;
+        left: 5px;
+        top: 52px;
+
+        width: 66px;
+        height: 104px;
+        background-image: #{$resourceImage};
+        background-position: -457px -1px;
+        + .rootNumber {
+          position: absolute;
+          z-index: 342;
+          left: 28px;
+          top: 130px;
+
+          width: 20px;
+          height: 20px;
+          background-image: #{$resourceImage};
+          background-position: -989px -383px;
+          + .leaf01 {
+            position: absolute;
+            z-index: 342;
+            left: 0px;
+            top: 86px;
+
+            width: 34px;
+            height: 18px;
+            background-image: #{$resourceImage};
+            background-position: -989px -191px;
+            transform-origin: right bottom;
+            + .leaf02 {
+              position: absolute;
+              z-index: 342;
+              left: 41px;
+              top: 74px;
+
+              width: 34px;
+              height: 24px;
+              background-image: #{$resourceImage};
+              background-position: -989px -211px;
+              transform-origin: left bottom;
+              + .flowerNumber04 {
+                position: absolute;
+                z-index: 343;
+                left: 2px;
+                top: 1px;
+
+                width: 74px;
+                height: 80px;
+                background-image: #{$resourceImage};
+                background-position: -521px -693px;
+                + .face {
+                  opacity: 0;
+                  position: absolute;
+                  z-index: 344;
+                  left: 22px;
+                  top: 31px;
+
+                  width: 36px;
+                  height: 24px;
+                  > .faceSelect {
+                    visibility: hidden;
+                    position: absolute;
+                    z-index: 345;
+
+                    width: 36px;
+                    height: 24px;
+                    background-image: #{$resourceImage};
+                    background-position: -623px -775px;
+                    + .music {
+                      visibility: hidden;
+                      position: absolute;
+                      z-index: 346;
+                      left: 2px;
+                      top: -8px;
+
+                      width: 28px;
+                      height: 38px;
+                      background-image: #{$resourceImage};
+                      background-position: -989px -237px;
+                    } //end of .music
+                  } //end of .faceSelect
+                } //end of .face
+              } //end of .flowerNumber04
+            } //end of .leaf02
+          } //end of .leaf01
+        } //end of .rootNumber
+      } //end of .root
+    } //end of .flowers04
+
+    > .flowers05 {
+      position: relative;
+      z-index: 350;
+      left: -12px;
+      top: 12px;
+
+      width: 76px;
+      height: 154px;
+      > .root {
+        position: absolute;
+        z-index: 351;
+        left: 5px;
+        top: 52px;
+
+        width: 66px;
+        height: 104px;
+        background-image: #{$resourceImage};
+        background-position: -457px -1px;
+        + .rootNumber {
+          position: absolute;
+          z-index: 352;
+          left: 28px;
+          top: 130px;
+
+          width: 20px;
+          height: 20px;
+          background-image: #{$resourceImage};
+          background-position: -989px -405px;
+          + .leaf01 {
+            position: absolute;
+            z-index: 352;
+            left: 0px;
+            top: 86px;
+
+            width: 34px;
+            height: 18px;
+            background-image: #{$resourceImage};
+            background-position: -989px -191px;
+            transform-origin: right bottom;
+            + .leaf02 {
+              position: absolute;
+              z-index: 352;
+              left: 41px;
+              top: 74px;
+
+              width: 34px;
+              height: 24px;
+              background-image: #{$resourceImage};
+              background-position: -989px -211px;
+              transform-origin: left bottom;
+              + .flowerNumber05 {
+                position: absolute;
+                z-index: 353;
+                left: 2px;
+                top: 1px;
+
+                width: 74px;
+                height: 80px;
+                background-image: #{$resourceImage};
+                background-position: -521px -693px;
+                + .face {
+                  opacity: 0;
+                  position: absolute;
+                  z-index: 354;
+                  left: 22px;
+                  top: 31px;
+
+                  width: 36px;
+                  height: 24px;
+                  > .faceSelect {
+                    visibility: hidden;
+                    position: absolute;
+                    z-index: 355;
+
+                    width: 36px;
+                    height: 24px;
+                    background-image: #{$resourceImage};
+                    background-position: -623px -775px;
+                    + .music {
+                      visibility: hidden;
+                      position: absolute;
+                      z-index: 356;
+                      left: 2px;
+                      top: -8px;
+
+                      width: 28px;
+                      height: 38px;
+                      background-image: #{$resourceImage};
+                      background-position: -989px -237px;
+                    } //end of .music
+                  } //end of .faceSelect
+                } //end of .face
+              } //end of .flowerNumber05
+            } //end of .leaf02
+          } //end of .leaf01
+        } //end of .rootNumber
+      } //end of .root
+    } //end of .flowers05
+
+    > .flowers06 {
+      position: relative;
+      z-index: 360;
+      left: -17px;
+      top: 12px;
+
+      width: 76px;
+      height: 154px;
+      > .root {
+        position: absolute;
+        z-index: 361;
+        left: 5px;
+        top: 52px;
+
+        width: 66px;
+        height: 104px;
+        background-image: #{$resourceImage};
+        background-position: -457px -1px;
+        + .rootNumber {
+          position: absolute;
+          z-index: 362;
+          left: 28px;
+          top: 130px;
+
+          width: 20px;
+          height: 20px;
+          background-image: #{$resourceImage};
+          background-position: -989px -427px;
+          + .leaf01 {
+            position: absolute;
+            z-index: 362;
+            left: 0px;
+            top: 86px;
+
+            width: 34px;
+            height: 18px;
+            background-image: #{$resourceImage};
+            background-position: -989px -191px;
+            transform-origin: right bottom;
+            + .leaf02 {
+              position: absolute;
+              z-index: 362;
+              left: 41px;
+              top: 74px;
+
+              width: 34px;
+              height: 24px;
+              background-image: #{$resourceImage};
+              background-position: -989px -211px;
+              transform-origin: left bottom;
+              + .flowerNumber06 {
+                position: absolute;
+                z-index: 363;
+                left: 2px;
+                top: 1px;
+
+                width: 74px;
+                height: 80px;
+                background-image: #{$resourceImage};
+                background-position: -521px -693px;
+                + .face {
+                  opacity: 0;
+                  position: absolute;
+                  z-index: 364;
+                  left: 22px;
+                  top: 31px;
+
+                  width: 36px;
+                  height: 24px;
+                  > .faceSelect {
+                    visibility: hidden;
+                    position: absolute;
+                    z-index: 365;
+
+                    width: 36px;
+                    height: 24px;
+                    background-image: #{$resourceImage};
+                    background-position: -623px -775px;
+                    + .music {
+                      visibility: hidden;
+                      position: absolute;
+                      z-index: 366;
+                      left: 2px;
+                      top: -8px;
+
+                      width: 28px;
+                      height: 38px;
+                      background-image: #{$resourceImage};
+                      background-position: -989px -237px;
+                    } //end of .music
+                  } //end of .faceSelect
+                } //end of .face
+              } //end of .flowerNumber06
+            } //end of .leaf02
+          } //end of .leaf01
+        } //end of .rootNumber
+      } //end of .root
+    } //end of .flowers06
+  } //end of .tempResult
+  // ------------------------------------꽃의무대 저장소 끝---------------------------------
+
+  .leafAni {
+    animation: leafAni 0.45s ease 0s alternate-reverse infinite;
+  }
+
+  .faceDance {
+    animation: faceDance 0.6s ease 0s normal infinite forwards;
+  }
+
+  .faceDancer {
+    animation: faceDancer 0.6s ease 0s normal infinite forwards;
+  }
+
+  .music {
+    animation: musician 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s normal
+      infinite forwards;
+  }
+
+  // -------------------------------------풍선위치 저장소-----------------------------------
+  > .lottoNumbers {
+    display: flex;
+    position: absolute;
+    z-index: 600;
+    left: 50%;
+    top: 92px;
+    transform: translate(-50%, 0);
+
+    width: 500px;
+    height: 200px;
+    > .moving {
+      display: none;
+      position: absolute;
+      width: 94px;
+      height: 188px;
+    }
+
+    .balloonAni01 {
+      position: absolute;
+      z-index: 610;
+
+      width: 94px;
+      height: 188px;
+      > .balloon {
+        position: absolute;
+        z-index: 611;
+
+        width: 94px;
+        height: 188px;
+        background-image: #{$resourceImage};
+        background-position: -525px -1px;
+        + .lottoNumber {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          z-index: 612;
+          left: 22px;
+          top: 36px;
+
+          width: 48px;
+          height: 46px;
+          > .number01 {
+            position: relative;
+            z-index: 613;
+
+            width: 24px;
+            height: 46px;
+            background-image: #{$resourceImage};
+            background-position: -1px -963px;
+          }
+          > .number02 {
+            position: relative;
+            z-index: 613;
+
+            width: 24px;
+            height: 46px;
+            background-image: #{$resourceImage};
+            background-position: -1px -963px;
+          }
+        } //end of .lottoNumber
+      } //end of .balloon
+    } //end of .balloonAni01
+
+    .balloonAni02 {
+      position: absolute;
+      z-index: 620;
+
+      width: 94px;
+      height: 188px;
+      > .balloon {
+        position: absolute;
+        z-index: 621;
+
+        width: 94px;
+        height: 188px;
+        background-image: #{$resourceImage};
+        background-position: -525px -1px;
+        + .lottoNumber {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          z-index: 622;
+          left: 22px;
+          top: 36px;
+
+          width: 48px;
+          height: 46px;
+          > .number01 {
+            position: relative;
+            z-index: 623;
+
+            width: 24px;
+            height: 46px;
+            background-image: #{$resourceImage};
+            background-position: -1px -963px;
+          }
+          > .number02 {
+            position: relative;
+            z-index: 623;
+
+            width: 24px;
+            height: 46px;
+            background-image: #{$resourceImage};
+            background-position: -1px -963px;
+          }
+        } //end of .lottoNumber
+      } //end of .balloon
+    } //end of .balloonAni03
+
+    .balloonAni03 {
+      position: absolute;
+      z-index: 630;
+
+      width: 94px;
+      height: 188px;
+      > .balloon {
+        position: absolute;
+        z-index: 631;
+
+        width: 94px;
+        height: 188px;
+        background-image: #{$resourceImage};
+        background-position: -525px -1px;
+        + .lottoNumber {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          z-index: 632;
+          left: 22px;
+          top: 36px;
+
+          width: 48px;
+          height: 46px;
+          > .number01 {
+            position: relative;
+            z-index: 633;
+
+            width: 24px;
+            height: 46px;
+            background-image: #{$resourceImage};
+            background-position: -1px -963px;
+          }
+          > .number02 {
+            position: relative;
+            z-index: 633;
+
+            width: 24px;
+            height: 46px;
+            background-image: #{$resourceImage};
+            background-position: -1px -963px;
+          }
+        } //end of .lottoNumber
+      } //end of .balloon
+    } //end of .balloonAni03
+
+    .balloonAni04 {
+      position: absolute;
+      z-index: 640;
+
+      width: 94px;
+      height: 188px;
+      > .balloon {
+        position: absolute;
+        z-index: 641;
+
+        width: 94px;
+        height: 188px;
+        background-image: #{$resourceImage};
+        background-position: -525px -1px;
+        + .lottoNumber {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          z-index: 642;
+          left: 22px;
+          top: 36px;
+
+          width: 48px;
+          height: 46px;
+          > .number01 {
+            position: relative;
+            z-index: 643;
+
+            width: 24px;
+            height: 46px;
+            background-image: #{$resourceImage};
+            background-position: -1px -963px;
+          }
+          > .number02 {
+            position: relative;
+            z-index: 643;
+
+            width: 24px;
+            height: 46px;
+            background-image: #{$resourceImage};
+            background-position: -1px -963px;
+          }
+        } //end of .lottoNumber
+      } //end of .balloon
+    } //end of .balloonAni04
+
+    .balloonAni05 {
+      position: absolute;
+      z-index: 650;
+
+      width: 94px;
+      height: 188px;
+      > .balloon {
+        position: absolute;
+        z-index: 651;
+
+        width: 94px;
+        height: 188px;
+        background-image: #{$resourceImage};
+        background-position: -525px -1px;
+        + .lottoNumber {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          z-index: 652;
+          left: 22px;
+          top: 36px;
+
+          width: 48px;
+          height: 46px;
+          > .number01 {
+            position: relative;
+            z-index: 653;
+
+            width: 24px;
+            height: 46px;
+            background-image: #{$resourceImage};
+            background-position: -1px -963px;
+          }
+          > .number02 {
+            position: relative;
+            z-index: 653;
+
+            width: 24px;
+            height: 46px;
+            background-image: #{$resourceImage};
+            background-position: -1px -963px;
+          }
+        } //end of .lottoNumber
+      } //end of .balloon
+    } //end of .balloonAni05
+
+    .balloonAni06 {
+      position: absolute;
+      z-index: 660;
+
+      width: 94px;
+      height: 188px;
+      > .balloon {
+        position: absolute;
+        z-index: 661;
+
+        width: 94px;
+        height: 188px;
+        background-image: #{$resourceImage};
+        background-position: -525px -1px;
+        + .lottoNumber {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          z-index: 662;
+          left: 22px;
+          top: 36px;
+
+          width: 48px;
+          height: 46px;
+          > .number01 {
+            position: relative;
+            z-index: 663;
+
+            width: 24px;
+            height: 46px;
+            background-image: #{$resourceImage};
+            background-position: -1px -963px;
+          }
+          > .number02 {
+            position: relative;
+            z-index: 663;
+
+            width: 24px;
+            height: 46px;
+            background-image: #{$resourceImage};
+            background-position: -1px -963px;
+          }
+        } //end of .lottoNumber
+      } //end of .balloon
+    } //end of .balloonAni06
+  } //end of .lottoNumbers
+  // ------------------------------------풍선위치 저장소 끝---------------------------------
+
+  .balloonsAni {
+    animation: balloons 1s ease 2s alternate-reverse infinite;
+  }
+
+  .balloonMove01 {
+    animation: balloonMove01 2s ease-out 0s alternate forwards;
+  }
+  .balloonMove02 {
+    animation: balloonMove02 2s ease-out 0s alternate forwards;
+  }
+  .balloonMove03 {
+    animation: balloonMove03 2s ease-out 0s alternate forwards;
+  }
+  .balloonMove04 {
+    animation: balloonMove04 2s ease-out 0s alternate forwards;
+  }
+  .balloonMove05 {
+    animation: balloonMove05 2s ease-out 0s alternate forwards;
+  }
+  .balloonMove06 {
+    animation: balloonMove06 2s ease-out 0s alternate forwards;
+  }
+
+  > .buttons {
+    > .buttonOff {
+      position: absolute;
+      z-index: 800;
+      left: 50%;
+      top: 676px;
+      transform: translate(-50%, 0);
+
+      width: 240px;
+      height: 72px;
+      background-image: #{$resourceImage};
+      background-position: -381px -775px;
+      + .buttonNormal {
+        position: absolute;
+        z-index: 810;
+        left: 50%;
+        top: 676px;
+        transform: translate(-50%, 0);
+
+        width: 240px;
+        height: 72px;
+        background-image: #{$resourceImage};
+        background-position: -381px -849px;
+
+        &:hover {
+          background-image: #{$resourceImage};
+          background-position: -381px -923px;
+        }
+
+        > .startButton {
+          display: block;
+          position: absolute;
+          z-index: 900;
+          left: 50%;
+          top: -676px;
+          transform: translate(-50%, 0);
+
+          width: 500px;
+          height: 800px;
+        } //end of .startButton
+      } //end of .buttonNormal
+    } //end of .buttonOff
+  } //end of .buttons
+} //end of section
+
+footer {
+  position: absolute;
+  z-index: 700;
+  left: 50%;
+  top: 759px;
+  width: 500px;
+  height: 40px;
+  transform: translate(-50%, 0);
+  small {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    transform: translate(-50%, 0);
+
+    width: 150px;
+    height: 28px;
+    text-shadow: 1px 1px #fff;
+    a {
+      display: block;
+      position: absolute;
+      z-index: 1000;
+      top: 10px;
+
+      width: 150px;
+      height: 20px;
+      text-align: center;
+    }
+  }
+}
