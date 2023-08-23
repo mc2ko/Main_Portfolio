@@ -7,29 +7,42 @@ $(function () {
 
 //메뉴, 스크롤
 $(function () {
-  //   const $home = $("#home");
-  //   const $header = $home.nextAll("header");
   const $header = $(".menu");
   const $background = $(".background");
+  const $mouse = $(".mouse");
   const $aboutme = $("#aboutme");
   const $nav = $("nav");
   const $mnus = $(".gnb a");
   const $btnGnb = $(".btn-gnb");
   const $aside = $("aside");
-  const backgroundH = $background.height();
+  const $cutLine = $(
+    "#aboutme, #skill, #ability, #uxdesign, #portfolio, #contact, footer"
+  );
 
   const headerH = $background.height();
   const arrTopVal = []; //header이후에 존재하는 section의 top값
 
   $(window).on("load resize", function () {
     const backgroundH = $background.height();
-    $aboutme.css({ top: -backgroundH + 67 });
+
+    // 헤더바 높이 자동 조절
+    // $header.css({ top: backgroundH });
+
+    // 어바웃미~하단까지 위치 올리기
+    for (let c = 0; c < $cutLine.length; c++) {
+      $($cutLine[c]).css({ top: -backgroundH + 67 });
+    }
+
+    // #wrap 높이 조정
+    $("#wrap").height(-backgroundH + 67);
 
     // 스마트폰 사이즈에서 버튼메뉴 보여주기
     if (window.innerWidth > 640) {
+      // 임시테스트 중!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       $nav.show();
     } else {
       $btnGnb.removeClass("clse");
+      // 임시테스트 중!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       $nav.hide();
     }
 
@@ -40,15 +53,15 @@ $(function () {
   }); //end of load resize 이벤트
 
   $(window).on("scroll", function () {
+    const backgroundH = $background.height();
     let scrollTop = $(this).scrollTop();
 
     //헤더바 상단표시
-    if (scrollTop > $(this).height() - 490) {
+    if (scrollTop > backgroundH) {
       $header.addClass("fixed");
       $aboutme.css({
         // marginTop: headerH,
         marginTop: 0,
-        // marginTop: 66,
       });
     } else {
       $header.removeClass("fixed");
