@@ -183,6 +183,209 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+#wrap > #home > .bgmov > .background > .rightTree02_leaf02 {
+  z-index: 110;
+  left: 68.5%;
+  top: -4%;
+  width: 28%;
+  height: 50%;
+  background-image: url(./../images/background/right_tree02_leaf02.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .rightTree02_leaf02 + .rightTree02 {
+  position: absolute;
+  z-index: 111;
+  left: 72.5%;
+  top: 18%;
+  width: 22%;
+  height: 54%;
+  background-image: url(./../images/background/right_tree02.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .rightTree02_leaf02 + .rightTree02 + .rightTree02_leaf01 {
+  position: absolute;
+  z-index: 112;
+  left: 73%;
+  top: -3.5%;
+  width: 19%;
+  height: 50%;
+  background-image: url(./../images/background/right_tree02_leaf01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .bush {
+  position: absolute;
+  z-index: 120;
+  left: 83.5%;
+  top: 59.5%;
+  width: 16%;
+  height: 50%;
+  background-image: url(./../images/background/mid_bush.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .leftTree01_leaf02 {
+  position: absolute;
+  z-index: 130;
+  left: 1.5%;
+  top: 0%;
+  width: 20%;
+  height: 50%;
+  background-image: url(./../images/background/left_tree01_leaf02.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .leftTree01_leaf02 + .leftTree01 {
+  position: absolute;
+  z-index: 131;
+  left: 0%;
+  top: 16%;
+  width: 20%;
+  height: 70%;
+  background-image: url(./../images/background/left_tree01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .leftTree01_leaf02 + .leftTree01 + .leftTree01_leaf01 {
+  position: absolute;
+  z-index: 132;
+  left: -7%;
+  top: -8%;
+  width: 24%;
+  height: 50%;
+  background-image: url(./../images/background/left_tree01_leaf01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .rightTree01_leaf02 {
+  position: absolute;
+  z-index: 130;
+  left: 86%;
+  top: 5%;
+  width: 28%;
+  height: 50%;
+  background-image: url(./../images/background/right_tree01_leaf02.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .rightTree01_leaf02 + .rightTree01 {
+  position: absolute;
+  z-index: 131;
+  left: 87%;
+  top: 26%;
+  width: 22%;
+  height: 66%;
+  background-image: url(./../images/background/right_tree01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .rightTree01_leaf02 + .rightTree01 + .rightTree01_leaf01 {
+  position: absolute;
+  z-index: 132;
+  left: 88%;
+  top: 21%;
+  width: 13%;
+  height: 50%;
+  background-image: url(./../images/background/right_tree01_leaf01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .leftBush {
+  position: absolute;
+  z-index: 140;
+  left: -1%;
+  top: 70%;
+  width: 24%;
+  height: 50%;
+  background-image: url(./../images/background/left_bush.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .rightBush {
+  position: absolute;
+  z-index: 140;
+  left: 76%;
+  top: 75%;
+  width: 24%;
+  height: 50%;
+  background-image: url(./../images/background/right_bush.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .owl {
+  position: absolute;
+  z-index: 140;
+  left: 76%;
+  top: 24.5%;
+  width: 8%;
+  height: 8%;
+}
+#wrap > #home > .bgmov > .background > .owl > .owlBody {
+  position: absolute;
+  z-index: 141;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./../images/background/owl.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .owl > .owlEye {
+  position: absolute;
+  z-index: 142;
+  left: 10%;
+  top: 27%;
+  width: 20%;
+  height: 20%;
+  background-image: url(./../images/background/owl_eye_ani00.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .stickPig {
+  position: absolute;
+  z-index: 300;
+  left: 41%;
+  top: 49%;
+  width: 23%;
+  height: 23%;
+}
+#wrap > #home > .bgmov > .background > .stickPig > .stick {
+  position: absolute;
+  z-index: 301;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./../images/background/stick.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .stickPig > .pig {
+  position: absolute;
+  z-index: 302;
+  left: 18%;
+  top: -2%;
+  width: 66%;
+  height: 66%;
+  background-image: url(./../images/background/pig.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wrap > #home > .bgmov > .background > .stickPig > .fire {
+  position: absolute;
+  z-index: 303;
+  left: 30%;
+  top: 40%;
+  width: 48%;
+  height: 48%;
+  background-image: url(./../images/background/fire_Ani01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
 #wrap header {
   position: absolute;
   z-index: 1000;
