@@ -732,6 +732,10 @@ $mobile: 'screen and (max-width:640px)';
 					transform: rotate(180deg);
 					background-image: url(./../images/background/gradient.png);
 					background-size: contain;
+
+					@media #{$mobile} {
+						visibility: hidden;
+					}
 				} //end of .gradient
 				> .gradient02 {
 					position: absolute;
@@ -743,10 +747,15 @@ $mobile: 'screen and (max-width:640px)';
 					height: 30%;
 					background-image: url(./../images/background/gradient.png);
 					background-size: contain;
+
+					@media #{$mobile} {
+						visibility: hidden;
+					}
 				} //end of .gradient
 
 				> .black {
 					position: absolute;
+					visibility: hidden;
 					z-index: 500;
 					left: 0;
 					right: 0;
@@ -755,6 +764,10 @@ $mobile: 'screen and (max-width:640px)';
 					width: 100%;
 					height: 100%;
 					background-color: rgba(0, 0, 0, 0.5);
+
+					@media #{$mobile} {
+						visibility: visible;
+					}
 				} //end of .gradient
 			} //end of .background
 		} //end of .bgmov
