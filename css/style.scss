@@ -32,6 +32,7 @@ $mobile: 'screen and (max-width:640px)';
 	@media #{$mobile} {
 		min-width: 100%;
 	}
+
 	> .loading {
 		position: fixed;
 		left: 0;
@@ -61,7 +62,7 @@ $mobile: 'screen and (max-width:640px)';
 		width: 100%;
 
 		@media #{$mobile} {
-			min-width: 420px;
+			// min-width: 420px;
 		}
 
 		// CSS를 활용한 #home 크기줄이기
@@ -1164,6 +1165,10 @@ $mobile: 'screen and (max-width:640px)';
 		min-width: 1200px;
 		background-color: darken($sec-color-2, 10%);
 
+		@media #{$mobile} {
+			min-width: 100%;
+		}
+
 		> h2 {
 			padding-top: 80px;
 			margin-bottom: 72px;
@@ -1328,6 +1333,11 @@ $mobile: 'screen and (max-width:640px)';
 		min-width: 1200px;
 		background-color: lighten($pri-color-2, 30%);
 		padding-bottom: 80px;
+
+		@media #{$mobile} {
+			min-width: 100%;
+		}
+
 		> h2 {
 			padding-top: 80px;
 			margin-bottom: 72px;
@@ -1351,6 +1361,10 @@ $mobile: 'screen and (max-width:640px)';
 		position: relative;
 		min-width: 1200px;
 		padding-bottom: 100px;
+
+		@media #{$mobile} {
+			min-width: 100%;
+		}
 
 		> h2 {
 			padding-top: 80px;
@@ -1411,6 +1425,11 @@ $mobile: 'screen and (max-width:640px)';
 		min-width: 1200px;
 		background-color: lighten($sec-color-1, 30%);
 		padding-bottom: 80px;
+
+		@media #{$mobile} {
+			min-width: 100%;
+		}
+
 		> h2 {
 			padding-top: 80px;
 			margin-bottom: 72px;

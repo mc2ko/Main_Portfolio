@@ -31,11 +31,6 @@
   transition: all 0.3s ease-in-out;
   width: 100%;
 }
-@media screen and (max-width:640px) {
-  #wrap > #home {
-    min-width: 420px;
-  }
-}
 #wrap > #home:after {
   display: block;
   padding-bottom: 100%;
@@ -1052,6 +1047,11 @@
   min-width: 1200px;
   background-color: #1a1a1a;
 }
+@media screen and (max-width:640px) {
+  #wrap #ability {
+    min-width: 100%;
+  }
+}
 #wrap #ability > h2 {
   padding-top: 80px;
   margin-bottom: 72px;
@@ -1204,6 +1204,11 @@
   background-color: #cfeaf5;
   padding-bottom: 80px;
 }
+@media screen and (max-width:640px) {
+  #wrap #uxdesign {
+    min-width: 100%;
+  }
+}
 #wrap #uxdesign > h2 {
   padding-top: 80px;
   margin-bottom: 72px;
@@ -1224,6 +1229,11 @@
   position: relative;
   min-width: 1200px;
   padding-bottom: 100px;
+}
+@media screen and (max-width:640px) {
+  #wrap #portfolio {
+    min-width: 100%;
+  }
 }
 #wrap #portfolio > h2 {
   padding-top: 80px;
@@ -1277,6 +1287,11 @@
   min-width: 1200px;
   background-color: #d5efe6;
   padding-bottom: 80px;
+}
+@media screen and (max-width:640px) {
+  #wrap #contact {
+    min-width: 100%;
+  }
 }
 #wrap #contact > h2 {
   padding-top: 80px;
