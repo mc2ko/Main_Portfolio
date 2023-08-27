@@ -26,7 +26,6 @@
   transform: translate(-50%, -50%);
 }
 #wrap > #home {
-  overflow: hidden;
   position: relative;
   transition: all 0.3s ease-in-out;
   width: 100%;
@@ -47,7 +46,8 @@
 }
 @media screen and (max-width:640px) {
   #wrap > #home > .intro {
-    top: 10%;
+    z-index: 800;
+    top: 66%;
     padding-bottom: 30px;
   }
 }
@@ -59,7 +59,9 @@
 }
 @media screen and (max-width:640px) {
   #wrap > #home > .intro > h1 {
+    color: #000;
     font-size: 22px;
+    margin-bottom: 10px;
   }
 }
 #wrap > #home > .intro > h2 {
@@ -69,7 +71,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap > #home > .intro > h2 {
-    font-size: 38px;
+    font-size: 34px;
     line-height: 40px;
   }
 }
@@ -86,6 +88,11 @@
   color: #ffffff;
   line-height: 1.8;
   letter-spacing: 1px;
+}
+@media screen and (max-width:640px) {
+  #wrap > #home > .intro > p {
+    color: #000;
+  }
 }
 @media screen and (max-width:640px) {
   #wrap > #home > .intro > p > span {
@@ -136,11 +143,16 @@
   transform: translate(-50%, 0);
   animation: mousewheel 1s linear infinite;
 }
+#wrap > #home > .bgmov {
+  overflow: hidden;
+}
 #wrap > #home > .bgmov > .background {
   position: absolute;
   z-index: 100;
   width: 100%;
   height: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
   background-image: url(./../images/background/background_image.jpg);
   background-size: cover;
 }
@@ -291,7 +303,7 @@
   position: absolute;
   z-index: 140;
   left: -1%;
-  top: 70%;
+  top: 70.5%;
   width: 24%;
   height: 50%;
   background-image: url(./../images/background/left_bush.png);
@@ -644,11 +656,6 @@
   background-image: url(./../images/background/gradient.png);
   background-size: contain;
 }
-@media screen and (max-width:640px) {
-  #wrap > #home > .bgmov > .background > .gradient01 {
-    visibility: hidden;
-  }
-}
 #wrap > #home > .bgmov > .background > .gradient02 {
   position: absolute;
   z-index: 500;
@@ -659,28 +666,6 @@
   height: 30%;
   background-image: url(./../images/background/gradient.png);
   background-size: contain;
-}
-@media screen and (max-width:640px) {
-  #wrap > #home > .bgmov > .background > .gradient02 {
-    visibility: hidden;
-  }
-}
-#wrap > #home > .bgmov > .background > .black {
-  position: absolute;
-  visibility: hidden;
-  z-index: 500;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-@media screen and (max-width:640px) {
-  #wrap > #home > .bgmov > .background > .black {
-    visibility: visible;
-  }
 }
 #wrap header {
   position: absolute;
@@ -803,6 +788,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap > #aboutme {
+    padding-top: 140px;
     min-width: initial;
   }
 }
@@ -846,7 +832,7 @@
   width: 360px;
   margin: 0 auto;
   border: 1px solid #d5d5d5;
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px;
 }
 @media screen and (max-width:640px) {
   #wrap > #aboutme > .container > .profile > div {
@@ -861,7 +847,6 @@
   bottom: -3px;
   width: 100%;
   height: 20px;
-  border-bottom: 1px solid #d5d5d5;
   content: "";
 }
 #wrap > #aboutme > .container > .profile > div > .myphoto {
@@ -871,7 +856,11 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-#wrap > #aboutme > .container > .profile > div > .myphoto > img {
+#wrap > #aboutme > .container > .profile > div > .myphoto > .radius {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+#wrap > #aboutme > .container > .profile > div > .myphoto > .radius > img {
   display: block;
   position: relative;
   left: -22%;
@@ -1202,8 +1191,13 @@
 }
 #wrap #ability > .resume > div > .iam > a {
   display: block;
+  position: relative;
+  left: 50%;
+  top: 0%;
+  bottom: 80px;
   width: 260px;
   height: 40px;
+  transform: translate(-50%, 0);
   color: #ffffff;
   line-height: 40px;
   text-align: center;
