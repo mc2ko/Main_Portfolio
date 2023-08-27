@@ -1,5 +1,6 @@
 #wrap {
   position: relative;
+  min-width: 1200px;
 }
 @media screen and (max-width:640px) {
   #wrap {
@@ -26,9 +27,15 @@
   transform: translate(-50%, -50%);
 }
 #wrap > #home {
+  overflow: hidden;
   position: relative;
   transition: all 0.3s ease-in-out;
   width: 100%;
+}
+@media screen and (max-width:640px) {
+  #wrap > #home {
+    overflow: initial;
+  }
 }
 #wrap > #home:after {
   display: block;
@@ -143,10 +150,8 @@
   transform: translate(-50%, 0);
   animation: mousewheel 1s linear infinite;
 }
-#wrap > #home > .bgmov {
-  overflow: hidden;
-}
 #wrap > #home > .bgmov > .background {
+  overflow: hidden;
   position: absolute;
   z-index: 100;
   width: 100%;

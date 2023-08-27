@@ -27,7 +27,7 @@ $mobile: "screen and (max-width:640px)";
 
 #wrap {
   position: relative;
-  //   min-width: 1200px;
+  min-width: 1200px;
 
   @media #{$mobile} {
     min-width: 100%;
@@ -56,13 +56,13 @@ $mobile: "screen and (max-width:640px)";
   } //end of loading
 
   > #home {
-    // overflow: hidden;
+    overflow: hidden;
     position: relative;
     transition: all 0.3s ease-in-out;
     width: 100%;
 
     @media #{$mobile} {
-      // min-width: 420px;
+      overflow: initial;
     }
 
     // CSS를 활용한 #home 크기줄이기
@@ -184,8 +184,8 @@ $mobile: "screen and (max-width:640px)";
     } //end of .mouse
 
     > .bgmov {
-      overflow: hidden;
       > .background {
+        overflow: hidden;
         position: absolute;
         z-index: 100;
         width: 100%;
