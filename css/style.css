@@ -495,7 +495,7 @@
   background-image: url(./../images/background/character/apeach_leftH_Ani03.png);
   background-size: contain;
   background-repeat: no-repeat;
-  animation: apeachHand_ani 2.5s ease 0s normal infinite forwards;
+  animation: apeachHand_ani 2s ease 0s normal infinite forwards;
 }
 @keyframes apeachHand_ani {
   0% {
@@ -538,7 +538,7 @@
   background-image: url(./../images/background/character/apeach_weapon02.png);
   background-size: contain;
   background-repeat: no-repeat;
-  animation: apeachWeapon_ani 2.5s ease 0s normal infinite forwards;
+  animation: apeachWeapon_ani 2s ease-in 0s normal infinite forwards;
 }
 @keyframes apeachWeapon_ani {
   0% {
