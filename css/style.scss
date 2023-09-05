@@ -183,6 +183,7 @@ $mobile: 'screen and (max-width:640px)';
 			}
 		} //end of .mouse
 
+		// 메인배경 애니메이션
 		> .bgmov {
 			> .background {
 				overflow: hidden;
@@ -565,14 +566,17 @@ $mobile: 'screen and (max-width:640px)';
 							13% {
 								background-image: url(./../images/background/character/apeach_leftH_Ani03.png);
 							}
-							97% {
+							77% {
 								background-image: url(./../images/background/character/apeach_leftH_Ani03.png);
 							}
-							98% {
+							78% {
 								background-image: url(./../images/background/character/apeach_leftH_Ani02.png);
 							}
-							99% {
+							79% {
 								background-image: url(./../images/background/character/apeach_leftH_Ani02.png);
+							}
+							80% {
+								background-image: url(./../images/background/character/apeach_leftH_Ani01.png);
 							}
 							100% {
 								background-image: url(./../images/background/character/apeach_leftH_Ani01.png);
@@ -615,30 +619,35 @@ $mobile: 'screen and (max-width:640px)';
 								rotate: 0deg;
 							}
 
-							50% {
+							40% {
 								left: 27%;
 								top: -42%;
 								rotate: -1220deg;
 							}
-							97% {
+							77% {
 								left: 28.5%;
 								top: 46%;
 								rotate: -2510deg;
 							}
-							98% {
+							78% {
 								left: 28%;
 								top: 46%;
 								rotate: -2510deg;
 							}
-							99% {
+							79% {
 								left: 27.5%;
 								top: 48%;
 								rotate: -2520deg;
 							}
+							80% {
+								left: 27.5%;
+								top: 48%;
+								rotate: -2510deg;
+							}
 							100% {
 								left: 27.5%;
 								top: 48%;
-								rotate: -2520deg;
+								rotate: -2510deg;
 							}
 						}
 
