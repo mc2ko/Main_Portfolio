@@ -355,6 +355,107 @@
   background-image: url(./../images/background/owl_eye_ani00.png);
   background-size: contain;
   background-repeat: no-repeat;
+  animation: owlEye_ani 10s ease 0s normal infinite forwards;
+}
+@keyframes owlEye_ani {
+  0% {
+    background-image: url(./../images/background/owl_eye_ani00.png);
+  }
+  26% {
+    background-image: url(./../images/background/owl_eye_ani00.png);
+  }
+  27% {
+    background-image: url(./../images/background/owl_eye_ani01.png);
+  }
+  28% {
+    background-image: url(./../images/background/owl_eye_ani01.png);
+  }
+  29% {
+    background-image: url(./../images/background/owl_eye_ani02.png);
+  }
+  30% {
+    background-image: url(./../images/background/owl_eye_ani02.png);
+  }
+  31% {
+    background-image: url(./../images/background/owl_eye_ani01.png);
+  }
+  32% {
+    background-image: url(./../images/background/owl_eye_ani01.png);
+  }
+  33% {
+    background-image: url(./../images/background/owl_eye_ani00.png);
+  }
+  44% {
+    background-image: url(./../images/background/owl_eye_ani00.png);
+    left: 10%;
+    top: 27%;
+  }
+  49% {
+    background-image: url(./../images/background/owl_eye_ani00.png);
+    left: 8%;
+    top: 28%;
+  }
+  59% {
+    background-image: url(./../images/background/owl_eye_ani00.png);
+  }
+  60% {
+    background-image: url(./../images/background/owl_eye_ani01.png);
+  }
+  61% {
+    background-image: url(./../images/background/owl_eye_ani01.png);
+  }
+  62% {
+    background-image: url(./../images/background/owl_eye_ani02.png);
+  }
+  63% {
+    background-image: url(./../images/background/owl_eye_ani02.png);
+  }
+  64% {
+    background-image: url(./../images/background/owl_eye_ani01.png);
+  }
+  65% {
+    background-image: url(./../images/background/owl_eye_ani01.png);
+  }
+  66% {
+    background-image: url(./../images/background/owl_eye_ani00.png);
+  }
+  76% {
+    background-image: url(./../images/background/owl_eye_ani00.png);
+    left: 8%;
+    top: 28%;
+  }
+  81% {
+    background-image: url(./../images/background/owl_eye_ani00.png);
+    left: 10%;
+    top: 27%;
+  }
+  92% {
+    background-image: url(./../images/background/owl_eye_ani00.png);
+  }
+  93% {
+    background-image: url(./../images/background/owl_eye_ani01.png);
+  }
+  94% {
+    background-image: url(./../images/background/owl_eye_ani01.png);
+  }
+  95% {
+    background-image: url(./../images/background/owl_eye_ani02.png);
+  }
+  96% {
+    background-image: url(./../images/background/owl_eye_ani02.png);
+  }
+  97% {
+    background-image: url(./../images/background/owl_eye_ani01.png);
+  }
+  98% {
+    background-image: url(./../images/background/owl_eye_ani01.png);
+  }
+  99% {
+    background-image: url(./../images/background/owl_eye_ani00.png);
+  }
+  100% {
+    background-image: url(./../images/background/owl_eye_ani00.png);
+  }
 }
 #wrap > #home > .bgmov > .background > .stickPig {
   position: absolute;
@@ -740,9 +841,39 @@
   top: 0%;
   width: 100%;
   height: 100%;
-  background-image: url(./../images/background/character/jay-G_body.png);
+  background-image: url(./../images/background/character/jay-G_body_ani01.png);
   background-size: contain;
   background-repeat: no-repeat;
+  animation: jay-G_ani 4s ease 0.5s normal infinite forwards;
+}
+@keyframes jay-G_ani {
+  0% {
+    background-image: url(./../images/background/character/jay-G_body_ani01.png);
+  }
+  70% {
+    background-image: url(./../images/background/character/jay-G_body_ani01.png);
+  }
+  71% {
+    background-image: url(./../images/background/character/jay-G_body_ani02.png);
+  }
+  72% {
+    background-image: url(./../images/background/character/jay-G_body_ani02.png);
+  }
+  73% {
+    background-image: url(./../images/background/character/jay-G_body_ani03.png);
+  }
+  97% {
+    background-image: url(./../images/background/character/jay-G_body_ani03.png);
+  }
+  98% {
+    background-image: url(./../images/background/character/jay-G_body_ani02.png);
+  }
+  99% {
+    background-image: url(./../images/background/character/jay-G_body_ani02.png);
+  }
+  100% {
+    background-image: url(./../images/background/character/jay-G_body_ani01.png);
+  }
 }
 #wrap > #home > .bgmov > .background > .frodo {
   position: absolute;
@@ -770,9 +901,39 @@
   top: 0%;
   width: 100%;
   height: 100%;
-  background-image: url(./../images/background/character/frodo_body.png);
+  background-image: url(./../images/background/character/frodo_body_ani01.png);
   background-size: contain;
   background-repeat: no-repeat;
+  animation: frodo_ani 4s ease 0.5s normal infinite forwards;
+}
+@keyframes frodo_ani {
+  0% {
+    background-image: url(./../images/background/character/frodo_body_ani01.png);
+  }
+  70% {
+    background-image: url(./../images/background/character/frodo_body_ani01.png);
+  }
+  71% {
+    background-image: url(./../images/background/character/frodo_body_ani02.png);
+  }
+  72% {
+    background-image: url(./../images/background/character/frodo_body_ani02.png);
+  }
+  73% {
+    background-image: url(./../images/background/character/frodo_body_ani03.png);
+  }
+  97% {
+    background-image: url(./../images/background/character/frodo_body_ani03.png);
+  }
+  98% {
+    background-image: url(./../images/background/character/frodo_body_ani02.png);
+  }
+  99% {
+    background-image: url(./../images/background/character/frodo_body_ani02.png);
+  }
+  100% {
+    background-image: url(./../images/background/character/frodo_body_ani01.png);
+  }
 }
 #wrap > #home > .bgmov > .background > .tube {
   position: absolute;
@@ -960,18 +1121,18 @@
 #wrap header > .container > nav > .gnb > li:hover > a, #wrap header > .container > nav > .gnb > li.on > a {
   color: #52b3d9;
 }
-#wrap > #aboutme {
+#wrap #aboutme {
   position: relative;
   min-width: 1200px;
   z-index: 200;
 }
 @media screen and (max-width:640px) {
-  #wrap > #aboutme {
+  #wrap #aboutme {
     padding-top: 140px;
     min-width: initial;
   }
 }
-#wrap > #aboutme > h2 {
+#wrap #aboutme > h2 {
   padding-top: 80px;
   margin-bottom: 72px;
   color: #2c3e50;
@@ -979,7 +1140,7 @@
   line-height: 50px;
   text-align: center;
 }
-#wrap > #aboutme > h2:after {
+#wrap #aboutme > h2:after {
   display: block;
   width: 138px;
   height: 15px;
@@ -987,26 +1148,26 @@
   background-image: url(./../images/deco_tit.png);
   content: "";
 }
-#wrap > #aboutme > .container {
+#wrap #aboutme > .container {
   display: flex;
   flex-direction: row-reverse;
   padding-bottom: 30px;
 }
 @media screen and (max-width:640px) {
-  #wrap > #aboutme > .container {
+  #wrap #aboutme > .container {
     display: block;
     padding-bottom: 0;
   }
 }
-#wrap > #aboutme > .container > .profile {
+#wrap #aboutme > .container > .profile {
   width: 33.33333%;
 }
 @media screen and (max-width:640px) {
-  #wrap > #aboutme > .container > .profile {
+  #wrap #aboutme > .container > .profile {
     width: 100%;
   }
 }
-#wrap > #aboutme > .container > .profile > div {
+#wrap #aboutme > .container > .profile > div {
   position: relative;
   width: 360px;
   margin: 0 auto;
@@ -1014,12 +1175,12 @@
   border-radius: 10px;
 }
 @media screen and (max-width:640px) {
-  #wrap > #aboutme > .container > .profile > div {
+  #wrap #aboutme > .container > .profile > div {
     width: 95%;
     margin-top: 50px;
   }
 }
-#wrap > #aboutme > .container > .profile > div:after {
+#wrap #aboutme > .container > .profile > div:after {
   display: block;
   position: absolute;
   left: 0;
@@ -1028,18 +1189,18 @@
   height: 20px;
   content: "";
 }
-#wrap > #aboutme > .container > .profile > div > .myphoto {
+#wrap #aboutme > .container > .profile > div > .myphoto {
   overflow: hidden;
   background-image: url(./../images/aboutme/photo-frame.png);
   background-position: 0 bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
-#wrap > #aboutme > .container > .profile > div > .myphoto > .radius {
+#wrap #aboutme > .container > .profile > div > .myphoto > .radius {
   overflow: hidden;
   border-radius: 10px 10px 0 0;
 }
-#wrap > #aboutme > .container > .profile > div > .myphoto > .radius > img {
+#wrap #aboutme > .container > .profile > div > .myphoto > .radius > img {
   display: block;
   position: relative;
   left: -22%;
@@ -1048,87 +1209,87 @@
   width: 160%;
   margin: -100px 0 0 -30px;
 }
-#wrap > #aboutme > .container > .profile > div > ol {
+#wrap #aboutme > .container > .profile > div > ol {
   padding: 0 20px;
 }
-#wrap > #aboutme > .container > .profile > div > ol > li {
+#wrap #aboutme > .container > .profile > div > ol > li {
   height: 45px;
   font-weight: 300;
   font-size: 16px;
   line-height: 45px;
   border-bottom: 1px solid #eeeeee;
 }
-#wrap > #aboutme > .container > .profile > div > ol > li:last-child {
+#wrap #aboutme > .container > .profile > div > ol > li:last-child {
   border-bottom-width: 0;
 }
-#wrap > #aboutme > .container > .biography {
+#wrap #aboutme > .container > .biography {
   width: 66.66666%;
 }
 @media screen and (max-width:640px) {
-  #wrap > #aboutme > .container > .biography {
+  #wrap #aboutme > .container > .biography {
     width: 100%;
     margin-top: 48px;
   }
 }
-#wrap > #aboutme > .container > .biography > .detail {
+#wrap #aboutme > .container > .biography > .detail {
   margin-bottom: 64px;
   padding-left: 10%;
 }
 @media screen and (max-width:640px) {
-  #wrap > #aboutme > .container > .biography > .detail {
+  #wrap #aboutme > .container > .biography > .detail {
     padding: 0 5%;
   }
 }
-#wrap > #aboutme > .container > .biography > .detail > h3 {
+#wrap #aboutme > .container > .biography > .detail > h3 {
   margin-bottom: 30px;
   font-weight: 500;
   font-size: 32px;
 }
-#wrap > #aboutme > .container > .biography > .detail > p {
+#wrap #aboutme > .container > .biography > .detail > p {
   margin-bottom: 20px;
   font-weight: 300;
   font-size: 14px;
 }
 @media screen and (max-width:640px) {
-  #wrap > #aboutme > .container > .biography > .detail > p {
+  #wrap #aboutme > .container > .biography > .detail > p {
     line-height: 1.4;
   }
-  #wrap > #aboutme > .container > .biography > .detail > p > br {
+  #wrap #aboutme > .container > .biography > .detail > p > br {
     display: none;
   }
 }
-#wrap > #aboutme > .container > .biography > .detail > p > mark {
+#wrap #aboutme > .container > .biography > .detail > p > mark {
   background-color: #fcf8e3;
 }
-#wrap > #aboutme > .container > .biography > .detail > .ican {
+#wrap #aboutme > .container > .biography > .detail > .ican {
   margin-top: 80px;
 }
 @media screen and (max-width:640px) {
-  #wrap > #aboutme > .container > .biography > .detail > .ican {
+  #wrap #aboutme > .container > .biography > .detail > .ican {
     margin-top: 50px;
   }
 }
-#wrap > #aboutme > .container > .biography > .detail > .ican > li {
+#wrap #aboutme > .container > .biography > .detail > .ican > li {
   font-size: 16px;
   line-height: 40px;
 }
-#wrap > #aboutme > .container > .biography > .detail > .ican > li:before {
+#wrap #aboutme > .container > .biography > .detail > .ican > li:before {
   margin-right: 10px;
   color: #52b3d9;
   font-family: "Font Awesome 5 Free";
   content: "\f14a";
 }
-#wrap > #skill {
+#wrap #skill {
   position: relative;
   min-width: 1200px;
   background-color: #d5efe6;
 }
 @media screen and (max-width:640px) {
-  #wrap > #skill {
+  #wrap #skill {
     min-width: initial;
   }
 }
-#wrap > #skill > h2 {
+#wrap #skill > h2 {
   padding-top: 80px;
   margin-bottom: 72px;
   color: #2c3e50;
@@ -1136,7 +1297,7 @@
   line-height: 50px;
   text-align: center;
 }
-#wrap > #skill > h2:after {
+#wrap #skill > h2:after {
   display: block;
   width: 138px;
   height: 15px;
@@ -1144,34 +1305,34 @@
   background-image: url(./../images/deco_tit.png);
   content: "";
 }
-#wrap > #skill > article:last-child {
+#wrap #skill > article:last-child {
   padding-bottom: 80px;
 }
-#wrap > #skill > article.skill-1 {
+#wrap #skill > article.skill-1 {
   margin-bottom: 120px;
 }
-#wrap > #skill > article > h3 {
+#wrap #skill > article > h3 {
   margin-bottom: 80px;
   font-weight: 400;
   font-size: 32px;
   line-height: 48px;
   text-align: center;
 }
-#wrap > #skill > article > h3 > span {
+#wrap #skill > article > h3 > span {
   display: block;
 }
-#wrap > #skill > article > ol {
+#wrap #skill > article > ol {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width:640px) {
-  #wrap > #skill > article > ol {
+  #wrap #skill > article > ol {
     display: block;
     width: 90%;
     margin: 0 auto;
   }
 }
-#wrap > #skill > article > ol > li {
+#wrap #skill > article > ol > li {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1181,48 +1342,48 @@
   box-sizing: border-box;
 }
 @media screen and (max-width:640px) {
-  #wrap > #skill > article > ol > li {
+  #wrap #skill > article > ol > li {
     width: 100%;
   }
-  #wrap > #skill > article > ol > li:first-child {
+  #wrap #skill > article > ol > li:first-child {
     margin-bottom: 40px;
   }
 }
-#wrap > #skill > article > ol > li > h4 {
+#wrap #skill > article > ol > li > h4 {
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 24px;
 }
-#wrap > #skill > article > ol > li > p {
+#wrap #skill > article > ol > li > p {
   line-height: 1.6;
 }
-#wrap > #skill > article.skill-1 li:first-child {
+#wrap #skill > article.skill-1 li:first-child {
   padding-left: 360px;
   background-image: url(./../images/skill/skill01.png);
   background-position: 180px 0;
 }
 @media screen and (max-width:640px) {
-  #wrap > #skill > article.skill-1 li:first-child {
+  #wrap #skill > article.skill-1 li:first-child {
     padding-left: 180px;
     background-position: 0 0;
   }
 }
-#wrap > #skill > article.skill-1 li:last-child {
+#wrap #skill > article.skill-1 li:last-child {
   padding-left: 180px;
   background-image: url(./../images/skill/skill02.png);
 }
-#wrap > #skill > article.skill-2 li:first-child {
+#wrap #skill > article.skill-2 li:first-child {
   padding-left: 360px;
   background-image: url(./../images/skill/skill03.png);
   background-position: 180px 0;
 }
 @media screen and (max-width:640px) {
-  #wrap > #skill > article.skill-2 li:first-child {
+  #wrap #skill > article.skill-2 li:first-child {
     padding-left: 180px;
     background-position: 0 0;
   }
 }
-#wrap > #skill > article.skill-2 li:last-child {
+#wrap #skill > article.skill-2 li:last-child {
   padding-left: 180px;
   background-image: url(./../images/skill/skill04.png);
 }
