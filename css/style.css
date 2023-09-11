@@ -35,6 +35,7 @@
 @media screen and (max-width:640px) {
   #wrap > #home {
     overflow: initial;
+    rotate: 90deg;
   }
 }
 #wrap > #home:after {
