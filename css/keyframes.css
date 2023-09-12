@@ -1,587 +1,605 @@
 @charset "utf-8";
 
+@keyframes backLight_ani {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0.92;
+	}
+	50% {
+		opacity: 0.86;
+	}
+	75% {
+		opacity: 0.92;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 @keyframes fire_ani {
-  0% {
-    background-image: url(./../images/background/fire_Ani01.png);
-  }
+	0% {
+		background-image: url(./../images/background/fire_Ani01.png);
+	}
 
-  14% {
-    background-image: url(./../images/background/fire_Ani02.png);
-  }
+	14% {
+		background-image: url(./../images/background/fire_Ani02.png);
+	}
 
-  29% {
-    background-image: url(./../images/background/fire_Ani03.png);
-  }
+	29% {
+		background-image: url(./../images/background/fire_Ani03.png);
+	}
 
-  43% {
-    background-image: url(./../images/background/fire_Ani04.png);
-  }
+	43% {
+		background-image: url(./../images/background/fire_Ani04.png);
+	}
 
-  57% {
-    background-image: url(./../images/background/fire_Ani05.png);
-  }
+	57% {
+		background-image: url(./../images/background/fire_Ani05.png);
+	}
 
-  71% {
-    background-image: url(./../images/background/fire_Ani06.png);
-  }
+	71% {
+		background-image: url(./../images/background/fire_Ani06.png);
+	}
 
-  85% {
-    background-image: url(./../images/background/fire_Ani07.png);
-  }
+	85% {
+		background-image: url(./../images/background/fire_Ani07.png);
+	}
 
-  100% {
-    background-image: url(./../images/background/fire_Ani08.png);
-  }
+	100% {
+		background-image: url(./../images/background/fire_Ani08.png);
+	}
 }
 
 @keyframes owlEye_ani {
-  0% {
-    background-image: url(./../images/background/owl_eye_ani00.png);
-  }
-  26% {
-    background-image: url(./../images/background/owl_eye_ani00.png);
-  }
-  27% {
-    background-image: url(./../images/background/owl_eye_ani01.png);
-  }
-  28% {
-    background-image: url(./../images/background/owl_eye_ani01.png);
-  }
-  29% {
-    background-image: url(./../images/background/owl_eye_ani02.png);
-  }
-  30% {
-    background-image: url(./../images/background/owl_eye_ani02.png);
-  }
-  31% {
-    background-image: url(./../images/background/owl_eye_ani01.png);
-  }
-  32% {
-    background-image: url(./../images/background/owl_eye_ani01.png);
-  }
-  33% {
-    background-image: url(./../images/background/owl_eye_ani00.png);
-  }
-  44% {
-    background-image: url(./../images/background/owl_eye_ani00.png);
-    left: 10%;
-    top: 27%;
-  }
-  49% {
-    background-image: url(./../images/background/owl_eye_ani00.png);
-    left: 8%;
-    top: 29%;
-  }
-  59% {
-    background-image: url(./../images/background/owl_eye_ani00.png);
-  }
-  60% {
-    background-image: url(./../images/background/owl_eye_ani01.png);
-  }
-  61% {
-    background-image: url(./../images/background/owl_eye_ani01.png);
-  }
-  62% {
-    background-image: url(./../images/background/owl_eye_ani02.png);
-  }
-  63% {
-    background-image: url(./../images/background/owl_eye_ani02.png);
-  }
-  64% {
-    background-image: url(./../images/background/owl_eye_ani01.png);
-  }
-  65% {
-    background-image: url(./../images/background/owl_eye_ani01.png);
-  }
-  66% {
-    background-image: url(./../images/background/owl_eye_ani00.png);
-  }
-  76% {
-    background-image: url(./../images/background/owl_eye_ani00.png);
-    left: 8%;
-    top: 29%;
-  }
-  81% {
-    background-image: url(./../images/background/owl_eye_ani00.png);
-    left: 10%;
-    top: 27%;
-  }
-  92% {
-    background-image: url(./../images/background/owl_eye_ani00.png);
-  }
-  93% {
-    background-image: url(./../images/background/owl_eye_ani01.png);
-  }
-  94% {
-    background-image: url(./../images/background/owl_eye_ani01.png);
-  }
-  95% {
-    background-image: url(./../images/background/owl_eye_ani02.png);
-  }
-  96% {
-    background-image: url(./../images/background/owl_eye_ani02.png);
-  }
-  97% {
-    background-image: url(./../images/background/owl_eye_ani01.png);
-  }
-  98% {
-    background-image: url(./../images/background/owl_eye_ani01.png);
-  }
-  99% {
-    background-image: url(./../images/background/owl_eye_ani00.png);
-  }
+	0% {
+		background-image: url(./../images/background/owl_eye_ani00.png);
+	}
+	26% {
+		background-image: url(./../images/background/owl_eye_ani00.png);
+	}
+	27% {
+		background-image: url(./../images/background/owl_eye_ani01.png);
+	}
+	28% {
+		background-image: url(./../images/background/owl_eye_ani01.png);
+	}
+	29% {
+		background-image: url(./../images/background/owl_eye_ani02.png);
+	}
+	30% {
+		background-image: url(./../images/background/owl_eye_ani02.png);
+	}
+	31% {
+		background-image: url(./../images/background/owl_eye_ani01.png);
+	}
+	32% {
+		background-image: url(./../images/background/owl_eye_ani01.png);
+	}
+	33% {
+		background-image: url(./../images/background/owl_eye_ani00.png);
+	}
+	44% {
+		background-image: url(./../images/background/owl_eye_ani00.png);
+		left: 10%;
+		top: 27%;
+	}
+	49% {
+		background-image: url(./../images/background/owl_eye_ani00.png);
+		left: 8%;
+		top: 29%;
+	}
+	59% {
+		background-image: url(./../images/background/owl_eye_ani00.png);
+	}
+	60% {
+		background-image: url(./../images/background/owl_eye_ani01.png);
+	}
+	61% {
+		background-image: url(./../images/background/owl_eye_ani01.png);
+	}
+	62% {
+		background-image: url(./../images/background/owl_eye_ani02.png);
+	}
+	63% {
+		background-image: url(./../images/background/owl_eye_ani02.png);
+	}
+	64% {
+		background-image: url(./../images/background/owl_eye_ani01.png);
+	}
+	65% {
+		background-image: url(./../images/background/owl_eye_ani01.png);
+	}
+	66% {
+		background-image: url(./../images/background/owl_eye_ani00.png);
+	}
+	76% {
+		background-image: url(./../images/background/owl_eye_ani00.png);
+		left: 8%;
+		top: 29%;
+	}
+	81% {
+		background-image: url(./../images/background/owl_eye_ani00.png);
+		left: 10%;
+		top: 27%;
+	}
+	92% {
+		background-image: url(./../images/background/owl_eye_ani00.png);
+	}
+	93% {
+		background-image: url(./../images/background/owl_eye_ani01.png);
+	}
+	94% {
+		background-image: url(./../images/background/owl_eye_ani01.png);
+	}
+	95% {
+		background-image: url(./../images/background/owl_eye_ani02.png);
+	}
+	96% {
+		background-image: url(./../images/background/owl_eye_ani02.png);
+	}
+	97% {
+		background-image: url(./../images/background/owl_eye_ani01.png);
+	}
+	98% {
+		background-image: url(./../images/background/owl_eye_ani01.png);
+	}
+	99% {
+		background-image: url(./../images/background/owl_eye_ani00.png);
+	}
 
-  100% {
-    background-image: url(./../images/background/owl_eye_ani00.png);
-  }
+	100% {
+		background-image: url(./../images/background/owl_eye_ani00.png);
+	}
 }
 
 @keyframes ryan_ani {
-  0% {
-    background-image: url(./../images/background/character/ryan_body_ani01.png);
-  }
-  70% {
-    background-image: url(./../images/background/character/ryan_body_ani01.png);
-  }
-  71% {
-    background-image: url(./../images/background/character/ryan_body_ani02.png);
-  }
-  72% {
-    background-image: url(./../images/background/character/ryan_body_ani02.png);
-  }
-  73% {
-    background-image: url(./../images/background/character/ryan_body_ani03.png);
-  }
-  97% {
-    background-image: url(./../images/background/character/ryan_body_ani03.png);
-  }
-  98% {
-    background-image: url(./../images/background/character/ryan_body_ani02.png);
-  }
-  99% {
-    background-image: url(./../images/background/character/ryan_body_ani02.png);
-  }
-  100% {
-    background-image: url(./../images/background/character/ryan_body_ani01.png);
-  }
+	0% {
+		background-image: url(./../images/background/character/ryan_body_ani01.png);
+	}
+	70% {
+		background-image: url(./../images/background/character/ryan_body_ani01.png);
+	}
+	71% {
+		background-image: url(./../images/background/character/ryan_body_ani02.png);
+	}
+	72% {
+		background-image: url(./../images/background/character/ryan_body_ani02.png);
+	}
+	73% {
+		background-image: url(./../images/background/character/ryan_body_ani03.png);
+	}
+	97% {
+		background-image: url(./../images/background/character/ryan_body_ani03.png);
+	}
+	98% {
+		background-image: url(./../images/background/character/ryan_body_ani02.png);
+	}
+	99% {
+		background-image: url(./../images/background/character/ryan_body_ani02.png);
+	}
+	100% {
+		background-image: url(./../images/background/character/ryan_body_ani01.png);
+	}
 }
 
 @keyframes muzi_ani {
-  0% {
-    background-image: url(./../images/background/character/muzi_body_ani01.png);
-  }
-  70% {
-    background-image: url(./../images/background/character/muzi_body_ani01.png);
-  }
-  71% {
-    background-image: url(./../images/background/character/muzi_body_ani02.png);
-  }
-  72% {
-    background-image: url(./../images/background/character/muzi_body_ani02.png);
-  }
-  73% {
-    background-image: url(./../images/background/character/muzi_body_ani03.png);
-  }
-  97% {
-    background-image: url(./../images/background/character/muzi_body_ani03.png);
-  }
-  98% {
-    background-image: url(./../images/background/character/muzi_body_ani02.png);
-  }
-  99% {
-    background-image: url(./../images/background/character/muzi_body_ani02.png);
-  }
-  100% {
-    background-image: url(./../images/background/character/muzi_body_ani01.png);
-  }
+	0% {
+		background-image: url(./../images/background/character/muzi_body_ani01.png);
+	}
+	70% {
+		background-image: url(./../images/background/character/muzi_body_ani01.png);
+	}
+	71% {
+		background-image: url(./../images/background/character/muzi_body_ani02.png);
+	}
+	72% {
+		background-image: url(./../images/background/character/muzi_body_ani02.png);
+	}
+	73% {
+		background-image: url(./../images/background/character/muzi_body_ani03.png);
+	}
+	97% {
+		background-image: url(./../images/background/character/muzi_body_ani03.png);
+	}
+	98% {
+		background-image: url(./../images/background/character/muzi_body_ani02.png);
+	}
+	99% {
+		background-image: url(./../images/background/character/muzi_body_ani02.png);
+	}
+	100% {
+		background-image: url(./../images/background/character/muzi_body_ani01.png);
+	}
 }
 
 @keyframes apeachHand_ani {
-  0% {
-    background-image: url(./../images/background/character/apeach_leftH_Ani01.png);
-  }
-  10% {
-    background-image: url(./../images/background/character/apeach_leftH_Ani01.png);
-  }
-  11% {
-    background-image: url(./../images/background/character/apeach_leftH_Ani02.png);
-  }
-  12% {
-    background-image: url(./../images/background/character/apeach_leftH_Ani02.png);
-  }
-  13% {
-    background-image: url(./../images/background/character/apeach_leftH_Ani03.png);
-  }
-  77% {
-    background-image: url(./../images/background/character/apeach_leftH_Ani03.png);
-  }
-  78% {
-    background-image: url(./../images/background/character/apeach_leftH_Ani02.png);
-  }
-  79% {
-    background-image: url(./../images/background/character/apeach_leftH_Ani02.png);
-  }
-  80% {
-    background-image: url(./../images/background/character/apeach_leftH_Ani01.png);
-  }
-  100% {
-    background-image: url(./../images/background/character/apeach_leftH_Ani01.png);
-  }
+	0% {
+		background-image: url(./../images/background/character/apeach_leftH_Ani01.png);
+	}
+	10% {
+		background-image: url(./../images/background/character/apeach_leftH_Ani01.png);
+	}
+	11% {
+		background-image: url(./../images/background/character/apeach_leftH_Ani02.png);
+	}
+	12% {
+		background-image: url(./../images/background/character/apeach_leftH_Ani02.png);
+	}
+	13% {
+		background-image: url(./../images/background/character/apeach_leftH_Ani03.png);
+	}
+	77% {
+		background-image: url(./../images/background/character/apeach_leftH_Ani03.png);
+	}
+	78% {
+		background-image: url(./../images/background/character/apeach_leftH_Ani02.png);
+	}
+	79% {
+		background-image: url(./../images/background/character/apeach_leftH_Ani02.png);
+	}
+	80% {
+		background-image: url(./../images/background/character/apeach_leftH_Ani01.png);
+	}
+	100% {
+		background-image: url(./../images/background/character/apeach_leftH_Ani01.png);
+	}
 }
 
 @keyframes apeachWeapon_ani {
-  0% {
-    left: 27.5%;
-    top: 48%;
-    rotate: 10deg;
-  }
-  10% {
-    left: 27.5%;
-    top: 48%;
-    rotate: 10deg;
-  }
-  12% {
-    left: 28%;
-    top: 46%;
-    rotate: 0deg;
-  }
-  13% {
-    left: 28%;
-    top: 46%;
-    rotate: 0deg;
-  }
+	0% {
+		left: 27.5%;
+		top: 48%;
+		rotate: 10deg;
+	}
+	10% {
+		left: 27.5%;
+		top: 48%;
+		rotate: 10deg;
+	}
+	12% {
+		left: 28%;
+		top: 46%;
+		rotate: 0deg;
+	}
+	13% {
+		left: 28%;
+		top: 46%;
+		rotate: 0deg;
+	}
 
-  40% {
-    left: 27%;
-    top: -42%;
-    rotate: -1220deg;
-  }
-  77% {
-    left: 28.5%;
-    top: 46%;
-    rotate: -2510deg;
-  }
-  78% {
-    left: 28%;
-    top: 46%;
-    rotate: -2510deg;
-  }
-  79% {
-    left: 27.5%;
-    top: 48%;
-    rotate: -2520deg;
-  }
-  80% {
-    left: 27.5%;
-    top: 48%;
-    rotate: -2510deg;
-  }
-  100% {
-    left: 27.5%;
-    top: 48%;
-    rotate: -2510deg;
-  }
+	40% {
+		left: 27%;
+		top: -42%;
+		rotate: -1220deg;
+	}
+	77% {
+		left: 28.5%;
+		top: 46%;
+		rotate: -2510deg;
+	}
+	78% {
+		left: 28%;
+		top: 46%;
+		rotate: -2510deg;
+	}
+	79% {
+		left: 27.5%;
+		top: 48%;
+		rotate: -2520deg;
+	}
+	80% {
+		left: 27.5%;
+		top: 48%;
+		rotate: -2510deg;
+	}
+	100% {
+		left: 27.5%;
+		top: 48%;
+		rotate: -2510deg;
+	}
 }
 
 @keyframes con_ani {
-  0% {
-    background-image: url(./../images/background/character/con_body_ani01.png);
-  }
-  49% {
-    background-image: url(./../images/background/character/con_body_ani01.png);
-  }
-  50% {
-    background-image: url(./../images/background/character/con_body_ani02.png);
-  }
-  100% {
-    background-image: url(./../images/background/character/con_body_ani02.png);
-  }
+	0% {
+		background-image: url(./../images/background/character/con_body_ani01.png);
+	}
+	49% {
+		background-image: url(./../images/background/character/con_body_ani01.png);
+	}
+	50% {
+		background-image: url(./../images/background/character/con_body_ani02.png);
+	}
+	100% {
+		background-image: url(./../images/background/character/con_body_ani02.png);
+	}
 }
 
 @keyframes music01_ani {
-  0% {
-    left: 34%;
-    top: 32%;
-    rotate: 20deg;
-    opacity: 0;
-  }
-  8% {
-    left: 36%;
-    top: 35.5%;
-    rotate: 30deg;
-    opacity: 0.5;
-  }
-  16% {
-    left: 38%;
-    top: 34%;
-    rotate: 40deg;
-    opacity: 1;
-  }
-  24% {
-    left: 40%;
-    top: 32.5%;
-    rotate: 30deg;
-  }
-  32% {
-    left: 38%;
-    top: 31%;
-    rotate: 20deg;
-  }
-  40% {
-    left: 36%;
-    top: 29.5%;
-    rotate: 30deg;
-  }
-  48% {
-    left: 38%;
-    top: 28%;
-    rotate: 40deg;
-  }
-  56% {
-    left: 40%;
-    top: 26.5%;
-    rotate: 50deg;
-  }
-  64% {
-    left: 42%;
-    top: 25%;
-    rotate: 40deg;
-  }
-  72% {
-    left: 44%;
-    top: 23.5%;
-    rotate: 30deg;
-    opacity: 1;
-  }
-  80% {
-    left: 42%;
-    top: 22%;
-    rotate: 20deg;
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+	0% {
+		left: 34%;
+		top: 32%;
+		rotate: 20deg;
+		opacity: 0;
+	}
+	8% {
+		left: 36%;
+		top: 35.5%;
+		rotate: 30deg;
+		opacity: 0.5;
+	}
+	16% {
+		left: 38%;
+		top: 34%;
+		rotate: 40deg;
+		opacity: 1;
+	}
+	24% {
+		left: 40%;
+		top: 32.5%;
+		rotate: 30deg;
+	}
+	32% {
+		left: 38%;
+		top: 31%;
+		rotate: 20deg;
+	}
+	40% {
+		left: 36%;
+		top: 29.5%;
+		rotate: 30deg;
+	}
+	48% {
+		left: 38%;
+		top: 28%;
+		rotate: 40deg;
+	}
+	56% {
+		left: 40%;
+		top: 26.5%;
+		rotate: 50deg;
+	}
+	64% {
+		left: 42%;
+		top: 25%;
+		rotate: 40deg;
+	}
+	72% {
+		left: 44%;
+		top: 23.5%;
+		rotate: 30deg;
+		opacity: 1;
+	}
+	80% {
+		left: 42%;
+		top: 22%;
+		rotate: 20deg;
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 @keyframes music02_ani {
-  0% {
-    left: 44%;
-    top: 31%;
-    rotate: -20deg;
-    opacity: 0;
-  }
-  6% {
-    left: 46%;
-    top: 30%;
-    rotate: -15deg;
-    opacity: 0.5;
-  }
-  12% {
-    left: 48%;
-    top: 29%;
-    rotate: -10deg;
-    opacity: 1;
-  }
-  12% {
-    left: 50%;
-    top: 28%;
-    rotate: -5deg;
-  }
-  18% {
-    left: 49%;
-    top: 27%;
-    rotate: 0;
-  }
-  24% {
-    left: 48%;
-    top: 26%;
-    rotate: 5deg;
-  }
-  30% {
-    left: 50%;
-    top: 25%;
-    rotate: 10deg;
-  }
-  36% {
-    left: 52%;
-    top: 24%;
-    rotate: 15deg;
-  }
-  42% {
-    left: 54%;
-    top: 23%;
-    rotate: 10deg;
-  }
-  48% {
-    left: 53%;
-    top: 22%;
-    rotate: 5deg;
-  }
-  54% {
-    left: 52%;
-    top: 21%;
-    rotate: 0;
-  }
-  60% {
-    left: 54%;
-    top: 20%;
-    rotate: -5deg;
-  }
-  66% {
-    left: 56%;
-    top: 19%;
-    rotate: 0;
-    opacity: 1;
-  }
-  72% {
-    left: 58%;
-    top: 18%;
-    rotate: 5deg;
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+	0% {
+		left: 44%;
+		top: 31%;
+		rotate: -20deg;
+		opacity: 0;
+	}
+	6% {
+		left: 46%;
+		top: 30%;
+		rotate: -15deg;
+		opacity: 0.5;
+	}
+	12% {
+		left: 48%;
+		top: 29%;
+		rotate: -10deg;
+		opacity: 1;
+	}
+	12% {
+		left: 50%;
+		top: 28%;
+		rotate: -5deg;
+	}
+	18% {
+		left: 49%;
+		top: 27%;
+		rotate: 0;
+	}
+	24% {
+		left: 48%;
+		top: 26%;
+		rotate: 5deg;
+	}
+	30% {
+		left: 50%;
+		top: 25%;
+		rotate: 10deg;
+	}
+	36% {
+		left: 52%;
+		top: 24%;
+		rotate: 15deg;
+	}
+	42% {
+		left: 54%;
+		top: 23%;
+		rotate: 10deg;
+	}
+	48% {
+		left: 53%;
+		top: 22%;
+		rotate: 5deg;
+	}
+	54% {
+		left: 52%;
+		top: 21%;
+		rotate: 0;
+	}
+	60% {
+		left: 54%;
+		top: 20%;
+		rotate: -5deg;
+	}
+	66% {
+		left: 56%;
+		top: 19%;
+		rotate: 0;
+		opacity: 1;
+	}
+	72% {
+		left: 58%;
+		top: 18%;
+		rotate: 5deg;
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 @keyframes music03_ani {
-  0% {
-    left: 43%;
-    top: 51%;
-    rotate: -10deg;
-    opacity: 0;
-  }
-  8% {
-    left: 44.5%;
-    top: 50%;
-    rotate: -5deg;
-    opacity: 0.5;
-  }
-  16% {
-    left: 46%;
-    top: 49%;
-    rotate: 0;
-    opacity: 1;
-  }
-  24% {
-    left: 47.5%;
-    top: 48%;
-    rotate: 5deg;
-  }
-  32% {
-    left: 48%;
-    top: 47%;
-    rotate: 10deg;
-  }
-  40% {
-    left: 49.5%;
-    top: 46%;
-    rotate: 15deg;
-  }
-  40% {
-    left: 51%;
-    top: 45%;
-    rotate: 20deg;
-  }
-  48% {
-    left: 52.5%;
-    top: 44%;
-    rotate: 15deg;
-  }
-  56% {
-    left: 54%;
-    top: 43%;
-    rotate: 10deg;
-  }
-  64% {
-    left: 53%;
-    top: 42%;
-    rotate: 5deg;
-  }
-  64% {
-    left: 52%;
-    top: 41%;
-    rotate: 0;
-  }
-  72% {
-    left: 53.5%;
-    top: 40%;
-    rotate: -5deg;
-  }
-  80% {
-    left: 55%;
-    top: 39%;
-    rotate: 0;
-    opacity: 1;
-  }
-  88% {
-    left: 56.5%;
-    top: 38%;
-    rotate: 5deg;
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+	0% {
+		left: 43%;
+		top: 51%;
+		rotate: -10deg;
+		opacity: 0;
+	}
+	8% {
+		left: 44.5%;
+		top: 50%;
+		rotate: -5deg;
+		opacity: 0.5;
+	}
+	16% {
+		left: 46%;
+		top: 49%;
+		rotate: 0;
+		opacity: 1;
+	}
+	24% {
+		left: 47.5%;
+		top: 48%;
+		rotate: 5deg;
+	}
+	32% {
+		left: 48%;
+		top: 47%;
+		rotate: 10deg;
+	}
+	40% {
+		left: 49.5%;
+		top: 46%;
+		rotate: 15deg;
+	}
+	40% {
+		left: 51%;
+		top: 45%;
+		rotate: 20deg;
+	}
+	48% {
+		left: 52.5%;
+		top: 44%;
+		rotate: 15deg;
+	}
+	56% {
+		left: 54%;
+		top: 43%;
+		rotate: 10deg;
+	}
+	64% {
+		left: 53%;
+		top: 42%;
+		rotate: 5deg;
+	}
+	64% {
+		left: 52%;
+		top: 41%;
+		rotate: 0;
+	}
+	72% {
+		left: 53.5%;
+		top: 40%;
+		rotate: -5deg;
+	}
+	80% {
+		left: 55%;
+		top: 39%;
+		rotate: 0;
+		opacity: 1;
+	}
+	88% {
+		left: 56.5%;
+		top: 38%;
+		rotate: 5deg;
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 @keyframes jay-G_ani {
-  0% {
-    background-image: url(./../images/background/character/jay-G_body_ani01.png);
-  }
-  70% {
-    background-image: url(./../images/background/character/jay-G_body_ani01.png);
-  }
-  71% {
-    background-image: url(./../images/background/character/jay-G_body_ani02.png);
-  }
-  72% {
-    background-image: url(./../images/background/character/jay-G_body_ani02.png);
-  }
-  73% {
-    background-image: url(./../images/background/character/jay-G_body_ani03.png);
-  }
-  97% {
-    background-image: url(./../images/background/character/jay-G_body_ani03.png);
-  }
-  98% {
-    background-image: url(./../images/background/character/jay-G_body_ani02.png);
-  }
-  99% {
-    background-image: url(./../images/background/character/jay-G_body_ani02.png);
-  }
-  100% {
-    background-image: url(./../images/background/character/jay-G_body_ani01.png);
-  }
+	0% {
+		background-image: url(./../images/background/character/jay-G_body_ani01.png);
+	}
+	70% {
+		background-image: url(./../images/background/character/jay-G_body_ani01.png);
+	}
+	71% {
+		background-image: url(./../images/background/character/jay-G_body_ani02.png);
+	}
+	72% {
+		background-image: url(./../images/background/character/jay-G_body_ani02.png);
+	}
+	73% {
+		background-image: url(./../images/background/character/jay-G_body_ani03.png);
+	}
+	97% {
+		background-image: url(./../images/background/character/jay-G_body_ani03.png);
+	}
+	98% {
+		background-image: url(./../images/background/character/jay-G_body_ani02.png);
+	}
+	99% {
+		background-image: url(./../images/background/character/jay-G_body_ani02.png);
+	}
+	100% {
+		background-image: url(./../images/background/character/jay-G_body_ani01.png);
+	}
 }
 
 @keyframes frodo_ani {
-  0% {
-    background-image: url(./../images/background/character/frodo_body_ani01.png);
-  }
-  70% {
-    background-image: url(./../images/background/character/frodo_body_ani01.png);
-  }
-  71% {
-    background-image: url(./../images/background/character/frodo_body_ani02.png);
-  }
-  72% {
-    background-image: url(./../images/background/character/frodo_body_ani02.png);
-  }
-  73% {
-    background-image: url(./../images/background/character/frodo_body_ani03.png);
-  }
-  97% {
-    background-image: url(./../images/background/character/frodo_body_ani03.png);
-  }
-  98% {
-    background-image: url(./../images/background/character/frodo_body_ani02.png);
-  }
-  99% {
-    background-image: url(./../images/background/character/frodo_body_ani02.png);
-  }
-  100% {
-    background-image: url(./../images/background/character/frodo_body_ani01.png);
-  }
+	0% {
+		background-image: url(./../images/background/character/frodo_body_ani01.png);
+	}
+	70% {
+		background-image: url(./../images/background/character/frodo_body_ani01.png);
+	}
+	71% {
+		background-image: url(./../images/background/character/frodo_body_ani02.png);
+	}
+	72% {
+		background-image: url(./../images/background/character/frodo_body_ani02.png);
+	}
+	73% {
+		background-image: url(./../images/background/character/frodo_body_ani03.png);
+	}
+	97% {
+		background-image: url(./../images/background/character/frodo_body_ani03.png);
+	}
+	98% {
+		background-image: url(./../images/background/character/frodo_body_ani02.png);
+	}
+	99% {
+		background-image: url(./../images/background/character/frodo_body_ani02.png);
+	}
+	100% {
+		background-image: url(./../images/background/character/frodo_body_ani01.png);
+	}
 }
