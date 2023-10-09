@@ -106,50 +106,6 @@
     display: block;
   }
 }
-#wrap > #home > .mouse {
-  position: absolute;
-  z-index: 300;
-  left: 50%;
-  bottom: 51%;
-  width: 30px;
-  height: 50px;
-  border: 2px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 15px;
-  transform: translate(-50%, 0);
-}
-@media screen and (max-width:640px) {
-  #wrap > #home > .mouse {
-    display: none;
-  }
-}
-@keyframes mousewheel {
-  0% {
-    top: 5px;
-    opacity: 0;
-  }
-  30% {
-    top: 10px;
-    opacity: 1;
-  }
-  100% {
-    top: 20px;
-    opacity: 0;
-  }
-}
-#wrap > #home > .mouse > .wheel {
-  position: absolute;
-  z-index: 301;
-  left: 50%;
-  top: 5px;
-  width: 4px;
-  height: 10px;
-  text-indent: -9999px;
-  background-color: #ffffff;
-  border-radius: 2px;
-  transform: translate(-50%, 0);
-  animation: mousewheel 1s linear infinite;
-}
 #wrap > #home > .bgmov > .background {
   overflow: hidden;
   position: absolute;
@@ -565,22 +521,6 @@
 }
 @media screen and (max-width:640px) {
   #wrap > #home > .bgmov > .background > .gradient01 {
-    opacity: 0;
-  }
-}
-#wrap > #home > .bgmov > .background > .gradient02 {
-  position: absolute;
-  z-index: 500;
-  left: 0;
-  right: 0;
-  top: 70%;
-  width: 100%;
-  height: 30%;
-  background-image: url(./../images/background/gradient.png);
-  background-size: contain;
-}
-@media screen and (max-width:640px) {
-  #wrap > #home > .bgmov > .background > .gradient02 {
     opacity: 0;
   }
 }
