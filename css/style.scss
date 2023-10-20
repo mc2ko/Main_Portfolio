@@ -5,9 +5,9 @@ $pri-color-1: #2c3e50;
 $pri-color-2: #52b3d9;
 $pri-color-3: #ffffff;
 
-$sec-color-1: #68c3a3;
-$sec-color-2: #333333;
-$sec-color-3: #eeeeee;
+$sec-color-1: #602a09;
+$sec-color-2: #c03611;
+$sec-color-3: #fff7ce;
 
 $point-color-1: #ffc90e;
 $point-color-2: #fcf8e3;
@@ -88,26 +88,26 @@ $mobile: "screen and (max-width:640px)";
       }
 
       > h1 {
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%, 0);
         z-index: 100;
         color: $pri-color-3;
         font-size: 30px;
         text-transform: uppercase;
 
         @media #{$mobile} {
-          color: #000;
           font-size: 22px;
           margin-bottom: 10px;
         }
       }
+
       > h2 {
         color: $pri-color-2;
         font-size: 40px;
         line-height: 60px;
-
-        @media #{$mobile} {
-          font-size: 34px;
-          line-height: 40px;
-        }
+        text-indent: -9999px;
 
         > span {
           color: $sec-color-1;
@@ -118,20 +118,49 @@ $mobile: "screen and (max-width:640px)";
         }
       } //end of h2
 
-      > p {
-        margin-top: 0px;
-        color: $pri-color-3;
-        line-height: 1.8;
+      > .creative {
+        position: absolute;
+        top: 2.2%;
+        right: 53.2%;
+        width: 167px;
+        height: 30px;
+        background-image: url(./../images/creative.png);
+
+        @media #{$mobile} {
+          top: 5%;
+          right: 50%;
+          transform: translate(50%, 0);
+        }
+      }
+
+      > .programmer {
+        position: absolute;
+        top: 2.2%;
+        left: 47.8%;
+        width: 245px;
+        height: 30px;
+        background-image: url(./../images/programmer.png);
+
+        @media #{$mobile} {
+          top: 11%;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+      }
+
+      > .mypr {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 5%;
+        transform: translate(-50%, 0);
+        color: $sec-color-3;
+        font-weight: 500;
+        line-height: 1.4;
         letter-spacing: 1px;
 
         @media #{$mobile} {
-          color: #000;
-        }
-
-        > span {
-          @media #{$mobile} {
-            display: block;
-          }
+          top: 18%;
         }
       } //end of p
     } //end of .intro
@@ -728,6 +757,7 @@ $mobile: "screen and (max-width:640px)";
     position: relative;
     min-width: 1200px;
     z-index: 200;
+    background-color: #64381c;
     @media #{$mobile} {
       padding-top: 140px;
       min-width: initial;
@@ -736,157 +766,278 @@ $mobile: "screen and (max-width:640px)";
     > h2 {
       padding-top: 80px;
       margin-bottom: 72px;
-      color: $pri-color-1;
+      color: $sec-color-3;
       font-size: 50px;
       line-height: 50px;
       text-align: center;
 
+      @media #{$mobile} {
+        font-size: 7vw;
+      }
+
       &:after {
         display: block;
-        width: 138px;
-        height: 15px;
-        margin: 30px auto 0;
-        background-image: url(./../images/deco_tit.png);
+        width: 520px;
+        height: 115px;
+        margin: -66px auto 0;
+        background-image: url(./../images/titlebar.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
         content: "";
+
+        @media #{$mobile} {
+          width: 80%;
+          margin: -70px auto 0;
+        }
       }
     } //end of h2
 
     > .container {
-      display: flex;
-      flex-direction: row-reverse;
-      padding-bottom: 30px;
-
       @media #{$mobile} {
-        display: block;
-        padding-bottom: 0;
+        width: 100%;
+        margin-top: -60px;
       }
-      > .profile {
-        width: 33.33333%;
+
+      > .scroll {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 30px;
+        height: 760px;
 
         @media #{$mobile} {
-          width: 100%;
+          height: 1500px;
         }
 
-        > div {
-          position: relative;
-          width: 360px;
-          margin: 0 auto;
-          border: 1px solid darken($sec-color-3, 10%);
-          border-radius: 10px;
+        > .scrollArea {
+          display: flex;
+          flex-direction: row-reverse;
+          overflow: hidden;
+          position: absolute;
+          z-index: 100;
+          left: 50%;
+          top: 53%;
+          transform: translate(-50%, -50%);
+          width: 1000px;
+          height: 850px;
 
           @media #{$mobile} {
-            width: 95%;
-            margin-top: 50px;
+            width: 500px;
+            height: 80%;
+            margin-top: 100px;
           }
 
-          &:after {
-            display: block;
+          > .scrollImage {
             position: absolute;
-            left: 0;
-            bottom: -3px;
-            width: 100%;
-            height: 20px;
-            content: "";
-          }
-
-          > .myphoto {
-            overflow: hidden;
-            background-image: url(./../images/aboutme/photo-frame.png);
-            background-position: 0 bottom;
-            background-size: contain;
+            z-index: 100;
+            left: 50%;
+            top: 50%;
+            width: 80%;
+            min-width: 1200px;
+            height: 86%;
+            transform: translate(-50%, -50%);
+            background-image: url(./../images/aboutme/aboutme_scroll.png);
+            background-position: center center;
             background-repeat: no-repeat;
+            background-size: 80% 96%;
 
-            > .radius {
-              overflow: hidden;
-              border-radius: 10px 10px 0 0;
-              > img {
-                display: block;
-                position: relative;
-                left: -22%;
-                top: 30px;
-                z-index: -1;
-                width: 160%;
-                margin: -100px 0 0 -30px;
-              }
+            @media #{$mobile} {
+              min-width: none;
+              rotate: 90deg;
+              left: -96%;
+              top: 0;
+              transform: initial;
+              width: 1460px;
+              height: 100%;
+              background-size: 100% 30%;
             }
-          }
+          } //end of scrollImage
 
-          > ol {
-            padding: 0 20px;
+          > .profile {
+            width: 33%;
+            margin-right: 6%;
+            margin-top: 140px;
 
-            > li {
-              height: 45px;
-              font-weight: 300;
-              font-size: 16px;
-              line-height: 45px;
-              border-bottom: 1px solid $sec-color-3;
+            @media #{$mobile} {
+              position: absolute;
+              z-index: 210;
+              width: 80%;
+              left: 50%;
+              transform: translate(-50%, 0);
+            }
 
-              &:last-child {
-                border-bottom-width: 0;
+            > div {
+              position: relative;
+              z-index: 200;
+
+              @media #{$mobile} {
+                width: 100%;
+                margin-top: -60px;
               }
-            } //end of li
-          } //end of ol
-        } //end of div
-      } //end of .profile
 
-      > .biography {
-        width: 66.66666%;
+              > .myphoto {
+                width: 326px;
+                height: 416px;
+                background-image: url(./../images/aboutme/aboutme_frame.png);
+                background-position: 0 bottom;
+                background-size: contain;
+                background-repeat: no-repeat;
 
-        @media #{$mobile} {
-          width: 100%;
-          margin-top: 48px;
-        }
-        > .detail {
-          margin-bottom: 64px;
-          padding-left: 10%;
+                @media #{$mobile} {
+                  position: relative;
+                  left: 50%;
+                  transform: translate(-50%, 0);
+                }
+
+                > .radius {
+                  overflow: hidden;
+                  position: relative;
+                  z-index: 210;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 300px;
+                  height: 390px;
+                  > img {
+                    display: block;
+                    position: relative;
+                    left: -20%;
+                    top: 30px;
+                    width: 160%;
+                    margin: -100px 0 0 -30px;
+                  }
+                }
+              }
+
+              > ol {
+                color: $sec-color-1;
+                padding: 20px 0 0 10px;
+
+                @media #{$mobile} {
+                  padding: 20px 0 0 50px;
+                }
+
+                > li {
+                  height: 30px;
+                  font-weight: 600;
+                  font-size: 18px;
+                  line-height: 30px;
+
+                  > span {
+                    color: white;
+                  }
+                } //end of li
+              } //end of ol
+            } //end of div
+          } //end of .profile
+
+          > .biography {
+            position: relative;
+            z-index: 200;
+            top: 130px;
+            margin-right: 30px;
+            width: 50%;
+            height: 70%;
+
+            @media #{$mobile} {
+              width: 80%;
+              margin-top: 600px;
+              margin-right: 44px;
+            }
+            > .detail {
+              margin-bottom: 44px;
+
+              @media #{$mobile} {
+                padding: 0 5%;
+              }
+
+              > h3 {
+                color: $sec-color-2;
+                margin-bottom: 20px;
+                font-weight: 500;
+                font-size: 32px;
+              }
+
+              > p {
+                margin-bottom: 20px;
+                color: $sec-color-1;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 1.2;
+
+                @media #{$mobile} {
+                  // font-size: 17px;
+                  line-height: 1.4;
+                  > br {
+                    display: none;
+                  }
+                }
+
+                > mark {
+                  background-color: $point-color-2;
+                }
+              } //end of p
+            } //end of .detail
+          } //end of .biography
+        } //end of scrollArea
+
+        > .scrollSide {
+          position: absolute;
+          z-index: 300;
+          left: 50%;
+          top: 13.4%;
+          transform: translate(-50%, 0);
+          width: 1000px;
+          height: 90%;
 
           @media #{$mobile} {
-            padding: 0 5%;
+            width: 500px;
+            height: 80%;
+            top: initial;
+            padding: initial;
           }
 
-          > h3 {
-            margin-bottom: 30px;
-            font-weight: 500;
-            font-size: 32px;
+          > .scrollLeft {
+            position: absolute;
+            z-index: 300;
+            left: -5%;
+            top: 0%;
+            width: 93px;
+            height: 850px;
+            background-image: url(./../images/aboutme/aboutme_left.png);
+
+            @media #{$mobile} {
+              rotate: 90deg;
+              left: 44%;
+              top: -16%;
+              width: 60px;
+              height: 520px;
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
           }
 
-          > p {
-            margin-bottom: 20px;
-            font-weight: 300;
-            font-size: 14px;
+          > .scrollRight {
+            position: absolute;
+            z-index: 300;
+            right: -5%;
+            top: 0%;
+            width: 93px;
+            height: 850px;
+            background-image: url(./../images/aboutme/aboutme_right.png);
 
             @media #{$mobile} {
-              line-height: 1.4;
-              > br {
-                display: none;
-              }
+              rotate: 90deg;
+              left: 44%;
+              top: 82.6%;
+              width: 60px;
+              height: 520px;
+              background-size: contain;
+              background-repeat: no-repeat;
             }
-
-            > mark {
-              background-color: $point-color-2;
-            }
-          } //end of p
-
-          > .ican {
-            margin-top: 80px;
-
-            @media #{$mobile} {
-              margin-top: 50px;
-            }
-            > li {
-              font-size: 16px;
-              line-height: 40px;
-
-              &:before {
-                margin-right: 10px;
-                color: $pri-color-2;
-                font-family: "Font Awesome 5 Free";
-                content: "\f14a";
-              }
-            }
-          } //end of .ican
-        } //end of .detail
-      } //end of .biography
+          }
+        }
+      } //end of scroll
     } //end of .container
   } //end of #aboutme
 
@@ -1247,7 +1398,7 @@ $mobile: "screen and (max-width:640px)";
         width: 250px;
         height: 400px;
 
-        background-image: url(./../images/portfolio/Flower_Lotto/Flower_Lotto.jpg);
+        background-image: url(./../images/portfolio/Flower_Lotto.jpg);
         background-size: cover;
         > a {
           display: block;
