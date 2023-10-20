@@ -71,9 +71,8 @@
 @media screen and (max-width:640px) {
   #wrap > #home > .intro > h1 {
     font-size: 22px;
-    width: 90%;
+    width: 400px;
     height: 40px;
-    top: 5%;
     margin-bottom: 10px;
   }
 }
@@ -101,7 +100,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap > #home > .intro > .creative {
-    top: 10%;
+    top: 20px;
     right: 50%;
     transform: translate(50%, 0);
   }
@@ -116,7 +115,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap > #home > .intro > .programmer {
-    top: 16%;
+    top: 52px;
     left: 50%;
     transform: translate(-50%, 0);
   }
@@ -134,8 +133,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap > #home > .intro > .mypr {
-    top: 23%;
-    font-size: 3vw;
+    top: 84px;
   }
 }
 #wrap > #home > .bgmov > .background {
@@ -683,7 +681,7 @@
   }
 }
 #wrap #aboutme > h2 {
-  padding-top: 60px;
+  padding-top: 50px;
   margin-bottom: 72px;
   color: #fff7ce;
   font-size: 50px;
@@ -745,7 +743,7 @@
   #wrap #aboutme > .container > .scroll > .scrollArea {
     width: 90%;
     height: 80%;
-    margin-top: 100px;
+    margin-top: 40px;
   }
 }
 #wrap #aboutme > .container > .scroll > .scrollArea > .scrollImage {
@@ -917,7 +915,7 @@
   position: absolute;
   z-index: 300;
   left: 50%;
-  top: 13.4%;
+  top: 11%;
   transform: translate(-50%, 0);
   width: 1000px;
   height: 90%;

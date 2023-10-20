@@ -99,9 +99,8 @@ $mobile: "screen and (max-width:640px)";
 
         @media #{$mobile} {
           font-size: 22px;
-          width: 90%;
+          width: 400px;
           height: 40px;
-          top: 5%;
           margin-bottom: 10px;
         }
       }
@@ -130,7 +129,7 @@ $mobile: "screen and (max-width:640px)";
         background-image: url(./../images/creative.png);
 
         @media #{$mobile} {
-          top: 10%;
+          top: 20px;
           right: 50%;
           transform: translate(50%, 0);
         }
@@ -145,7 +144,7 @@ $mobile: "screen and (max-width:640px)";
         background-image: url(./../images/programmer.png);
 
         @media #{$mobile} {
-          top: 16%;
+          top: 52px;
           left: 50%;
           transform: translate(-50%, 0);
         }
@@ -163,8 +162,7 @@ $mobile: "screen and (max-width:640px)";
         letter-spacing: 1px;
 
         @media #{$mobile} {
-          top: 23%;
-          font-size: 3vw;
+          top: 84px;
         }
       } //end of p
     } //end of .intro
@@ -768,7 +766,7 @@ $mobile: "screen and (max-width:640px)";
     }
 
     > h2 {
-      padding-top: 60px;
+      padding-top: 50px;
       margin-bottom: 72px;
       color: $sec-color-3;
       font-size: 50px;
@@ -828,7 +826,7 @@ $mobile: "screen and (max-width:640px)";
           @media #{$mobile} {
             width: 90%;
             height: 80%;
-            margin-top: 100px;
+            margin-top: 40px;
           }
 
           > .scrollImage {
@@ -1002,7 +1000,7 @@ $mobile: "screen and (max-width:640px)";
           position: absolute;
           z-index: 300;
           left: 50%;
-          top: 13.4%;
+          top: 11%;
           transform: translate(-50%, 0);
           width: 1000px;
           height: 90%;
