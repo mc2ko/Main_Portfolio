@@ -24,6 +24,7 @@ $point-color-2: #fcf8e3;
 }
 
 $mobile: "screen and (max-width:640px)";
+$smallSize: "screen and (max-width:480px)";
 
 #wrap {
   position: relative;
@@ -103,6 +104,10 @@ $mobile: "screen and (max-width:640px)";
           height: 40px;
           margin-bottom: 10px;
         }
+
+        @media #{$smallSize} {
+          top: 20px;
+        }
       }
 
       > h2 {
@@ -133,6 +138,10 @@ $mobile: "screen and (max-width:640px)";
           right: 50%;
           transform: translate(50%, 0);
         }
+
+        @media #{$smallSize} {
+          top: 40px;
+        }
       }
 
       > .programmer {
@@ -147,6 +156,10 @@ $mobile: "screen and (max-width:640px)";
           top: 52px;
           left: 50%;
           transform: translate(-50%, 0);
+        }
+
+        @media #{$smallSize} {
+          top: 72px;
         }
       }
 
@@ -163,6 +176,10 @@ $mobile: "screen and (max-width:640px)";
 
         @media #{$mobile} {
           top: 84px;
+        }
+
+        @media #{$smallSize} {
+          top: 104px;
         }
       } //end of p
     } //end of .intro
