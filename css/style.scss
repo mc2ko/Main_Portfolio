@@ -99,6 +99,9 @@ $mobile: "screen and (max-width:640px)";
 
         @media #{$mobile} {
           font-size: 22px;
+          width: 90%;
+          height: 40px;
+          top: 5%;
           margin-bottom: 10px;
         }
       }
@@ -127,7 +130,7 @@ $mobile: "screen and (max-width:640px)";
         background-image: url(./../images/creative.png);
 
         @media #{$mobile} {
-          top: 5%;
+          top: 10%;
           right: 50%;
           transform: translate(50%, 0);
         }
@@ -142,7 +145,7 @@ $mobile: "screen and (max-width:640px)";
         background-image: url(./../images/programmer.png);
 
         @media #{$mobile} {
-          top: 11%;
+          top: 16%;
           left: 50%;
           transform: translate(-50%, 0);
         }
@@ -160,7 +163,8 @@ $mobile: "screen and (max-width:640px)";
         letter-spacing: 1px;
 
         @media #{$mobile} {
-          top: 18%;
+          top: 23%;
+          font-size: 3vw;
         }
       } //end of p
     } //end of .intro
@@ -1045,20 +1049,32 @@ $mobile: "screen and (max-width:640px)";
     }
 
     > h2 {
-      padding-top: 80px;
+      padding-top: 60px;
       margin-bottom: 72px;
-      color: $pri-color-1;
+      color: $sec-color-3;
       font-size: 50px;
       line-height: 50px;
       text-align: center;
 
+      @media #{$mobile} {
+        font-size: 7vw;
+      }
+
       &:after {
         display: block;
-        width: 138px;
-        height: 15px;
-        margin: 30px auto 0;
-        background-image: url(./../images/deco_tit.png);
+        width: 520px;
+        height: 115px;
+        margin: -66px auto 0;
+        background-image: url(./../images/titlebar.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
         content: "";
+
+        @media #{$mobile} {
+          width: 80%;
+          margin: -70px auto 0;
+        }
       }
     } //end of h2
 
@@ -1163,20 +1179,32 @@ $mobile: "screen and (max-width:640px)";
     }
 
     > h2 {
-      padding-top: 80px;
+      padding-top: 60px;
       margin-bottom: 72px;
-      color: $pri-color-3;
+      color: $sec-color-3;
       font-size: 50px;
       line-height: 50px;
       text-align: center;
 
+      @media #{$mobile} {
+        font-size: 7vw;
+      }
+
       &:after {
         display: block;
-        width: 138px;
-        height: 15px;
-        margin: 30px auto 0;
-        background-image: url(./../images/deco_tit.png);
+        width: 520px;
+        height: 115px;
+        margin: -66px auto 0;
+        background-image: url(./../images/titlebar.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
         content: "";
+
+        @media #{$mobile} {
+          width: 80%;
+          margin: -70px auto 0;
+        }
       }
     } //end of h2
 
@@ -1335,20 +1363,32 @@ $mobile: "screen and (max-width:640px)";
     }
 
     > h2 {
-      padding-top: 80px;
+      padding-top: 60px;
       margin-bottom: 72px;
-      color: $pri-color-1;
+      color: $sec-color-3;
       font-size: 50px;
       line-height: 50px;
       text-align: center;
 
+      @media #{$mobile} {
+        font-size: 7vw;
+      }
+
       &:after {
         display: block;
-        width: 138px;
-        height: 15px;
-        margin: 30px auto 0;
-        background-image: url(./../images/deco_tit.png);
+        width: 520px;
+        height: 115px;
+        margin: -66px auto 0;
+        background-image: url(./../images/titlebar.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
         content: "";
+
+        @media #{$mobile} {
+          width: 80%;
+          margin: -70px auto 0;
+        }
       }
     } //end of h2
   }
@@ -1363,20 +1403,32 @@ $mobile: "screen and (max-width:640px)";
     }
 
     > h2 {
-      padding-top: 80px;
+      padding-top: 60px;
       margin-bottom: 72px;
-      color: $pri-color-1;
+      color: $sec-color-3;
       font-size: 50px;
       line-height: 50px;
       text-align: center;
 
+      @media #{$mobile} {
+        font-size: 7vw;
+      }
+
       &:after {
         display: block;
-        width: 138px;
-        height: 15px;
-        margin: 30px auto 0;
-        background-image: url(./../images/deco_tit.png);
+        width: 520px;
+        height: 115px;
+        margin: -66px auto 0;
+        background-image: url(./../images/titlebar.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
         content: "";
+
+        @media #{$mobile} {
+          width: 80%;
+          margin: -70px auto 0;
+        }
       }
     } //end of h2
 
@@ -1427,20 +1479,32 @@ $mobile: "screen and (max-width:640px)";
     }
 
     > h2 {
-      padding-top: 80px;
+      padding-top: 60px;
       margin-bottom: 72px;
-      color: $pri-color-1;
+      color: $sec-color-3;
       font-size: 50px;
       line-height: 50px;
       text-align: center;
 
+      @media #{$mobile} {
+        font-size: 7vw;
+      }
+
       &:after {
         display: block;
-        width: 138px;
-        height: 15px;
-        margin: 30px auto 0;
-        background-image: url(./../images/deco_tit.png);
+        width: 520px;
+        height: 115px;
+        margin: -66px auto 0;
+        background-image: url(./../images/titlebar.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
         content: "";
+
+        @media #{$mobile} {
+          width: 80%;
+          margin: -70px auto 0;
+        }
       }
     } //end of h2
   }
