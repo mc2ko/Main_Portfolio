@@ -764,7 +764,7 @@ $mobile: "screen and (max-width:640px)";
     }
 
     > h2 {
-      padding-top: 80px;
+      padding-top: 60px;
       margin-bottom: 72px;
       color: $sec-color-3;
       font-size: 50px;
@@ -822,7 +822,7 @@ $mobile: "screen and (max-width:640px)";
           height: 850px;
 
           @media #{$mobile} {
-            width: 500px;
+            width: 90%;
             height: 80%;
             margin-top: 100px;
           }
@@ -842,14 +842,7 @@ $mobile: "screen and (max-width:640px)";
             background-size: 80% 96%;
 
             @media #{$mobile} {
-              min-width: none;
-              rotate: 90deg;
-              left: -96%;
-              top: 0;
-              transform: initial;
-              width: 1460px;
-              height: 100%;
-              background-size: 100% 30%;
+              display: none;
             }
           } //end of scrollImage
 
@@ -886,6 +879,7 @@ $mobile: "screen and (max-width:640px)";
                 @media #{$mobile} {
                   position: relative;
                   left: 50%;
+                  top: -80px;
                   transform: translate(-50%, 0);
                 }
 
@@ -914,17 +908,32 @@ $mobile: "screen and (max-width:640px)";
                 padding: 20px 0 0 10px;
 
                 @media #{$mobile} {
-                  padding: 20px 0 0 50px;
+                  padding: initial;
                 }
 
                 > li {
                   height: 30px;
-                  font-weight: 600;
+                  font-weight: 500;
                   font-size: 18px;
                   line-height: 30px;
 
+                  @media #{$mobile} {
+                    width: 300px;
+                    min-width: 300px;
+                    display: block;
+                    position: relative;
+                    color: white;
+                    left: 50%;
+                    top: -50px;
+                    transform: translate(-50%, 0);
+                  }
+
                   > span {
                     color: white;
+
+                    @media #{$mobile} {
+                      color: $sec-color-3;
+                    }
                   }
                 } //end of li
               } //end of ol
@@ -940,9 +949,9 @@ $mobile: "screen and (max-width:640px)";
             height: 70%;
 
             @media #{$mobile} {
-              width: 80%;
-              margin-top: 600px;
-              margin-right: 44px;
+              width: 100%;
+              margin-top: 520px;
+              margin-right: initial;
             }
             > .detail {
               margin-bottom: 44px;
@@ -956,6 +965,10 @@ $mobile: "screen and (max-width:640px)";
                 margin-bottom: 20px;
                 font-weight: 500;
                 font-size: 32px;
+
+                @media #{$mobile} {
+                  color: $point-color-1;
+                }
               }
 
               > p {
@@ -966,7 +979,7 @@ $mobile: "screen and (max-width:640px)";
                 line-height: 1.2;
 
                 @media #{$mobile} {
-                  // font-size: 17px;
+                  color: $sec-color-3;
                   line-height: 1.4;
                   > br {
                     display: none;
@@ -991,10 +1004,7 @@ $mobile: "screen and (max-width:640px)";
           height: 90%;
 
           @media #{$mobile} {
-            width: 500px;
-            height: 80%;
-            top: initial;
-            padding: initial;
+            display: none;
           }
 
           > .scrollLeft {
@@ -1005,16 +1015,6 @@ $mobile: "screen and (max-width:640px)";
             width: 93px;
             height: 850px;
             background-image: url(./../images/aboutme/aboutme_left.png);
-
-            @media #{$mobile} {
-              rotate: 90deg;
-              left: 44%;
-              top: -16%;
-              width: 60px;
-              height: 520px;
-              background-size: contain;
-              background-repeat: no-repeat;
-            }
           }
 
           > .scrollRight {
@@ -1027,13 +1027,7 @@ $mobile: "screen and (max-width:640px)";
             background-image: url(./../images/aboutme/aboutme_right.png);
 
             @media #{$mobile} {
-              rotate: 90deg;
-              left: 44%;
-              top: 82.6%;
-              width: 60px;
-              height: 520px;
-              background-size: contain;
-              background-repeat: no-repeat;
+              display: none;
             }
           }
         }

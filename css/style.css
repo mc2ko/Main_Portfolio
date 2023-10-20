@@ -679,7 +679,7 @@
   }
 }
 #wrap #aboutme > h2 {
-  padding-top: 80px;
+  padding-top: 60px;
   margin-bottom: 72px;
   color: #fff7ce;
   font-size: 50px;
@@ -739,7 +739,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap #aboutme > .container > .scroll > .scrollArea {
-    width: 500px;
+    width: 90%;
     height: 80%;
     margin-top: 100px;
   }
@@ -760,14 +760,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap #aboutme > .container > .scroll > .scrollArea > .scrollImage {
-    min-width: none;
-    rotate: 90deg;
-    left: -96%;
-    top: 0;
-    transform: initial;
-    width: 1460px;
-    height: 100%;
-    background-size: 100% 30%;
+    display: none;
   }
 }
 #wrap #aboutme > .container > .scroll > .scrollArea > .profile {
@@ -806,6 +799,7 @@
   #wrap #aboutme > .container > .scroll > .scrollArea > .profile > div > .myphoto {
     position: relative;
     left: 50%;
+    top: -80px;
     transform: translate(-50%, 0);
   }
 }
@@ -833,17 +827,34 @@
 }
 @media screen and (max-width:640px) {
   #wrap #aboutme > .container > .scroll > .scrollArea > .profile > div > ol {
-    padding: 20px 0 0 50px;
+    padding: initial;
   }
 }
 #wrap #aboutme > .container > .scroll > .scrollArea > .profile > div > ol > li {
   height: 30px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   line-height: 30px;
 }
+@media screen and (max-width:640px) {
+  #wrap #aboutme > .container > .scroll > .scrollArea > .profile > div > ol > li {
+    width: 300px;
+    min-width: 300px;
+    display: block;
+    position: relative;
+    color: white;
+    left: 50%;
+    top: -50px;
+    transform: translate(-50%, 0);
+  }
+}
 #wrap #aboutme > .container > .scroll > .scrollArea > .profile > div > ol > li > span {
   color: white;
+}
+@media screen and (max-width:640px) {
+  #wrap #aboutme > .container > .scroll > .scrollArea > .profile > div > ol > li > span {
+    color: #fff7ce;
+  }
 }
 #wrap #aboutme > .container > .scroll > .scrollArea > .biography {
   position: relative;
@@ -855,9 +866,9 @@
 }
 @media screen and (max-width:640px) {
   #wrap #aboutme > .container > .scroll > .scrollArea > .biography {
-    width: 80%;
-    margin-top: 600px;
-    margin-right: 44px;
+    width: 100%;
+    margin-top: 520px;
+    margin-right: initial;
   }
 }
 #wrap #aboutme > .container > .scroll > .scrollArea > .biography > .detail {
@@ -874,6 +885,11 @@
   font-weight: 500;
   font-size: 32px;
 }
+@media screen and (max-width:640px) {
+  #wrap #aboutme > .container > .scroll > .scrollArea > .biography > .detail > h3 {
+    color: #ffc90e;
+  }
+}
 #wrap #aboutme > .container > .scroll > .scrollArea > .biography > .detail > p {
   margin-bottom: 20px;
   color: #602a09;
@@ -883,6 +899,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap #aboutme > .container > .scroll > .scrollArea > .biography > .detail > p {
+    color: #fff7ce;
     line-height: 1.4;
   }
   #wrap #aboutme > .container > .scroll > .scrollArea > .biography > .detail > p > br {
@@ -903,10 +920,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap #aboutme > .container > .scroll > .scrollSide {
-    width: 500px;
-    height: 80%;
-    top: initial;
-    padding: initial;
+    display: none;
   }
 }
 #wrap #aboutme > .container > .scroll > .scrollSide > .scrollLeft {
@@ -917,17 +931,6 @@
   width: 93px;
   height: 850px;
   background-image: url(./../images/aboutme/aboutme_left.png);
-}
-@media screen and (max-width:640px) {
-  #wrap #aboutme > .container > .scroll > .scrollSide > .scrollLeft {
-    rotate: 90deg;
-    left: 44%;
-    top: -16%;
-    width: 60px;
-    height: 520px;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
 }
 #wrap #aboutme > .container > .scroll > .scrollSide > .scrollRight {
   position: absolute;
@@ -940,13 +943,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap #aboutme > .container > .scroll > .scrollSide > .scrollRight {
-    rotate: 90deg;
-    left: 44%;
-    top: 82.6%;
-    width: 60px;
-    height: 520px;
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: none;
   }
 }
 #wrap #skill {
