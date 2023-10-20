@@ -14,7 +14,7 @@
   top: 0;
   bottom: 0;
   z-index: 1000;
-  background-color: #ffffff;
+  background-color: #fbf7c1;
 }
 #wrap > .loading > p {
   position: absolute;
@@ -64,7 +64,7 @@
   top: 0%;
   transform: translate(-50%, 0);
   z-index: 100;
-  color: #ffffff;
+  color: white;
   font-size: 30px;
   text-transform: uppercase;
 }
@@ -82,7 +82,7 @@
   }
 }
 #wrap > #home > .intro > h2 {
-  color: #52b3d9;
+  color: #f08d50;
   font-size: 40px;
   line-height: 60px;
   text-indent: -9999px;
@@ -580,7 +580,7 @@
   top: 50%;
   width: 100%;
   min-width: 1200px;
-  background-color: #ffffff;
+  background-color: #fbf7c1;
   border-bottom: 1px solid #fff7ce;
 }
 @media screen and (max-width:640px) {
@@ -608,7 +608,7 @@
 #wrap header > .container > h2 > a {
   display: block;
   height: 32px;
-  color: #2c3e50;
+  color: #674a39;
   line-height: 32px;
   text-indent: 40px;
   text-transform: uppercase;
@@ -665,7 +665,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap header > .container > nav > .gnb > li {
-    background-color: #ffffff;
+    background-color: #fbf7c1;
     border-bottom: 1px solid #fff7ce;
   }
 }
@@ -686,7 +686,7 @@
   }
 }
 #wrap header > .container > nav > .gnb > li:hover > a, #wrap header > .container > nav > .gnb > li.on > a {
-  color: #52b3d9;
+  color: #f08d50;
 }
 #wrap #aboutme {
   position: relative;
@@ -935,7 +935,7 @@
   position: absolute;
   z-index: 300;
   left: 50%;
-  top: 11%;
+  top: 11.4%;
   transform: translate(-50%, 0);
   width: 1000px;
   height: 90%;
@@ -971,7 +971,7 @@
 #wrap #skill {
   position: relative;
   min-width: 1200px;
-  background-color: #e96819;
+  background-color: #f08d50;
 }
 @media screen and (max-width:640px) {
   #wrap #skill {
@@ -1093,7 +1093,7 @@
 #wrap #ability {
   position: relative;
   min-width: 1200px;
-  background-color: #91290d;
+  background-color: #674a39;
 }
 @media screen and (max-width:640px) {
   #wrap #ability {
@@ -1163,7 +1163,7 @@
 #wrap #ability > .ability-container > .stick > .stick-container > .item > h3 {
   width: 17%;
   padding-right: 8%;
-  color: #ffffff;
+  color: #fbf7c1;
   font-weight: 600;
   line-height: 10px;
   text-align: right;
@@ -1183,18 +1183,18 @@
 #wrap #ability > .ability-container > .stick > .stick-container > .item > .progress > .bar {
   width: 0;
   height: 100%;
-  background-color: #52b3d9;
+  background-color: #f08d50;
   transition: all 2s ease-in-out;
 }
 #wrap #ability > .ability-container > .stick > .stick-container > .item > .progress > .bar > span {
   position: absolute;
   right: 15px;
   top: -20px;
-  color: #ffffff;
+  color: #fbf7c1;
 }
 #wrap #ability > .resume {
   padding: 80px 0;
-  background-color: #ffffff;
+  background-color: #fbf7c1;
 }
 #wrap #ability > .resume > div {
   display: flex;
@@ -1255,7 +1255,7 @@
   width: 260px;
   height: 40px;
   transform: translate(-50%, 0);
-  color: #ffffff;
+  color: #fbf7c1;
   line-height: 40px;
   text-align: center;
   background-color: #91290d;
@@ -1268,8 +1268,8 @@
 #wrap #uxdesign {
   position: relative;
   min-width: 1200px;
-  background-color: #cfeaf5;
   padding-bottom: 80px;
+  background-color: #f08d50;
 }
 @media screen and (max-width:640px) {
   #wrap #uxdesign {
@@ -1380,7 +1380,7 @@
 #wrap #contact {
   position: relative;
   min-width: 1200px;
-  background-color: #e96819;
+  background-color: #f08d50;
   padding-bottom: 80px;
 }
 @media screen and (max-width:640px) {
@@ -1427,22 +1427,8 @@
     min-width: 100%;
   }
 }
-#wrap > footer > .working {
-  border-top: 1px solid #fff7ce;
-}
-#wrap > footer > .working > p {
-  height: 80px;
-  padding-left: 7%;
-  line-height: 80px;
-}
-#wrap > footer > .working > p > a {
-  margin: 0 30px;
-}
-#wrap > footer > .working > p > a:hover {
-  text-decoration: underline;
-}
 #wrap > footer > .info {
-  background-color: #91290d;
+  background-color: #674a39;
 }
 #wrap > footer > .info > .container {
   position: relative;
@@ -1496,8 +1482,8 @@
   height: 28px;
   line-height: 28px;
   text-align: center;
-  background-color: #52b3d9;
+  background-color: #f08d50;
 }
 #wrap > aside > .top > i {
-  color: #ffffff;
+  color: #fbf7c1;
 }/*# sourceMappingURL=style.css.map */

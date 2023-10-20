@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 //컬러시스템
-$pri-color-1: #2c3e50;
-$pri-color-2: #52b3d9;
-$pri-color-3: #ffffff;
+$pri-color-1: #674a39;
+$pri-color-2: #f08d50;
+$pri-color-3: #fbf7c1;
 
 $sec-color-1: #602a09;
 $sec-color-2: #c03611;
@@ -94,7 +94,7 @@ $smallSize: "screen and (max-width:480px)";
         top: 0%;
         transform: translate(-50%, 0);
         z-index: 100;
-        color: $pri-color-3;
+        color: white;
         font-size: 30px;
         text-transform: uppercase;
 
@@ -1017,7 +1017,7 @@ $smallSize: "screen and (max-width:480px)";
           position: absolute;
           z-index: 300;
           left: 50%;
-          top: 11%;
+          top: 11.4%;
           transform: translate(-50%, 0);
           width: 1000px;
           height: 90%;
@@ -1057,7 +1057,7 @@ $smallSize: "screen and (max-width:480px)";
   #skill {
     position: relative;
     min-width: 1200px;
-    background-color: lighten($sec-color-1, 30%);
+    background-color: $pri-color-2;
 
     @media #{$mobile} {
       min-width: initial;
@@ -1187,7 +1187,7 @@ $smallSize: "screen and (max-width:480px)";
   #ability {
     position: relative;
     min-width: 1200px;
-    background-color: darken($sec-color-2, 10%);
+    background-color: $pri-color-1;
 
     @media #{$mobile} {
       min-width: 100%;
@@ -1370,8 +1370,8 @@ $smallSize: "screen and (max-width:480px)";
   #uxdesign {
     position: relative;
     min-width: 1200px;
-    background-color: lighten($pri-color-2, 30%);
     padding-bottom: 80px;
+    background-color: $pri-color-2;
 
     @media #{$mobile} {
       min-width: 100%;
@@ -1486,7 +1486,7 @@ $smallSize: "screen and (max-width:480px)";
   #contact {
     position: relative;
     min-width: 1200px;
-    background-color: lighten($sec-color-1, 30%);
+    background-color: $pri-color-2;
     padding-bottom: 80px;
 
     @media #{$mobile} {
@@ -1532,26 +1532,8 @@ $smallSize: "screen and (max-width:480px)";
       min-width: 100%;
     }
 
-    > .working {
-      border-top: 1px solid $sec-color-3;
-
-      > p {
-        height: 80px;
-        padding-left: 7%;
-        line-height: 80px;
-
-        > a {
-          margin: 0 30px;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      } //end of p
-    } //end of .working
-
     > .info {
-      background-color: darken($sec-color-2, 10%);
+      background-color: $pri-color-1;
 
       > .container {
         position: relative;
