@@ -688,3 +688,108 @@
     right: -5%;
   }
 }
+
+@keyframes skill01 {
+  0% {
+    background-image: url(./../images/skill/skill_icon01_00.png);
+  }
+  7.15% {
+    background-image: url(./../images/skill/skill_icon01_01.png);
+  }
+  14.3% {
+    background-image: url(./../images/skill/skill_icon01_02.png);
+  }
+  21.45% {
+    background-image: url(./../images/skill/skill_icon01_03.png);
+  }
+  28.6% {
+    background-image: url(./../images/skill/skill_icon01_04.png);
+  }
+  35.75% {
+    background-image: url(./../images/skill/skill_icon01_05.png);
+  }
+  42.9% {
+    background-image: url(./../images/skill/skill_icon01_06.png);
+  }
+  50.05% {
+    background-image: url(./../images/skill/skill_icon01_07.png);
+  }
+  57.2% {
+    background-image: url(./../images/skill/skill_icon01_08.png);
+  }
+  64.35% {
+    background-image: url(./../images/skill/skill_icon01_09.png);
+  }
+  71.5% {
+    background-image: url(./../images/skill/skill_icon01_10.png);
+  }
+  78.65% {
+    background-image: url(./../images/skill/skill_icon01_11.png);
+  }
+  85.8% {
+    background-image: url(./../images/skill/skill_icon01_12.png);
+  }
+  92.95% {
+    background-image: url(./../images/skill/skill_icon01_13.png);
+  }
+  100% {
+    background-image: url(./../images/skill/skill_icon01_00.png);
+  }
+}
+
+@keyframes skill02 {
+  0% {
+    background-image: url(./../images/skill/skill_icon02_00.png);
+  }
+  4% {
+    background-image: url(./../images/skill/skill_icon02_01.png);
+  }
+  8% {
+    background-image: url(./../images/skill/skill_icon02_02.png);
+  }
+  12% {
+    background-image: url(./../images/skill/skill_icon02_03.png);
+  }
+  16% {
+    background-image: url(./../images/skill/skill_icon02_04.png);
+  }
+  20% {
+    background-image: url(./../images/skill/skill_icon02_05.png);
+  }
+  24% {
+    background-image: url(./../images/skill/skill_icon02_06.png);
+  }
+  50% {
+    background-image: url(./../images/skill/skill_icon02_06.png);
+  }
+  54% {
+    background-image: url(./../images/skill/skill_icon02_07.png);
+  }
+  58% {
+    background-image: url(./../images/skill/skill_icon02_08.png);
+  }
+  62% {
+    background-image: url(./../images/skill/skill_icon02_09.png);
+  }
+  66% {
+    background-image: url(./../images/skill/skill_icon02_10.png);
+  }
+  70% {
+    background-image: url(./../images/skill/skill_icon02_11.png);
+  }
+  74% {
+    background-image: url(./../images/skill/skill_icon02_00.png);
+  }
+  100% {
+    background-image: url(./../images/skill/skill_icon02_00.png);
+  }
+}
+
+@keyframes skill04 {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}

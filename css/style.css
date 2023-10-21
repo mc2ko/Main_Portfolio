@@ -712,7 +712,7 @@
 }
 #wrap #aboutme > h2 {
   padding-top: 50px;
-  margin-bottom: 72px;
+  margin-bottom: 70px;
   color: #fff7ce;
   font-size: 50px;
   line-height: 50px;
@@ -743,7 +743,7 @@
 @media screen and (max-width:640px) {
   #wrap #aboutme > .container {
     width: 100%;
-    margin-top: -60px;
+    margin-top: -40px;
   }
 }
 #wrap #aboutme > .container > .scroll {
@@ -924,7 +924,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap #aboutme > .container > .scroll > .scrollArea > .biography > .detail > h3 {
-    color: #ffc90e;
+    color: #fff09f;
   }
 }
 #wrap #aboutme > .container > .scroll > .scrollArea > .biography > .detail > p {
@@ -1006,7 +1006,7 @@
 }
 #wrap #skill > h2 {
   padding-top: 60px;
-  margin-bottom: 72px;
+  margin-bottom: 60px;
   color: #fff7ce;
   font-size: 50px;
   line-height: 50px;
@@ -1038,17 +1038,18 @@
   padding-bottom: 80px;
 }
 #wrap #skill > article.skill-1 {
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 #wrap #skill > article > h3 {
-  margin-bottom: 80px;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 48px;
+  margin-bottom: 40px;
+  color: #602a09;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.4;
   text-align: center;
 }
 #wrap #skill > article > h3 > span {
-  display: block;
+  color: #c03611;
 }
 #wrap #skill > article > ol {
   display: flex;
@@ -1065,8 +1066,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 45%;
-  height: 150px;
+  width: 48%;
+  height: 172px;
   background-repeat: no-repeat;
   box-sizing: border-box;
 }
@@ -1080,16 +1081,21 @@
 }
 #wrap #skill > article > ol > li > h4 {
   margin-bottom: 30px;
-  font-weight: 400;
+  color: #fff09f;
+  font-weight: 500;
   font-size: 24px;
+  line-height: 1.2;
 }
 #wrap #skill > article > ol > li > p {
+  color: white;
+  font-size: 16px;
   line-height: 1.6;
 }
 #wrap #skill > article.skill-1 li:first-child {
-  padding-left: 360px;
-  background-image: url(./../images/skill/skill01.png);
-  background-position: 180px 0;
+  padding-left: 260px;
+  background-image: url(./../images/skill/skill_icon01_00.png);
+  background-position: 80px 0;
+  animation: skill01 1s ease infinite forwards;
 }
 @media screen and (max-width:640px) {
   #wrap #skill > article.skill-1 li:first-child {
@@ -1099,12 +1105,13 @@
 }
 #wrap #skill > article.skill-1 li:last-child {
   padding-left: 180px;
-  background-image: url(./../images/skill/skill02.png);
+  background-image: url(./../images/skill/skill_icon02_00.png);
+  animation: skill02 2s ease infinite forwards;
 }
 #wrap #skill > article.skill-2 li:first-child {
-  padding-left: 360px;
-  background-image: url(./../images/skill/skill03.png);
-  background-position: 180px 0;
+  padding-left: 260px;
+  background-image: url(./../images/skill/skill_icon03_01.png);
+  background-position: 80px 0;
 }
 @media screen and (max-width:640px) {
   #wrap #skill > article.skill-2 li:first-child {
@@ -1114,7 +1121,16 @@
 }
 #wrap #skill > article.skill-2 li:last-child {
   padding-left: 180px;
-  background-image: url(./../images/skill/skill04.png);
+  background-image: url(./../images/skill/skill_icon04_00.png);
+}
+#wrap #skill > article .rotateSkill {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 640px;
+  rotate: 0;
+  background-image: url(./../images/skill/skill_icon04_01.png);
+  animation: skill04 4s ease infinite;
 }
 #wrap #ability {
   position: relative;
@@ -1128,7 +1144,7 @@
 }
 #wrap #ability > h2 {
   padding-top: 60px;
-  margin-bottom: 72px;
+  margin-bottom: 60px;
   color: #fff7ce;
   font-size: 50px;
   line-height: 50px;
@@ -1295,7 +1311,7 @@
   position: relative;
   min-width: 1200px;
   padding-bottom: 80px;
-  background-color: #f08d50;
+  background-color: #f4ac7f;
 }
 @media screen and (max-width:640px) {
   #wrap #uxdesign {
@@ -1304,7 +1320,7 @@
 }
 #wrap #uxdesign > h2 {
   padding-top: 60px;
-  margin-bottom: 72px;
+  margin-bottom: 60px;
   color: #fff7ce;
   font-size: 50px;
   line-height: 50px;
@@ -1344,7 +1360,7 @@
 }
 #wrap #portfolio > h2 {
   padding-top: 60px;
-  margin-bottom: 72px;
+  margin-bottom: 60px;
   color: #fff7ce;
   font-size: 50px;
   line-height: 50px;
@@ -1406,7 +1422,7 @@
 #wrap #contact {
   position: relative;
   min-width: 1200px;
-  background-color: #f08d50;
+  background-color: #fbf7c1;
   padding-bottom: 80px;
 }
 @media screen and (max-width:640px) {
@@ -1416,7 +1432,7 @@
 }
 #wrap #contact > h2 {
   padding-top: 60px;
-  margin-bottom: 72px;
+  margin-bottom: 60px;
   color: #fff7ce;
   font-size: 50px;
   line-height: 50px;
