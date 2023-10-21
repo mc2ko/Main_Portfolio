@@ -661,3 +661,30 @@
     opacity: 1;
   }
 }
+
+@keyframes scroll {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 1000px;
+  }
+}
+
+@keyframes scrollLeft {
+  0% {
+    left: 40%;
+  }
+  100% {
+    left: -5%;
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    right: 40%;
+  }
+  100% {
+    right: -5%;
+  }
+}

@@ -119,20 +119,20 @@ $(function () {
   $(window).on("scroll", function () {
     const scrollTop = $(this).scrollTop();
 
-    // aboutme 영역
-    if (scrollTop > $("#aboutme").offset().top - window.innerHeight + 200) {
-      $("#aboutme .scrollArea").animate({ width: 1000 }, 3000);
-    } else if (
-      scrollTop <
-      $("#aboutme").offset().top - window.innerHeight + 800
-    ) {
-      $("#aboutme .scrollArea").animate({ width: 100 }); //스크롤접기
-    }
+    // // aboutme 영역
+    // if (scrollTop > $("#aboutme").offset().top - window.innerHeight + 200) {
+    //   $("#aboutme .scrollArea").animate({ width: 1000 }, 3000);
+    // } else if (
+    //   scrollTop <
+    //   $("#aboutme").offset().top - window.innerHeight + 800
+    // ) {
+    //   $("#aboutme .scrollArea").animate({ width: 100 }); //스크롤접기
+    // }
 
-    // 화면을 내렸다 올려도 스크롤펼치기 리셋
-    if (scrollTop >= $("#aboutme").offset().top + 580) {
-      $("#aboutme .scrollArea").animate({ width: 100 }, 3000);
-    }
+    // // 화면을 내렸다 올려도 스크롤펼치기 리셋
+    // if (scrollTop >= $("#aboutme").offset().top + 880) {
+    //   $("#aboutme .scrollArea").animate({ width: 100 }, 3000);
+    // }
 
     //ability 영역
     if (scrollTop > $("#ability").offset().top - window.innerHeight + 300) {
