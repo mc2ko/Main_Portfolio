@@ -147,7 +147,7 @@ $(function () {
     }
 
     // 화면을 내렸다 올려도 막대그래프 리셋되게 연습하기
-    if (scrollTop >= $("#ability").offset().top + 280) {
+    if (scrollTop >= $("#ability").offset().top + 480) {
       $("#ability .bar").width(0);
     }
   });

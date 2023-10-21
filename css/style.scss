@@ -1185,6 +1185,12 @@ $smallSize: "screen and (max-width:480px)";
             color: white;
             font-size: 16px;
             line-height: 1.6;
+
+            > br {
+              @media #{$mobile} {
+                display: none;
+              }
+            }
           }
         } //end of li
       } //end of ol
@@ -1271,64 +1277,151 @@ $smallSize: "screen and (max-width:480px)";
     } //end of h2
 
     > .ability-container {
-      padding-bottom: 50px;
+      position: relative;
+
+      @media #{$mobile} {
+        top: -80px;
+        margin-bottom: -80px;
+      }
+
+      > .abilityBook {
+        position: absolute;
+        z-index: 0;
+        left: 50%;
+        top: -30px;
+        transform: translate(-50%, 0);
+        width: 780px;
+        height: 476px;
+        background-image: url(./../images/ability/ability_book.png);
+
+        @media #{$mobile} {
+          display: none;
+        }
+      }
 
       > .stick {
         display: flex;
-        justify-content: space-around;
+        position: relative;
+        top: 30px;
+        padding-bottom: 150px;
 
         @media #{$mobile} {
           display: block;
+          padding-bottom: 50px;
         }
 
         > .stick-container {
-          width: 43%;
+          position: relative;
+          left: 50%;
+          width: 300px;
 
           @media #{$mobile} {
-            width: 100%;
+            width: 80%;
+          }
+
+          &:first-child {
+            transform: translate(-108%, 0);
+
+            @media #{$mobile} {
+              transform: translate(-62.5%, 0);
+            }
+          }
+
+          &:last-child {
+            transform: translate(-92%, 0);
+
+            @media #{$mobile} {
+              top: -10px;
+              transform: translate(-62.5%, 0);
+            }
           }
 
           > .item {
             display: flex;
             flex-flow: row nowrap;
-            margin-bottom: 40px;
+            // justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            margin-bottom: 10px;
 
             @media #{$mobile} {
-              padding: 0 7%;
+              margin-left: 15%;
             }
 
             > h3 {
-              width: 17%;
-              padding-right: 8%;
-              color: $pri-color-3;
+              position: absolute;
+              left: 30%;
+              padding-bottom: 30px;
+              color: $sec-color-1;
+              font-size: 16px;
               font-weight: 600;
               line-height: 10px;
-              text-align: right;
 
               @media #{$mobile} {
-                font-size: 15px;
+                left: 40%;
+                color: $sec-color-3;
               }
+            }
+
+            > .abilityIcon {
+              width: 68px;
+              height: 88px;
+            }
+
+            > .abilityIcon01 {
+              background-image: url(./../images/ability/ability_icon00.png);
+            }
+
+            > .abilityIcon02 {
+              background-image: url(./../images/ability/ability_icon01.png);
+            }
+
+            > .abilityIcon03 {
+              background-image: url(./../images/ability/ability_icon02.png);
+            }
+
+            > .abilityIcon04 {
+              background-image: url(./../images/ability/ability_icon03.png);
+            }
+
+            > .abilityIcon05 {
+              background-image: url(./../images/ability/ability_icon04.png);
+            }
+
+            > .abilityIcon06 {
+              background-image: url(./../images/ability/ability_icon05.png);
             }
 
             > .progress {
               position: relative;
-              width: 75%;
+              left: 7%;
+              margin-top: 20px;
+              width: 70%;
               height: 10px;
-              background-color: $sec-color-2;
-              border-radius: 3px;
+              background-color: $pri-color-1;
+
+              @media #{$mobile} {
+                width: 80%;
+                background-color: black;
+              }
 
               > .bar {
-                // width: 95%;
                 width: 0; //js에서 동적으로 할당
                 height: 100%;
-                background-color: $pri-color-2;
+                background-color: rgb(86, 238, 86);
                 transition: all 2s ease-in-out;
 
                 > span {
                   position: absolute;
-                  right: 15px;
+                  right: 2px;
                   top: -20px;
-                  color: $pri-color-3;
+                  color: $sec-color-1;
+                  font-size: 16px;
+                  font-weight: 600;
+
+                  @media #{$mobile} {
+                    color: $sec-color-3;
+                  }
                 }
               } //end of .bar
             } //end of .progress
