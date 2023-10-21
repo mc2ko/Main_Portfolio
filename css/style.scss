@@ -1211,8 +1211,10 @@ $smallSize: "screen and (max-width:480px)";
 
       &.skill-2 li:first-child {
         padding-left: 260px;
-        background-image: url(./../images/skill/skill_icon03_01.png);
+        background-image: url(./../images/skill/skill_icon03_00.png);
         background-position: 80px 0;
+
+        animation: skill03 2s ease infinite forwards;
 
         @media #{$mobile} {
           padding-left: 180px;
@@ -1223,6 +1225,8 @@ $smallSize: "screen and (max-width:480px)";
       &.skill-2 li:last-child {
         padding-left: 180px;
         background-image: url(./../images/skill/skill_icon04_00.png);
+
+        animation: skill04 0.4s ease infinite forwards;
       }
     } //end of article
   } //end of #skill
