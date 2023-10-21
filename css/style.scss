@@ -1224,17 +1224,6 @@ $smallSize: "screen and (max-width:480px)";
         padding-left: 180px;
         background-image: url(./../images/skill/skill_icon04_00.png);
       }
-
-      .rotateSkill {
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        left: 640px;
-        rotate: 0;
-        background-image: url(./../images/skill/skill_icon04_01.png);
-
-        animation: skill04 4s ease infinite;
-      }
     } //end of article
   } //end of #skill
 
