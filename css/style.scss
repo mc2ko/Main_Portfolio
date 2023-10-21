@@ -140,6 +140,8 @@ $smallSize: "screen and (max-width:480px)";
           top: 20px;
           right: 50%;
           transform: translate(50%, 0);
+          opacity: 1;
+          animation: none;
         }
 
         @media #{$smallSize} {
@@ -162,6 +164,8 @@ $smallSize: "screen and (max-width:480px)";
           top: 52px;
           left: 50%;
           transform: translate(-50%, 0);
+          opacity: 1;
+          animation: none;
         }
 
         @media #{$smallSize} {
@@ -783,9 +787,12 @@ $smallSize: "screen and (max-width:480px)";
     min-width: 1200px;
     z-index: 200;
     background-color: #64381c;
+    background-image: url(./../images/aboutme/bg_pattern.jpg);
+
     @media #{$mobile} {
       padding-top: 140px;
       min-width: initial;
+      background-image: none;
     }
 
     > h2 {
@@ -831,7 +838,7 @@ $smallSize: "screen and (max-width:480px)";
         height: 760px;
 
         @media #{$mobile} {
-          height: 1500px;
+          height: 1400px;
         }
 
         > .scrollArea {

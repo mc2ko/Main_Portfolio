@@ -110,6 +110,8 @@
     top: 20px;
     right: 50%;
     transform: translate(50%, 0);
+    opacity: 1;
+    animation: none;
   }
 }
 @media screen and (max-width:480px) {
@@ -132,6 +134,8 @@
     top: 52px;
     left: 50%;
     transform: translate(-50%, 0);
+    opacity: 1;
+    animation: none;
   }
 }
 @media screen and (max-width:480px) {
@@ -697,11 +701,13 @@
   min-width: 1200px;
   z-index: 200;
   background-color: #64381c;
+  background-image: url(./../images/aboutme/bg_pattern.jpg);
 }
 @media screen and (max-width:640px) {
   #wrap #aboutme {
     padding-top: 140px;
     min-width: initial;
+    background-image: none;
   }
 }
 #wrap #aboutme > h2 {
@@ -748,7 +754,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap #aboutme > .container > .scroll {
-    height: 1500px;
+    height: 1400px;
   }
 }
 #wrap #aboutme > .container > .scroll > .scrollArea {
