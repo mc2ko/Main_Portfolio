@@ -1053,12 +1053,12 @@
 }
 #wrap #skill > article > ol {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media screen and (max-width:640px) {
   #wrap #skill > article > ol {
     display: block;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
 }
@@ -1066,7 +1066,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 48%;
+  width: 44%;
   height: 172px;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -1080,7 +1080,7 @@
   }
 }
 #wrap #skill > article > ol > li > h4 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: #fff09f;
   font-weight: 500;
   font-size: 24px;
@@ -1089,7 +1089,7 @@
 #wrap #skill > article > ol > li > p {
   color: white;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 @media screen and (max-width:640px) {
   #wrap #skill > article > ol > li > p > br {
@@ -1109,9 +1109,16 @@
   }
 }
 #wrap #skill > article.skill-1 li:last-child {
-  padding-left: 180px;
+  padding-left: 230px;
   background-image: url(./../images/skill/skill_icon02_00.png);
+  background-position: 50px 0;
   animation: skill02 2s ease infinite forwards;
+}
+@media screen and (max-width:640px) {
+  #wrap #skill > article.skill-1 li:last-child {
+    padding-left: 180px;
+    background-position: 0 0;
+  }
 }
 #wrap #skill > article.skill-2 li:first-child {
   padding-left: 260px;
@@ -1126,9 +1133,16 @@
   }
 }
 #wrap #skill > article.skill-2 li:last-child {
-  padding-left: 180px;
+  padding-left: 230px;
   background-image: url(./../images/skill/skill_icon04_00.png);
+  background-position: 50px 0;
   animation: skill04 0.4s ease infinite forwards;
+}
+@media screen and (max-width:640px) {
+  #wrap #skill > article.skill-2 li:last-child {
+    padding-left: 180px;
+    background-position: 0 0;
+  }
 }
 #wrap #ability {
   position: relative;

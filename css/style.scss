@@ -1149,18 +1149,19 @@ $smallSize: "screen and (max-width:480px)";
 
       > ol {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
 
         @media #{$mobile} {
           display: block;
-          width: 90%;
+          width: 80%;
           margin: 0 auto;
         }
         > li {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          width: 48%;
+          width: 44%;
+          // background-color: rgba(0, 0, 0, 0.5);
           height: 172px;
           background-repeat: no-repeat;
           box-sizing: border-box;
@@ -1174,7 +1175,7 @@ $smallSize: "screen and (max-width:480px)";
           }
 
           > h4 {
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             color: $point-color-1;
             font-weight: 500;
             font-size: 24px;
@@ -1184,7 +1185,7 @@ $smallSize: "screen and (max-width:480px)";
           > p {
             color: white;
             font-size: 16px;
-            line-height: 1.6;
+            line-height: 1.4;
 
             > br {
               @media #{$mobile} {
@@ -1209,10 +1210,16 @@ $smallSize: "screen and (max-width:480px)";
       }
 
       &.skill-1 li:last-child {
-        padding-left: 180px;
+        padding-left: 230px;
         background-image: url(./../images/skill/skill_icon02_00.png);
+        background-position: 50px 0;
 
         animation: skill02 2s ease infinite forwards;
+
+        @media #{$mobile} {
+          padding-left: 180px;
+          background-position: 0 0;
+        }
       }
 
       &.skill-2 li:first-child {
@@ -1229,10 +1236,16 @@ $smallSize: "screen and (max-width:480px)";
       }
 
       &.skill-2 li:last-child {
-        padding-left: 180px;
+        padding-left: 230px;
         background-image: url(./../images/skill/skill_icon04_00.png);
+        background-position: 50px 0;
 
         animation: skill04 0.4s ease infinite forwards;
+
+        @media #{$mobile} {
+          padding-left: 180px;
+          background-position: 0 0;
+        }
       }
     } //end of article
   } //end of #skill
