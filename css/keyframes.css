@@ -859,3 +859,61 @@
     background-image: url(./../images/skill/skill_icon04_00.png);
   }
 }
+
+@keyframes sideDecoLeft {
+  0% {
+    background-image: url(./../images/deco/side_deco00.png);
+    opacity: 0;
+    left: -100px;
+  }
+  40% {
+    background-image: url(./../images/deco/side_deco00.png);
+    opacity: 1;
+    left: 0px;
+  }
+  55% {
+    background-image: url(./../images/deco/side_deco01.png);
+    opacity: 1;
+  }
+  70% {
+    background-image: url(./../images/deco/side_deco02.png);
+    opacity: 1;
+  }
+  85% {
+    background-image: url(./../images/deco/side_deco03.png);
+    opacity: 1;
+  }
+  100% {
+    background-image: url(./../images/deco/side_deco04.png);
+    opacity: 1;
+  }
+}
+
+@keyframes sideDecoRight {
+  0% {
+    background-image: url(./../images/deco/side_deco00.png);
+    opacity: 0;
+    right: -100px;
+  }
+  40% {
+    background-image: url(./../images/deco/side_deco00.png);
+    opacity: 1;
+    right: 0px;
+  }
+  55% {
+    background-image: url(./../images/deco/side_deco01.png);
+    opacity: 1;
+  }
+  70% {
+    background-image: url(./../images/deco/side_deco02.png);
+    opacity: 1;
+  }
+  85% {
+    background-image: url(./../images/deco/side_deco03.png);
+    opacity: 1;
+  }
+  100% {
+    background-image: url(./../images/deco/side_deco04.png);
+    opacity: 1;
+  }
+}

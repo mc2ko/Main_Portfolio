@@ -886,7 +886,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap #aboutme > .container > .scroll > .scrollArea > .profile > div > ol > li > span {
-    color: #fff7ce;
+    color: #f08d50;
   }
 }
 #wrap #aboutme > .container > .scroll > .scrollArea > .biography {
@@ -924,7 +924,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap #aboutme > .container > .scroll > .scrollArea > .biography > .detail > h3 {
-    color: #fff09f;
+    color: #f08d50;
   }
 }
 #wrap #aboutme > .container > .scroll > .scrollArea > .biography > .detail > p {
@@ -1554,6 +1554,44 @@
     width: 80%;
     margin: -70px auto 0;
   }
+}
+#wrap #sideDeco {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 400;
+  top: 50%;
+  transform: translate(0, -45%);
+  width: 100%;
+  height: 688px;
+}
+@media screen and (max-width:640px) {
+  #wrap #sideDeco {
+    display: none;
+  }
+}
+#wrap #sideDeco > #sideDecoLeft {
+  display: none;
+  position: relative;
+  width: 94px;
+  height: 688px;
+  background-image: url(./../images/deco/side_deco00.png);
+  z-index: 400;
+  background-size: contain;
+  opacity: 0;
+  transform: scaleX(-100%);
+  animation: sideDecoLeft 1s ease-in 0.5s alternate forwards;
+}
+#wrap #sideDeco > #sideDecoRight {
+  display: none;
+  position: relative;
+  width: 94px;
+  height: 688px;
+  background-image: url(./../images/deco/side_deco00.png);
+  z-index: 400;
+  background-size: contain;
+  opacity: 0;
+  animation: sideDecoRight 1s ease-in 0.5s alternate forwards;
 }
 #wrap > footer {
   position: relative;

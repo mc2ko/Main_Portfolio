@@ -119,31 +119,30 @@ $(function () {
   $(window).on("scroll", function () {
     const scrollTop = $(this).scrollTop();
 
-    // // aboutme 영역
-    // if (scrollTop > $("#aboutme").offset().top - window.innerHeight + 200) {
-    //   $("#aboutme .scrollArea").animate({ width: 1000 }, 3000);
-    // } else if (
-    //   scrollTop <
-    //   $("#aboutme").offset().top - window.innerHeight + 800
-    // ) {
-    //   $("#aboutme .scrollArea").animate({ width: 100 }); //스크롤접기
-    // }
-
-    // // 화면을 내렸다 올려도 스크롤펼치기 리셋
-    // if (scrollTop >= $("#aboutme").offset().top + 880) {
-    //   $("#aboutme .scrollArea").animate({ width: 100 }, 3000);
-    // }
+    // 덩쿨나무 장식 영역
+    if (scrollTop > $("#skill").offset().top - window.innerHeight + 800) {
+      $("#sideDecoLeft").fadeIn(0);
+      $("#sideDecoRight").fadeIn(0);
+    } else if (
+      scrollTop <
+      $("#skill").offset().top - window.innerHeight + 780
+    ) {
+      $("#sideDecoLeft").fadeOut();
+      $("#sideDecoRight").fadeOut();
+    }
 
     //ability 영역
     if (scrollTop > $("#ability").offset().top - window.innerHeight + 300) {
       $("#ability .bar").each(function () {
         $(this).width($(this).children("span").text());
       });
+      // $("#sideDecoLeft").css({ opacity: 1 });
     } else if (
       scrollTop <
       $("#ability").offset().top - window.innerHeight + 200
     ) {
       $("#ability .bar").width(0); //막대그래프 리셋
+      // $("#sideDecoLeft").css({ opacity: 0 });
     }
 
     // 화면을 내렸다 올려도 막대그래프 리셋되게 연습하기

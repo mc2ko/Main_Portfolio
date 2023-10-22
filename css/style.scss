@@ -967,7 +967,7 @@ $smallSize: "screen and (max-width:480px)";
                     color: white;
 
                     @media #{$mobile} {
-                      color: $sec-color-3;
+                      color: $pri-color-2;
                     }
                   }
                 } //end of li
@@ -1006,7 +1006,7 @@ $smallSize: "screen and (max-width:480px)";
                 font-size: 32px;
 
                 @media #{$mobile} {
-                  color: $point-color-1;
+                  color: $pri-color-2;
                 }
               }
 
@@ -1675,6 +1675,48 @@ $smallSize: "screen and (max-width:480px)";
         }
       }
     } //end of h2
+  }
+
+  #sideDeco {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 400;
+    top: 50%;
+    transform: translate(0, -45%);
+    width: 100%;
+    height: 688px;
+
+    @media #{$mobile} {
+      display: none;
+    }
+
+    > #sideDecoLeft {
+      display: none;
+      position: relative;
+      width: 94px;
+      height: 688px;
+      background-image: url(./../images/deco/side_deco00.png);
+      z-index: 400;
+      background-size: contain;
+      opacity: 0;
+      transform: scaleX(-100%);
+
+      animation: sideDecoLeft 1s ease-in 0.5s alternate forwards;
+    }
+
+    > #sideDecoRight {
+      display: none;
+      position: relative;
+      width: 94px;
+      height: 688px;
+      background-image: url(./../images/deco/side_deco00.png);
+      z-index: 400;
+      background-size: contain;
+      opacity: 0;
+
+      animation: sideDecoRight 1s ease-in 0.5s alternate forwards;
+    }
   }
 
   > footer {
