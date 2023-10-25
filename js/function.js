@@ -121,14 +121,14 @@ $(function () {
 
     // 덩쿨나무 장식 영역
     if (scrollTop > $("#skill").offset().top - window.innerHeight + 800) {
+      $("#sideDeco").css({ display: "flex" });
       $("#sideDecoLeft").fadeIn(0);
       $("#sideDecoRight").fadeIn(0);
     } else if (
       scrollTop <
       $("#skill").offset().top - window.innerHeight + 780
     ) {
-      $("#sideDecoLeft").fadeOut();
-      $("#sideDecoRight").fadeOut();
+      $("#sideDeco").fadeOut();
     }
 
     //ability 영역

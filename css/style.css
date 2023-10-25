@@ -1301,19 +1301,30 @@
   left: 7%;
   margin-top: 20px;
   width: 70%;
-  height: 10px;
+  height: 16px;
   background-color: #674a39;
+}
+#wrap #ability > .ability-container > .stick > .stick-container > .item > .progress:before {
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  width: 100%;
+  height: 16px;
+  border: 3px solid #000;
+  border-radius: 6px;
+  content: "";
 }
 @media screen and (max-width:640px) {
   #wrap #ability > .ability-container > .stick > .stick-container > .item > .progress {
     width: 80%;
-    background-color: black;
+    background-color: rgb(19, 66, 37);
   }
 }
 #wrap #ability > .ability-container > .stick > .stick-container > .item > .progress > .bar {
   width: 0;
   height: 100%;
-  background-color: rgb(86, 238, 86);
+  border-right: 2px solid #000;
+  background-image: url(./../images/ability/ability_progress.png);
   transition: all 2s ease-in-out;
 }
 #wrap #ability > .ability-container > .stick > .stick-container > .item > .progress > .bar > span {
@@ -1345,30 +1356,38 @@
 }
 #wrap #ability > .resume > div > .frame {
   overflow: hidden;
-  width: 520px;
-  height: 340px;
-  margin-right: 50px;
+  width: 440px;
+  height: 314px;
+  margin: 0 20px 0 20px;
+  border-radius: 12px;
 }
 @media screen and (max-width:640px) {
   #wrap #ability > .resume > div > .frame {
     width: 100%;
     height: auto;
-    margin-right: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
   }
 }
 #wrap #ability > .resume > div > .frame > img {
   display: block;
-  width: 100%;
-  border-radius: 12px;
+  width: 130%;
+}
+@media screen and (max-width:640px) {
+  #wrap #ability > .resume > div > .frame > img {
+    width: 100%;
+  }
 }
 #wrap #ability > .resume > div > .iam {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 6px;
 }
 #wrap #ability > .resume > div > .iam > p {
-  line-height: 1.8;
+  color: #602a09;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
 }
 @media screen and (max-width:640px) {
   #wrap #ability > .resume > div > .iam > p > br {
@@ -1386,16 +1405,20 @@
 #wrap #ability > .resume > div > .iam > a {
   display: block;
   position: relative;
+  z-index: 800;
   left: 50%;
   top: 0%;
   bottom: 80px;
-  width: 260px;
-  height: 40px;
+  width: 336px;
+  height: 62px;
+  margin-top: 12px;
   transform: translate(-50%, 0);
-  color: #fbf7c1;
-  line-height: 40px;
+  color: #1f5104;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 58px;
   text-align: center;
-  background-color: #91290d;
+  background-image: url(./../images/ability/ability_button.png);
 }
 @media screen and (max-width:640px) {
   #wrap #ability > .resume > div > .iam > a {
@@ -1490,6 +1513,7 @@
 }
 #wrap #portfolio > ol > li {
   position: relative;
+  z-index: 800;
 }
 #wrap #portfolio > ol > li:nth-child(1) {
   width: 250px;
@@ -1564,10 +1588,11 @@
   transform: translate(0, -45%);
   width: 100%;
   height: 688px;
+  visibility: visible;
 }
 @media screen and (max-width:640px) {
   #wrap #sideDeco {
-    display: none;
+    visibility: hidden;
   }
 }
 #wrap #sideDeco > #sideDecoLeft {
@@ -1580,7 +1605,7 @@
   background-size: contain;
   opacity: 0;
   transform: scaleX(-100%);
-  animation: sideDecoLeft 1s ease-in 0.5s alternate forwards;
+  animation: sideDecoLeft 0.5s ease-in 0s alternate forwards;
 }
 #wrap #sideDeco > #sideDecoRight {
   display: none;
@@ -1591,7 +1616,7 @@
   z-index: 400;
   background-size: contain;
   opacity: 0;
-  animation: sideDecoRight 1s ease-in 0.5s alternate forwards;
+  animation: sideDecoRight 0.5s ease-in 0s alternate forwards;
 }
 #wrap > footer {
   position: relative;
