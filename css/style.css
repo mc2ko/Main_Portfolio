@@ -1428,7 +1428,7 @@
 #wrap #uxdesign {
   position: relative;
   min-width: 1200px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   background-color: #f4ac7f;
 }
 @media screen and (max-width:640px) {
@@ -1438,7 +1438,7 @@
 }
 #wrap #uxdesign > h2 {
   padding-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   color: #fff7ce;
   font-size: 50px;
   line-height: 50px;
@@ -1465,6 +1465,63 @@
     width: 80%;
     margin: -70px auto 0;
   }
+}
+#wrap #uxdesign > .maps {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1100px;
+  height: 704px;
+  background-image: url(./../images/uidesign/ui_map.png);
+}
+@media screen and (max-width:640px) {
+  #wrap #uxdesign > .maps {
+    width: 100%;
+    background-image: none;
+  }
+}
+#wrap #uxdesign > .maps > .btn_designLeft {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-820%, -100%);
+  width: 50px;
+  height: 72px;
+  background-image: url(./../images/btn_arrow.png);
+}
+#wrap #uxdesign > .maps > .btn_designRight {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(720%, -100%) scaleX(-100%);
+  width: 50px;
+  height: 72px;
+  background-image: url(./../images/btn_arrow.png);
+}
+#wrap #uxdesign > .maps > .btn_boneEye {
+  position: absolute;
+  left: 116px;
+  top: 590px;
+  width: 86px;
+  height: 54px;
+  background-image: url(./../images/uidesign/ui_boneeye.png);
+}
+#wrap #uxdesign > .maps > .design01 > ol {
+  width: 100%;
+}
+#wrap #uxdesign > .maps > .design01 > ol > li {
+  position: absolute;
+  left: 50%;
+  top: 84px;
+  transform: translate(-50%, 0);
+  width: 614px;
+  height: 460px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  background-image: url("https://github.com/mc2ko/Resource_Image/blob/main/ui_design/01_Seoyugi_Online/SeoyugiOnline_UI01.jpg?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 #wrap #portfolio {
   position: relative;

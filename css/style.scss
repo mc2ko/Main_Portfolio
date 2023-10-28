@@ -1542,7 +1542,7 @@ $smallSize: "screen and (max-width:480px)";
   #uxdesign {
     position: relative;
     min-width: 1200px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     background-color: lighten($pri-color-2, 10%);
 
     @media #{$mobile} {
@@ -1551,7 +1551,7 @@ $smallSize: "screen and (max-width:480px)";
 
     > h2 {
       padding-top: 60px;
-      margin-bottom: 60px;
+      margin-bottom: 20px;
       color: $sec-color-3;
       font-size: 50px;
       line-height: 50px;
@@ -1578,7 +1578,70 @@ $smallSize: "screen and (max-width:480px)";
         }
       }
     } //end of h2
-  }
+
+    > .maps {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 1100px;
+      height: 704px;
+      background-image: url(./../images/uidesign/ui_map.png);
+
+      @media #{$mobile} {
+        width: 100%;
+        background-image: none;
+      }
+
+      > .btn_designLeft {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-820%, -100%);
+        width: 50px;
+        height: 72px;
+        background-image: url(./../images/btn_arrow.png);
+      } //end of left
+
+      > .btn_designRight {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(720%, -100%) scaleX(-100%);
+        width: 50px;
+        height: 72px;
+        background-image: url(./../images/btn_arrow.png);
+      } //end of right
+
+      > .btn_boneEye {
+        position: absolute;
+        left: 116px;
+        top: 590px;
+        width: 86px;
+        height: 54px;
+        background-image: url(./../images/uidesign/ui_boneeye.png);
+      } //end of boneEye
+
+      > .design01 {
+        > ol {
+          width: 100%;
+          > li {
+            position: absolute;
+            left: 50%;
+            top: 84px;
+            transform: translate(-50%, 0);
+            width: 614px;
+            height: 460px;
+            border: 3px solid #000;
+            border-radius: 10px;
+            background-image: url("https://github.com/mc2ko/Resource_Image/blob/main/ui_design/01_Seoyugi_Online/SeoyugiOnline_UI01.jpg?raw=true");
+            background-size: cover;
+            background-repeat: no-repeat;
+            cursor: pointer;
+          }
+        }
+      }
+    } //end of maps
+  } //end of uxdesign
 
   #portfolio {
     position: relative;
