@@ -115,21 +115,23 @@ $(function () {
     });
 });
 
+//화면위치에 따른 연출
 $(function () {
   $(window).on("scroll", function () {
     const scrollTop = $(this).scrollTop();
 
     // 덩쿨나무 장식 영역
-    if (scrollTop > $("#skill").offset().top - window.innerHeight + 800) {
-      $("#sideDeco").css({ display: "flex" });
-      $("#sideDecoLeft").fadeIn(0);
-      $("#sideDecoRight").fadeIn(0);
-    } else if (
-      scrollTop <
-      $("#skill").offset().top - window.innerHeight + 780
-    ) {
-      $("#sideDeco").fadeOut();
-    }
+    // 임시로 효과 끄기!!!!!!!!!!!!!!!!!!!!!!!!!!!! 작업완료후 활성화 할것!
+    // if (scrollTop > $("#skill").offset().top - window.innerHeight + 800) {
+    //   $("#sideDeco").css({ display: "flex" });
+    //   $("#sideDecoLeft").fadeIn(0);
+    //   $("#sideDecoRight").fadeIn(0);
+    // } else if (
+    //   scrollTop <
+    //   $("#skill").offset().top - window.innerHeight + 780
+    // ) {
+    //   $("#sideDeco").fadeOut();
+    // }
 
     //ability 영역
     if (scrollTop > $("#ability").offset().top - window.innerHeight + 300) {
@@ -149,5 +151,252 @@ $(function () {
     if (scrollTop >= $("#ability").offset().top + 480) {
       $("#ability .bar").width(0);
     }
+  });
+});
+
+//UI디자인 살펴보기
+$(function () {
+  const $designTab = $(".btnDesignTab p");
+  const $uiDesign = $(".maps .uiDesign");
+  const $btnCount01 = $(".design01 a");
+  const $btnCount02 = $(".design02 a");
+  const $btnCount03 = $(".design03 a");
+  const $btnCount04 = $(".design04 a");
+  const $btnCount05 = $(".design05 a");
+  const $btnCount06 = $(".design06 a");
+  const $frame = $(".imageFrame");
+  const $btnLeft = $(".btn_designLeft");
+  const $btnRight = $(".btn_designRight");
+  const $popupImage = $("#popupImage > img");
+
+  let nowIdx = 0;
+
+  // UI디자인텝 활성화
+  for (let t = 0; t < $designTab.length; t++) {
+    $designTab.eq(t).on("click", function (evt) {
+      evt.preventDefault();
+
+      $designTab.eq(t).css({ opacity: 1 }).siblings().css({ opacity: 0.5 });
+      $uiDesign
+        .eq(t)
+        .css({ display: "block" })
+        .siblings()
+        .css({ display: "none" });
+    });
+  }
+
+  // UI 디자인 다음버튼
+  $btnRight.on("click", function (evt) {
+    evt.preventDefault();
+
+    const nowTab = $btnRight.index(this);
+    switch (nowTab) {
+      case 0:
+        if (nowIdx < $btnCount01.length - 1) {
+          nowIdx++;
+        } else {
+          nowIdx = 0;
+        }
+
+        $frame.eq(0).animate({ left: -100 * nowIdx + "%" });
+        break;
+
+      case 1:
+        if (nowIdx < $btnCount02.length - 1) {
+          nowIdx++;
+        } else {
+          nowIdx = 0;
+        }
+
+        $frame.eq(1).animate({ left: -100 * nowIdx + "%" });
+        break;
+
+      case 2:
+        if (nowIdx < $btnCount03.length - 1) {
+          nowIdx++;
+        } else {
+          nowIdx = 0;
+        }
+
+        $frame.eq(2).animate({ left: -100 * nowIdx + "%" });
+        break;
+
+      case 3:
+        if (nowIdx < $btnCount04.length - 1) {
+          nowIdx++;
+        } else {
+          nowIdx = 0;
+        }
+
+        $frame.eq(3).animate({ left: -100 * nowIdx + "%" });
+        break;
+
+      case 4:
+        if (nowIdx < $btnCount05.length - 1) {
+          nowIdx++;
+        } else {
+          nowIdx = 0;
+        }
+
+        $frame.eq(4).animate({ left: -100 * nowIdx + "%" });
+        break;
+
+      case 5:
+        if (nowIdx < $btnCount06.length - 1) {
+          nowIdx++;
+        } else {
+          nowIdx = 0;
+        }
+
+        $frame.eq(5).animate({ left: -100 * nowIdx + "%" });
+        break;
+    }
+  });
+
+  // UI디자인 이전버튼
+  $btnLeft.on("click", function (evt) {
+    evt.preventDefault();
+
+    const nowTab = $btnRight.index(this);
+    switch (nowTab) {
+      case 0:
+        if (nowIdx > 0) {
+          nowIdx--;
+        } else {
+          nowIdx = $btnCount01.length - 1;
+        }
+
+        $frame.eq(0).animate({ left: -100 * nowIdx + "%" });
+        break;
+
+      case 1:
+        if (nowIdx > 0) {
+          nowIdx--;
+        } else {
+          nowIdx = $btnCount02.length - 1;
+        }
+
+        $frame.eq(1).animate({ left: -100 * nowIdx + "%" });
+        break;
+
+      case 2:
+        if (nowIdx > 0) {
+          nowIdx--;
+        } else {
+          nowIdx = $btnCount03.length - 1;
+        }
+
+        $frame.eq(2).animate({ left: -100 * nowIdx + "%" });
+        break;
+
+      case 3:
+        if (nowIdx > 0) {
+          nowIdx--;
+        } else {
+          nowIdx = $btnCount04.length - 1;
+        }
+
+        $frame.eq(3).animate({ left: -100 * nowIdx + "%" });
+        break;
+
+      case 4:
+        if (nowIdx > 0) {
+          nowIdx--;
+        } else {
+          nowIdx = $btnCount05.length - 1;
+        }
+
+        $frame.eq(4).animate({ left: -100 * nowIdx + "%" });
+        break;
+
+      case 5:
+        if (nowIdx > 0) {
+          nowIdx--;
+        } else {
+          nowIdx = $btnCount06.length - 1;
+        }
+
+        $frame.eq(5).animate({ left: -100 * nowIdx + "%" });
+        break;
+    }
+  });
+
+  // UI디자인01 상세보기 팝업창
+  for (let i = 0; i < $btnCount01.length; i++);
+  {
+    $btnCount01.on("click", function (evt) {
+      evt.preventDefault();
+
+      const tempImage = $(this).attr("href");
+      $popupImage.attr({ src: tempImage });
+      $("#popupImage").css({ display: "block" });
+    });
+  }
+
+  // UI디자인02 상세보기 팝업창
+  for (let i = 0; i < $btnCount02.length; i++);
+  {
+    $btnCount02.on("click", function (evt) {
+      evt.preventDefault();
+
+      const tempImage = $(this).attr("href");
+      $popupImage.attr({ src: tempImage });
+      $("#popupImage").css({ display: "block" });
+    });
+  }
+
+  // UI디자인03 상세보기 팝업창
+  for (let i = 0; i < $btnCount03.length; i++);
+  {
+    $btnCount03.on("click", function (evt) {
+      evt.preventDefault();
+
+      const tempImage = $(this).attr("href");
+      $popupImage.attr({ src: tempImage });
+      $("#popupImage").css({ display: "block" });
+    });
+  }
+
+  // UI디자인04 상세보기 팝업창
+  for (let i = 0; i < $btnCount04.length; i++);
+  {
+    $btnCount04.on("click", function (evt) {
+      evt.preventDefault();
+
+      const tempImage = $(this).attr("href");
+      $popupImage.attr({ src: tempImage });
+      $("#popupImage").css({ display: "block" });
+    });
+  }
+
+  // UI디자인05 상세보기 팝업창
+  for (let i = 0; i < $btnCount05.length; i++);
+  {
+    $btnCount05.on("click", function (evt) {
+      evt.preventDefault();
+
+      const tempImage = $(this).attr("href");
+      $popupImage.attr({ src: tempImage });
+      $("#popupImage").css({ display: "block" });
+    });
+  }
+
+  // UI디자인06 상세보기 팝업창
+  for (let i = 0; i < $btnCount06.length; i++);
+  {
+    $btnCount06.on("click", function (evt) {
+      evt.preventDefault();
+
+      const tempImage = $(this).attr("href");
+      $popupImage.attr({ src: tempImage });
+      $("#popupImage").css({ display: "block" });
+    });
+  }
+
+  // UI디자인 상세보기 팝업창 닫기
+  $("#popupImage").on("click", function (evt) {
+    evt.preventDefault();
+
+    $("#popupImage").css({ display: "none" });
   });
 });

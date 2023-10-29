@@ -1580,6 +1580,7 @@ $smallSize: "screen and (max-width:480px)";
     } //end of h2
 
     > .maps {
+      overflow: hidden;
       position: relative;
       left: 50%;
       transform: translate(-50%, 0);
@@ -1587,7 +1588,6 @@ $smallSize: "screen and (max-width:480px)";
       height: 704px;
 
       @media #{$mobile} {
-        overflow: hidden;
         width: 100%;
         height: 400px;
       }
@@ -1603,45 +1603,8 @@ $smallSize: "screen and (max-width:480px)";
         }
       }
 
-      > .btn_designLeft {
-        position: absolute;
-        z-index: 400;
-        left: 50%;
-        top: 50%;
-        transform: translate(-820%, -100%);
-        width: 50px;
-        height: 72px;
-        background-image: url(./../images/btn_arrow.png);
-        cursor: pointer;
-
-        @media #{$mobile} {
-          left: 8%;
-          top: 30%;
-          transform: initial;
-          z-index: 810;
-        }
-      } //end of left
-
-      > .btn_designRight {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(720%, -100%) scaleX(-100%);
-        width: 50px;
-        height: 72px;
-        background-image: url(./../images/btn_arrow.png);
-        cursor: pointer;
-
-        @media #{$mobile} {
-          left: initial;
-          right: 8%;
-          top: 30%;
-          transform: translate(0, 0) scale(-100%);
-          z-index: 810;
-        }
-      } //end of right
-
       > .btn_boneEye {
+        display: none;
         position: absolute;
         left: 116px;
         top: 590px;
@@ -1650,44 +1613,449 @@ $smallSize: "screen and (max-width:480px)";
         background-image: url(./../images/uidesign/ui_boneeye.png);
       } //end of boneEye
 
-      > .design01 {
-        position: relative;
-        z-index: 800;
-        width: 100%;
-        height: 65.4%;
-
-        > ol {
+      > .uiDesignTab {
+        > .design01 {
+          display: block;
+          position: absolute;
+          left: 50%;
+          top: 12%;
+          transform: translate(-50%, 0);
+          z-index: 500;
           width: 614px;
+          height: 460px;
+          border-radius: 10px;
+          border: 3px solid #000;
 
           @media #{$mobile} {
             width: 90%;
-            height: 90%;
+            height: 64.7%;
+            top: 0;
           }
 
-          > li {
+          > .cutLine {
             overflow: hidden;
-            position: absolute;
-            left: 50%;
-            top: 84px;
-            transform: translate(-50%, 0);
-            width: 55.84%;
+            width: 100%;
             height: 100%;
-            border: 3px solid #000;
-            border-radius: 10px;
-            background-image: url("https://github.com/mc2ko/Resource_Image/blob/main/ui_design/01_Seoyugi_Online/SeoyugiOnline_UI01.jpg?raw=true");
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
 
-            @media #{$mobile} {
-              width: 90%;
-              top: 0;
-              background-color: #fff;
-            }
+            > ol {
+              display: flex;
+              position: relative;
+              left: 0%;
+              width: 900%;
+              height: 100%;
 
-            > a {
-              position: absolute;
-              width: 100%;
-            }
+              @media #{$mobile} {
+              }
+
+              > li {
+                position: relative;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 6px;
+
+                @media #{$mobile} {
+                  width: 90%;
+                }
+
+                > a {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  left: 0;
+                  top: 0;
+
+                  > img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 6px;
+                  }
+                }
+              } //end of li
+            } //end of ol
+          }
+        } //end of design01
+
+        > .design02 {
+          display: none;
+          position: absolute;
+          left: 50%;
+          top: 12%;
+          transform: translate(-50%, 0);
+          z-index: 500;
+          width: 614px;
+          height: 460px;
+          border-radius: 10px;
+          border: 3px solid #000;
+
+          @media #{$mobile} {
+            width: 90%;
+            height: 64.7%;
+            top: 0;
+          }
+
+          > .cutLine {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+
+            > ol {
+              display: flex;
+              position: relative;
+              left: 0%;
+              width: 800%;
+              height: 100%;
+
+              @media #{$mobile} {
+              }
+
+              > li {
+                position: relative;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 6px;
+
+                @media #{$mobile} {
+                  width: 90%;
+                }
+
+                > a {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  left: 0;
+                  top: 0;
+
+                  > img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 6px;
+                  }
+                }
+              } //end of li
+            } //end of ol
+          }
+        } //end of design02
+
+        > .design03 {
+          display: none;
+          position: absolute;
+          left: 50%;
+          top: 12%;
+          transform: translate(-50%, 0);
+          z-index: 500;
+          width: 614px;
+          height: 460px;
+          border-radius: 10px;
+          border: 3px solid #000;
+
+          @media #{$mobile} {
+            width: 90%;
+            height: 64.7%;
+            top: 0;
+          }
+
+          > .cutLine {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+
+            > ol {
+              display: flex;
+              position: relative;
+              left: 0%;
+              width: 600%;
+              height: 100%;
+
+              @media #{$mobile} {
+              }
+
+              > li {
+                position: relative;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 6px;
+
+                @media #{$mobile} {
+                  width: 90%;
+                }
+
+                > a {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  left: 0;
+                  top: 0;
+
+                  > img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 6px;
+                  }
+                }
+              } //end of li
+            } //end of ol
+          }
+        } //end of design03
+
+        > .design04 {
+          display: none;
+          position: absolute;
+          left: 50%;
+          top: 15.7%;
+          transform: translate(-50%, 0);
+          z-index: 500;
+          width: 614px;
+          height: 409px;
+          border-radius: 10px;
+          border: 3px solid #000;
+
+          @media #{$mobile} {
+            width: 90%;
+            height: 60%;
+            top: 10px;
+          }
+
+          > .cutLine {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+
+            > ol {
+              display: flex;
+              position: relative;
+              left: 0%;
+              width: 1100%;
+              height: 100%;
+
+              @media #{$mobile} {
+              }
+
+              > li {
+                position: relative;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 6px;
+
+                @media #{$mobile} {
+                  width: 90%;
+                }
+
+                > a {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  left: 0;
+                  top: 0;
+
+                  > img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 6px;
+                  }
+                }
+              } //end of li
+            } //end of ol
+          }
+        } //end of design04
+
+        > .design05 {
+          display: none;
+          position: absolute;
+          left: 50%;
+          top: 10%;
+          transform: translate(-50%, 0);
+          z-index: 500;
+          width: 320px;
+          height: 480px;
+          border-radius: 10px;
+          border: 3px solid #000;
+
+          @media #{$mobile} {
+            width: 90%;
+            top: 0;
+          }
+
+          > .cutLine {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+
+            > ol {
+              display: flex;
+              position: relative;
+              left: 0%;
+              width: 500%;
+              height: 100%;
+
+              @media #{$mobile} {
+              }
+
+              > li {
+                position: relative;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 6px;
+
+                @media #{$mobile} {
+                  width: 90%;
+                }
+
+                > a {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  left: 0;
+                  top: 0;
+
+                  > img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 6px;
+                  }
+                }
+              } //end of li
+            } //end of ol
+          }
+        } //end of design05
+
+        > .design06 {
+          display: none;
+          position: absolute;
+          left: 50%;
+          top: 12%;
+          transform: translate(-50%, 0);
+          z-index: 500;
+          width: 614px;
+          height: 65.4%;
+          border-radius: 10px;
+          border: 3px solid #000;
+
+          @media #{$mobile} {
+            width: 90%;
+            top: 0;
+          }
+
+          > .cutLine {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+
+            > ol {
+              display: flex;
+              position: relative;
+              left: 0%;
+              width: 900%;
+              height: 100%;
+
+              @media #{$mobile} {
+              }
+
+              > li {
+                position: relative;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 6px;
+
+                @media #{$mobile} {
+                  width: 90%;
+                }
+
+                > a {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  left: 0;
+                  top: 0;
+
+                  > img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 6px;
+                  }
+                }
+              } //end of li
+            } //end of ol
+          }
+        } //end of design06
+
+        .btn_designLeft {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-820%, -50%);
+          width: 50px;
+          height: 72px;
+          background-image: url(./../images/btn_arrow.png);
+          cursor: pointer;
+
+          @media #{$mobile} {
+            left: 2%;
+            top: 30%;
+            transform: translate(0, 0);
+            z-index: 810;
+          }
+        } //end of left
+
+        .btn_designRight {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(720%, -50%) scaleX(-100%);
+          width: 50px;
+          height: 72px;
+          background-image: url(./../images/btn_arrow.png);
+          cursor: pointer;
+
+          @media #{$mobile} {
+            left: initial;
+            right: 2%;
+            top: 30%;
+            transform: translate(0, 0) scale(-100%);
+            z-index: 810;
+          }
+        } //end of right
+      } //end of uiDesignTab
+
+      > .btnDesignTab {
+        display: flex;
+        justify-content: space-between;
+        left: 50%;
+        top: 580px;
+        transform: translate(-50%, 0);
+        position: absolute;
+        width: 522px;
+
+        @media #{$mobile} {
+          top: 300px;
+        }
+
+        > p {
+          width: 72px;
+          height: 72px;
+          background-color: #fff;
+          cursor: pointer;
+          opacity: 0.5;
+
+          &:first-child {
+            opacity: 1;
           }
         }
       }
@@ -1854,6 +2222,35 @@ $smallSize: "screen and (max-width:480px)";
     }
   }
 
+  > #popupImage {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+
+    @media #{$mobile} {
+      width: 100%;
+      background-size: contain;
+    }
+
+    > img {
+      position: absolute;
+      z-index: 1010;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      @media #{$mobile} {
+        width: 100%;
+      }
+    }
+  } //end of popupImage
+
   > footer {
     position: relative;
     min-width: 1200px;
@@ -1914,7 +2311,7 @@ $smallSize: "screen and (max-width:480px)";
     position: fixed;
     right: 1rem;
     bottom: 1rem;
-    z-index: 1000;
+    z-index: 900;
 
     > .top {
       display: block;
