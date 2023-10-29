@@ -1589,7 +1589,7 @@ $smallSize: "screen and (max-width:480px)";
       @media #{$mobile} {
         overflow: hidden;
         width: 100%;
-        height: 440px;
+        height: 400px;
       }
 
       > .map {
@@ -1615,8 +1615,9 @@ $smallSize: "screen and (max-width:480px)";
         cursor: pointer;
 
         @media #{$mobile} {
-          top: 124px;
-          transform: translate(-500%, 0);
+          left: 8%;
+          top: 30%;
+          transform: initial;
           z-index: 810;
         }
       } //end of left
@@ -1632,8 +1633,10 @@ $smallSize: "screen and (max-width:480px)";
         cursor: pointer;
 
         @media #{$mobile} {
-          top: 124px;
-          transform: translate(400%, 0) scale(-100%);
+          left: initial;
+          right: 8%;
+          top: 30%;
+          transform: translate(0, 0) scale(-100%);
           z-index: 810;
         }
       } //end of right
@@ -1651,14 +1654,14 @@ $smallSize: "screen and (max-width:480px)";
         position: relative;
         z-index: 800;
         width: 100%;
+        height: 65.4%;
 
         > ol {
           width: 614px;
-          height: 460px;
 
           @media #{$mobile} {
             width: 90%;
-            height: 326px;
+            height: 90%;
           }
 
           > li {
@@ -1684,7 +1687,6 @@ $smallSize: "screen and (max-width:480px)";
             > a {
               position: absolute;
               width: 100%;
-              height: 100%;
             }
           }
         }
