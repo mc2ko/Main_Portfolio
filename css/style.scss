@@ -1596,6 +1596,7 @@ $smallSize: "screen and (max-width:480px)";
         width: 100%;
         height: initial;
         top: -10px;
+        margin-bottom: 0;
       }
 
       > .map {
@@ -1610,16 +1611,21 @@ $smallSize: "screen and (max-width:480px)";
       }
 
       > .btn_boneEye {
-        visibility: visible;
         position: absolute;
         left: 116px;
         top: 590px;
         width: 86px;
         height: 54px;
         background-image: url(./../images/uidesign/ui_boneeye.png);
+        opacity: 0;
+        transition: all 1s;
 
         @media #{$mobile} {
           display: none;
+        }
+
+        & .looknme {
+          opacity: 1;
         }
       } //end of boneEye
 
@@ -1996,7 +2002,7 @@ $smallSize: "screen and (max-width:480px)";
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-820%, -50%);
+        transform: translate(-820%, 60%);
         width: 50px;
         height: 72px;
         background-image: url(./../images/btn_arrow.png);
@@ -2014,7 +2020,7 @@ $smallSize: "screen and (max-width:480px)";
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(720%, -50%) scaleX(-100%);
+        transform: translate(720%, 60%) scaleX(-100%);
         width: 50px;
         height: 72px;
         background-image: url(./../images/btn_arrow.png);
@@ -2047,19 +2053,42 @@ $smallSize: "screen and (max-width:480px)";
         }
 
         > p {
-          width: 72px;
-          height: 72px;
-          background-color: #fff;
-          cursor: pointer;
+          width: 88px;
+          height: 74px;
+          text-indent: -9999px;
+          background-size: contain;
+          background-repeat: no-repeat;
           opacity: 0.5;
+          cursor: pointer;
 
           @media #{$mobile} {
             width: 60px;
             height: 60px;
           }
 
-          &:first-child {
+          &:nth-child(1) {
+            background-image: url(./../images/uidesign/ui_tabbtn01.png);
             opacity: 1;
+          }
+
+          &:nth-child(2) {
+            background-image: url(./../images/uidesign/ui_tabbtn02.png);
+          }
+
+          &:nth-child(3) {
+            background-image: url(./../images/uidesign/ui_tabbtn03.png);
+          }
+
+          &:nth-child(4) {
+            background-image: url(./../images/uidesign/ui_tabbtn04.png);
+          }
+
+          &:nth-child(5) {
+            background-image: url(./../images/uidesign/ui_tabbtn05.png);
+          }
+
+          &:nth-child(6) {
+            background-image: url(./../images/uidesign/ui_tabbtn06.png);
           }
         }
       }

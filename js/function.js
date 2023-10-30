@@ -434,3 +434,15 @@ $(function () {
     $("#popupImage").css({ display: "none" });
   });
 });
+
+//이스터 에그
+$(function () {
+  $(".btn_boneEye").on("click", function (evt) {
+    evt.preventDefault();
+
+    $(".btn_boneEye").css({ opacity: 1 });
+    setTimeout(function () {
+      $(".btn_boneEye").css({ opacity: 0 });
+    }, 6000);
+  });
+});

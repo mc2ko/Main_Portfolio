@@ -1482,6 +1482,7 @@
     width: 100%;
     height: initial;
     top: -10px;
+    margin-bottom: 0;
   }
 }
 #wrap #uxdesign > .maps > .map {
@@ -1496,18 +1497,22 @@
   }
 }
 #wrap #uxdesign > .maps > .btn_boneEye {
-  visibility: visible;
   position: absolute;
   left: 116px;
   top: 590px;
   width: 86px;
   height: 54px;
   background-image: url(./../images/uidesign/ui_boneeye.png);
+  opacity: 0;
+  transition: all 1s;
 }
 @media screen and (max-width:640px) {
   #wrap #uxdesign > .maps > .btn_boneEye {
     display: none;
   }
+}
+#wrap #uxdesign > .maps > .btn_boneEye .looknme {
+  opacity: 1;
 }
 #wrap #uxdesign > .maps > .uiDesignTab > .design01 {
   display: block;
@@ -1856,7 +1861,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-820%, -50%);
+  transform: translate(-820%, 60%);
   width: 50px;
   height: 72px;
   background-image: url(./../images/btn_arrow.png);
@@ -1874,7 +1879,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(720%, -50%) scaleX(-100%);
+  transform: translate(720%, 60%) scaleX(-100%);
   width: 50px;
   height: 72px;
   background-image: url(./../images/btn_arrow.png);
@@ -1908,11 +1913,13 @@
   }
 }
 #wrap #uxdesign > .maps > .btnDesignTab > p {
-  width: 72px;
-  height: 72px;
-  background-color: #fff;
-  cursor: pointer;
+  width: 88px;
+  height: 74px;
+  text-indent: -9999px;
+  background-size: contain;
+  background-repeat: no-repeat;
   opacity: 0.5;
+  cursor: pointer;
 }
 @media screen and (max-width:640px) {
   #wrap #uxdesign > .maps > .btnDesignTab > p {
@@ -1920,8 +1927,24 @@
     height: 60px;
   }
 }
-#wrap #uxdesign > .maps > .btnDesignTab > p:first-child {
+#wrap #uxdesign > .maps > .btnDesignTab > p:nth-child(1) {
+  background-image: url(./../images/uidesign/ui_tabbtn01.png);
   opacity: 1;
+}
+#wrap #uxdesign > .maps > .btnDesignTab > p:nth-child(2) {
+  background-image: url(./../images/uidesign/ui_tabbtn02.png);
+}
+#wrap #uxdesign > .maps > .btnDesignTab > p:nth-child(3) {
+  background-image: url(./../images/uidesign/ui_tabbtn03.png);
+}
+#wrap #uxdesign > .maps > .btnDesignTab > p:nth-child(4) {
+  background-image: url(./../images/uidesign/ui_tabbtn04.png);
+}
+#wrap #uxdesign > .maps > .btnDesignTab > p:nth-child(5) {
+  background-image: url(./../images/uidesign/ui_tabbtn05.png);
+}
+#wrap #uxdesign > .maps > .btnDesignTab > p:nth-child(6) {
+  background-image: url(./../images/uidesign/ui_tabbtn06.png);
 }
 #wrap #portfolio {
   position: relative;
