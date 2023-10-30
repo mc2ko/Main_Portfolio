@@ -1586,12 +1586,11 @@ $smallSize: "screen and (max-width:480px)";
     } //end of h2
 
     > .maps {
-      overflow: hidden;
       position: relative;
       left: 50%;
       transform: translate(-50%, 0);
       width: 1100px;
-      height: 704px;
+      margin-bottom: 240px;
 
       @media #{$mobile} {
         width: 100%;
@@ -1628,27 +1627,30 @@ $smallSize: "screen and (max-width:480px)";
         > .design01 {
           display: block;
           position: absolute;
+          top: 18%;
           left: 50%;
-          top: 12%;
           transform: translate(-50%, 0);
           z-index: 500;
-          width: 614px;
-          height: 460px;
-          border-radius: 10px;
-          border: 3px solid #000;
 
           @media #{$mobile} {
             position: relative;
-            width: 90%;
-            height: 64.7%;
-            top: 6px;
-            margin-bottom: 100px;
+            width: 100%;
+            top: initial;
+            margin-bottom: 40px;
           }
 
           > .cutLine {
             overflow: hidden;
-            width: 100%;
-            height: 100%;
+            width: 614px;
+            border-radius: 10px;
+            border: 3px solid #000;
+
+            @media #{$mobile} {
+              position: relative;
+              left: 50%;
+              transform: translate(-50%, 0);
+              width: 90%;
+            }
 
             > ol {
               display: flex;
@@ -1657,18 +1659,11 @@ $smallSize: "screen and (max-width:480px)";
               width: 900%;
               height: 100%;
 
-              @media #{$mobile} {
-              }
-
               > li {
                 position: relative;
                 width: 100%;
-                background-color: #fff;
+                background-color: #000;
                 border-radius: 6px;
-
-                @media #{$mobile} {
-                  width: 90%;
-                }
 
                 > a {
                   position: absolute;
@@ -1692,27 +1687,31 @@ $smallSize: "screen and (max-width:480px)";
         } //end of design01
 
         > .design02 {
-          display: none;
+          visibility: hidden;
           position: absolute;
           left: 50%;
-          top: 12%;
+          top: 18%;
           transform: translate(-50%, 0);
           z-index: 500;
-          width: 614px;
-          height: 460px;
-          border-radius: 10px;
-          border: 3px solid #000;
 
           @media #{$mobile} {
-            width: 90%;
-            height: 64.7%;
-            top: 6px;
+            width: 100%;
+            top: 0%;
+            margin-bottom: 40px;
           }
 
           > .cutLine {
             overflow: hidden;
-            width: 100%;
-            height: 100%;
+            width: 614px;
+            border-radius: 10px;
+            border: 3px solid #000;
+
+            @media #{$mobile} {
+              position: relative;
+              left: 50%;
+              transform: translate(-50%, 0);
+              width: 90%;
+            }
 
             > ol {
               display: flex;
@@ -1721,18 +1720,11 @@ $smallSize: "screen and (max-width:480px)";
               width: 800%;
               height: 100%;
 
-              @media #{$mobile} {
-              }
-
               > li {
                 position: relative;
                 width: 100%;
                 background-color: #fff;
                 border-radius: 6px;
-
-                @media #{$mobile} {
-                  width: 90%;
-                }
 
                 > a {
                   position: absolute;
@@ -1756,27 +1748,31 @@ $smallSize: "screen and (max-width:480px)";
         } //end of design02
 
         > .design03 {
-          display: none;
+          visibility: hidden;
           position: absolute;
           left: 50%;
-          top: 12%;
+          top: 18%;
           transform: translate(-50%, 0);
           z-index: 500;
-          width: 614px;
-          height: 460px;
-          border-radius: 10px;
-          border: 3px solid #000;
 
           @media #{$mobile} {
-            width: 90%;
-            height: 64.7%;
-            top: 6px;
+            width: 100%;
+            top: 0%;
+            margin-bottom: 40px;
           }
 
           > .cutLine {
             overflow: hidden;
-            width: 100%;
-            height: 100%;
+            width: 614px;
+            border-radius: 10px;
+            border: 3px solid #000;
+
+            @media #{$mobile} {
+              position: relative;
+              left: 50%;
+              transform: translate(-50%, 0);
+              width: 90%;
+            }
 
             > ol {
               display: flex;
@@ -1785,18 +1781,11 @@ $smallSize: "screen and (max-width:480px)";
               width: 600%;
               height: 100%;
 
-              @media #{$mobile} {
-              }
-
               > li {
                 position: relative;
                 width: 100%;
-                background-color: #fff;
+                background-color: #000;
                 border-radius: 6px;
-
-                @media #{$mobile} {
-                  width: 90%;
-                }
 
                 > a {
                   position: absolute;
@@ -1820,27 +1809,31 @@ $smallSize: "screen and (max-width:480px)";
         } //end of design03
 
         > .design04 {
-          display: none;
+          visibility: hidden;
           position: absolute;
           left: 50%;
-          top: 15.7%;
+          top: 23%;
           transform: translate(-50%, 0);
           z-index: 500;
-          width: 614px;
-          height: 409px;
-          border-radius: 10px;
-          border: 3px solid #000;
 
           @media #{$mobile} {
-            width: 90%;
-            height: 60%;
-            top: 12px;
+            width: 100%;
+            top: 4.2%;
+            margin-bottom: 40px;
           }
 
           > .cutLine {
             overflow: hidden;
-            width: 100%;
-            height: 100%;
+            width: 614px;
+            border-radius: 10px;
+            border: 3px solid #000;
+
+            @media #{$mobile} {
+              position: relative;
+              left: 50%;
+              transform: translate(-50%, 0);
+              width: 90%;
+            }
 
             > ol {
               display: flex;
@@ -1849,18 +1842,11 @@ $smallSize: "screen and (max-width:480px)";
               width: 1100%;
               height: 100%;
 
-              @media #{$mobile} {
-              }
-
               > li {
                 position: relative;
                 width: 100%;
                 background-color: #fff;
                 border-radius: 6px;
-
-                @media #{$mobile} {
-                  width: 90%;
-                }
 
                 > a {
                   position: absolute;
@@ -1884,27 +1870,31 @@ $smallSize: "screen and (max-width:480px)";
         } //end of design04
 
         > .design05 {
-          display: none;
+          visibility: hidden;
           position: absolute;
           left: 50%;
-          top: 10.6%;
+          top: 16%;
           transform: translate(-50%, 0);
           z-index: 500;
-          width: 320px;
-          height: 480px;
-          border-radius: 10px;
-          border: 3px solid #000;
 
           @media #{$mobile} {
-            width: 40%;
-            height: 70%;
-            top: 0;
+            width: 100%;
+            top: 0.8%;
+            margin-bottom: 40px;
           }
 
           > .cutLine {
             overflow: hidden;
-            width: 100%;
-            height: 100%;
+            width: 320px;
+            border-radius: 10px;
+            border: 3px solid #000;
+
+            @media #{$mobile} {
+              position: relative;
+              left: 50%;
+              transform: translate(-50%, 0);
+              width: 44%;
+            }
 
             > ol {
               display: flex;
@@ -1913,18 +1903,11 @@ $smallSize: "screen and (max-width:480px)";
               width: 500%;
               height: 100%;
 
-              @media #{$mobile} {
-              }
-
               > li {
                 position: relative;
                 width: 100%;
                 background-color: #fff;
                 border-radius: 6px;
-
-                @media #{$mobile} {
-                  width: 90%;
-                }
 
                 > a {
                   position: absolute;
@@ -1948,27 +1931,31 @@ $smallSize: "screen and (max-width:480px)";
         } //end of design05
 
         > .design06 {
-          display: none;
+          visibility: hidden;
           position: absolute;
           left: 50%;
-          top: 19.2%;
+          top: 28.6%;
           transform: translate(-50%, 0);
           z-index: 500;
-          width: 640px;
-          height: 360px;
-          border-radius: 10px;
-          border: 3px solid #000;
 
           @media #{$mobile} {
-            width: 90%;
-            height: 60%;
-            top: 12px;
+            width: 100%;
+            top: 9.4%;
+            margin-bottom: 40px;
           }
 
           > .cutLine {
             overflow: hidden;
-            width: 100%;
-            height: 100%;
+            width: 640px;
+            border-radius: 10px;
+            border: 3px solid #000;
+
+            @media #{$mobile} {
+              position: relative;
+              left: 50%;
+              transform: translate(-50%, 0);
+              width: 90%;
+            }
 
             > ol {
               display: flex;
@@ -1977,18 +1964,11 @@ $smallSize: "screen and (max-width:480px)";
               width: 500%;
               height: 100%;
 
-              @media #{$mobile} {
-              }
-
               > li {
                 position: relative;
                 width: 100%;
                 background-color: #fff;
                 border-radius: 6px;
-
-                @media #{$mobile} {
-                  width: 90%;
-                }
 
                 > a {
                   position: absolute;
@@ -2023,7 +2003,7 @@ $smallSize: "screen and (max-width:480px)";
         cursor: pointer;
 
         @media #{$mobile} {
-          left: 2%;
+          left: 1%;
           top: 30%;
           transform: translate(0, 0);
           z-index: 810;
@@ -2042,7 +2022,7 @@ $smallSize: "screen and (max-width:480px)";
 
         @media #{$mobile} {
           left: initial;
-          right: 2%;
+          right: 1%;
           top: 30%;
           transform: translate(0, 0) scale(-100%);
           z-index: 810;
@@ -2059,9 +2039,11 @@ $smallSize: "screen and (max-width:480px)";
         width: 522px;
 
         @media #{$mobile} {
+          position: relative;
           width: 90%;
           top: initial;
           bottom: 20px;
+          margin-top: 10px;
         }
 
         > p {

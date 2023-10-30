@@ -118,20 +118,22 @@ $(function () {
 //가로크기 비율에 맞춰 세로크기 정하기
 $(function () {
   $(window).load(function () {
-    $(".design01").css("height", $(".design01").width() * 0.749);
-    $(".design02").css("height", $(".design02").width() * 0.749);
-    $(".design03").css("height", $(".design03").width() * 0.749);
-    $(".design04").css("height", $(".design04").width() * 0.666);
-    $(".design05").css("height", $(".design05").width() * 1.5);
-    $(".design06").css("height", $(".design06").width() * 0.562);
+    $(".uiDesignTab").css("height", $(".design01").width() * 0.749);
+    $(".cutLine01").css("height", $(".cutLine01").width() * 0.749);
+    $(".cutLine02").css("height", $(".cutLine02").width() * 0.749);
+    $(".cutLine03").css("height", $(".cutLine03").width() * 0.749);
+    $(".cutLine04").css("height", $(".cutLine04").width() * 0.666);
+    $(".cutLine05").css("height", $(".cutLine05").width() * 1.5);
+    $(".cutLine06").css("height", $(".cutLine06").width() * 0.562);
   });
   $(window).resize(function () {
-    $(".design01").css("height", $(".design01").width() * 0.749);
-    $(".design02").css("height", $(".design02").width() * 0.749);
-    $(".design03").css("height", $(".design03").width() * 0.749);
-    $(".design04").css("height", $(".design04").width() * 0.666);
-    $(".design05").css("height", $(".design05").width() * 1.5);
-    $(".design06").css("height", $(".design06").width() * 0.562);
+    $(".uiDesignTab").css("height", $(".design01").width() * 0.749);
+    $(".cutLine01").css("height", $(".cutLine01").width() * 0.749);
+    $(".cutLine02").css("height", $(".cutLine02").width() * 0.749);
+    $(".cutLine03").css("height", $(".cutLine03").width() * 0.749);
+    $(".cutLine04").css("height", $(".cutLine04").width() * 0.666);
+    $(".cutLine05").css("height", $(".cutLine05").width() * 1.5);
+    $(".cutLine06").css("height", $(".cutLine06").width() * 0.562);
   });
 });
 
@@ -197,9 +199,11 @@ $(function () {
       $designTab.eq(t).css({ opacity: 1 }).siblings().css({ opacity: 0.5 });
       $uiDesign
         .eq(t)
-        .css({ display: "block" })
+        // .css({ display: "block" })
+        .css({ visibility: "visible" })
         .siblings()
-        .css({ display: "none" });
+        // .css({ display: "none" });
+        .css({ visibility: "hidden" });
 
       // 디자인텝 초기화
       nowIdx = 0;
