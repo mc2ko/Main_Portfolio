@@ -257,7 +257,7 @@ $(function () {
   $btnLeft.on("click", function (evt) {
     evt.preventDefault();
 
-    const nowTab = $btnRight.index(this);
+    const nowTab = $btnLeft.index(this);
     switch (nowTab) {
       case 0:
         if (nowIdx > 0) {

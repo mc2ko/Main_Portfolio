@@ -1434,6 +1434,7 @@
 @media screen and (max-width:640px) {
   #wrap #uxdesign {
     min-width: 100%;
+    padding-bottom: 0;
   }
 }
 #wrap #uxdesign > h2 {
@@ -1478,6 +1479,7 @@
   #wrap #uxdesign > .maps {
     width: 100%;
     height: 400px;
+    top: -10px;
   }
 }
 #wrap #uxdesign > .maps > .map {
@@ -1516,7 +1518,7 @@
   #wrap #uxdesign > .maps > .uiDesignTab > .design01 {
     width: 90%;
     height: 64.7%;
-    top: 0;
+    top: 6px;
   }
 }
 #wrap #uxdesign > .maps > .uiDesignTab > .design01 > .cutLine {
@@ -1573,7 +1575,7 @@
   #wrap #uxdesign > .maps > .uiDesignTab > .design02 {
     width: 90%;
     height: 64.7%;
-    top: 0;
+    top: 6px;
   }
 }
 #wrap #uxdesign > .maps > .uiDesignTab > .design02 > .cutLine {
@@ -1630,7 +1632,7 @@
   #wrap #uxdesign > .maps > .uiDesignTab > .design03 {
     width: 90%;
     height: 64.7%;
-    top: 0;
+    top: 6px;
   }
 }
 #wrap #uxdesign > .maps > .uiDesignTab > .design03 > .cutLine {
@@ -1687,7 +1689,7 @@
   #wrap #uxdesign > .maps > .uiDesignTab > .design04 {
     width: 90%;
     height: 60%;
-    top: 10px;
+    top: 12px;
   }
 }
 #wrap #uxdesign > .maps > .uiDesignTab > .design04 > .cutLine {
@@ -1732,7 +1734,7 @@
   display: none;
   position: absolute;
   left: 50%;
-  top: 10%;
+  top: 10.6%;
   transform: translate(-50%, 0);
   z-index: 500;
   width: 320px;
@@ -1742,7 +1744,8 @@
 }
 @media screen and (max-width:640px) {
   #wrap #uxdesign > .maps > .uiDesignTab > .design05 {
-    width: 90%;
+    width: 40%;
+    height: 70%;
     top: 0;
   }
 }
@@ -1788,18 +1791,19 @@
   display: none;
   position: absolute;
   left: 50%;
-  top: 12%;
+  top: 19.2%;
   transform: translate(-50%, 0);
   z-index: 500;
-  width: 614px;
-  height: 65.4%;
+  width: 640px;
+  height: 360px;
   border-radius: 10px;
   border: 3px solid #000;
 }
 @media screen and (max-width:640px) {
   #wrap #uxdesign > .maps > .uiDesignTab > .design06 {
     width: 90%;
-    top: 0;
+    height: 60%;
+    top: 12px;
   }
 }
 #wrap #uxdesign > .maps > .uiDesignTab > .design06 > .cutLine {
@@ -1811,7 +1815,7 @@
   display: flex;
   position: relative;
   left: 0%;
-  width: 900%;
+  width: 500%;
   height: 100%;
 }
 #wrap #uxdesign > .maps > .uiDesignTab > .design06 > .cutLine > ol > li {
@@ -1888,6 +1892,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap #uxdesign > .maps > .btnDesignTab {
+    width: 90%;
     top: 300px;
   }
 }
@@ -1897,6 +1902,12 @@
   background-color: #fff;
   cursor: pointer;
   opacity: 0.5;
+}
+@media screen and (max-width:640px) {
+  #wrap #uxdesign > .maps > .btnDesignTab > p {
+    width: 60px;
+    height: 60px;
+  }
 }
 #wrap #uxdesign > .maps > .btnDesignTab > p:first-child {
   opacity: 1;
