@@ -1478,7 +1478,7 @@
 @media screen and (max-width:640px) {
   #wrap #uxdesign > .maps {
     width: 100%;
-    height: 400px;
+    height: initial;
     top: -10px;
   }
 }
@@ -1494,13 +1494,18 @@
   }
 }
 #wrap #uxdesign > .maps > .btn_boneEye {
-  display: none;
+  visibility: visible;
   position: absolute;
   left: 116px;
   top: 590px;
   width: 86px;
   height: 54px;
   background-image: url(./../images/uidesign/ui_boneeye.png);
+}
+@media screen and (max-width:640px) {
+  #wrap #uxdesign > .maps > .btn_boneEye {
+    display: none;
+  }
 }
 #wrap #uxdesign > .maps > .uiDesignTab > .design01 {
   display: block;
@@ -1516,9 +1521,11 @@
 }
 @media screen and (max-width:640px) {
   #wrap #uxdesign > .maps > .uiDesignTab > .design01 {
+    position: relative;
     width: 90%;
     height: 64.7%;
     top: 6px;
+    margin-bottom: 100px;
   }
 }
 #wrap #uxdesign > .maps > .uiDesignTab > .design01 > .cutLine {
@@ -1844,7 +1851,7 @@
   height: 100%;
   border-radius: 6px;
 }
-#wrap #uxdesign > .maps > .uiDesignTab .btn_designLeft {
+#wrap #uxdesign > .maps .btn_designLeft {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1855,14 +1862,14 @@
   cursor: pointer;
 }
 @media screen and (max-width:640px) {
-  #wrap #uxdesign > .maps > .uiDesignTab .btn_designLeft {
+  #wrap #uxdesign > .maps .btn_designLeft {
     left: 2%;
     top: 30%;
     transform: translate(0, 0);
     z-index: 810;
   }
 }
-#wrap #uxdesign > .maps > .uiDesignTab .btn_designRight {
+#wrap #uxdesign > .maps .btn_designRight {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1873,7 +1880,7 @@
   cursor: pointer;
 }
 @media screen and (max-width:640px) {
-  #wrap #uxdesign > .maps > .uiDesignTab .btn_designRight {
+  #wrap #uxdesign > .maps .btn_designRight {
     left: initial;
     right: 2%;
     top: 30%;
@@ -1884,16 +1891,17 @@
 #wrap #uxdesign > .maps > .btnDesignTab {
   display: flex;
   justify-content: space-between;
+  position: absolute;
   left: 50%;
   top: 580px;
   transform: translate(-50%, 0);
-  position: absolute;
   width: 522px;
 }
 @media screen and (max-width:640px) {
   #wrap #uxdesign > .maps > .btnDesignTab {
     width: 90%;
-    top: 300px;
+    top: initial;
+    bottom: 20px;
   }
 }
 #wrap #uxdesign > .maps > .btnDesignTab > p {

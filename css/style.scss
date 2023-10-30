@@ -1590,7 +1590,7 @@ $smallSize: "screen and (max-width:480px)";
 
       @media #{$mobile} {
         width: 100%;
-        height: 400px;
+        height: initial;
         top: -10px;
       }
 
@@ -1606,13 +1606,17 @@ $smallSize: "screen and (max-width:480px)";
       }
 
       > .btn_boneEye {
-        display: none;
+        visibility: visible;
         position: absolute;
         left: 116px;
         top: 590px;
         width: 86px;
         height: 54px;
         background-image: url(./../images/uidesign/ui_boneeye.png);
+
+        @media #{$mobile} {
+          display: none;
+        }
       } //end of boneEye
 
       > .uiDesignTab {
@@ -1629,9 +1633,11 @@ $smallSize: "screen and (max-width:480px)";
           border: 3px solid #000;
 
           @media #{$mobile} {
+            position: relative;
             width: 90%;
             height: 64.7%;
             top: 6px;
+            margin-bottom: 100px;
           }
 
           > .cutLine {
@@ -1999,57 +2005,58 @@ $smallSize: "screen and (max-width:480px)";
             } //end of ol
           }
         } //end of design06
-
-        .btn_designLeft {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-820%, -50%);
-          width: 50px;
-          height: 72px;
-          background-image: url(./../images/btn_arrow.png);
-          cursor: pointer;
-
-          @media #{$mobile} {
-            left: 2%;
-            top: 30%;
-            transform: translate(0, 0);
-            z-index: 810;
-          }
-        } //end of left
-
-        .btn_designRight {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(720%, -50%) scaleX(-100%);
-          width: 50px;
-          height: 72px;
-          background-image: url(./../images/btn_arrow.png);
-          cursor: pointer;
-
-          @media #{$mobile} {
-            left: initial;
-            right: 2%;
-            top: 30%;
-            transform: translate(0, 0) scale(-100%);
-            z-index: 810;
-          }
-        } //end of right
       } //end of uiDesignTab
+
+      .btn_designLeft {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-820%, -50%);
+        width: 50px;
+        height: 72px;
+        background-image: url(./../images/btn_arrow.png);
+        cursor: pointer;
+
+        @media #{$mobile} {
+          left: 2%;
+          top: 30%;
+          transform: translate(0, 0);
+          z-index: 810;
+        }
+      } //end of left
+
+      .btn_designRight {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(720%, -50%) scaleX(-100%);
+        width: 50px;
+        height: 72px;
+        background-image: url(./../images/btn_arrow.png);
+        cursor: pointer;
+
+        @media #{$mobile} {
+          left: initial;
+          right: 2%;
+          top: 30%;
+          transform: translate(0, 0) scale(-100%);
+          z-index: 810;
+        }
+      } //end of right
 
       > .btnDesignTab {
         display: flex;
         justify-content: space-between;
+        position: absolute;
         left: 50%;
         top: 580px;
         transform: translate(-50%, 0);
-        position: absolute;
         width: 522px;
 
         @media #{$mobile} {
           width: 90%;
-          top: 300px;
+          top: initial;
+          bottom: 20px;
         }
 
         > p {

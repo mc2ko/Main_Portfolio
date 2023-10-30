@@ -115,6 +115,18 @@ $(function () {
     });
 });
 
+//가로크기 비율에 맞춰 세로크기 정하기
+$(function () {
+  $(window).resize(function () {
+    $(".design01").css("height", $(".design01").width() * 0.749);
+    $(".design02").css("height", $(".design02").width() * 0.749);
+    $(".design03").css("height", $(".design03").width() * 0.749);
+    $(".design04").css("height", $(".design04").width() * 0.666);
+    $(".design05").css("height", $(".design05").width() * 1.5);
+    $(".design06").css("height", $(".design06").width() * 0.562);
+  });
+});
+
 //화면위치에 따른 연출
 $(function () {
   $(window).on("scroll", function () {
@@ -165,8 +177,6 @@ $(function () {
   const $btnCount05 = $(".design05 a");
   const $btnCount06 = $(".design06 a");
   const $frame = $(".imageFrame");
-  const $btnLeft = $(".btn_designLeft");
-  const $btnRight = $(".btn_designRight");
   const $popupImage = $("#popupImage > img");
 
   let nowIdx = 0;
@@ -182,142 +192,154 @@ $(function () {
         .css({ display: "block" })
         .siblings()
         .css({ display: "none" });
+
+      // 디자인텝 초기화
+      nowIdx = 0;
+      for (let resetIdx = 0; resetIdx < $designTab.length; resetIdx++) {
+        $frame.eq(resetIdx).animate({ left: -100 * nowIdx + "%" });
+      }
     });
   }
 
-  // UI 디자인 다음버튼
-  $btnRight.on("click", function (evt) {
+  // UI디자인 다음버튼
+  $(".btn_designRight").on("click", function (evt) {
     evt.preventDefault();
 
-    const nowTab = $btnRight.index(this);
-    switch (nowTab) {
-      case 0:
-        if (nowIdx < $btnCount01.length - 1) {
-          nowIdx++;
-        } else {
-          nowIdx = 0;
+    for (let tabOn = 0; tabOn < $designTab.length; tabOn++) {
+      if ($designTab.eq(tabOn).css("opacity") == 1) {
+        switch (tabOn) {
+          case 0:
+            if (nowIdx < $btnCount01.length - 1) {
+              nowIdx++;
+            } else {
+              nowIdx = 0;
+            }
+
+            $frame.eq(0).animate({ left: -100 * nowIdx + "%" });
+            break;
+
+          case 1:
+            if (nowIdx < $btnCount02.length - 1) {
+              nowIdx++;
+            } else {
+              nowIdx = 0;
+            }
+
+            $frame.eq(1).animate({ left: -100 * nowIdx + "%" });
+            break;
+
+          case 2:
+            if (nowIdx < $btnCount03.length - 1) {
+              nowIdx++;
+            } else {
+              nowIdx = 0;
+            }
+
+            $frame.eq(2).animate({ left: -100 * nowIdx + "%" });
+            break;
+
+          case 3:
+            if (nowIdx < $btnCount04.length - 1) {
+              nowIdx++;
+            } else {
+              nowIdx = 0;
+            }
+
+            $frame.eq(3).animate({ left: -100 * nowIdx + "%" });
+            break;
+
+          case 4:
+            if (nowIdx < $btnCount05.length - 1) {
+              nowIdx++;
+            } else {
+              nowIdx = 0;
+            }
+
+            $frame.eq(4).animate({ left: -100 * nowIdx + "%" });
+            break;
+
+          case 5:
+            if (nowIdx < $btnCount06.length - 1) {
+              nowIdx++;
+            } else {
+              nowIdx = 0;
+            }
+
+            $frame.eq(5).animate({ left: -100 * nowIdx + "%" });
+            break;
         }
-
-        $frame.eq(0).animate({ left: -100 * nowIdx + "%" });
-        break;
-
-      case 1:
-        if (nowIdx < $btnCount02.length - 1) {
-          nowIdx++;
-        } else {
-          nowIdx = 0;
-        }
-
-        $frame.eq(1).animate({ left: -100 * nowIdx + "%" });
-        break;
-
-      case 2:
-        if (nowIdx < $btnCount03.length - 1) {
-          nowIdx++;
-        } else {
-          nowIdx = 0;
-        }
-
-        $frame.eq(2).animate({ left: -100 * nowIdx + "%" });
-        break;
-
-      case 3:
-        if (nowIdx < $btnCount04.length - 1) {
-          nowIdx++;
-        } else {
-          nowIdx = 0;
-        }
-
-        $frame.eq(3).animate({ left: -100 * nowIdx + "%" });
-        break;
-
-      case 4:
-        if (nowIdx < $btnCount05.length - 1) {
-          nowIdx++;
-        } else {
-          nowIdx = 0;
-        }
-
-        $frame.eq(4).animate({ left: -100 * nowIdx + "%" });
-        break;
-
-      case 5:
-        if (nowIdx < $btnCount06.length - 1) {
-          nowIdx++;
-        } else {
-          nowIdx = 0;
-        }
-
-        $frame.eq(5).animate({ left: -100 * nowIdx + "%" });
-        break;
+      }
     }
   });
 
   // UI디자인 이전버튼
-  $btnLeft.on("click", function (evt) {
+  $(".btn_designLeft").on("click", function (evt) {
     evt.preventDefault();
 
-    const nowTab = $btnLeft.index(this);
-    switch (nowTab) {
-      case 0:
-        if (nowIdx > 0) {
-          nowIdx--;
-        } else {
-          nowIdx = $btnCount01.length - 1;
+    for (let tabOn = 0; tabOn < $designTab.length; tabOn++) {
+      if ($designTab.eq(tabOn).css("opacity") == 1) {
+        switch (tabOn) {
+          case 0:
+            if (nowIdx > 0) {
+              nowIdx--;
+            } else {
+              nowIdx = $btnCount01.length - 1;
+            }
+
+            $frame.eq(0).animate({ left: -100 * nowIdx + "%" });
+            break;
+
+          case 1:
+            if (nowIdx > 0) {
+              nowIdx--;
+            } else {
+              nowIdx = $btnCount02.length - 1;
+            }
+
+            $frame.eq(1).animate({ left: -100 * nowIdx + "%" });
+            break;
+
+          case 2:
+            if (nowIdx > 0) {
+              nowIdx--;
+            } else {
+              nowIdx = $btnCount03.length - 1;
+            }
+
+            $frame.eq(2).animate({ left: -100 * nowIdx + "%" });
+            break;
+
+          case 3:
+            if (nowIdx > 0) {
+              nowIdx--;
+            } else {
+              nowIdx = $btnCount04.length - 1;
+            }
+
+            $frame.eq(3).animate({ left: -100 * nowIdx + "%" });
+            break;
+
+          case 4:
+            if (nowIdx > 0) {
+              nowIdx--;
+            } else {
+              nowIdx = $btnCount05.length - 1;
+            }
+
+            $frame.eq(4).animate({ left: -100 * nowIdx + "%" });
+            break;
+
+          case 5:
+            if (nowIdx > 0) {
+              nowIdx--;
+            } else {
+              nowIdx = $btnCount06.length - 1;
+            }
+
+            $frame.eq(5).animate({ left: -100 * nowIdx + "%" });
+            break;
         }
-
-        $frame.eq(0).animate({ left: -100 * nowIdx + "%" });
-        break;
-
-      case 1:
-        if (nowIdx > 0) {
-          nowIdx--;
-        } else {
-          nowIdx = $btnCount02.length - 1;
-        }
-
-        $frame.eq(1).animate({ left: -100 * nowIdx + "%" });
-        break;
-
-      case 2:
-        if (nowIdx > 0) {
-          nowIdx--;
-        } else {
-          nowIdx = $btnCount03.length - 1;
-        }
-
-        $frame.eq(2).animate({ left: -100 * nowIdx + "%" });
-        break;
-
-      case 3:
-        if (nowIdx > 0) {
-          nowIdx--;
-        } else {
-          nowIdx = $btnCount04.length - 1;
-        }
-
-        $frame.eq(3).animate({ left: -100 * nowIdx + "%" });
-        break;
-
-      case 4:
-        if (nowIdx > 0) {
-          nowIdx--;
-        } else {
-          nowIdx = $btnCount05.length - 1;
-        }
-
-        $frame.eq(4).animate({ left: -100 * nowIdx + "%" });
-        break;
-
-      case 5:
-        if (nowIdx > 0) {
-          nowIdx--;
-        } else {
-          nowIdx = $btnCount06.length - 1;
-        }
-
-        $frame.eq(5).animate({ left: -100 * nowIdx + "%" });
-        break;
+      }
     }
   });
 
