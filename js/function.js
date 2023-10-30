@@ -117,6 +117,14 @@ $(function () {
 
 //가로크기 비율에 맞춰 세로크기 정하기
 $(function () {
+  $(window).load(function () {
+    $(".design01").css("height", $(".design01").width() * 0.749);
+    $(".design02").css("height", $(".design02").width() * 0.749);
+    $(".design03").css("height", $(".design03").width() * 0.749);
+    $(".design04").css("height", $(".design04").width() * 0.666);
+    $(".design05").css("height", $(".design05").width() * 1.5);
+    $(".design06").css("height", $(".design06").width() * 0.562);
+  });
   $(window).resize(function () {
     $(".design01").css("height", $(".design01").width() * 0.749);
     $(".design02").css("height", $(".design02").width() * 0.749);

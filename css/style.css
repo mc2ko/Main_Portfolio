@@ -1395,11 +1395,14 @@
   }
 }
 #wrap #ability > .resume > div > .iam > p > span {
-  display: block;
+  display: inline;
 }
 @media screen and (max-width:640px) {
   #wrap #ability > .resume > div > .iam > p > span {
-    display: inline;
+    display: block;
+  }
+  #wrap #ability > .resume > div > .iam > p > span > br {
+    display: none;
   }
 }
 #wrap #ability > .resume > div > .iam > a {
