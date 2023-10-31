@@ -2117,7 +2117,7 @@ $smallSize: "screen and (max-width:480px)";
   #portfolio {
     position: relative;
     min-width: 1200px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 
     @media #{$mobile} {
       min-width: 100%;
@@ -2156,35 +2156,91 @@ $smallSize: "screen and (max-width:480px)";
     > ol {
       display: flex;
       justify-content: space-around;
-      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 900px;
+
+      @media #{$mobile} {
+        width: 100%;
+      }
+
       > li {
         position: relative;
         z-index: 800;
-      }
-
-      > li:nth-child(1) {
-        width: 250px;
-        height: 400px;
-
-        background-image: url(./../images/portfolio/Flower_Lotto.jpg);
+        width: 358px;
+        height: 622px;
+        background-image: url(./../images/portfolio/portfolio_wanted.png);
         background-size: cover;
+        margin-bottom: 60px;
+        text-align: center;
+
         > a {
           display: block;
           position: absolute;
           left: 0;
           top: 0;
           z-index: 100;
-          width: 250px;
-          height: 430px;
-          text-indent: -9999px;
+          width: 100%;
+          height: 100%;
         }
 
-        > p {
+        > .projectNumber {
           position: absolute;
-          top: 410px;
+          top: 50px;
           width: 100%;
-          font-size: 20px;
-          text-align: center;
+          color: $sec-color-2;
+          font-weight: 500;
+          font-size: 40px;
+        }
+
+        > .projectImage {
+          position: absolute;
+          left: 50%;
+          top: 111px;
+          transform: translate(-50%, 0);
+          width: 226px;
+          height: 360px;
+          background-size: 100% 100%;
+        }
+
+        > .projectTitle {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          width: 100%;
+          top: 510px;
+
+          > .mainTitle {
+            color: $sec-color-2;
+            font-weight: 600;
+            font-size: 24px;
+          }
+
+          > .subTitle {
+            margin-left: 2px;
+            color: $sec-color-2;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.4;
+          }
+        }
+
+        > .projectInfo {
+          position: absolute;
+          top: 540px;
+          width: 100%;
+          color: $sec-color-1;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 1.2;
+        }
+      } //end of li
+
+      > li:nth-child(1) {
+        > .projectImage {
+          background-image: url(./../images/portfolio/project_n01.jpg);
         }
       } //end of li:nth-child(1)
     } //end of ol
