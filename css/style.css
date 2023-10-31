@@ -2051,6 +2051,7 @@
   transform: translate(-50%, 0);
   width: 226px;
   height: 360px;
+  line-height: 360px;
   background-size: 100% 100%;
 }
 #wrap #portfolio > ol > li > .projectTitle {
@@ -2083,6 +2084,12 @@
 }
 #wrap #portfolio > ol > li:nth-child(1) > .projectImage {
   background-image: url(./../images/portfolio/project_n01.jpg);
+}
+#wrap #portfolio > ol > li:nth-child(2) > .projectImage {
+  background-image: url(./../images/portfolio/project_n02.jpg);
+}
+#wrap #portfolio > ol > li:nth-child(3) > .projectImage {
+  background-image: url(./../images/portfolio/project_n03.jpg);
 }
 #wrap #contact {
   position: relative;
