@@ -1292,6 +1292,25 @@ $smallSize: "screen and (max-width:480px)";
         margin-bottom: -80px;
       }
 
+      > .abilityCross {
+        position: absolute;
+        left: 2%;
+        top: -26%;
+        rotate: 30deg;
+        width: 237px;
+        height: 336px;
+        background-image: url(./../images/ability/ability_cross.png);
+      }
+
+      > .abilitySword {
+        position: absolute;
+        right: 2%;
+        top: -38%;
+        width: 227px;
+        height: 634px;
+        background-image: url(./../images/ability/ability_sword.png);
+      }
+
       > .abilityBook {
         position: absolute;
         z-index: 0;

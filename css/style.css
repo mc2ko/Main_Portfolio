@@ -1193,6 +1193,23 @@
     margin-bottom: -80px;
   }
 }
+#wrap #ability > .ability-container > .abilityCross {
+  position: absolute;
+  left: 2%;
+  top: -26%;
+  rotate: 30deg;
+  width: 237px;
+  height: 336px;
+  background-image: url(./../images/ability/ability_cross.png);
+}
+#wrap #ability > .ability-container > .abilitySword {
+  position: absolute;
+  right: 2%;
+  top: -38%;
+  width: 227px;
+  height: 634px;
+  background-image: url(./../images/ability/ability_sword.png);
+}
 #wrap #ability > .ability-container > .abilityBook {
   position: absolute;
   z-index: 0;
