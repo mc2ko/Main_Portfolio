@@ -1202,6 +1202,11 @@
   height: 336px;
   background-image: url(./../images/ability/ability_cross.png);
 }
+@media screen and (max-width:640px) {
+  #wrap #ability > .ability-container > .abilityCross {
+    display: none;
+  }
+}
 #wrap #ability > .ability-container > .abilitySword {
   position: absolute;
   right: 2%;
@@ -1209,6 +1214,11 @@
   width: 227px;
   height: 634px;
   background-image: url(./../images/ability/ability_sword.png);
+}
+@media screen and (max-width:640px) {
+  #wrap #ability > .ability-container > .abilitySword {
+    display: none;
+  }
 }
 #wrap #ability > .ability-container > .abilityBook {
   position: absolute;

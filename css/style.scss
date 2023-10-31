@@ -1300,6 +1300,10 @@ $smallSize: "screen and (max-width:480px)";
         width: 237px;
         height: 336px;
         background-image: url(./../images/ability/ability_cross.png);
+
+        @media #{$mobile} {
+          display: none;
+        }
       }
 
       > .abilitySword {
@@ -1309,6 +1313,10 @@ $smallSize: "screen and (max-width:480px)";
         width: 227px;
         height: 634px;
         background-image: url(./../images/ability/ability_sword.png);
+
+        @media #{$mobile} {
+          display: none;
+        }
       }
 
       > .abilityBook {
@@ -1366,7 +1374,6 @@ $smallSize: "screen and (max-width:480px)";
           > .item {
             display: flex;
             flex-flow: row nowrap;
-            // justify-content: space-between;
             align-items: center;
             height: 100px;
             margin-bottom: 10px;
