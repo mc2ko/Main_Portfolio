@@ -2266,7 +2266,7 @@ $smallSize: "screen and (max-width:480px)";
 
       > li:nth-child(4) {
         > .projectImage {
-          // background-image: url(./../images/portfolio/project_n04.jpg);
+          background-image: url(./../images/portfolio/project_n04.jpg);
         }
       } //end of li:nth-child(4)
     } //end of ol
@@ -2395,6 +2395,7 @@ $smallSize: "screen and (max-width:480px)";
 
     > .info {
       background-color: $pri-color-1;
+      text-align: center;
 
       > .container {
         position: relative;
@@ -2402,39 +2403,9 @@ $smallSize: "screen and (max-width:480px)";
 
         h2,
         p {
-          margin-bottom: 15px;
-          color: #aaa;
-          font-size: 13px;
-
-          > a {
-            color: #aaa;
-          }
-
-          > .bar {
-            margin: 0 10px;
-          }
-        }
-
-        h2:after {
-          display: block;
-          position: absolute;
-          right: 7%;
-          @include transTop;
-
-          width: 53px;
-          height: 68px;
-          background-image: url(./../images/footer_logo.png);
-          content: "";
-
-          @media #{$mobile} {
-            display: none;
-          }
-        }
-
-        @media #{$mobile} {
-          > p.iam_2 > span {
-            display: block;
-          }
+          color: $pri-color-3;
+          font-size: 14px;
+          line-height: 1.6;
         }
       } //end of .container
     } //end of .info

@@ -2101,6 +2101,9 @@
 #wrap #portfolio > ol > li:nth-child(3) > .projectImage {
   background-image: url(./../images/portfolio/project_n03.jpg);
 }
+#wrap #portfolio > ol > li:nth-child(4) > .projectImage {
+  background-image: url(./../images/portfolio/project_n04.jpg);
+}
 #wrap #contact {
   position: relative;
   min-width: 1200px;
@@ -2221,6 +2224,7 @@
 }
 #wrap > footer > .info {
   background-color: #674a39;
+  text-align: center;
 }
 #wrap > footer > .info > .container {
   position: relative;
@@ -2228,38 +2232,9 @@
 }
 #wrap > footer > .info > .container h2,
 #wrap > footer > .info > .container p {
-  margin-bottom: 15px;
-  color: #aaa;
-  font-size: 13px;
-}
-#wrap > footer > .info > .container h2 > a,
-#wrap > footer > .info > .container p > a {
-  color: #aaa;
-}
-#wrap > footer > .info > .container h2 > .bar,
-#wrap > footer > .info > .container p > .bar {
-  margin: 0 10px;
-}
-#wrap > footer > .info > .container h2:after {
-  display: block;
-  position: absolute;
-  right: 7%;
-  top: 50%;
-  transform: translate(0, -50%);
-  width: 53px;
-  height: 68px;
-  background-image: url(./../images/footer_logo.png);
-  content: "";
-}
-@media screen and (max-width:640px) {
-  #wrap > footer > .info > .container h2:after {
-    display: none;
-  }
-}
-@media screen and (max-width:640px) {
-  #wrap > footer > .info > .container > p.iam_2 > span {
-    display: block;
-  }
+  color: #fbf7c1;
+  font-size: 14px;
+  line-height: 1.6;
 }
 #wrap > aside {
   display: none;

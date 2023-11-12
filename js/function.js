@@ -435,7 +435,7 @@ $(function () {
   });
 });
 
-//이스터 에그
+//배경음악 & 이스터 에그
 $(function () {
   $(".btn_boneEye").on("click", function (evt) {
     evt.preventDefault();
