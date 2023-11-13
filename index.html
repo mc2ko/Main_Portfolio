@@ -35,7 +35,37 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery.easing.min.js"></script>
     <script src="./js/function.js"></script>
-    <script></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("cyWcesM-EB1Y_F91G");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = (Math.random() * 100000) | 0;
+            // Service ID 와 Template ID 입력하세요
+            emailjs.sendForm("service_hj6byim", "template_fkx0eyo", this).then(
+              function () {
+                console.log("SUCCESS!");
+                document.getElementById("contact-form").style.display = "none";
+              },
+              function (error) {
+                console.log("FAILED...", error);
+                alert("메일보내기에 실패하였습니다");
+              }
+            );
+          });
+      };
+    </script>
   </head>
   <body>
     <div id="wrap">
@@ -900,12 +930,6 @@
         <div class="linkAnchor">
           <a class="linkAnchor01" href="tel:01099910937"></a
           ><a
-            class="linkAnchor02"
-            href="https://mc2ko.github.io/sendME/"
-            target="_blank"
-            rel="noopener noreferrer"
-          ></a
-          ><a
             class="linkAnchor03"
             href="https://www.instagram.com/mc42ko/"
             target="_blank"
@@ -944,6 +968,20 @@
       <aside>
         <a href="#" class="top"><i class="fa fa-angle-up"></i></a>
       </aside>
+
+      <form id="contact-form">
+        <p>배경이미지</p>
+        <input type="hidden" name="contact_number" />
+        <label class="nameLabel">보내는 사람</label>
+        <input class="nameInput" type="text" name="name" />
+        <label class="emailLabel">회신받을 이메일</label>
+        <input class="emailInput" type="email" name="email" />
+        <label class="textLabel">내용</label>
+        <textarea name="message"></textarea>
+        <input class="btnSubmit" type="submit" value="보내기" />
+        <input class="btnReset" type="reset" value="비우기" />
+        <input class="btnCancel" type="button" value="취소" />
+      </form>
     </div>
   </body>
 </html>

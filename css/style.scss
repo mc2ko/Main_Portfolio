@@ -2312,11 +2312,6 @@ $smallSize: "screen and (max-width:480px)";
       }
     } //end of h2
 
-    > img {
-      width: 140px;
-      height: 126px;
-    }
-
     > .linkBtn {
       display: flex;
       flex-direction: row;
@@ -2371,12 +2366,45 @@ $smallSize: "screen and (max-width:480px)";
       }
       .linkBtn02 {
         background-image: url(./../images/contact/contact_btn02_00.png);
+
+        > .linkAni {
+          display: none;
+          position: absolute;
+          top: 0;
+          width: 126px;
+          height: 126px;
+          background-image: url(./../images/contact/contact_btn02_01.png);
+
+          animation: linkBtn02 0.6s ease-out 0s alternate forwards;
+        }
       }
       .linkBtn03 {
         background-image: url(./../images/contact/contact_btn03_00.png);
+
+        > .linkAni {
+          display: none;
+          position: absolute;
+          top: 0;
+          width: 126px;
+          height: 126px;
+          background-image: url(./../images/contact/contact_btn03_01.png);
+
+          animation: linkBtn03 0.6s ease-out 0s alternate forwards;
+        }
       }
       .linkBtn04 {
         background-image: url(./../images/contact/contact_btn04_00.png);
+
+        > .linkAni {
+          display: none;
+          position: absolute;
+          top: 0;
+          width: 126px;
+          height: 126px;
+          background-image: url(./../images/contact/contact_btn04_01.png);
+
+          animation: linkBtn04 0.6s ease-out 0s alternate forwards;
+        }
       }
     } //end of linkBtn
 
@@ -2503,4 +2531,134 @@ $smallSize: "screen and (max-width:480px)";
       }
     } //end of .top
   } //end of aside
+
+  #contact-form {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    > p {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 380px;
+      height: 600px;
+      background-color: $pri-color-3;
+      text-indent: -9999px;
+    }
+
+    > label {
+      position: absolute;
+      z-index: 1010;
+      color: $sec-color-1;
+      font-weight: 600;
+      font-size: 20px;
+      cursor: initial;
+    }
+
+    > .nameLabel {
+      left: 50%;
+      top: 50%;
+      transform: translate(-160px, -270px);
+    }
+
+    > .emailLabel {
+      left: 50%;
+      top: 50%;
+      transform: translate(-160px, -230px);
+    }
+
+    > .textLabel {
+      left: 50%;
+      top: 50%;
+      transform: translate(-160px, -190px);
+    }
+
+    > input {
+      position: absolute;
+      z-index: 1010;
+      height: 30px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 20px;
+      padding: 0 8px;
+      background-color: $pri-color-1;
+      border: initial;
+      border-radius: 4px;
+      outline: initial;
+    }
+
+    > .nameInput {
+      left: 50%;
+      top: 50%;
+      transform: translate(-46px, -276px);
+      width: 192px;
+    }
+
+    > .emailInput {
+      left: 50%;
+      top: 50%;
+      transform: translate(-10px, -236px);
+      width: 156px;
+    }
+
+    > textarea {
+      position: absolute;
+      z-index: 1010;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -160px);
+      width: 310px;
+      height: 380px;
+      padding: 0 8px;
+      color: #fff;
+      font-weight: 400;
+      font-size: 20px;
+      font-family: "Noto Sans KR", "Nanum Gothic", 돋움, 굴림;
+      background-color: $pri-color-1;
+      border-radius: 4px;
+      outline: initial;
+    }
+
+    > .btnReset {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(82px, -196px);
+      width: 80px;
+      font-weight: 600;
+      font-size: 16px;
+      background-color: $pri-color-2;
+      cursor: pointer;
+    }
+
+    > .btnCancel {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-163px, 240px);
+      width: 150px;
+      height: 40px;
+      font-weight: 600;
+      background-color: $pri-color-2;
+      cursor: pointer;
+    }
+
+    > .btnSubmit {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(13px, 240px);
+      width: 150px;
+      height: 40px;
+      font-weight: 600;
+      background-color: $pri-color-2;
+      cursor: pointer;
+    }
+  } //end of contact-form
 } //end of #wrap

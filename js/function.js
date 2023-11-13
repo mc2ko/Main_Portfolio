@@ -449,157 +449,60 @@ $(function () {
     }, 500);
   });
 
-  // $(".linkBtn01").mouseup(function (evt) {
-  //   evt.preventDefault();
-
-  //   setTimeout(function () {
-  //     $(".linkBtn01").css({
-  //       backgroundImage: "url(./../images/contact/contact_btn01_02.png)",
-  //     });
-  //   }, 50);
-  //   setTimeout(function () {
-  //     $(".linkBtn01").css({
-  //       backgroundImage: "url(./../images/contact/contact_btn01_03.png)",
-  //     });
-  //   }, 200);
-  //   setTimeout(function () {
-  //     $(".linkBtn01").css({
-  //       backgroundImage: "url(./../images/contact/contact_btn01_02.png)",
-  //     });
-  //   }, 325);
-  //   setTimeout(function () {
-  //     $(".linkBtn01").css({
-  //       backgroundImage: "url(./../images/contact/contact_btn01_04.png)",
-  //     });
-  //   }, 425);
-  //   setTimeout(function () {
-  //     $(".linkBtn01").css({
-  //       backgroundImage: "url(./../images/contact/contact_btn01_00.png)",
-  //     });
-  //   }, 500);
-  //   setTimeout(function () {
-  //     $(".linkAnchor01[href]").trigger("click");
-  //   }, 600);
-  // });
-
   //이메일 링크
-  $(".linkBtn02").mousedown(function (evt) {
+  $(".linkBtn02").on("click", function (evt) {
     evt.preventDefault();
 
-    $(".linkBtn02").css({
-      backgroundImage: "url(./../images/contact/contact_btn02_01.png)",
-    });
-  });
-
-  $(".linkBtn02").mouseup(function (evt) {
-    evt.preventDefault();
-
+    $(".linkBtn02 p").css({ display: "block" });
     setTimeout(function () {
-      $(".linkBtn02").css({
-        backgroundImage: "url(./../images/contact/contact_btn02_02.png)",
+      $(".linkBtn02 p").css({
+        display: "none",
       });
-    }, 50);
-    setTimeout(function () {
-      $(".linkBtn02").css({
-        backgroundImage: "url(./../images/contact/contact_btn02_03.png)",
-      });
-    }, 200);
-    setTimeout(function () {
-      $(".linkBtn02").css({
-        backgroundImage: "url(./../images/contact/contact_btn02_02.png)",
-      });
-    }, 325);
-    setTimeout(function () {
-      $(".linkBtn02").css({
-        backgroundImage: "url(./../images/contact/contact_btn02_04.png)",
-      });
-    }, 425);
-    setTimeout(function () {
-      $(".linkBtn02").css({
-        backgroundImage: "url(./../images/contact/contact_btn02_00.png)",
-      });
+      $("#contact-form").css({ display: "block" });
     }, 500);
   });
 
   //인스타그램 링크
-  $(".linkBtn03").mousedown(function (evt) {
+  $(".linkBtn03").on("click", function (evt) {
     evt.preventDefault();
 
-    $(".linkBtn03").css({
-      backgroundImage: "url(./../images/contact/contact_btn03_01.png)",
-    });
-  });
-
-  $(".linkBtn03").mouseup(function (evt) {
-    evt.preventDefault();
-
+    $(".linkBtn03 p").css({ display: "block" });
     setTimeout(function () {
-      $(".linkBtn03").css({
-        backgroundImage: "url(./../images/contact/contact_btn03_02.png)",
-      });
-    }, 50);
-    setTimeout(function () {
-      $(".linkBtn03").css({
-        backgroundImage: "url(./../images/contact/contact_btn03_03.png)",
-      });
-    }, 200);
-    setTimeout(function () {
-      $(".linkBtn03").css({
-        backgroundImage: "url(./../images/contact/contact_btn03_02.png)",
-      });
-    }, 325);
-    setTimeout(function () {
-      $(".linkBtn03").css({
-        backgroundImage: "url(./../images/contact/contact_btn03_04.png)",
-      });
-    }, 425);
-    setTimeout(function () {
-      $(".linkBtn03").css({
-        backgroundImage: "url(./../images/contact/contact_btn03_00.png)",
+      $(".linkBtn03 p").css({
+        display: "none",
       });
     }, 500);
-    setTimeout(function () {
-      $(".linkAnchor03[href]").trigger("click", function () {});
-    }, 600);
   });
 
   //카톡추가 링크
-  $(".linkBtn04").mousedown(function (evt) {
+  $(".linkBtn04").on("click", function (evt) {
     evt.preventDefault();
 
-    $(".linkBtn04").css({
-      backgroundImage: "url(./../images/contact/contact_btn04_01.png)",
-    });
-  });
-
-  $(".linkBtn04").mouseup(function (evt) {
-    evt.preventDefault();
-
+    $(".linkBtn04 p").css({ display: "block" });
     setTimeout(function () {
-      $(".linkBtn04").css({
-        backgroundImage: "url(./../images/contact/contact_btn04_02.png)",
-      });
-    }, 50);
-    setTimeout(function () {
-      $(".linkBtn04").css({
-        backgroundImage: "url(./../images/contact/contact_btn04_03.png)",
-      });
-    }, 200);
-    setTimeout(function () {
-      $(".linkBtn04").css({
-        backgroundImage: "url(./../images/contact/contact_btn04_02.png)",
-      });
-    }, 325);
-    setTimeout(function () {
-      $(".linkBtn04").css({
-        backgroundImage: "url(./../images/contact/contact_btn04_04.png)",
-      });
-    }, 425);
-    setTimeout(function () {
-      $(".linkBtn04").css({
-        backgroundImage: "url(./../images/contact/contact_btn04_00.png)",
+      $(".linkBtn04 p").css({
+        display: "none",
       });
     }, 500);
+  });
+
+  //이메일 보내기 취소
+  $("#contact-form .btnCancel").on("click", function (evt) {
+    evt.preventDefault();
+
+    $("#contact-form").css({ display: "none" });
+  });
+
+  $("#contact-form").on("click", function (evt) {
+    evt.preventDefault();
+
+    $("#contact-form").css({ display: "none" });
+  });
+
+  $(
+    "#contact-form p, #contact-form label, #contact-form input, #contact-form textarea"
+  ).on("click", function (evt) {
+    evt.stopPropagation();
   });
 });
 
