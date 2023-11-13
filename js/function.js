@@ -437,6 +437,35 @@ $(function () {
 
 //contact링크
 $(function () {
+  $("#contact img").mousedown(function (evt) {
+    evt.preventDefault();
+
+    $("#contact img").attr("src", "./../images/contact/contact_btn01_01.png");
+  });
+
+  $("#contact img").mouseup(function (evt) {
+    evt.preventDefault();
+
+    setTimeout(function () {
+      $("#contact img").attr("src", "./../images/contact/contact_btn01_02.png");
+    }, 50);
+    setTimeout(function () {
+      $("#contact img").attr("src", "./../images/contact/contact_btn01_03.png");
+    }, 200);
+    setTimeout(function () {
+      $("#contact img").attr("src", "./../images/contact/contact_btn01_02.png");
+    }, 325);
+    setTimeout(function () {
+      $("#contact img").attr("src", "./../images/contact/contact_btn01_04.png");
+    }, 425);
+    setTimeout(function () {
+      $("#contact img").attr("src", "./../images/contact/contact_btn01_00.png");
+    }, 500);
+    setTimeout(function () {
+      $(".linkAnchor01[href]").trigger("click");
+    }, 600);
+  });
+
   const linkBtnImage = [
     "./../images/contact/contact_btn01_00.png",
     "./../images/contact/contact_btn01_01.png",
