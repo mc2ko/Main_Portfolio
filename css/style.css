@@ -2219,6 +2219,11 @@
   background-image: url(./../images/contact/contact_btn03_01.png);
   animation: linkBtn03 0.6s ease-out 0s alternate forwards;
 }
+@media screen and (max-width:640px) {
+  #wrap #contact > .linkBtn .linkBtn03 > .linkAni {
+    top: 170px;
+  }
+}
 #wrap #contact > .linkBtn .linkBtn04 {
   background-image: url(./../images/contact/contact_btn04_00.png);
 }
@@ -2230,6 +2235,11 @@
   height: 126px;
   background-image: url(./../images/contact/contact_btn04_01.png);
   animation: linkBtn04 0.6s ease-out 0s alternate forwards;
+}
+@media screen and (max-width:640px) {
+  #wrap #contact > .linkBtn .linkBtn04 > .linkAni {
+    top: 170px;
+  }
 }
 #wrap #contact > .katalkID {
   display: none;

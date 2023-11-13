@@ -2390,6 +2390,10 @@ $smallSize: "screen and (max-width:480px)";
           background-image: url(./../images/contact/contact_btn03_01.png);
 
           animation: linkBtn03 0.6s ease-out 0s alternate forwards;
+
+          @media #{$mobile} {
+            top: 170px;
+          }
         }
       }
       .linkBtn04 {
@@ -2404,6 +2408,10 @@ $smallSize: "screen and (max-width:480px)";
           background-image: url(./../images/contact/contact_btn04_01.png);
 
           animation: linkBtn04 0.6s ease-out 0s alternate forwards;
+
+          @media #{$mobile} {
+            top: 170px;
+          }
         }
       }
     } //end of linkBtn
