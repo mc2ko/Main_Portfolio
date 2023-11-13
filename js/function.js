@@ -437,98 +437,50 @@ $(function () {
 
 //contact링크
 $(function () {
-  $("#contact img").mousedown(function (evt) {
-    evt.preventDefault();
-
-    $("#contact img").attr("src", "./../images/contact/contact_btn01_01.png");
-  });
-
-  $("#contact img").mouseup(function (evt) {
-    evt.preventDefault();
-
-    setTimeout(function () {
-      $("#contact img").attr("src", "./../images/contact/contact_btn01_02.png");
-    }, 50);
-    setTimeout(function () {
-      $("#contact img").attr("src", "./../images/contact/contact_btn01_03.png");
-    }, 200);
-    setTimeout(function () {
-      $("#contact img").attr("src", "./../images/contact/contact_btn01_02.png");
-    }, 325);
-    setTimeout(function () {
-      $("#contact img").attr("src", "./../images/contact/contact_btn01_04.png");
-    }, 425);
-    setTimeout(function () {
-      $("#contact img").attr("src", "./../images/contact/contact_btn01_00.png");
-    }, 500);
-    setTimeout(function () {
-      $(".linkAnchor01[href]").trigger("click");
-    }, 600);
-  });
-
-  const linkBtnImage = [
-    "./../images/contact/contact_btn01_00.png",
-    "./../images/contact/contact_btn01_01.png",
-    "./../images/contact/contact_btn01_02.png",
-    "./../images/contact/contact_btn01_03.png",
-    "./../images/contact/contact_btn01_04.png",
-    "./../images/contact/contact_btn02_00.png",
-    "./../images/contact/contact_btn02_01.png",
-    "./../images/contact/contact_btn02_02.png",
-    "./../images/contact/contact_btn02_03.png",
-    "./../images/contact/contact_btn02_04.png",
-  ];
-
-  const preload = (linkBtnImage) => {
-    linkBtnImage.forEach((image) => {
-      const img = new Image();
-      img.src = image;
-    });
-  };
-
-  preload(linkBtnImage);
-
   //전화 링크
-  $(".linkBtn01").mousedown(function (evt) {
+  $(".linkBtn01").on("click", function (evt) {
     evt.preventDefault();
 
-    $(".linkBtn01").css({
-      backgroundImage: "url(./../images/contact/contact_btn01_01.png)",
-    });
-  });
-
-  $(".linkBtn01").mouseup(function (evt) {
-    evt.preventDefault();
-
+    $(".linkBtn01 p").css({ display: "block" });
     setTimeout(function () {
-      $(".linkBtn01").css({
-        backgroundImage: "url(./../images/contact/contact_btn01_02.png)",
-      });
-    }, 50);
-    setTimeout(function () {
-      $(".linkBtn01").css({
-        backgroundImage: "url(./../images/contact/contact_btn01_03.png)",
-      });
-    }, 200);
-    setTimeout(function () {
-      $(".linkBtn01").css({
-        backgroundImage: "url(./../images/contact/contact_btn01_02.png)",
-      });
-    }, 325);
-    setTimeout(function () {
-      $(".linkBtn01").css({
-        backgroundImage: "url(./../images/contact/contact_btn01_04.png)",
-      });
-    }, 425);
-    setTimeout(function () {
-      $(".linkBtn01").css({
-        backgroundImage: "url(./../images/contact/contact_btn01_00.png)",
+      $(".linkBtn01 p").css({
+        display: "none",
       });
     }, 500);
-    setTimeout(function () {
-      $(".linkAnchor01[href]").trigger("click");
-    }, 600);
   });
+
+  // $(".linkBtn01").mouseup(function (evt) {
+  //   evt.preventDefault();
+
+  //   setTimeout(function () {
+  //     $(".linkBtn01").css({
+  //       backgroundImage: "url(./../images/contact/contact_btn01_02.png)",
+  //     });
+  //   }, 50);
+  //   setTimeout(function () {
+  //     $(".linkBtn01").css({
+  //       backgroundImage: "url(./../images/contact/contact_btn01_03.png)",
+  //     });
+  //   }, 200);
+  //   setTimeout(function () {
+  //     $(".linkBtn01").css({
+  //       backgroundImage: "url(./../images/contact/contact_btn01_02.png)",
+  //     });
+  //   }, 325);
+  //   setTimeout(function () {
+  //     $(".linkBtn01").css({
+  //       backgroundImage: "url(./../images/contact/contact_btn01_04.png)",
+  //     });
+  //   }, 425);
+  //   setTimeout(function () {
+  //     $(".linkBtn01").css({
+  //       backgroundImage: "url(./../images/contact/contact_btn01_00.png)",
+  //     });
+  //   }, 500);
+  //   setTimeout(function () {
+  //     $(".linkAnchor01[href]").trigger("click");
+  //   }, 600);
+  // });
 
   //이메일 링크
   $(".linkBtn02").mousedown(function (evt) {

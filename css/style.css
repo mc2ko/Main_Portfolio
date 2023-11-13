@@ -2145,6 +2145,10 @@
     margin: -70px auto 0;
   }
 }
+#wrap #contact > img {
+  width: 140px;
+  height: 126px;
+}
 #wrap #contact > .linkBtn {
   display: flex;
   flex-direction: row;
@@ -2176,7 +2180,7 @@
     margin-top: 44px;
   }
 }
-#wrap #contact > .linkBtn p {
+#wrap #contact > .linkBtn .linkBtn {
   width: 126px;
   height: 126px;
   text-indent: -9999px;
@@ -2184,6 +2188,15 @@
 }
 #wrap #contact > .linkBtn .linkBtn01 {
   background-image: url(./../images/contact/contact_btn01_00.png);
+}
+#wrap #contact > .linkBtn .linkBtn01 > .linkAni {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 126px;
+  height: 126px;
+  background-image: url(./../images/contact/contact_btn01_01.png);
+  animation: linkBtn01 0.6s ease-out 0s alternate forwards;
 }
 #wrap #contact > .linkBtn .linkBtn02 {
   background-image: url(./../images/contact/contact_btn02_00.png);

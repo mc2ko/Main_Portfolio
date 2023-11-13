@@ -909,3 +909,24 @@
     opacity: 1;
   }
 }
+
+@keyframes linkBtn01 {
+  0% {
+    background-image: url(./../images/contact/contact_btn01_01.png);
+  }
+  10% {
+    background-image: url(./../images/contact/contact_btn01_02.png);
+  }
+  40% {
+    background-image: url(./../images/contact/contact_btn01_03.png);
+  }
+  65% {
+    background-image: url(./../images/contact/contact_btn01_02.png);
+  }
+  85% {
+    background-image: url(./../images/contact/contact_btn01_04.png);
+  }
+  100% {
+    background-image: url(./../images/contact/contact_btn01_00.png);
+  }
+}

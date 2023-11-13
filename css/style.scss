@@ -2312,6 +2312,11 @@ $smallSize: "screen and (max-width:480px)";
       }
     } //end of h2
 
+    > img {
+      width: 140px;
+      height: 126px;
+    }
+
     > .linkBtn {
       display: flex;
       flex-direction: row;
@@ -2343,7 +2348,7 @@ $smallSize: "screen and (max-width:480px)";
         }
       } //end of linkBottom
 
-      p {
+      .linkBtn {
         width: 126px;
         height: 126px;
         text-indent: -9999px;
@@ -2352,6 +2357,17 @@ $smallSize: "screen and (max-width:480px)";
 
       .linkBtn01 {
         background-image: url(./../images/contact/contact_btn01_00.png);
+
+        > .linkAni {
+          display: none;
+          position: absolute;
+          top: 0;
+          width: 126px;
+          height: 126px;
+          background-image: url(./../images/contact/contact_btn01_01.png);
+
+          animation: linkBtn01 0.6s ease-out 0s alternate forwards;
+        }
       }
       .linkBtn02 {
         background-image: url(./../images/contact/contact_btn02_00.png);
