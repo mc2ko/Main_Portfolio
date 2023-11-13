@@ -435,6 +435,193 @@ $(function () {
   });
 });
 
+//contact링크
+$(function () {
+  const linkBtnImage = [
+    "./../images/contact/contact_btn01_00.png",
+    "./../images/contact/contact_btn01_01.png",
+    "./../images/contact/contact_btn01_02.png",
+    "./../images/contact/contact_btn01_03.png",
+    "./../images/contact/contact_btn01_04.png",
+    "./../images/contact/contact_btn02_00.png",
+    "./../images/contact/contact_btn02_01.png",
+    "./../images/contact/contact_btn02_02.png",
+    "./../images/contact/contact_btn02_03.png",
+    "./../images/contact/contact_btn02_04.png",
+  ];
+
+  const preload = (linkBtnImage) => {
+    linkBtnImage.forEach((image) => {
+      const img = new Image();
+      img.src = image;
+    });
+  };
+
+  preload(linkBtnImage);
+
+  //전화 링크
+  $(".linkBtn01").mousedown(function (evt) {
+    evt.preventDefault();
+
+    $(".linkBtn01").css({
+      backgroundImage: "url(./../images/contact/contact_btn01_01.png)",
+    });
+  });
+
+  $(".linkBtn01").mouseup(function (evt) {
+    evt.preventDefault();
+
+    setTimeout(function () {
+      $(".linkBtn01").css({
+        backgroundImage: "url(./../images/contact/contact_btn01_02.png)",
+      });
+    }, 50);
+    setTimeout(function () {
+      $(".linkBtn01").css({
+        backgroundImage: "url(./../images/contact/contact_btn01_03.png)",
+      });
+    }, 200);
+    setTimeout(function () {
+      $(".linkBtn01").css({
+        backgroundImage: "url(./../images/contact/contact_btn01_02.png)",
+      });
+    }, 325);
+    setTimeout(function () {
+      $(".linkBtn01").css({
+        backgroundImage: "url(./../images/contact/contact_btn01_04.png)",
+      });
+    }, 425);
+    setTimeout(function () {
+      $(".linkBtn01").css({
+        backgroundImage: "url(./../images/contact/contact_btn01_00.png)",
+      });
+    }, 500);
+    setTimeout(function () {
+      $(".linkAnchor01[href]").trigger("click");
+    }, 600);
+  });
+
+  //이메일 링크
+  $(".linkBtn02").mousedown(function (evt) {
+    evt.preventDefault();
+
+    $(".linkBtn02").css({
+      backgroundImage: "url(./../images/contact/contact_btn02_01.png)",
+    });
+  });
+
+  $(".linkBtn02").mouseup(function (evt) {
+    evt.preventDefault();
+
+    setTimeout(function () {
+      $(".linkBtn02").css({
+        backgroundImage: "url(./../images/contact/contact_btn02_02.png)",
+      });
+    }, 50);
+    setTimeout(function () {
+      $(".linkBtn02").css({
+        backgroundImage: "url(./../images/contact/contact_btn02_03.png)",
+      });
+    }, 200);
+    setTimeout(function () {
+      $(".linkBtn02").css({
+        backgroundImage: "url(./../images/contact/contact_btn02_02.png)",
+      });
+    }, 325);
+    setTimeout(function () {
+      $(".linkBtn02").css({
+        backgroundImage: "url(./../images/contact/contact_btn02_04.png)",
+      });
+    }, 425);
+    setTimeout(function () {
+      $(".linkBtn02").css({
+        backgroundImage: "url(./../images/contact/contact_btn02_00.png)",
+      });
+    }, 500);
+  });
+
+  //인스타그램 링크
+  $(".linkBtn03").mousedown(function (evt) {
+    evt.preventDefault();
+
+    $(".linkBtn03").css({
+      backgroundImage: "url(./../images/contact/contact_btn03_01.png)",
+    });
+  });
+
+  $(".linkBtn03").mouseup(function (evt) {
+    evt.preventDefault();
+
+    setTimeout(function () {
+      $(".linkBtn03").css({
+        backgroundImage: "url(./../images/contact/contact_btn03_02.png)",
+      });
+    }, 50);
+    setTimeout(function () {
+      $(".linkBtn03").css({
+        backgroundImage: "url(./../images/contact/contact_btn03_03.png)",
+      });
+    }, 200);
+    setTimeout(function () {
+      $(".linkBtn03").css({
+        backgroundImage: "url(./../images/contact/contact_btn03_02.png)",
+      });
+    }, 325);
+    setTimeout(function () {
+      $(".linkBtn03").css({
+        backgroundImage: "url(./../images/contact/contact_btn03_04.png)",
+      });
+    }, 425);
+    setTimeout(function () {
+      $(".linkBtn03").css({
+        backgroundImage: "url(./../images/contact/contact_btn03_00.png)",
+      });
+    }, 500);
+    setTimeout(function () {
+      $(".linkAnchor03[href]").trigger("click", function () {});
+    }, 600);
+  });
+
+  //카톡추가 링크
+  $(".linkBtn04").mousedown(function (evt) {
+    evt.preventDefault();
+
+    $(".linkBtn04").css({
+      backgroundImage: "url(./../images/contact/contact_btn04_01.png)",
+    });
+  });
+
+  $(".linkBtn04").mouseup(function (evt) {
+    evt.preventDefault();
+
+    setTimeout(function () {
+      $(".linkBtn04").css({
+        backgroundImage: "url(./../images/contact/contact_btn04_02.png)",
+      });
+    }, 50);
+    setTimeout(function () {
+      $(".linkBtn04").css({
+        backgroundImage: "url(./../images/contact/contact_btn04_03.png)",
+      });
+    }, 200);
+    setTimeout(function () {
+      $(".linkBtn04").css({
+        backgroundImage: "url(./../images/contact/contact_btn04_02.png)",
+      });
+    }, 325);
+    setTimeout(function () {
+      $(".linkBtn04").css({
+        backgroundImage: "url(./../images/contact/contact_btn04_04.png)",
+      });
+    }, 425);
+    setTimeout(function () {
+      $(".linkBtn04").css({
+        backgroundImage: "url(./../images/contact/contact_btn04_00.png)",
+      });
+    }, 500);
+  });
+});
+
 //배경음악 & 이스터 에그
 $(function () {
   $(".btn_boneEye").on("click", function (evt) {

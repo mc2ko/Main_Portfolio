@@ -2145,6 +2145,59 @@
     margin: -70px auto 0;
   }
 }
+#wrap #contact > .linkBtn {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 636px;
+}
+@media screen and (max-width:640px) {
+  #wrap #contact > .linkBtn {
+    width: 296px;
+    flex-direction: column;
+  }
+}
+#wrap #contact > .linkBtn > .linkTop {
+  display: flex;
+  justify-content: space-between;
+  width: 296px;
+}
+#wrap #contact > .linkBtn > .linkBottom {
+  display: flex;
+  justify-content: space-between;
+  width: 296px;
+  margin-left: 44px;
+}
+@media screen and (max-width:640px) {
+  #wrap #contact > .linkBtn > .linkBottom {
+    margin-left: initial;
+    margin-top: 44px;
+  }
+}
+#wrap #contact > .linkBtn p {
+  width: 126px;
+  height: 126px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+#wrap #contact > .linkBtn .linkBtn01 {
+  background-image: url(./../images/contact/contact_btn01_00.png);
+}
+#wrap #contact > .linkBtn .linkBtn02 {
+  background-image: url(./../images/contact/contact_btn02_00.png);
+}
+#wrap #contact > .linkBtn .linkBtn03 {
+  background-image: url(./../images/contact/contact_btn03_00.png);
+}
+#wrap #contact > .linkBtn .linkBtn04 {
+  background-image: url(./../images/contact/contact_btn04_00.png);
+}
+#wrap #contact > .katalkID {
+  display: none;
+  position: absolute;
+}
 #wrap #sideDeco {
   display: flex;
   position: fixed;

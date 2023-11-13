@@ -2311,7 +2311,64 @@ $smallSize: "screen and (max-width:480px)";
         }
       }
     } //end of h2
-  }
+
+    > .linkBtn {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 636px;
+
+      @media #{$mobile} {
+        width: 296px;
+        flex-direction: column;
+      }
+
+      > .linkTop {
+        display: flex;
+        justify-content: space-between;
+        width: 296px;
+      } //end of linkTop
+
+      > .linkBottom {
+        display: flex;
+        justify-content: space-between;
+        width: 296px;
+        margin-left: 44px;
+
+        @media #{$mobile} {
+          margin-left: initial;
+          margin-top: 44px;
+        }
+      } //end of linkBottom
+
+      p {
+        width: 126px;
+        height: 126px;
+        text-indent: -9999px;
+        cursor: pointer;
+      }
+
+      .linkBtn01 {
+        background-image: url(./../images/contact/contact_btn01_00.png);
+      }
+      .linkBtn02 {
+        background-image: url(./../images/contact/contact_btn02_00.png);
+      }
+      .linkBtn03 {
+        background-image: url(./../images/contact/contact_btn03_00.png);
+      }
+      .linkBtn04 {
+        background-image: url(./../images/contact/contact_btn04_00.png);
+      }
+    } //end of linkBtn
+
+    > .katalkID {
+      display: none;
+      position: absolute;
+    }
+  } //end of contact
 
   #sideDeco {
     display: flex;
