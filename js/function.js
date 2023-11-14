@@ -79,6 +79,50 @@ $(function () {
       }
     } //end of for
 
+    if (scrollTop < 971) {
+      $neoBar.css({ right: 500 });
+    } else if (scrollTop > 970 && scrollTop < 1921) {
+      $neoBar.css({ right: 410 });
+      $neoCharacter.stop().css({ display: "none" });
+      $neoBarAni.stop().css({ display: "block" });
+      setTimeout(function () {
+        $neoCharacter.css({ display: "block" });
+        $neoBarAni.css({ display: "none" });
+      }, 1800);
+    } else if (scrollTop > 1920 && scrollTop < 3111) {
+      $neoBar.css({ right: 330 });
+      $neoCharacter.stop().css({ display: "none" });
+      $neoBarAni.stop().css({ display: "block" });
+      setTimeout(function () {
+        $neoCharacter.css({ display: "block" });
+        $neoBarAni.css({ display: "none" });
+      }, 1800);
+    } else if (scrollTop > 3110 && scrollTop < 4071) {
+      $neoBar.css({ right: 230 });
+      $neoCharacter.stop().css({ display: "none" });
+      $neoBarAni.stop().css({ display: "block" });
+      setTimeout(function () {
+        $neoCharacter.css({ display: "block" });
+        $neoBarAni.css({ display: "none" });
+      }, 1800);
+    } else if (scrollTop > 4070 && scrollTop < 5681) {
+      $neoBar.css({ right: 118 });
+      $neoCharacter.stop().css({ display: "none" });
+      $neoBarAni.stop().css({ display: "block" });
+      setTimeout(function () {
+        $neoCharacter.css({ display: "block" });
+        $neoBarAni.css({ display: "none" });
+      }, 1800);
+    } else if (scrollTop > 5680) {
+      $neoBar.css({ right: 8 });
+      $neoCharacter.stop().css({ display: "none" });
+      $neoBarAni.stop().css({ display: "block" });
+      setTimeout(function () {
+        $neoCharacter.css({ display: "block" });
+        $neoBarAni.css({ display: "none" });
+      }, 1800);
+    }
+
     // 탑버튼 노출 처리
     if (scrollTop > 120) {
       $aside.fadeIn();
@@ -87,14 +131,14 @@ $(function () {
     }
   }); //end of scroll
 
-  //   클릭시 해당 section간 이동
+  // 클릭시 해당 section간 이동
   $mnus.on("click", function (evt) {
     evt.preventDefault();
 
     //nowIdx
     let nowIdx = $mnus.index(this);
-    console.log(nowIdx);
 
+    //네오바 버튼클릭 이동
     switch (nowIdx) {
       case 0: {
         $neoBar.css({ right: 500 });
