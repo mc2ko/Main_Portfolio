@@ -993,3 +993,21 @@
     background-image: url(./../images/contact/contact_btn04_00.png);
   }
 }
+
+@keyframes neoBar {
+  0% {
+    background-image: url(./../images/menubar/menubar_neo02.png);
+  }
+  33% {
+    background-image: url(./../images/menubar/menubar_neo01.png);
+  }
+  66% {
+    background-image: url(./../images/menubar/menubar_neo02.png);
+  }
+  99% {
+    background-image: url(./../images/menubar/menubar_neo03.png);
+  }
+  100% {
+    background-image: url(./../images/menubar/menubar_neo02.png);
+  }
+}

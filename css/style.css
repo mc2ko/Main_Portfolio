@@ -605,22 +605,52 @@
 }
 #wrap header > .container {
   height: 66px;
+  background-color: #fde29a;
 }
-#wrap header > .container > h2 {
+#wrap header > .container:before {
   position: absolute;
-  left: 7%;
-  top: 50%;
-  transform: translate(0, -50%);
-  background-image: url(./../images/logo.png);
-  background-repeat: no-repeat;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background-color: #fffbcc;
+  content: "";
 }
-#wrap header > .container > h2 > a {
+#wrap header > .container:after {
+  position: absolute;
+  z-index: 1010;
+  width: 100%;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  background-color: #381805;
+  content: "";
+}
+#wrap header > .container > .menuLeft {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 66px;
+  text-indent: -9999px;
+}
+#wrap header > .container > .menuLeft > p:nth-child(1) {
+  margin-left: 12px;
+  width: 57px;
+  height: 57px;
+  background-image: url(./../images/menubar/menubar_icon.png);
+  cursor: pointer;
+}
+#wrap header > .container > .menuLeft > p:nth-child(2) {
+  margin-left: 6px;
+  width: 254px;
+  height: 30px;
+  background-image: url(./../images/menubar/menubar_title.png);
+}
+#wrap header > .container > .menuLeft > p:nth-child(2) > a {
   display: block;
-  height: 32px;
-  color: #674a39;
-  line-height: 32px;
-  text-indent: 40px;
-  text-transform: uppercase;
+  position: absolute;
+  width: 254px;
+  height: 30px;
 }
 #wrap header > .container > button {
   display: none;
@@ -649,16 +679,17 @@
 #wrap header > .container > nav {
   position: absolute;
   z-index: 1000;
-  right: 7%;
+  right: 1%;
   top: 50%;
   transform: translate(0, -50%);
+  font-size: 18px;
 }
 @media screen and (max-width:640px) {
   #wrap header > .container > nav {
     display: none;
     right: initial;
     left: 0;
-    top: 66px;
+    top: 67px;
     width: 100%;
     transform: initial;
     border-top: 1px solid #fff7ce;
@@ -680,7 +711,7 @@
 }
 #wrap header > .container > nav > .gnb > li > a {
   display: block;
-  padding: 0 15px;
+  padding: 0 10px;
   color: #685700;
   font-weight: 500;
   text-transform: uppercase;
@@ -696,6 +727,39 @@
 }
 #wrap header > .container > nav > .gnb > li:hover > a, #wrap header > .container > nav > .gnb > li.on > a {
   color: #f08d50;
+}
+#wrap header > .container > .neoBar {
+  position: absolute;
+  z-index: 1020;
+  top: 48px;
+  right: 500px;
+  width: 108px;
+  height: 72px;
+  text-indent: -9999px;
+  transition: all 2s;
+}
+@media screen and (max-width:640px) {
+  #wrap header > .container > .neoBar {
+    display: none;
+  }
+}
+#wrap header > .container > .neoBar > .neoCharacter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 108px;
+  height: 72px;
+  background-image: url(./../images/menubar/menubar_neo02.png);
+}
+#wrap header > .container > .neoBar > .neoBarAni {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 108px;
+  height: 72px;
+  background-image: url(./../images/menubar/menubar_neo02.png);
+  animation: neoBar 0.4s ease 0s infinite forwards;
 }
 #wrap #aboutme {
   position: relative;
@@ -1459,6 +1523,7 @@
 #wrap #uxdesign {
   position: relative;
   min-width: 1200px;
+  height: 924px;
   padding-bottom: 40px;
   background-color: #f4ac7f;
 }
@@ -1466,6 +1531,7 @@
   #wrap #uxdesign {
     min-width: 100%;
     padding-bottom: 0;
+    height: initial;
   }
 }
 #wrap #uxdesign > h2 {

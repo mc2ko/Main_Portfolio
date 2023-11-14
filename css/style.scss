@@ -674,6 +674,7 @@ $smallSize: "screen and (max-width:480px)";
     @media #{$mobile} {
       min-width: 100%;
     }
+
     &.fixed {
       position: fixed;
       left: 0;
@@ -683,22 +684,60 @@ $smallSize: "screen and (max-width:480px)";
 
     > .container {
       height: 66px;
-      > h2 {
-        position: absolute;
-        left: 7%;
-        @include transTop; //믹신변수 활용
-        background-image: url(./../images/logo.png);
-        background-repeat: no-repeat;
+      background-color: #fde29a;
 
-        > a {
-          display: block;
-          height: 32px;
-          color: $pri-color-1;
-          line-height: 32px;
-          text-indent: 40px;
-          text-transform: uppercase;
-        }
+      &:before {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 2px;
+        background-color: #fffbcc;
+        content: "";
       }
+
+      &:after {
+        position: absolute;
+        z-index: 1010;
+        width: 100%;
+        bottom: -1px;
+        left: 0;
+        height: 2px;
+        background-color: #381805;
+        content: "";
+      }
+
+      > .menuLeft {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 66px;
+        text-indent: -9999px;
+
+        > p {
+          &:nth-child(1) {
+            margin-left: 12px;
+            width: 57px;
+            height: 57px;
+            background-image: url(./../images/menubar/menubar_icon.png);
+            cursor: pointer;
+          }
+
+          &:nth-child(2) {
+            margin-left: 6px;
+            width: 254px;
+            height: 30px;
+            background-image: url(./../images/menubar/menubar_title.png);
+
+            > a {
+              display: block;
+              position: absolute;
+              width: 254px;
+              height: 30px;
+            }
+          }
+        }
+      } //end of menuLeft
 
       > button {
         display: none;
@@ -728,18 +767,20 @@ $smallSize: "screen and (max-width:480px)";
       > nav {
         position: absolute;
         z-index: 1000;
-        right: 7%;
+        right: 1%;
         @include transTop;
+        font-size: 18px;
 
         @media #{$mobile} {
           display: none;
           right: initial;
           left: 0;
-          top: 66px;
+          top: 67px;
           width: 100%;
           transform: initial; //
           border-top: 1px solid $sec-color-3;
         }
+
         > .gnb {
           display: flex;
 
@@ -751,9 +792,10 @@ $smallSize: "screen and (max-width:480px)";
               background-color: $pri-color-3;
               border-bottom: 1px solid $sec-color-3;
             }
+
             > a {
               display: block;
-              padding: 0 15px;
+              padding: 0 10px;
               color: darken($sec-color-3, 70%);
               font-weight: 500;
               text-transform: uppercase;
@@ -774,6 +816,42 @@ $smallSize: "screen and (max-width:480px)";
           } //end of li
         } //end of .gnb
       } //end of nav
+
+      > .neoBar {
+        position: absolute;
+        z-index: 1020;
+        top: 48px;
+        right: 500px;
+        width: 108px;
+        height: 72px;
+        text-indent: -9999px;
+        transition: all 2s;
+
+        @media #{$mobile} {
+          display: none;
+        }
+
+        > .neoCharacter {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 108px;
+          height: 72px;
+          background-image: url(./../images/menubar/menubar_neo02.png);
+        }
+
+        > .neoBarAni {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 108px;
+          height: 72px;
+          background-image: url(./../images/menubar/menubar_neo02.png);
+
+          animation: neoBar 0.4s ease 0s infinite forwards;
+        }
+      }
     } //end of .container
   } //end of header
 
@@ -1573,12 +1651,14 @@ $smallSize: "screen and (max-width:480px)";
   #uxdesign {
     position: relative;
     min-width: 1200px;
+    height: 924px;
     padding-bottom: 40px;
     background-color: lighten($pri-color-2, 10%);
 
     @media #{$mobile} {
       min-width: 100%;
       padding-bottom: 0;
+      height: initial;
     }
 
     > h2 {

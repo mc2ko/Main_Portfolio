@@ -17,6 +17,9 @@ $(function () {
   const $cutLine = $(
     "#aboutme, #skill, #ability, #uxdesign, #portfolio, #contact, footer"
   );
+  const $neoBar = $(".neoBar");
+  const $neoCharacter = $(".neoCharacter");
+  const $neoBarAni = $(".neoBarAni");
 
   const headerH = $background.height();
   const arrTopVal = []; //header이후에 존재하는 section의 top값
@@ -69,7 +72,7 @@ $(function () {
 
     //스크롤바 위치에 따른 메뉴활성화 표시
     for (let i = 0; i < $mnus.length; i++) {
-      if (scrollTop >= arrTopVal[i] - headerH - 150) {
+      if (scrollTop >= arrTopVal[i] - headerH - 50) {
         $mnus.eq(i).parent().addClass("on").siblings().removeClass("on");
       } else if (scrollTop < arrTopVal[0] - headerH - 150) {
         $mnus.parent().removeClass("on");
@@ -90,11 +93,77 @@ $(function () {
 
     //nowIdx
     let nowIdx = $mnus.index(this);
+    console.log(nowIdx);
+
+    switch (nowIdx) {
+      case 0: {
+        $neoBar.css({ right: 500 });
+        $neoCharacter.stop().css({ display: "none" });
+        $neoBarAni.stop().css({ display: "block" });
+        setTimeout(function () {
+          $neoCharacter.css({ display: "block" });
+          $neoBarAni.css({ display: "none" });
+        }, 1800);
+        break;
+      }
+      case 1: {
+        $neoBar.css({ right: 410 });
+        $neoCharacter.stop().css({ display: "none" });
+        $neoBarAni.stop().css({ display: "block" });
+        setTimeout(function () {
+          $neoCharacter.css({ display: "block" });
+          $neoBarAni.css({ display: "none" });
+        }, 1800);
+        break;
+      }
+      case 2: {
+        $neoBar.css({ right: 330 });
+        $neoCharacter.stop().css({ display: "none" });
+        $neoBarAni.stop().css({ display: "block" });
+        setTimeout(function () {
+          $neoCharacter.css({ display: "block" });
+          $neoBarAni.css({ display: "none" });
+        }, 1800);
+        break;
+      }
+      case 3: {
+        $neoBar.css({ right: 230 });
+        $neoCharacter.stop().css({ display: "none" });
+        $neoBarAni.stop().css({ display: "block" });
+        setTimeout(function () {
+          $neoCharacter.css({ display: "block" });
+          $neoBarAni.css({ display: "none" });
+        }, 1800);
+        break;
+      }
+      case 4: {
+        $neoBar.css({ right: 118 });
+        $neoCharacter.stop().css({ display: "none" });
+        $neoBarAni.stop().css({ display: "block" });
+        setTimeout(function () {
+          $neoCharacter.css({ display: "block" });
+          $neoBarAni.css({ display: "none" });
+        }, 1800);
+        break;
+      }
+      case 5: {
+        $neoBar.css({ right: 8 });
+        $neoCharacter.stop().css({ display: "none" });
+        $neoBarAni.stop().css({ display: "block" });
+        setTimeout(function () {
+          $neoCharacter.css({ display: "block" });
+          $neoBarAni.css({ display: "none" });
+        }, 1800);
+        break;
+      }
+    }
 
     //animate
-    $("html, body").stop().animate({
-      scrollTop: arrTopVal[nowIdx],
-    });
+    $("html, body")
+      .stop()
+      .animate({
+        scrollTop: arrTopVal[nowIdx] - 50,
+      });
 
     if (!(window.innerWidth > 640)) {
       $btnGnb.trigger("click"); //클릭이벤트 강제발생
