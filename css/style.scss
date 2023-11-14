@@ -717,23 +717,23 @@ $smallSize: "screen and (max-width:480px)";
         > p {
           &:nth-child(1) {
             margin-left: 12px;
-            width: 57px;
-            height: 57px;
+            width: 49px;
+            height: 49px;
             background-image: url(./../images/menubar/menubar_icon.png);
             cursor: pointer;
           }
 
           &:nth-child(2) {
             margin-left: 6px;
-            width: 254px;
-            height: 30px;
+            width: 207px;
+            height: 26px;
             background-image: url(./../images/menubar/menubar_title.png);
 
             > a {
               display: block;
               position: absolute;
-              width: 254px;
-              height: 30px;
+              width: 207px;
+              height: 26px;
             }
           }
         }

@@ -71,21 +71,19 @@ $(function () {
     }
 
     //스크롤바 위치에 따른 메뉴활성화 표시
-    // for (let i = 0; i < $mnus.length; i++) {
-    //   if (scrollTop >= arrTopVal[i] - headerH - 50) {
-    //     $mnus.eq(i).parent().addClass("on").siblings().removeClass("on");
-    //   } else if (scrollTop < arrTopVal[0] - headerH - 150) {
-    //     $mnus.parent().removeClass("on");
-    //   }
-    // } //end of for
+    for (let i = 0; i < $mnus.length; i++) {
+      if (scrollTop >= arrTopVal[i] - headerH - 50) {
+        $mnus.eq(i).parent().addClass("on").siblings().removeClass("on");
+      } else if (scrollTop < arrTopVal[0] - headerH - 150) {
+        $mnus.parent().removeClass("on");
+      }
+    } //end of for
 
     // 스크롤바 위치에 따른 네오바 이동
     console.log(scrollTop);
     if (scrollTop < 971) {
-      $mnus.eq(0).parent().addClass("on").siblings().removeClass("on");
       $neoBar.css({ right: 500 });
     } else if (scrollTop > 970 && scrollTop < 1921) {
-      $mnus.eq(1).parent().addClass("on").siblings().removeClass("on");
       $neoBar.css({ right: 410 });
       $neoCharacter.stop().css({ display: "none" });
       $neoBarAni.stop().css({ display: "block" });
@@ -94,7 +92,6 @@ $(function () {
         $neoBarAni.css({ display: "none" });
       }, 1800);
     } else if (scrollTop > 1920 && scrollTop < 3111) {
-      $mnus.eq(2).parent().addClass("on").siblings().removeClass("on");
       $neoBar.css({ right: 330 });
       $neoCharacter.stop().css({ display: "none" });
       $neoBarAni.stop().css({ display: "block" });
@@ -103,7 +100,6 @@ $(function () {
         $neoBarAni.css({ display: "none" });
       }, 1800);
     } else if (scrollTop > 3110 && scrollTop < 4071) {
-      $mnus.eq(3).parent().addClass("on").siblings().removeClass("on");
       $neoBar.css({ right: 230 });
       $neoCharacter.stop().css({ display: "none" });
       $neoBarAni.stop().css({ display: "block" });
@@ -112,7 +108,6 @@ $(function () {
         $neoBarAni.css({ display: "none" });
       }, 1800);
     } else if (scrollTop > 4070 && scrollTop < 5681) {
-      $mnus.eq(4).parent().addClass("on").siblings().removeClass("on");
       $neoBar.css({ right: 118 });
       $neoCharacter.stop().css({ display: "none" });
       $neoBarAni.stop().css({ display: "block" });
@@ -121,7 +116,6 @@ $(function () {
         $neoBarAni.css({ display: "none" });
       }, 1800);
     } else if (scrollTop > 5680) {
-      $mnus.eq(5).parent().addClass("on").siblings().removeClass("on");
       $neoBar.css({ right: 8 });
       $neoCharacter.stop().css({ display: "none" });
       $neoBarAni.stop().css({ display: "block" });
