@@ -79,6 +79,7 @@ $(function () {
       }
     } //end of for
 
+    // 스크롤바 위치에 따른 네오바 이동
     if (scrollTop < 971) {
       $neoBar.css({ right: 500 });
     } else if (scrollTop > 970 && scrollTop < 1921) {
