@@ -24,6 +24,7 @@ $(function () {
   const headerH = $background.height();
   const arrTopVal = []; //header이후에 존재하는 section의 top값
 
+  // 처음로딩 및 화면사이즈변화에 따른 이벤트
   $(window).on("load resize", function () {
     const backgroundH = $background.height();
 
@@ -52,6 +53,7 @@ $(function () {
     });
   }); //end of load resize 이벤트
 
+  // 스크롤위치 변화에 따른 이벤트
   $(window).on("scroll", function () {
     const backgroundH = $background.height();
     let scrollTop = $(this).scrollTop();
@@ -73,6 +75,7 @@ $(function () {
     //스크롤바 위치에 따른 메뉴활성화 표시
     for (let i = 0; i < $mnus.length; i++) {
       if (scrollTop >= arrTopVal[i] - headerH - 50) {
+        $mnus.parent().removeClass("on");
         $mnus.eq(i).parent().addClass("on").siblings().removeClass("on");
       } else if (scrollTop < arrTopVal[0] - headerH - 150) {
         $mnus.parent().removeClass("on");
@@ -80,7 +83,6 @@ $(function () {
     } //end of for
 
     // 스크롤바 위치에 따른 네오바 이동
-    console.log(scrollTop);
     if (scrollTop < 971) {
       $neoBar.css({ right: 500 });
     } else if (scrollTop > 970 && scrollTop < 1921) {
@@ -132,6 +134,16 @@ $(function () {
       $aside.fadeOut();
     }
   }); //end of scroll
+
+  // BGM버튼
+  $(".btnBGM").on("click", function (evt) {
+    console.log("눌렀다!");
+  });
+
+  // Home버튼 처리
+  $(".menuLeft a").on("click", function () {
+    $mnus.eq(0).parent().addClass("on").siblings().removeClass("on");
+  });
 
   // 클릭시 해당 section간 이동
   $mnus.on("click", function (evt) {
@@ -230,7 +242,7 @@ $(function () {
     });
 });
 
-//가로크기 비율에 맞춰 세로크기 정하기
+//UI디자인 이미지 가로크기 비율에 맞춰 세로크기 정하기
 $(function () {
   $(window).load(function () {
     $(".uiDesignTab").css("height", $(".design01").width() * 0.749);
@@ -258,17 +270,18 @@ $(function () {
     const scrollTop = $(this).scrollTop();
 
     // 덩쿨나무 장식 영역
-    // 임시로 효과 끄기!!!!!!!!!!!!!!!!!!!!!!!!!!!! 작업완료후 활성화 할것!
-    // if (scrollTop > $("#skill").offset().top - window.innerHeight + 800) {
-    //   $("#sideDeco").css({ display: "flex" });
-    //   $("#sideDecoLeft").fadeIn(0);
-    //   $("#sideDecoRight").fadeIn(0);
-    // } else if (
-    //   scrollTop <
-    //   $("#skill").offset().top - window.innerHeight + 780
-    // ) {
-    //   $("#sideDeco").fadeOut();
-    // }
+    if (scrollTop > $("#skill").offset().top - window.innerHeight + 800) {
+      $("#decoLeft").css({ display: "block" });
+      $("#decoRight").css({ display: "block" });
+      $("#sideDecoLeft").fadeIn(0);
+      $("#sideDecoRight").fadeIn(0);
+    } else if (
+      scrollTop <
+      $("#skill").offset().top - window.innerHeight + 780
+    ) {
+      $("#decoLeft").fadeOut();
+      $("#decoRight").fadeOut();
+    }
 
     //ability 영역
     if (scrollTop > $("#ability").offset().top - window.innerHeight + 300) {
@@ -621,7 +634,7 @@ $(function () {
   });
 });
 
-//배경음악 & 이스터 에그
+//이스터 에그
 $(function () {
   $(".btn_boneEye").on("click", function (evt) {
     evt.preventDefault();
