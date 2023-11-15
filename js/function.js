@@ -139,6 +139,7 @@ $(function () {
     // 탑버튼 노출 처리
     if (scrollTop > 120) {
       $aside.css({ display: "block" });
+      $(".asideMen").css({ display: "block" });
     } else {
       $aside.css({ display: "none" });
     }
@@ -245,20 +246,19 @@ $(function () {
     $(".effectFog").css({ display: "block" });
     setTimeout(function () {
       $(".asideMen").css({ opacity: 0 });
-      $(".asideSuperMen").css({ opacity: 1 });
-    }, 400);
+      $(".asideMen").css({ display: "none" });
+      $(".asideSuperMen").css({ display: "block" });
+    }, 600);
 
     setTimeout(function () {
       $("html,body").stop().animate({ scrollTop: 0 });
+      $(".effectFog").css({ display: "none" });
     }, 800);
 
     setTimeout(function () {
-      $(".effectFog").css({ display: "none" });
-    }, 1000);
-
-    setTimeout(function () {
-      $(".asideSuperMen").css({ opacity: 0 });
-    }, 1500);
+      $(".asideMen").css({ opacity: 1 });
+      $(".asideSuperMen").css({ display: "none" });
+    }, 1200);
   });
 });
 
