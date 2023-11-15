@@ -668,12 +668,12 @@
     width: 24px;
     height: 18px;
     text-indent: -9999px;
-    background-image: url(./../images/mnu_btn.png);
+    background-image: url(./../images/menubar/mnu_btn.png);
     background-position: center center;
     background-repeat: no-repeat;
   }
   #wrap header > .container > button.clse {
-    background-image: url(./../images/clse_btn.png);
+    background-image: url(./../images/menubar/clse_btn.png);
   }
 }
 #wrap header > .container > nav {
@@ -707,6 +707,9 @@
   #wrap header > .container > nav > .gnb > li {
     background-color: #fbf7c1;
     border-bottom: 1px solid #fff7ce;
+  }
+  #wrap header > .container > nav > .gnb > li:last-child {
+    border-bottom: 2px solid #381805;
   }
 }
 #wrap header > .container > nav > .gnb > li > a {
@@ -1531,6 +1534,7 @@
   #wrap #uxdesign {
     min-width: 100%;
     padding-bottom: 0;
+    height: 924px;
     height: initial;
   }
 }

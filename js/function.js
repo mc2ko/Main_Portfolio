@@ -5,7 +5,7 @@ $(function () {
   $loading.delay(250).fadeOut(800);
 });
 
-//메뉴, 스크롤
+//메인
 $(function () {
   const $header = $(".menu");
   const $background = $(".background");
@@ -27,6 +27,15 @@ $(function () {
   // 처음로딩 및 화면사이즈변화에 따른 이벤트
   $(window).on("load resize", function () {
     const backgroundH = $background.height();
+
+    //UI디자인 이미지 가로크기 비율에 맞춰 세로크기 정하기
+    $(".uiDesignTab").css("height", $(".design01").width() * 0.749);
+    $(".cutLine01").css("height", $(".cutLine01").width() * 0.749);
+    $(".cutLine02").css("height", $(".cutLine02").width() * 0.749);
+    $(".cutLine03").css("height", $(".cutLine03").width() * 0.749);
+    $(".cutLine04").css("height", $(".cutLine04").width() * 0.666);
+    $(".cutLine05").css("height", $(".cutLine05").width() * 1.5);
+    $(".cutLine06").css("height", $(".cutLine06").width() * 0.562);
 
     // 헤더바 높이 자동 조절
     // $header.css({ top: backgroundH });
@@ -135,11 +144,6 @@ $(function () {
     }
   }); //end of scroll
 
-  // BGM버튼
-  $(".btnBGM").on("click", function (evt) {
-    console.log("눌렀다!");
-  });
-
   // Home버튼 처리
   $(".menuLeft a").on("click", function () {
     $mnus.eq(0).parent().addClass("on").siblings().removeClass("on");
@@ -240,28 +244,6 @@ $(function () {
       evt.preventDefault();
       $("html,body").stop().animate({ scrollTop: 0 });
     });
-});
-
-//UI디자인 이미지 가로크기 비율에 맞춰 세로크기 정하기
-$(function () {
-  $(window).load(function () {
-    $(".uiDesignTab").css("height", $(".design01").width() * 0.749);
-    $(".cutLine01").css("height", $(".cutLine01").width() * 0.749);
-    $(".cutLine02").css("height", $(".cutLine02").width() * 0.749);
-    $(".cutLine03").css("height", $(".cutLine03").width() * 0.749);
-    $(".cutLine04").css("height", $(".cutLine04").width() * 0.666);
-    $(".cutLine05").css("height", $(".cutLine05").width() * 1.5);
-    $(".cutLine06").css("height", $(".cutLine06").width() * 0.562);
-  });
-  $(window).resize(function () {
-    $(".uiDesignTab").css("height", $(".design01").width() * 0.749);
-    $(".cutLine01").css("height", $(".cutLine01").width() * 0.749);
-    $(".cutLine02").css("height", $(".cutLine02").width() * 0.749);
-    $(".cutLine03").css("height", $(".cutLine03").width() * 0.749);
-    $(".cutLine04").css("height", $(".cutLine04").width() * 0.666);
-    $(".cutLine05").css("height", $(".cutLine05").width() * 1.5);
-    $(".cutLine06").css("height", $(".cutLine06").width() * 0.562);
-  });
 });
 
 //화면위치에 따른 연출
@@ -636,6 +618,11 @@ $(function () {
 
 //이스터 에그
 $(function () {
+  // BGM버튼
+  $(".btnBGM").on("click", function (evt) {
+    console.log("눌렀다!");
+  });
+
   $(".btn_boneEye").on("click", function (evt) {
     evt.preventDefault();
 
