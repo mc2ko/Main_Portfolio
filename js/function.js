@@ -140,8 +140,11 @@ $(function () {
     if (scrollTop > 120) {
       $aside.css({ display: "block" });
       $(".asideMen").css({ display: "block" });
+      $(".top").css({ display: "block" });
     } else {
       $aside.css({ display: "none" });
+      // $(".asideMen").css({ display: "none" });
+      // $(".top").css({display: "none"})
     }
   }); //end of scroll
 

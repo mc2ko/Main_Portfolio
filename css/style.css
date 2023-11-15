@@ -2420,8 +2420,8 @@
 }
 #wrap > aside {
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 20px;
+  bottom: 20px;
   width: 48px;
   height: 68px;
   z-index: 1000;
@@ -2457,14 +2457,13 @@
   animation: firstFog 0.8s ease 0s alternate forwards;
 }
 #wrap > aside > .top {
-  display: block;
+  display: none;
   position: absolute;
   z-index: 1010;
   width: 48px;
   height: 68px;
   line-height: 28px;
   text-align: center;
-  background-color: #fff;
 }
 #wrap #contact-form {
   display: none;
