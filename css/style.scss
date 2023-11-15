@@ -2625,16 +2625,48 @@ $smallSize: "screen and (max-width:480px)";
     bottom: 1rem;
     z-index: 900;
 
+    > .asideMen {
+      width: 58px;
+      height: 83px;
+      background-image: url(./../images/menubar/aside_before.png);
+      opacity: 0;
+
+      animation: asideMen 0.6s ease 0s alternate forwards;
+    }
+
+    > .asideSuperMen {
+      position: absolute;
+      top: 0px;
+      width: 58px;
+      height: 83px;
+      background-image: url(./../images/menubar/aside_after.png);
+      opacity: 0;
+
+      // animation: asideMen 0.5s ease 0.5s alternate forwards;
+    }
+
+    > .effectFog {
+      display: none;
+      position: absolute;
+      top: 10px;
+      left: -6px;
+      width: 72px;
+      height: 70px;
+      background-image: url(./../images/menubar/effect_fog01.png);
+
+      animation: firstFog 1s ease 0s alternate forwards;
+    }
+
     > .top {
       display: block;
-      width: 28px;
-      height: 28px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 48px;
+      height: 68px;
       line-height: 28px;
       text-align: center;
-      background-color: $pri-color-2;
-      > i {
-        color: $pri-color-3;
-      }
     } //end of .top
   } //end of aside
 

@@ -138,9 +138,9 @@ $(function () {
 
     // 탑버튼 노출 처리
     if (scrollTop > 120) {
-      $aside.fadeIn();
+      $aside.css({ display: "block" });
     } else {
-      $aside.fadeOut();
+      $aside.css({ display: "none" });
     }
   }); //end of scroll
 
@@ -238,12 +238,28 @@ $(function () {
     $nav.toggle();
   });
 
-  $(".logo")
-    .add($aside)
-    .on("click", function (evt) {
-      evt.preventDefault();
+  // aside버튼
+  $("aside > a").on("click", function (evt) {
+    evt.preventDefault();
+
+    $(".effectFog").css({ display: "block" });
+    setTimeout(function () {
+      $(".asideMen").css({ opacity: 0 });
+      $(".asideSuperMen").css({ opacity: 1 });
+    }, 400);
+
+    setTimeout(function () {
       $("html,body").stop().animate({ scrollTop: 0 });
-    });
+    }, 800);
+
+    setTimeout(function () {
+      $(".effectFog").css({ display: "none" });
+    }, 1000);
+
+    setTimeout(function () {
+      $(".asideSuperMen").css({ opacity: 0 });
+    }, 1500);
+  });
 });
 
 //화면위치에 따른 연출
