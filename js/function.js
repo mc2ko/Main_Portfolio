@@ -236,6 +236,15 @@ $(function () {
     }
   });
 
+  // 입사지원서 버튼
+  $(".iam > a").on("click", function (evt) {
+    evt.preventDefault();
+    $("#resume").css({ display: "block" });
+  });
+  $("#resume").on("click", function () {
+    $("#resume").css({ display: "none" });
+  });
+
   // 반응형 햄버거 버튼
   $btnGnb.on("click", function () {
     $(this).toggleClass("clse");

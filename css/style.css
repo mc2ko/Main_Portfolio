@@ -1503,7 +1503,6 @@
 #wrap #ability > .resume > div > .iam > a {
   display: block;
   position: relative;
-  z-index: 800;
   left: 50%;
   top: 0%;
   bottom: 80px;
@@ -2317,11 +2316,9 @@
 }
 #wrap #decoLeft {
   position: fixed;
-  z-index: 400;
   left: 0;
-  top: 50%;
-  transform: translate(0, -45%);
-  height: 688px;
+  top: 15%;
+  height: 100px;
   visibility: visible;
 }
 @media screen and (max-width:640px) {
@@ -2343,11 +2340,9 @@
 }
 #wrap #decoRight {
   position: fixed;
-  z-index: 400;
   right: 0;
-  top: 50%;
-  transform: translate(0, -45%);
-  height: 688px;
+  top: 15%;
+  height: 100px;
   visibility: visible;
 }
 @media screen and (max-width:640px) {
@@ -2581,4 +2576,84 @@
   font-weight: 600;
   background-color: #f08d50;
   cursor: pointer;
+}
+#wrap #resume {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1100;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+#wrap #resume > .paper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 900px;
+  background-color: #fff;
+}
+#wrap #resume table {
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+}
+#wrap #resume th,
+#wrap #resume td {
+  height: 30px;
+  border: 1px solid #000;
+}
+#wrap #resume > .paper01 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 680px;
+  height: 880px;
+}
+#wrap #resume > .paper01 > .resumeTop {
+  position: relative;
+  width: 680px;
+  height: 156px;
+  margin-bottom: 10px;
+}
+#wrap #resume > .paper01 > .resumeTop > .resumeTopLeft {
+  position: absolute;
+  left: 0;
+  width: 200px;
+}
+#wrap #resume > .paper01 > .resumeTop > h2 {
+  position: absolute;
+  top: 12px;
+  width: 680px;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+}
+#wrap #resume > .paper01 > .resumeTop > .resumePhoto {
+  position: absolute;
+  right: 0;
+  width: 120px;
+  height: 156px;
+  background-image: url(./../images/M_Photo_700x910.jpg);
+  background-size: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#wrap #resume > .paper01 > .resumeList01 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+}
+#wrap #resume > .paper01 > .resumeList02,
+#wrap #resume > .paper01 .resumeList03 {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
