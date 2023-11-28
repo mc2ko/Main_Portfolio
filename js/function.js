@@ -242,8 +242,7 @@ $(function () {
     $("#resume").css({ display: "block" });
   });
 
-  $("#resume").on("click", function (evt) {
-    evt.stopPropagation();
+  $("#resume").on("click", function () {
     $("#resume").css({ display: "none" });
   });
 

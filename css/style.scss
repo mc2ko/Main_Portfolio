@@ -2817,7 +2817,7 @@ $smallSize: "screen and (max-width:480px)";
       top: 4%;
       bottom: 4%;
       transform: translate(-50%, 0%);
-      width: 718px;
+      width: 700px;
       max-height: 900px;
       background-color: #fff;
     }
@@ -2839,21 +2839,18 @@ $smallSize: "screen and (max-width:480px)";
       position: fixed;
       left: 50%;
       top: 4%;
-      bottom: 4%;
+      bottom: 5%;
       transform: translate(-50%, 0%);
-      width: 700px;
+      width: 682px;
       max-height: 880px;
       margin-top: 10px;
-      padding-right: 4px;
       overflow-y: scroll;
-      background-color: orange;
 
       > .resumeTop {
-        position: relative;
+        position: absolute;
         width: 680px;
         height: 156px;
         margin-bottom: 10px;
-        background-color: yellow;
 
         > .resumeTopLeft {
           position: absolute;
@@ -2884,8 +2881,9 @@ $smallSize: "screen and (max-width:480px)";
       } //end of resumeTop
 
       > .resumeList01 {
+        display: block;
         position: relative;
-        top: -32px;
+        top: 135px;
         padding-bottom: 8px;
         border-bottom: 1px solid #000;
         margin-bottom: 8px;
@@ -2895,9 +2893,8 @@ $smallSize: "screen and (max-width:480px)";
       .resumeList04 {
         display: block;
         position: relative;
-        top: -32px;
+        top: 135px;
         margin-bottom: 16px;
-        background-color: pink;
       }
 
       .resumeList04 {
@@ -2905,5 +2902,9 @@ $smallSize: "screen and (max-width:480px)";
         margin-bottom: initial;
       }
     } //end of paper01
+
+    .paper01::-webkit-scrollbar {
+      display: none;
+    }
   } //end of resume
 } //end of #wrap
