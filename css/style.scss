@@ -2397,7 +2397,7 @@ $smallSize: "screen and (max-width:480px)";
       }
     } //end of h2
 
-    > .linkBtn {
+    > .linkContactBtn {
       display: flex;
       flex-direction: row;
       position: relative;
@@ -2500,6 +2500,17 @@ $smallSize: "screen and (max-width:480px)";
         }
       }
     } //end of linkBtn
+
+    // > .linkAnchor {
+    //   width: 100px;
+    //   height: 100px;
+    //   > a {
+    //     display: block;
+    //     width: 100px;
+    //     height: 100px;
+    //     background-color: pink;
+    //   }
+    // }
 
     > .katalkID {
       display: none;

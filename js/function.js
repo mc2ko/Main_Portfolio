@@ -585,6 +585,7 @@ $(function () {
       $(".linkBtn01 p").css({
         display: "none",
       });
+      $(location).attr("href", "tel:01099910937");
     }, 500);
   });
 
@@ -610,6 +611,7 @@ $(function () {
       $(".linkBtn03 p").css({
         display: "none",
       });
+      $(location).attr("href", "https://www.instagram.com/mc42ko/");
     }, 500);
   });
 

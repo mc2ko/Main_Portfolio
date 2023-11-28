@@ -50,6 +50,7 @@
           .getElementById("contact-form")
           .addEventListener("submit", function (event) {
             event.preventDefault();
+
             // generate a five digit number for the contact_number variable
             this.contact_number.value = (Math.random() * 100000) | 0;
             // Service ID 와 Template ID 입력하세요
@@ -57,6 +58,7 @@
               function () {
                 console.log("SUCCESS!");
                 document.getElementById("contact-form").style.display = "none";
+                alert("메일을 발송하였습니다");
               },
               function (error) {
                 console.log("FAILED...", error);
@@ -912,7 +914,7 @@
 
       <section id="contact">
         <h2>CONTACT</h2>
-        <div class="linkBtn">
+        <div class="linkContactBtn">
           <div class="linkTop">
             <div class="linkBtn linkBtn01">
               전화
@@ -935,13 +937,14 @@
           </div>
         </div>
         <div class="linkAnchor">
-          <a class="linkAnchor01" href="tel:01099910937"></a
-          ><a
+          <a class="linkAnchor01"></a>
+          <a
             class="linkAnchor03"
             href="https://www.instagram.com/mc42ko/"
             target="_blank"
             rel="noopener noreferrer"
-          ></a>
+          >
+          </a>
         </div>
         <div class="katalkID">mc2ko</div>
       </section>
@@ -1210,8 +1213,6 @@
             </table>
           </article>
         </div>
-        <!-- <div class="paper02"></div>
-        <div class="paper03"></div> -->
       </div>
     </div>
   </body>
