@@ -241,7 +241,9 @@ $(function () {
     evt.preventDefault();
     $("#resume").css({ display: "block" });
   });
-  $("#resume").on("click", function () {
+
+  $("#resume").on("click", function (evt) {
+    evt.stopPropagation();
     $("#resume").css({ display: "none" });
   });
 

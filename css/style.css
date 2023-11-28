@@ -2419,7 +2419,7 @@
   bottom: 20px;
   width: 48px;
   height: 68px;
-  z-index: 1000;
+  z-index: 900;
 }
 #wrap > aside > .asideMen {
   display: none;
@@ -2592,12 +2592,13 @@
   cursor: pointer;
 }
 #wrap #resume > .paper {
-  position: absolute;
+  position: fixed;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 700px;
-  height: 900px;
+  top: 4%;
+  bottom: 4%;
+  transform: translate(-50%, 0%);
+  width: 718px;
+  max-height: 900px;
   background-color: #fff;
 }
 #wrap #resume table {
@@ -2611,18 +2612,25 @@
   vertical-align: middle;
 }
 #wrap #resume > .paper01 {
-  position: absolute;
+  display: block;
+  position: fixed;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 680px;
-  height: 880px;
+  top: 4%;
+  bottom: 4%;
+  transform: translate(-50%, 0%);
+  width: 700px;
+  max-height: 880px;
+  margin-top: 10px;
+  padding-right: 4px;
+  overflow-y: scroll;
+  background-color: orange;
 }
 #wrap #resume > .paper01 > .resumeTop {
   position: relative;
   width: 680px;
   height: 156px;
   margin-bottom: 10px;
+  background-color: yellow;
 }
 #wrap #resume > .paper01 > .resumeTop > .resumeTopLeft {
   position: absolute;
@@ -2658,7 +2666,13 @@
 #wrap #resume > .paper01 > .resumeList02,
 #wrap #resume > .paper01 .resumeList03,
 #wrap #resume > .paper01 .resumeList04 {
+  display: block;
   position: relative;
   top: -32px;
   margin-bottom: 16px;
+  background-color: pink;
+}
+#wrap #resume > .paper01 .resumeList04 {
+  padding-bottom: initial;
+  margin-bottom: initial;
 }/*# sourceMappingURL=style.css.map */
