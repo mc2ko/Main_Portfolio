@@ -2276,6 +2276,8 @@ $smallSize: "screen and (max-width:480px)";
           z-index: 100;
           width: 100%;
           height: 100%;
+          // 임시 커서 모양 활성화
+          cursor: pointer;
         }
 
         > .projectNumber {
@@ -2500,17 +2502,6 @@ $smallSize: "screen and (max-width:480px)";
         }
       }
     } //end of linkBtn
-
-    // > .linkAnchor {
-    //   width: 100px;
-    //   height: 100px;
-    //   > a {
-    //     display: block;
-    //     width: 100px;
-    //     height: 100px;
-    //     background-color: pink;
-    //   }
-    // }
 
     > .katalkID {
       display: none;
@@ -2807,6 +2798,38 @@ $smallSize: "screen and (max-width:480px)";
       cursor: pointer;
     }
   } //end of contact-form
+
+  #working {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+
+    > .workingImage {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 228px;
+      height: 266px;
+      background-image: url(./../images/portfolio/portfolio_working.png);
+      text-indent: -9999px;
+    }
+
+    > a {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-26px, 62px);
+      width: 36px;
+      height: 20px;
+      // background-color: rgba(0, 0, 0, 0.85);
+    }
+  } //end of working
 
   #resume {
     display: none;

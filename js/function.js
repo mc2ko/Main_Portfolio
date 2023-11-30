@@ -654,6 +654,7 @@ $(function () {
     console.log("눌렀다!");
   });
 
+  //해골눈알
   $(".btn_boneEye").on("click", function (evt) {
     evt.preventDefault();
 
@@ -661,5 +662,14 @@ $(function () {
     setTimeout(function () {
       $(".btn_boneEye").css({ opacity: 0 });
     }, 6000);
+  });
+
+  //작업중팝업
+  $(".stopMessage").on("click", function () {
+    $("#working").css({ display: "block" });
+  });
+
+  $("#working").on("click", function () {
+    $("#working").css({ display: "none" });
   });
 });
