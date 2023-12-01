@@ -624,7 +624,12 @@ $(function () {
       $(".linkBtn04 p").css({
         display: "none",
       });
+      $("#addMe").css({ display: "block" });
     }, 500);
+  });
+
+  $("#addMe").on("click", function () {
+    $("#addMe").css({ display: "none" });
   });
 
   //이메일 보내기 취소

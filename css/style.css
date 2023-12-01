@@ -2475,10 +2475,16 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 380px;
-  height: 600px;
+  width: 460px;
+  height: 400px;
   background-color: #fbf7c1;
   text-indent: -9999px;
+}
+@media screen and (max-width:640px) {
+  #wrap #contact-form > p {
+    width: 380px;
+    height: 600px;
+  }
 }
 #wrap #contact-form > label {
   position: absolute;
@@ -2491,17 +2497,32 @@
 #wrap #contact-form > .nameLabel {
   left: 50%;
   top: 50%;
-  transform: translate(-160px, -270px);
+  transform: translate(-198px, -170px);
+}
+@media screen and (max-width:640px) {
+  #wrap #contact-form > .nameLabel {
+    transform: translate(-160px, -270px);
+  }
 }
 #wrap #contact-form > .emailLabel {
   left: 50%;
   top: 50%;
-  transform: translate(-160px, -230px);
+  transform: translate(-198px, -130px);
+}
+@media screen and (max-width:640px) {
+  #wrap #contact-form > .emailLabel {
+    transform: translate(-160px, -230px);
+  }
 }
 #wrap #contact-form > .textLabel {
   left: 50%;
   top: 50%;
-  transform: translate(-160px, -190px);
+  transform: translate(-198px, -90px);
+}
+@media screen and (max-width:640px) {
+  #wrap #contact-form > .textLabel {
+    transform: translate(-160px, -190px);
+  }
 }
 #wrap #contact-form > input {
   position: absolute;
@@ -2519,23 +2540,35 @@
 #wrap #contact-form > .nameInput {
   left: 50%;
   top: 50%;
-  transform: translate(-46px, -276px);
-  width: 192px;
+  width: 230px;
+  transform: translate(-44px, -176px);
+}
+@media screen and (max-width:640px) {
+  #wrap #contact-form > .nameInput {
+    width: 192px;
+    transform: translate(-46px, -276px);
+  }
 }
 #wrap #contact-form > .emailInput {
   left: 50%;
   top: 50%;
-  transform: translate(-10px, -236px);
-  width: 156px;
+  width: 230px;
+  transform: translate(-44px, -136px);
+}
+@media screen and (max-width:640px) {
+  #wrap #contact-form > .emailInput {
+    width: 156px;
+    transform: translate(-10px, -236px);
+  }
 }
 #wrap #contact-form > textarea {
   position: absolute;
   z-index: 1010;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -160px);
-  width: 310px;
-  height: 380px;
+  transform: translate(-50%, -60px);
+  width: 388px;
+  height: 182px;
   padding: 0 8px;
   color: #fff;
   font-weight: 400;
@@ -2543,40 +2576,63 @@
   font-family: "Noto Sans KR", "Nanum Gothic", 돋움, 굴림;
   background-color: #674a39;
   border-radius: 4px;
+  border: initial;
   outline: initial;
+}
+@media screen and (max-width:640px) {
+  #wrap #contact-form > textarea {
+    width: 310px;
+    height: 380px;
+    transform: translate(-50%, -160px);
+  }
 }
 #wrap #contact-form > .btnReset {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(82px, -196px);
+  transform: translate(122px, -96px);
   width: 80px;
   font-weight: 600;
   font-size: 16px;
   background-color: #f08d50;
   cursor: pointer;
 }
+@media screen and (max-width:640px) {
+  #wrap #contact-form > .btnReset {
+    transform: translate(82px, -196px);
+  }
+}
 #wrap #contact-form > .btnCancel {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-163px, 240px);
+  transform: translate(-202px, 138px);
   width: 150px;
   height: 40px;
   font-weight: 600;
   background-color: #f08d50;
   cursor: pointer;
 }
+@media screen and (max-width:640px) {
+  #wrap #contact-form > .btnCancel {
+    transform: translate(-163px, 240px);
+  }
+}
 #wrap #contact-form > .btnSubmit {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(13px, 240px);
+  transform: translate(52px, 138px);
   width: 150px;
   height: 40px;
   font-weight: 600;
   background-color: #f08d50;
   cursor: pointer;
+}
+@media screen and (max-width:640px) {
+  #wrap #contact-form > .btnSubmit {
+    transform: translate(13px, 240px);
+  }
 }
 #wrap #working {
   display: none;
@@ -2605,6 +2661,44 @@
   transform: translate(-26px, 62px);
   width: 36px;
   height: 20px;
+}
+#wrap #addMe {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+#wrap #addMe > .addMeImage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-68px, -50%);
+  width: 206px;
+  height: 194px;
+  background-image: url(./../images/contact/contact_addme.png);
+  text-indent: -9999px;
+}
+#wrap #addMe > .addMeImage + p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(15px, -28px);
+  font-weight: 600;
+  font-size: 30px;
+  rotate: 30deg;
+}
+#wrap #addMe > .addMeImage + p + p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 108px);
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
 }
 #wrap #resume {
   display: none;
