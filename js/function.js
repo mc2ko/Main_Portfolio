@@ -677,4 +677,9 @@ $(function () {
   $("#working").on("click", function () {
     $("#working").css({ display: "none" });
   });
+
+  //클릭제거
+  $(".dontTouch").on("click", function (evt) {
+    evt.preventDefault();
+  });
 });
