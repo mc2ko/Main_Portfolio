@@ -1,4 +1,13 @@
 @charset "UTF-8";
+.dontTouch {
+  min-width: 1200px;
+}
+@media screen and (max-width:640px) {
+  .dontTouch {
+    min-width: 100%;
+  }
+}
+
 #wrap {
   position: relative;
   min-width: 1200px;
@@ -577,11 +586,6 @@
   transform: rotate(180deg);
   background-image: url(./../images/background/gradient.png);
   background-size: contain;
-}
-@media screen and (max-width:640px) {
-  #wrap > #home > .bgmov > .background > .gradient01 {
-    opacity: 0;
-  }
 }
 #wrap header {
   position: absolute;

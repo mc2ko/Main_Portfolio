@@ -21,6 +21,14 @@ $point-color-2: #fcf8e3;
 $mobile: "screen and (max-width:640px)";
 $smallSize: "screen and (max-width:480px)";
 
+.dontTouch {
+  min-width: 1200px;
+
+  @media #{$mobile} {
+    min-width: 100%;
+  }
+}
+
 #wrap {
   position: relative;
   min-width: 1200px;
@@ -652,10 +660,6 @@ $smallSize: "screen and (max-width:480px)";
           transform: rotate(180deg);
           background-image: url(./../images/background/gradient.png);
           background-size: contain;
-
-          @media #{$mobile} {
-            opacity: 0;
-          }
         } //end of .gradient
       } //end of .background
     } //end of .bgmov
@@ -863,7 +867,6 @@ $smallSize: "screen and (max-width:480px)";
   #aboutme {
     position: relative;
     min-width: 1200px;
-    // z-index: 200;
     background-color: #64381c;
     background-image: url(./../images/aboutme/bg_pattern.jpg);
 
