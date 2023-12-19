@@ -767,7 +767,6 @@
 #wrap #aboutme {
   position: relative;
   min-width: 1200px;
-  z-index: 200;
   background-color: #64381c;
   background-image: url(./../images/aboutme/bg_pattern.jpg);
 }
