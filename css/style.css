@@ -2703,6 +2703,11 @@
   font-weight: 500;
   font-size: 24px;
 }
+@media screen and (max-width:640px) {
+  #wrap #addMe > .addMeImage + p + p > span {
+    font-size: 20px;
+  }
+}
 #wrap #resume {
   display: none;
   position: fixed;
